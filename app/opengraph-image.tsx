@@ -120,7 +120,7 @@ export default function OgImage() {
           { label: 'Smart Filters', icon: '🎛️', color: '#8b5cf6' },
           { label: 'Side-by-Side Compare', icon: '📊', color: '#d946ef' },
           { label: 'One-Click Deploy', icon: '⚡', color: '#ec4899' },
-        ].map(({ label, icon, color }) => (
+        ].map(({ label, icon }) => (
           <div
             key={label}
             style={{

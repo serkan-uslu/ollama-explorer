@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { FilterChip } from '@/components/ui/molecules/FilterChip';
 import { Button } from '@/components/ui/atoms/Button';
 import { Divider } from '@/components/ui/atoms/Divider';
-import { cn } from '@/lib/utils/cn';
 import { trackFilterApply, trackFilterRemove, trackFilterReset } from '@/lib/utils/ga';
 import type { FilterOptions } from '@/lib/types/filter';
 import type { Capability, Complexity, Domain, SpeedTier } from '@/lib/types/model';
