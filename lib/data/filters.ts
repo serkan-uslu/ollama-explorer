@@ -11,7 +11,7 @@ function unique<T>(arr: T[]): T[] {
   return [...new Set(arr)];
 }
 
-function deriveParamSizeBuckets(_models: Model[]): ParamSizeBucket[] {
+function deriveParamSizeBuckets(): ParamSizeBucket[] {
   return [
     { label: '≤ 1B', min: 0, max: 1 },
     { label: '1B – 4B', min: 1, max: 4 },
@@ -21,7 +21,7 @@ function deriveParamSizeBuckets(_models: Model[]): ParamSizeBucket[] {
   ];
 }
 
-function deriveRamBuckets(_models: Model[]): RamBucket[] {
+function deriveRamBuckets(): RamBucket[] {
   return [
     { label: '< 4 GB', min: 0, max: 4 },
     { label: '4 – 8 GB', min: 4, max: 8 },
@@ -31,7 +31,7 @@ function deriveRamBuckets(_models: Model[]): RamBucket[] {
   ];
 }
 
-function deriveContextWindowBuckets(_models: Model[]): ContextWindowBucket[] {
+function deriveContextWindowBuckets(): ContextWindowBucket[] {
   return [
     { label: '≤ 8K', min: 0, max: 8_001 },
     { label: '8K – 32K', min: 8_001, max: 32_001 },
@@ -56,8 +56,8 @@ export function deriveFilterOptions(models: Model[]): FilterOptions {
       models.map((m) => normalizeCreatorOrg(m.creator_org)).filter((c): c is string => !!c),
     ).sort(),
     applications: unique(models.flatMap((m) => (m.applications ?? []).map((a) => a.name))).sort(),
-    paramSizeBuckets: deriveParamSizeBuckets(models),
-    ramBuckets: deriveRamBuckets(models),
-    contextWindowBuckets: deriveContextWindowBuckets(models),
+    paramSizeBuckets: deriveParamSizeBuckets(),
+    ramBuckets: deriveRamBuckets(),
+    contextWindowBuckets: deriveContextWindowBuckets(),
   };
 }

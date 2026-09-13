@@ -116,11 +116,11 @@ export default function OgImage() {
         }}
       >
         {[
-          { label: '214+ Models', icon: '🤖', color: '#6366f1' },
-          { label: 'Smart Filters', icon: '🎛️', color: '#8b5cf6' },
-          { label: 'Side-by-Side Compare', icon: '📊', color: '#d946ef' },
-          { label: 'One-Click Deploy', icon: '⚡', color: '#ec4899' },
-        ].map(({ label, icon, color }) => (
+          { label: '214+ Models', icon: '🤖' },
+          { label: 'Smart Filters', icon: '🎛️' },
+          { label: 'Side-by-Side Compare', icon: '📊' },
+          { label: 'One-Click Deploy', icon: '⚡' },
+        ].map(({ label, icon }) => (
           <div
             key={label}
             style={{

@@ -37,7 +37,7 @@ export function ModelsBrowser({ allModels, filterOptions }: ModelsBrowserProps) 
 
   const results = useMemo(() => {
     return filterAndSortModels({ ...hook.filters, search: debouncedSearch });
-  }, [hook.filters, debouncedSearch, allModels]); // allModels is stable (server prop)
+  }, [hook.filters, debouncedSearch]);
 
   return (
     <>
