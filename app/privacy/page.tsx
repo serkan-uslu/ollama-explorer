@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Divider } from '@/components/ui/atoms/Divider';
-import { Button } from '@/components/ui/atoms/Button';
+import { buttonClassName } from '@/components/ui/atoms/Button';
 
 export const dynamic = 'force-static';
 
@@ -212,10 +212,8 @@ export default function PrivacyPage() {
 
       {/* Back button */}
       <div className="pt-4">
-        <Link href="/about">
-          <Button variant="outline" size="md">
-            ← Back to About
-          </Button>
+        <Link href="/about" className={buttonClassName('outline')}>
+          ← Back to About
         </Link>
       </div>
     </main>

@@ -1,0 +1,1292 @@
+{
+  "slug": "deepseek-coder-v2",
+  "name": "deepseek-coder-v2",
+  "description": "An open-source Mixture-of-Experts code language model that achieves performance comparable to GPT4-Turbo in code-specific tasks.",
+  "source_url": "https://ollama.com/library/deepseek-coder-v2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 3200000,
+  "tag_count": 64,
+  "source_updated_at": "2024-09-06T03:33:00Z",
+  "parameter_sizes": [
+    "16b",
+    "236b"
+  ],
+  "min_download_size_bytes": 6400000000,
+  "max_download_size_bytes": 472000000000,
+  "max_context_window": 160000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 64,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "deepseek-coder-v2:latest",
+    "tag": "latest",
+    "digest": "63fb193b3a9b",
+    "availability": "local",
+    "download_size_bytes": 8900000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 160000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "deepseek-coder-v2:16b-lite-base-q2_K",
+    "tag": "16b-lite-base-q2_K",
+    "digest": "8b62e3f7c4be",
+    "availability": "local",
+    "download_size_bytes": 6400000000,
+    "parameter": {
+      "raw": "16b",
+      "total_billion": 16.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "deepseek-coder-v2:16b",
+      "tag": "16b",
+      "digest": "63fb193b3a9b",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-fp16",
+      "tag": "16b-lite-base-fp16",
+      "digest": "eab76b4e3742",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q2_K",
+      "tag": "16b-lite-base-q2_K",
+      "digest": "8b62e3f7c4be",
+      "availability": "local",
+      "download_size_bytes": 6400000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q3_K_L",
+      "tag": "16b-lite-base-q3_K_L",
+      "digest": "3dab6fe7735c",
+      "availability": "local",
+      "download_size_bytes": 8500000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q3_K_M",
+      "tag": "16b-lite-base-q3_K_M",
+      "digest": "d16d8f044de1",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q3_K_S",
+      "tag": "16b-lite-base-q3_K_S",
+      "digest": "8620271ad4df",
+      "availability": "local",
+      "download_size_bytes": 7500000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q4_0",
+      "tag": "16b-lite-base-q4_0",
+      "digest": "dc3c85f78976",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q4_1",
+      "tag": "16b-lite-base-q4_1",
+      "digest": "09d4128b178d",
+      "availability": "local",
+      "download_size_bytes": 9900000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q4_K_M",
+      "tag": "16b-lite-base-q4_K_M",
+      "digest": "2f4fb0bfc6a7",
+      "availability": "local",
+      "download_size_bytes": 10000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q4_K_S",
+      "tag": "16b-lite-base-q4_K_S",
+      "digest": "eea8c1bb07d9",
+      "availability": "local",
+      "download_size_bytes": 9500000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q5_0",
+      "tag": "16b-lite-base-q5_0",
+      "digest": "cd16e96f0530",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q5_1",
+      "tag": "16b-lite-base-q5_1",
+      "digest": "cf643e1eb150",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q5_K_M",
+      "tag": "16b-lite-base-q5_K_M",
+      "digest": "0802b3662146",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q5_K_S",
+      "tag": "16b-lite-base-q5_K_S",
+      "digest": "94111aa16b14",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q6_K",
+      "tag": "16b-lite-base-q6_K",
+      "digest": "7e7a754912f8",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-base-q8_0",
+      "tag": "16b-lite-base-q8_0",
+      "digest": "8e01d51811ab",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-fp16",
+      "tag": "16b-lite-instruct-fp16",
+      "digest": "e2edc649e2ab",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q2_K",
+      "tag": "16b-lite-instruct-q2_K",
+      "digest": "82e79aef7a69",
+      "availability": "local",
+      "download_size_bytes": 6400000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q3_K_L",
+      "tag": "16b-lite-instruct-q3_K_L",
+      "digest": "c5fffde68649",
+      "availability": "local",
+      "download_size_bytes": 8500000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q3_K_M",
+      "tag": "16b-lite-instruct-q3_K_M",
+      "digest": "a1dbf0a1e4fa",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q3_K_S",
+      "tag": "16b-lite-instruct-q3_K_S",
+      "digest": "36faf1cc8ce9",
+      "availability": "local",
+      "download_size_bytes": 7500000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q4_0",
+      "tag": "16b-lite-instruct-q4_0",
+      "digest": "63fb193b3a9b",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q4_1",
+      "tag": "16b-lite-instruct-q4_1",
+      "digest": "2ccedaf506ab",
+      "availability": "local",
+      "download_size_bytes": 9900000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q4_K_M",
+      "tag": "16b-lite-instruct-q4_K_M",
+      "digest": "dac6ff6589c9",
+      "availability": "local",
+      "download_size_bytes": 10000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q4_K_S",
+      "tag": "16b-lite-instruct-q4_K_S",
+      "digest": "5e86e3ea790e",
+      "availability": "local",
+      "download_size_bytes": 9500000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q5_0",
+      "tag": "16b-lite-instruct-q5_0",
+      "digest": "6084bfd4db26",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q5_1",
+      "tag": "16b-lite-instruct-q5_1",
+      "digest": "840b2157e9f0",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q5_K_M",
+      "tag": "16b-lite-instruct-q5_K_M",
+      "digest": "6065d4880bf9",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q5_K_S",
+      "tag": "16b-lite-instruct-q5_K_S",
+      "digest": "efe9f0187a2d",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q6_K",
+      "tag": "16b-lite-instruct-q6_K",
+      "digest": "cf566e23d87f",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:16b-lite-instruct-q8_0",
+      "tag": "16b-lite-instruct-q8_0",
+      "digest": "ef033cab4dae",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "16b",
+        "total_billion": 16.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b",
+      "tag": "236b",
+      "digest": "c78d80129305",
+      "availability": "local",
+      "download_size_bytes": 133000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-fp16",
+      "tag": "236b-base-fp16",
+      "digest": "bd60a2f7c8bc",
+      "availability": "local",
+      "download_size_bytes": 472000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q2_K",
+      "tag": "236b-base-q2_K",
+      "digest": "783021b97803",
+      "availability": "local",
+      "download_size_bytes": 86000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q3_K_L",
+      "tag": "236b-base-q3_K_L",
+      "digest": "317accd37d79",
+      "availability": "local",
+      "download_size_bytes": 122000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q3_K_M",
+      "tag": "236b-base-q3_K_M",
+      "digest": "e8d5da110401",
+      "availability": "local",
+      "download_size_bytes": 113000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q3_K_S",
+      "tag": "236b-base-q3_K_S",
+      "digest": "e307d50c3f31",
+      "availability": "local",
+      "download_size_bytes": 102000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q4_0",
+      "tag": "236b-base-q4_0",
+      "digest": "2dc89d24571b",
+      "availability": "local",
+      "download_size_bytes": 133000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q4_1",
+      "tag": "236b-base-q4_1",
+      "digest": "6c9b97422ea4",
+      "availability": "local",
+      "download_size_bytes": 148000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q4_K_M",
+      "tag": "236b-base-q4_K_M",
+      "digest": "c02e9228aa14",
+      "availability": "local",
+      "download_size_bytes": 142000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q4_K_S",
+      "tag": "236b-base-q4_K_S",
+      "digest": "4e51408d2392",
+      "availability": "local",
+      "download_size_bytes": 134000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q5_0",
+      "tag": "236b-base-q5_0",
+      "digest": "786659c065fa",
+      "availability": "local",
+      "download_size_bytes": 162000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q5_1",
+      "tag": "236b-base-q5_1",
+      "digest": "073514be5a03",
+      "availability": "local",
+      "download_size_bytes": 177000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q5_K_M",
+      "tag": "236b-base-q5_K_M",
+      "digest": "6710a3c300fc",
+      "availability": "local",
+      "download_size_bytes": 167000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q5_K_S",
+      "tag": "236b-base-q5_K_S",
+      "digest": "93374287311f",
+      "availability": "local",
+      "download_size_bytes": 162000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q6_K",
+      "tag": "236b-base-q6_K",
+      "digest": "9f090258b940",
+      "availability": "local",
+      "download_size_bytes": 194000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-base-q8_0",
+      "tag": "236b-base-q8_0",
+      "digest": "d1bcdd7d5871",
+      "availability": "local",
+      "download_size_bytes": 251000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-fp16",
+      "tag": "236b-instruct-fp16",
+      "digest": "22504f15ba17",
+      "availability": "local",
+      "download_size_bytes": 472000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q2_K",
+      "tag": "236b-instruct-q2_K",
+      "digest": "4f831761cd02",
+      "availability": "local",
+      "download_size_bytes": 86000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q3_K_L",
+      "tag": "236b-instruct-q3_K_L",
+      "digest": "f230e675a4e3",
+      "availability": "local",
+      "download_size_bytes": 122000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q3_K_M",
+      "tag": "236b-instruct-q3_K_M",
+      "digest": "2432b4ab9079",
+      "availability": "local",
+      "download_size_bytes": 113000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q3_K_S",
+      "tag": "236b-instruct-q3_K_S",
+      "digest": "d7317e5ddd3f",
+      "availability": "local",
+      "download_size_bytes": 102000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q4_0",
+      "tag": "236b-instruct-q4_0",
+      "digest": "c78d80129305",
+      "availability": "local",
+      "download_size_bytes": 133000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q4_1",
+      "tag": "236b-instruct-q4_1",
+      "digest": "3deb93929590",
+      "availability": "local",
+      "download_size_bytes": 148000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q4_K_M",
+      "tag": "236b-instruct-q4_K_M",
+      "digest": "f37bcc863826",
+      "availability": "local",
+      "download_size_bytes": 142000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q4_K_S",
+      "tag": "236b-instruct-q4_K_S",
+      "digest": "fa7317115737",
+      "availability": "local",
+      "download_size_bytes": 134000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q5_0",
+      "tag": "236b-instruct-q5_0",
+      "digest": "46ceaf3a8ffd",
+      "availability": "local",
+      "download_size_bytes": 162000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q5_1",
+      "tag": "236b-instruct-q5_1",
+      "digest": "d29414056789",
+      "availability": "local",
+      "download_size_bytes": 177000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q5_K_M",
+      "tag": "236b-instruct-q5_K_M",
+      "digest": "4e723bdb7e50",
+      "availability": "local",
+      "download_size_bytes": 167000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q5_K_S",
+      "tag": "236b-instruct-q5_K_S",
+      "digest": "0ccf53e6e50b",
+      "availability": "local",
+      "download_size_bytes": 162000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q6_K",
+      "tag": "236b-instruct-q6_K",
+      "digest": "6ce352e55f26",
+      "availability": "local",
+      "download_size_bytes": 194000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:236b-instruct-q8_0",
+      "tag": "236b-instruct-q8_0",
+      "digest": "7f763ec0e20e",
+      "availability": "local",
+      "download_size_bytes": 251000000000,
+      "parameter": {
+        "raw": "236b",
+        "total_billion": 236.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder-v2:latest",
+      "tag": "latest",
+      "digest": "63fb193b3a9b",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "deepseek-coder-v2:lite",
+      "tag": "lite",
+      "digest": "63fb193b3a9b",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

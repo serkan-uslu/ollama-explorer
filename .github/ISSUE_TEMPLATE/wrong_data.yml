@@ -1,11 +1,11 @@
 name: 📊 Wrong Model Data
-description: A model's metadata (domain, capabilities, RAM, etc.) is incorrect or outdated.
+description: A model's source-backed catalog or variant data is incorrect or outdated.
 labels: ['data']
 body:
   - type: markdown
     attributes:
       value: |
-        Model metadata is automatically enriched and may contain errors. Help us fix it!
+        Catalog fields are parsed from Ollama. Share the source page so the parser or checked-in data can be corrected.
 
   - type: input
     id: model
@@ -19,7 +19,7 @@ body:
     id: model_url
     attributes:
       label: Model page URL
-      placeholder: 'e.g. https://ollama-explorer.vercel.app/models/abc-123'
+      placeholder: 'e.g. https://ollama-explorer.vercel.app/models/llama3.1'
     validations:
       required: false
 
@@ -28,18 +28,20 @@ body:
     attributes:
       label: Which field is wrong?
       options:
-        - Domain
+        - Availability
         - Capabilities
-        - Complexity
-        - Min RAM
+        - Applications
+        - Download size
+        - Estimated memory
         - Context window
-        - Use cases
-        - Languages
-        - Speed tier
+        - Input modalities
+        - Quantization
+        - Variant or tag
         - Model family
-        - Creator
+        - License
         - Description
         - Parameter sizes
+        - Source update date
         - Other
     validations:
       required: true
@@ -67,4 +69,4 @@ body:
       description: Link to the official Ollama page or documentation that confirms the correct value.
       placeholder: 'https://ollama.com/library/...'
     validations:
-      required: false
+      required: true

@@ -57,10 +57,10 @@ export function trackModelView(modelName: string, modelId: string, domain: strin
 /**
  * Track copy command action
  */
-export function trackCopyCommand(modelName: string, modelIdentifier: string) {
+export function trackCopyCommand(modelName: string, command: string) {
   trackEvent(GA_EVENTS.MODEL_COPY_COMMAND, {
     model_name: modelName,
-    command: `ollama run ${modelIdentifier}`,
+    command,
   });
 }
 

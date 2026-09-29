@@ -45,14 +45,14 @@ export function CompareToggle({ modelId, modelName }: CompareToggleProps) {
             : 'Add to comparison'
       }
       className={cn(
-        'flex items-center justify-center w-6 h-6 rounded-full border transition-all duration-150',
+        'flex items-center justify-center min-w-11 min-h-11 rounded-full border transition-all duration-150',
         selected
           ? 'bg-(--color-accent) border-(--color-accent) text-(--color-on-accent)'
           : 'bg-(--color-bg) border-(--color-border) text-(--color-text-subtle) hover:border-(--color-border-strong) hover:text-(--color-text)',
         maxReached && 'opacity-30 cursor-not-allowed',
       )}
     >
-      {selected ? <Check size={11} strokeWidth={2.5} /> : <Plus size={11} strokeWidth={2.5} />}
+      {selected ? <Check size={16} strokeWidth={2.5} /> : <Plus size={16} strokeWidth={2.5} />}
     </button>
   );
 }

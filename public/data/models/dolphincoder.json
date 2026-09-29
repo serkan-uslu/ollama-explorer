@@ -1,0 +1,745 @@
+{
+  "slug": "dolphincoder",
+  "name": "dolphincoder",
+  "description": "A 7B and 15B uncensored variant of the Dolphin model family that excels at coding, based on StarCoder2.",
+  "source_url": "https://ollama.com/library/dolphincoder",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1000000,
+  "tag_count": 35,
+  "source_updated_at": "2024-04-09T00:01:00Z",
+  "parameter_sizes": [
+    "7b",
+    "15b"
+  ],
+  "min_download_size_bytes": 2900000000,
+  "max_download_size_bytes": 32000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 35,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "dolphincoder:latest",
+    "tag": "latest",
+    "digest": "677555f1f316",
+    "availability": "local",
+    "download_size_bytes": 4200000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "dolphincoder:7b-starcoder2-q2_K",
+    "tag": "7b-starcoder2-q2_K",
+    "digest": "fb0129d225aa",
+    "availability": "local",
+    "download_size_bytes": 2900000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "dolphincoder:15b",
+      "tag": "15b",
+      "digest": "1102380927c2",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2",
+      "tag": "15b-starcoder2",
+      "digest": "1102380927c2",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-fp16",
+      "tag": "15b-starcoder2-fp16",
+      "digest": "1c1dc0127ddc",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q2_K",
+      "tag": "15b-starcoder2-q2_K",
+      "digest": "ba9150d92d7a",
+      "availability": "local",
+      "download_size_bytes": 6200000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q3_K_L",
+      "tag": "15b-starcoder2-q3_K_L",
+      "digest": "df6670a7f78c",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q3_K_M",
+      "tag": "15b-starcoder2-q3_K_M",
+      "digest": "eddba241c8a5",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q3_K_S",
+      "tag": "15b-starcoder2-q3_K_S",
+      "digest": "acf10b086812",
+      "availability": "local",
+      "download_size_bytes": 7000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q4_0",
+      "tag": "15b-starcoder2-q4_0",
+      "digest": "1102380927c2",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q4_1",
+      "tag": "15b-starcoder2-q4_1",
+      "digest": "e6e9a34e768f",
+      "availability": "local",
+      "download_size_bytes": 10000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q4_K_M",
+      "tag": "15b-starcoder2-q4_K_M",
+      "digest": "5af4b8a9d51d",
+      "availability": "local",
+      "download_size_bytes": 9900000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q4_K_S",
+      "tag": "15b-starcoder2-q4_K_S",
+      "digest": "c2b8d84e8ce3",
+      "availability": "local",
+      "download_size_bytes": 9300000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q5_0",
+      "tag": "15b-starcoder2-q5_0",
+      "digest": "b4735d7cba44",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q5_1",
+      "tag": "15b-starcoder2-q5_1",
+      "digest": "7140319becb6",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q5_K_M",
+      "tag": "15b-starcoder2-q5_K_M",
+      "digest": "fff9c5a18e8a",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q5_K_S",
+      "tag": "15b-starcoder2-q5_K_S",
+      "digest": "f4ebaabdbf39",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q6_K",
+      "tag": "15b-starcoder2-q6_K",
+      "digest": "7f4177c2ad67",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:15b-starcoder2-q8_0",
+      "tag": "15b-starcoder2-q8_0",
+      "digest": "a0693c917630",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b",
+      "tag": "7b",
+      "digest": "677555f1f316",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2",
+      "tag": "7b-starcoder2",
+      "digest": "677555f1f316",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-fp16",
+      "tag": "7b-starcoder2-fp16",
+      "digest": "59be24ed28ca",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q2_K",
+      "tag": "7b-starcoder2-q2_K",
+      "digest": "fb0129d225aa",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q3_K_L",
+      "tag": "7b-starcoder2-q3_K_L",
+      "digest": "a8319e4b88e3",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q3_K_M",
+      "tag": "7b-starcoder2-q3_K_M",
+      "digest": "3e450ded039a",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q3_K_S",
+      "tag": "7b-starcoder2-q3_K_S",
+      "digest": "e97ee0126684",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q4_0",
+      "tag": "7b-starcoder2-q4_0",
+      "digest": "677555f1f316",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q4_1",
+      "tag": "7b-starcoder2-q4_1",
+      "digest": "659db57b0269",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q4_K_M",
+      "tag": "7b-starcoder2-q4_K_M",
+      "digest": "547e49183386",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q4_K_S",
+      "tag": "7b-starcoder2-q4_K_S",
+      "digest": "0d50809844f2",
+      "availability": "local",
+      "download_size_bytes": 4300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q5_0",
+      "tag": "7b-starcoder2-q5_0",
+      "digest": "c83c1feb4d92",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q5_1",
+      "tag": "7b-starcoder2-q5_1",
+      "digest": "4f0f2eb0effb",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q5_K_M",
+      "tag": "7b-starcoder2-q5_K_M",
+      "digest": "c44956298761",
+      "availability": "local",
+      "download_size_bytes": 5300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q5_K_S",
+      "tag": "7b-starcoder2-q5_K_S",
+      "digest": "4566628e5196",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q6_K",
+      "tag": "7b-starcoder2-q6_K",
+      "digest": "fd5972ba8500",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:7b-starcoder2-q8_0",
+      "tag": "7b-starcoder2-q8_0",
+      "digest": "21c985c7feb0",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphincoder:latest",
+      "tag": "latest",
+      "digest": "677555f1f316",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

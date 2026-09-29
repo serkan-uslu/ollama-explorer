@@ -1,0 +1,248 @@
+{
+  "slug": "granite3.2",
+  "name": "granite3.2",
+  "description": "Granite-3.2 is a family of long-context AI models from IBM Granite fine-tuned for thinking capabilities.",
+  "source_url": "https://ollama.com/library/granite3.2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 461300,
+  "tag_count": 9,
+  "source_updated_at": "2025-02-26T05:48:00Z",
+  "parameter_sizes": [
+    "2b",
+    "8b"
+  ],
+  "min_download_size_bytes": 1500000000,
+  "max_download_size_bytes": 16000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "granite3.2:latest",
+    "tag": "latest",
+    "digest": "9bcb3335083f",
+    "availability": "local",
+    "download_size_bytes": 4900000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "granite3.2:2b",
+    "tag": "2b",
+    "digest": "9d79a41f2f75",
+    "availability": "local",
+    "download_size_bytes": 1500000000,
+    "parameter": {
+      "raw": "2b",
+      "total_billion": 2.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "granite3.2:2b",
+      "tag": "2b",
+      "digest": "9d79a41f2f75",
+      "availability": "local",
+      "download_size_bytes": 1500000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:2b-instruct-fp16",
+      "tag": "2b-instruct-fp16",
+      "digest": "c86bd0b2f0bd",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:2b-instruct-q4_K_M",
+      "tag": "2b-instruct-q4_K_M",
+      "digest": "9d79a41f2f75",
+      "availability": "local",
+      "download_size_bytes": 1500000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:2b-instruct-q8_0",
+      "tag": "2b-instruct-q8_0",
+      "digest": "f6f4d0d4b4fa",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:8b",
+      "tag": "8b",
+      "digest": "9bcb3335083f",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:8b-instruct-fp16",
+      "tag": "8b-instruct-fp16",
+      "digest": "b9679f6ae759",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:8b-instruct-q4_K_M",
+      "tag": "8b-instruct-q4_K_M",
+      "digest": "9bcb3335083f",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:8b-instruct-q8_0",
+      "tag": "8b-instruct-q8_0",
+      "digest": "1b54499df0ff",
+      "availability": "local",
+      "download_size_bytes": 8700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2:latest",
+      "tag": "latest",
+      "digest": "9bcb3335083f",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

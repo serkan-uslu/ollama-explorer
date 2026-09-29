@@ -1,0 +1,1021 @@
+{
+  "slug": "smollm2",
+  "name": "smollm2",
+  "description": "SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters.",
+  "source_url": "https://ollama.com/library/smollm2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 4000000,
+  "tag_count": 49,
+  "source_updated_at": "2024-11-01T04:57:00Z",
+  "parameter_sizes": [
+    "135m",
+    "360m",
+    "1.7b"
+  ],
+  "min_download_size_bytes": 88000000,
+  "max_download_size_bytes": 3400000000,
+  "max_context_window": 8000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 49,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "smollm2:latest",
+    "tag": "latest",
+    "digest": "cef4a1e09247",
+    "availability": "local",
+    "download_size_bytes": 1800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "smollm2:135m-instruct-q2_K",
+    "tag": "135m-instruct-q2_K",
+    "digest": "888e2e49aff1",
+    "availability": "local",
+    "download_size_bytes": 88000000,
+    "parameter": {
+      "raw": "135m",
+      "total_billion": 0.135,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 8000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "smollm2:1.7b",
+      "tag": "1.7b",
+      "digest": "cef4a1e09247",
+      "availability": "local",
+      "download_size_bytes": 1800000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-fp16",
+      "tag": "1.7b-instruct-fp16",
+      "digest": "4dfa5c286f7d",
+      "availability": "local",
+      "download_size_bytes": 3400000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q2_K",
+      "tag": "1.7b-instruct-q2_K",
+      "digest": "c9fa799834eb",
+      "availability": "local",
+      "download_size_bytes": 675000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q3_K_L",
+      "tag": "1.7b-instruct-q3_K_L",
+      "digest": "8e9bf65b4fc1",
+      "availability": "local",
+      "download_size_bytes": 933000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q3_K_M",
+      "tag": "1.7b-instruct-q3_K_M",
+      "digest": "995c3b9124da",
+      "availability": "local",
+      "download_size_bytes": 860000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q3_K_S",
+      "tag": "1.7b-instruct-q3_K_S",
+      "digest": "5f6dd832de68",
+      "availability": "local",
+      "download_size_bytes": 777000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q4_0",
+      "tag": "1.7b-instruct-q4_0",
+      "digest": "4c11ca6ef836",
+      "availability": "local",
+      "download_size_bytes": 991000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q4_1",
+      "tag": "1.7b-instruct-q4_1",
+      "digest": "aee2f3421da8",
+      "availability": "local",
+      "download_size_bytes": 1100000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q4_K_M",
+      "tag": "1.7b-instruct-q4_K_M",
+      "digest": "8ea75f835db9",
+      "availability": "local",
+      "download_size_bytes": 1100000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q4_K_S",
+      "tag": "1.7b-instruct-q4_K_S",
+      "digest": "fa70e3e2531f",
+      "availability": "local",
+      "download_size_bytes": 999000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q5_0",
+      "tag": "1.7b-instruct-q5_0",
+      "digest": "b8b1fb6cc166",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q5_1",
+      "tag": "1.7b-instruct-q5_1",
+      "digest": "f46b4fa8622d",
+      "availability": "local",
+      "download_size_bytes": 1300000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q5_K_M",
+      "tag": "1.7b-instruct-q5_K_M",
+      "digest": "ff2bf7135787",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q5_K_S",
+      "tag": "1.7b-instruct-q5_K_S",
+      "digest": "042ddeb76d9e",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q6_K",
+      "tag": "1.7b-instruct-q6_K",
+      "digest": "d334c54e8df6",
+      "availability": "local",
+      "download_size_bytes": 1400000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:1.7b-instruct-q8_0",
+      "tag": "1.7b-instruct-q8_0",
+      "digest": "cef4a1e09247",
+      "availability": "local",
+      "download_size_bytes": 1800000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m",
+      "tag": "135m",
+      "digest": "9077fe9d2ae1",
+      "availability": "local",
+      "download_size_bytes": 271000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-fp16",
+      "tag": "135m-instruct-fp16",
+      "digest": "9077fe9d2ae1",
+      "availability": "local",
+      "download_size_bytes": 271000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q2_K",
+      "tag": "135m-instruct-q2_K",
+      "digest": "888e2e49aff1",
+      "availability": "local",
+      "download_size_bytes": 88000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q3_K_L",
+      "tag": "135m-instruct-q3_K_L",
+      "digest": "c72ffea38f60",
+      "availability": "local",
+      "download_size_bytes": 98000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q3_K_M",
+      "tag": "135m-instruct-q3_K_M",
+      "digest": "970418f9b140",
+      "availability": "local",
+      "download_size_bytes": 94000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q3_K_S",
+      "tag": "135m-instruct-q3_K_S",
+      "digest": "ea68556e2fe1",
+      "availability": "local",
+      "download_size_bytes": 88000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q4_0",
+      "tag": "135m-instruct-q4_0",
+      "digest": "dbc9f6c89cb0",
+      "availability": "local",
+      "download_size_bytes": 92000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q4_1",
+      "tag": "135m-instruct-q4_1",
+      "digest": "1e7dbfd9f706",
+      "availability": "local",
+      "download_size_bytes": 98000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q4_K_M",
+      "tag": "135m-instruct-q4_K_M",
+      "digest": "fd3168509652",
+      "availability": "local",
+      "download_size_bytes": 105000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q4_K_S",
+      "tag": "135m-instruct-q4_K_S",
+      "digest": "9a7ead04933f",
+      "availability": "local",
+      "download_size_bytes": 102000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q5_0",
+      "tag": "135m-instruct-q5_0",
+      "digest": "b4ae22539f3f",
+      "availability": "local",
+      "download_size_bytes": 105000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q5_1",
+      "tag": "135m-instruct-q5_1",
+      "digest": "e8d2ad7e6838",
+      "availability": "local",
+      "download_size_bytes": 112000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q5_K_M",
+      "tag": "135m-instruct-q5_K_M",
+      "digest": "a703ae7fccb0",
+      "availability": "local",
+      "download_size_bytes": 112000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q5_K_S",
+      "tag": "135m-instruct-q5_K_S",
+      "digest": "11d6886e86ff",
+      "availability": "local",
+      "download_size_bytes": 110000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q6_K",
+      "tag": "135m-instruct-q6_K",
+      "digest": "6e8e767c0cee",
+      "availability": "local",
+      "download_size_bytes": 138000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:135m-instruct-q8_0",
+      "tag": "135m-instruct-q8_0",
+      "digest": "2d470404841a",
+      "availability": "local",
+      "download_size_bytes": 145000000,
+      "parameter": {
+        "raw": "135m",
+        "total_billion": 0.135,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m",
+      "tag": "360m",
+      "digest": "297281b699fc",
+      "availability": "local",
+      "download_size_bytes": 726000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-fp16",
+      "tag": "360m-instruct-fp16",
+      "digest": "297281b699fc",
+      "availability": "local",
+      "download_size_bytes": 726000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q2_K",
+      "tag": "360m-instruct-q2_K",
+      "digest": "54be4fc61f4d",
+      "availability": "local",
+      "download_size_bytes": 219000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q3_K_L",
+      "tag": "360m-instruct-q3_K_L",
+      "digest": "43b5786c7936",
+      "availability": "local",
+      "download_size_bytes": 246000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q3_K_M",
+      "tag": "360m-instruct-q3_K_M",
+      "digest": "0178f7a9b2a2",
+      "availability": "local",
+      "download_size_bytes": 235000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q3_K_S",
+      "tag": "360m-instruct-q3_K_S",
+      "digest": "a601e4ea2064",
+      "availability": "local",
+      "download_size_bytes": 219000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q4_0",
+      "tag": "360m-instruct-q4_0",
+      "digest": "676f4c06b139",
+      "availability": "local",
+      "download_size_bytes": 229000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q4_1",
+      "tag": "360m-instruct-q4_1",
+      "digest": "105941c87459",
+      "availability": "local",
+      "download_size_bytes": 249000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q4_K_M",
+      "tag": "360m-instruct-q4_K_M",
+      "digest": "4ca41655e80e",
+      "availability": "local",
+      "download_size_bytes": 271000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q4_K_S",
+      "tag": "360m-instruct-q4_K_S",
+      "digest": "c03645f8e0dc",
+      "availability": "local",
+      "download_size_bytes": 260000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q5_0",
+      "tag": "360m-instruct-q5_0",
+      "digest": "456bcbe27a48",
+      "availability": "local",
+      "download_size_bytes": 268000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q5_1",
+      "tag": "360m-instruct-q5_1",
+      "digest": "3bcd2b075c64",
+      "availability": "local",
+      "download_size_bytes": 288000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q5_K_M",
+      "tag": "360m-instruct-q5_K_M",
+      "digest": "a2f10c17100d",
+      "availability": "local",
+      "download_size_bytes": 290000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q5_K_S",
+      "tag": "360m-instruct-q5_K_S",
+      "digest": "8d5a33b7fc41",
+      "availability": "local",
+      "download_size_bytes": 283000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q6_K",
+      "tag": "360m-instruct-q6_K",
+      "digest": "0b45c0118489",
+      "availability": "local",
+      "download_size_bytes": 367000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:360m-instruct-q8_0",
+      "tag": "360m-instruct-q8_0",
+      "digest": "dfd48b1fa28f",
+      "availability": "local",
+      "download_size_bytes": 386000000,
+      "parameter": {
+        "raw": "360m",
+        "total_billion": 0.36,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "smollm2:latest",
+      "tag": "latest",
+      "digest": "cef4a1e09247",
+      "availability": "local",
+      "download_size_bytes": 1800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

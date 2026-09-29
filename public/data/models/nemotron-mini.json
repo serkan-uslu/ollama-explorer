@@ -1,0 +1,411 @@
+{
+  "slug": "nemotron-mini",
+  "name": "nemotron-mini",
+  "description": "A commercial-friendly small language model by NVIDIA optimized for roleplay, RAG QA, and function calling.",
+  "source_url": "https://ollama.com/library/nemotron-mini",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 720300,
+  "tag_count": 17,
+  "source_updated_at": "2024-09-18T20:21:00Z",
+  "parameter_sizes": [
+    "4b"
+  ],
+  "min_download_size_bytes": 1900000000,
+  "max_download_size_bytes": 8400000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 17,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nemotron-mini:latest",
+    "tag": "latest",
+    "digest": "ed76ab18784f",
+    "availability": "local",
+    "download_size_bytes": 2700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nemotron-mini:4b-instruct-q2_K",
+    "tag": "4b-instruct-q2_K",
+    "digest": "71c1aed58cc4",
+    "availability": "local",
+    "download_size_bytes": 1900000000,
+    "parameter": {
+      "raw": "4b",
+      "total_billion": 4.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nemotron-mini:4b",
+      "tag": "4b",
+      "digest": "ed76ab18784f",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-fp16",
+      "tag": "4b-instruct-fp16",
+      "digest": "d0d806e9853c",
+      "availability": "local",
+      "download_size_bytes": 8400000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q2_K",
+      "tag": "4b-instruct-q2_K",
+      "digest": "71c1aed58cc4",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q3_K_L",
+      "tag": "4b-instruct-q3_K_L",
+      "digest": "899020cd5b1e",
+      "availability": "local",
+      "download_size_bytes": 2500000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q3_K_M",
+      "tag": "4b-instruct-q3_K_M",
+      "digest": "91b07164ba46",
+      "availability": "local",
+      "download_size_bytes": 2300000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q3_K_S",
+      "tag": "4b-instruct-q3_K_S",
+      "digest": "28cabdeeb76e",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q4_0",
+      "tag": "4b-instruct-q4_0",
+      "digest": "041bd339f71f",
+      "availability": "local",
+      "download_size_bytes": 2600000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q4_1",
+      "tag": "4b-instruct-q4_1",
+      "digest": "715f0114b145",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q4_K_M",
+      "tag": "4b-instruct-q4_K_M",
+      "digest": "ed76ab18784f",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q4_K_S",
+      "tag": "4b-instruct-q4_K_S",
+      "digest": "59f3d2ea76f8",
+      "availability": "local",
+      "download_size_bytes": 2600000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q5_0",
+      "tag": "4b-instruct-q5_0",
+      "digest": "e5f64c7116d1",
+      "availability": "local",
+      "download_size_bytes": 3000000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q5_1",
+      "tag": "4b-instruct-q5_1",
+      "digest": "8c244be13dfe",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q5_K_M",
+      "tag": "4b-instruct-q5_K_M",
+      "digest": "9e36e563dbdd",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q5_K_S",
+      "tag": "4b-instruct-q5_K_S",
+      "digest": "072f4b7daa17",
+      "availability": "local",
+      "download_size_bytes": 3000000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q6_K",
+      "tag": "4b-instruct-q6_K",
+      "digest": "4cf36901911e",
+      "availability": "local",
+      "download_size_bytes": 3400000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:4b-instruct-q8_0",
+      "tag": "4b-instruct-q8_0",
+      "digest": "fe86a4d04f9f",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-mini:latest",
+      "tag": "latest",
+      "digest": "ed76ab18784f",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

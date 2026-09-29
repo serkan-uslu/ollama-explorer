@@ -1,35 +1,48 @@
 import type { MetadataRoute } from 'next';
-import { getAllModels } from '@/lib/data/models';
+import { getAllModels, getCatalog } from '@/lib/data/models';
 
 const BASE_URL = 'https://ollama-explorer.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const models = getAllModels();
+  const generatedAt = new Date(getCatalog().generated_at);
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: new Date(),
+      lastModified: generatedAt,
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
       url: `${BASE_URL}/models`,
-      lastModified: new Date(),
+      lastModified: generatedAt,
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: new Date(),
+      lastModified: generatedAt,
       changeFrequency: 'monthly',
       priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/roadmap`,
+      lastModified: generatedAt,
+      changeFrequency: 'monthly',
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/privacy`,
+      lastModified: generatedAt,
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ];
 
   const modelRoutes: MetadataRoute.Sitemap = models.map((model) => ({
-    url: `${BASE_URL}/models/${model.id}`,
-    lastModified: model.timestamp ? new Date(model.timestamp) : new Date(),
+    url: `${BASE_URL}/models/${model.slug}`,
+    lastModified: model.source_updated_at ? new Date(model.source_updated_at) : generatedAt,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));

@@ -1,0 +1,239 @@
+{
+  "slug": "olmo2",
+  "name": "olmo2",
+  "description": "OLMo 2 is a new family of 7B and 13B models trained on up to 5T tokens. These models are on par with or better than equivalently sized fully open models, and competitive with open-weight models such as Llama 3.1 on English academic benchmarks.",
+  "source_url": "https://ollama.com/library/olmo2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 3800000,
+  "tag_count": 9,
+  "source_updated_at": "2025-01-11T22:43:00Z",
+  "parameter_sizes": [
+    "7b",
+    "13b"
+  ],
+  "min_download_size_bytes": 4500000000,
+  "max_download_size_bytes": 27000000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "olmo2:latest",
+    "tag": "latest",
+    "digest": "4208d3b406db",
+    "availability": "local",
+    "download_size_bytes": 4500000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "olmo2:7b",
+    "tag": "7b",
+    "digest": "4208d3b406db",
+    "availability": "local",
+    "download_size_bytes": 4500000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "olmo2:13b",
+      "tag": "13b",
+      "digest": "6c279ebc980f",
+      "availability": "local",
+      "download_size_bytes": 8400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:13b-1124-instruct-fp16",
+      "tag": "13b-1124-instruct-fp16",
+      "digest": "c5cd17f69ca0",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:13b-1124-instruct-q4_K_M",
+      "tag": "13b-1124-instruct-q4_K_M",
+      "digest": "6c279ebc980f",
+      "availability": "local",
+      "download_size_bytes": 8400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:13b-1124-instruct-q8_0",
+      "tag": "13b-1124-instruct-q8_0",
+      "digest": "54d0ec72e884",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:7b",
+      "tag": "7b",
+      "digest": "4208d3b406db",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:7b-1124-instruct-fp16",
+      "tag": "7b-1124-instruct-fp16",
+      "digest": "fa483f2d5cc7",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:7b-1124-instruct-q4_K_M",
+      "tag": "7b-1124-instruct-q4_K_M",
+      "digest": "4208d3b406db",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:7b-1124-instruct-q8_0",
+      "tag": "7b-1124-instruct-q8_0",
+      "digest": "e75d0b293717",
+      "availability": "local",
+      "download_size_bytes": 7800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo2:latest",
+      "tag": "latest",
+      "digest": "4208d3b406db",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

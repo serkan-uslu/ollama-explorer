@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/atoms/Button';
+import { buttonClassName } from '@/components/ui/atoms/Button';
 import { OlliVideo } from '@/components/features/home/OlliVideo';
 
 export const metadata = {
@@ -21,13 +21,11 @@ export default function NotFound() {
         The page you&rsquo;re looking for doesn&rsquo;t exist or the model may have been removed.
       </p>
       <div className="flex flex-col sm:flex-row gap-3">
-        <Link href="/models">
-          <Button size="md">Browse models</Button>
+        <Link href="/models" className={buttonClassName()}>
+          Browse models
         </Link>
-        <Link href="/">
-          <Button variant="outline" size="md">
-            Go home
-          </Button>
+        <Link href="/" className={buttonClassName('outline')}>
+          Go home
         </Link>
       </div>
     </main>

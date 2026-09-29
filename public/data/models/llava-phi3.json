@@ -1,0 +1,152 @@
+{
+  "slug": "llava-phi3",
+  "name": "llava-phi3",
+  "description": "A new small LLaVA model fine-tuned from Phi 3 Mini.",
+  "source_url": "https://ollama.com/library/llava-phi3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 458100,
+  "tag_count": 4,
+  "source_updated_at": "2024-05-07T21:20:00Z",
+  "parameter_sizes": [
+    "3.8b"
+  ],
+  "min_download_size_bytes": 2900000000,
+  "max_download_size_bytes": 8300000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_0"
+  ],
+  "local_variant_count": 4,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llava-phi3:latest",
+    "tag": "latest",
+    "digest": "c7edd7b87593",
+    "availability": "local",
+    "download_size_bytes": 2900000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llava-phi3:3.8b",
+    "tag": "3.8b",
+    "digest": "c7edd7b87593",
+    "availability": "local",
+    "download_size_bytes": 2900000000,
+    "parameter": {
+      "raw": "3.8b",
+      "total_billion": 3.8,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llava-phi3:3.8b",
+      "tag": "3.8b",
+      "digest": "c7edd7b87593",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "3.8b",
+        "total_billion": 3.8,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llava-phi3:3.8b-mini-fp16",
+      "tag": "3.8b-mini-fp16",
+      "digest": "39ed50ad5b22",
+      "availability": "local",
+      "download_size_bytes": 8300000000,
+      "parameter": {
+        "raw": "3.8b",
+        "total_billion": 3.8,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llava-phi3:3.8b-mini-q4_0",
+      "tag": "3.8b-mini-q4_0",
+      "digest": "c7edd7b87593",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "3.8b",
+        "total_billion": 3.8,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llava-phi3:latest",
+      "tag": "latest",
+      "digest": "c7edd7b87593",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

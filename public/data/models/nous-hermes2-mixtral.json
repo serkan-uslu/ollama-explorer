@@ -1,0 +1,417 @@
+{
+  "slug": "nous-hermes2-mixtral",
+  "name": "nous-hermes2-mixtral",
+  "description": "The Nous Hermes 2 model from Nous Research, now trained over Mixtral.",
+  "source_url": "https://ollama.com/library/nous-hermes2-mixtral",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 598400,
+  "tag_count": 18,
+  "source_updated_at": "2024-12-20T01:05:00Z",
+  "parameter_sizes": [
+    "8x7b"
+  ],
+  "min_download_size_bytes": 17000000000,
+  "max_download_size_bytes": 93000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 18,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nous-hermes2-mixtral:latest",
+    "tag": "latest",
+    "digest": "da8c35896cff",
+    "availability": "local",
+    "download_size_bytes": 26000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nous-hermes2-mixtral:8x7b-dpo-q2_K",
+    "tag": "8x7b-dpo-q2_K",
+    "digest": "def75f44e678",
+    "availability": "local",
+    "download_size_bytes": 17000000000,
+    "parameter": {
+      "raw": "8x7b",
+      "total_billion": 56.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nous-hermes2-mixtral:8x7b",
+      "tag": "8x7b",
+      "digest": "da8c35896cff",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-fp16",
+      "tag": "8x7b-dpo-fp16",
+      "digest": "42c40087888d",
+      "availability": "local",
+      "download_size_bytes": 93000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q2_K",
+      "tag": "8x7b-dpo-q2_K",
+      "digest": "def75f44e678",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q3_K_L",
+      "tag": "8x7b-dpo-q3_K_L",
+      "digest": "d3f241b3fa43",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q3_K_M",
+      "tag": "8x7b-dpo-q3_K_M",
+      "digest": "e401c6cff6ee",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q3_K_S",
+      "tag": "8x7b-dpo-q3_K_S",
+      "digest": "b83102712906",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q4_0",
+      "tag": "8x7b-dpo-q4_0",
+      "digest": "da8c35896cff",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q4_1",
+      "tag": "8x7b-dpo-q4_1",
+      "digest": "6b8631272ae5",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q4_K_M",
+      "tag": "8x7b-dpo-q4_K_M",
+      "digest": "5ce16766078d",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q4_K_S",
+      "tag": "8x7b-dpo-q4_K_S",
+      "digest": "72597fc38d4a",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q5_0",
+      "tag": "8x7b-dpo-q5_0",
+      "digest": "2d30ec45b54c",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q5_1",
+      "tag": "8x7b-dpo-q5_1",
+      "digest": "d37f3798cec9",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q5_K_M",
+      "tag": "8x7b-dpo-q5_K_M",
+      "digest": "c95f2fb1bbb0",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q5_K_S",
+      "tag": "8x7b-dpo-q5_K_S",
+      "digest": "78bf09c60f45",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q6_K",
+      "tag": "8x7b-dpo-q6_K",
+      "digest": "af9b1e15b356",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:8x7b-dpo-q8_0",
+      "tag": "8x7b-dpo-q8_0",
+      "digest": "a6f9a3257097",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:dpo",
+      "tag": "dpo",
+      "digest": "da8c35896cff",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2-mixtral:latest",
+      "tag": "latest",
+      "digest": "da8c35896cff",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

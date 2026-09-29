@@ -1,0 +1,145 @@
+{
+  "slug": "functiongemma",
+  "name": "functiongemma",
+  "description": "FunctionGemma is a specialized version of Google's Gemma 3 270M model fine-tuned explicitly for function calling.",
+  "source_url": "https://ollama.com/library/functiongemma",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [],
+  "pulls": 193400,
+  "tag_count": 4,
+  "source_updated_at": "2025-12-18T07:03:00Z",
+  "parameter_sizes": [
+    "270m"
+  ],
+  "min_download_size_bytes": 301000000,
+  "max_download_size_bytes": 552000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q8_0"
+  ],
+  "local_variant_count": 4,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "functiongemma:latest",
+    "tag": "latest",
+    "digest": "7c19b650567a",
+    "availability": "local",
+    "download_size_bytes": 301000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "functiongemma:270m",
+    "tag": "270m",
+    "digest": "7c19b650567a",
+    "availability": "local",
+    "download_size_bytes": 301000000,
+    "parameter": {
+      "raw": "270m",
+      "total_billion": 0.27,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "functiongemma:270m",
+      "tag": "270m",
+      "digest": "7c19b650567a",
+      "availability": "local",
+      "download_size_bytes": 301000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "functiongemma:270m-it-fp16",
+      "tag": "270m-it-fp16",
+      "digest": "ce6e8a1097cd",
+      "availability": "local",
+      "download_size_bytes": 552000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "functiongemma:270m-it-q8_0",
+      "tag": "270m-it-q8_0",
+      "digest": "7c19b650567a",
+      "availability": "local",
+      "download_size_bytes": 301000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "functiongemma:latest",
+      "tag": "latest",
+      "digest": "7c19b650567a",
+      "availability": "local",
+      "download_size_bytes": 301000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "slug": "notux",
+  "name": "notux",
+  "description": "A top-performing mixture of experts model, fine-tuned with high-quality data.",
+  "source_url": "https://ollama.com/library/notux",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 546100,
+  "tag_count": 18,
+  "source_updated_at": "2023-12-29T03:35:00Z",
+  "parameter_sizes": [
+    "8x7b"
+  ],
+  "min_download_size_bytes": 16000000000,
+  "max_download_size_bytes": 93000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 18,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "notux:latest",
+    "tag": "latest",
+    "digest": "fe14e7d66184",
+    "availability": "local",
+    "download_size_bytes": 26000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "notux:8x7b-v1-q2_K",
+    "tag": "8x7b-v1-q2_K",
+    "digest": "92257992996c",
+    "availability": "local",
+    "download_size_bytes": 16000000000,
+    "parameter": {
+      "raw": "8x7b",
+      "total_billion": 56.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "notux:8x7b",
+      "tag": "8x7b",
+      "digest": "fe14e7d66184",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1",
+      "tag": "8x7b-v1",
+      "digest": "fe14e7d66184",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-fp16",
+      "tag": "8x7b-v1-fp16",
+      "digest": "2fcdc0b6a3a1",
+      "availability": "local",
+      "download_size_bytes": 93000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q2_K",
+      "tag": "8x7b-v1-q2_K",
+      "digest": "92257992996c",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q3_K_L",
+      "tag": "8x7b-v1-q3_K_L",
+      "digest": "dba2de3a5168",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q3_K_M",
+      "tag": "8x7b-v1-q3_K_M",
+      "digest": "20bdbdb43962",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q3_K_S",
+      "tag": "8x7b-v1-q3_K_S",
+      "digest": "204879dc2cc3",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q4_0",
+      "tag": "8x7b-v1-q4_0",
+      "digest": "fe14e7d66184",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q4_1",
+      "tag": "8x7b-v1-q4_1",
+      "digest": "09296d49ac57",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q4_K_M",
+      "tag": "8x7b-v1-q4_K_M",
+      "digest": "3b16f6f4e58b",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q4_K_S",
+      "tag": "8x7b-v1-q4_K_S",
+      "digest": "abf66a2df688",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q5_0",
+      "tag": "8x7b-v1-q5_0",
+      "digest": "ccd5d7aa8e35",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q5_1",
+      "tag": "8x7b-v1-q5_1",
+      "digest": "f5d5ac5b61ef",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q5_K_M",
+      "tag": "8x7b-v1-q5_K_M",
+      "digest": "ec6abe6a6aa2",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q5_K_S",
+      "tag": "8x7b-v1-q5_K_S",
+      "digest": "acae292badb5",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q6_K",
+      "tag": "8x7b-v1-q6_K",
+      "digest": "ecaacfc45d90",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:8x7b-v1-q8_0",
+      "tag": "8x7b-v1-q8_0",
+      "digest": "03152c4371e4",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "notux:latest",
+      "tag": "latest",
+      "digest": "fe14e7d66184",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

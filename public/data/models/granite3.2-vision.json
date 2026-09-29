@@ -1,0 +1,181 @@
+{
+  "slug": "granite3.2-vision",
+  "name": "granite3.2-vision",
+  "description": "A compact and efficient vision-language model, specifically designed for visual document understanding, enabling automated content extraction from tables, charts, infographics, plots, diagrams, and more.",
+  "source_url": "https://ollama.com/library/granite3.2-vision",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1000000,
+  "tag_count": 5,
+  "source_updated_at": "2025-02-27T19:26:00Z",
+  "parameter_sizes": [
+    "2b"
+  ],
+  "min_download_size_bytes": 2400000000,
+  "max_download_size_bytes": 6000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "granite3.2-vision:latest",
+    "tag": "latest",
+    "digest": "3be41a661804",
+    "availability": "local",
+    "download_size_bytes": 2400000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "granite3.2-vision:2b",
+    "tag": "2b",
+    "digest": "3be41a661804",
+    "availability": "local",
+    "download_size_bytes": 2400000000,
+    "parameter": {
+      "raw": "2b",
+      "total_billion": 2.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "granite3.2-vision:2b",
+      "tag": "2b",
+      "digest": "3be41a661804",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2-vision:2b-fp16",
+      "tag": "2b-fp16",
+      "digest": "17ca6aa97bd9",
+      "availability": "local",
+      "download_size_bytes": 6000000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2-vision:2b-q4_K_M",
+      "tag": "2b-q4_K_M",
+      "digest": "3be41a661804",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2-vision:2b-q8_0",
+      "tag": "2b-q8_0",
+      "digest": "9b6204ce60f6",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3.2-vision:latest",
+      "tag": "latest",
+      "digest": "3be41a661804",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

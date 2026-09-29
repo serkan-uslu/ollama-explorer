@@ -1,282 +1,207 @@
-# Feature List — Ollama Model Explorer
+# Feature Status — Ollama Explorer
 
-> **Data source:** 214 Ollama models (scraped & processed from ollama.com)  
-> **Stack:** Next.js 16 App Router · React 19 · TypeScript 5 · Tailwind CSS v4  
-> **Last updated:** 2026-02-25
-
----
+> **Data:** checked-in Ollama catalog, schema v2<br>
+> **Stack:** Next.js 16 · React 19 · TypeScript 5 · Tailwind CSS v4<br>
+> **Updated:** 2026-09-29
 
 ## Legend
 
-| Symbol | Meaning                 |
-| ------ | ----------------------- |
-| ✅     | Must have (MVP)         |
-| 🔵     | Should have (v1 polish) |
-| 🟡     | Nice to have (v2)       |
-| 🔴     | Future / research phase |
+| Symbol | Meaning               |
+| ------ | --------------------- |
+| ✅     | Implemented           |
+| ⏸      | Deliberately deferred |
 
----
+## Routes
 
-## Pages Overview
+| Route             | Current behavior                                                            |
+| ----------------- | --------------------------------------------------------------------------- |
+| `/`               | Olli video, task/memory entry points, daily model, and catalog statistics   |
+| `/models`         | Search, facets, sorting, incremental pagination, and compare selection      |
+| `/models/[slug]`  | Source-backed model facts, all variants, exact commands, and related models |
+| `/models/compare` | Query-driven comparison for two to four models; intentionally `noindex`     |
+| `/about`          | Data provenance, catalog statistics, and stack                              |
+| `/roadmap`        | Shipped and deferred product scope                                          |
+| `/privacy`        | Privacy and analytics disclosure                                            |
 
-| Route          | Description                                  |
-| -------------- | -------------------------------------------- |
-| `/`            | Minimal hero landing page                    |
-| `/models`      | Full model browser with search, filter, sort |
-| `/models/[id]` | Individual model detail page                 |
-| `/about`       | About the project                            |
+Legacy UUID detail URLs permanently redirect to their stable slugs.
 
----
+The home page keeps Olli's autoplaying muted character video with sound control and a reduced-motion
+poster fallback. Model of the Day rotates at UTC midnight from a deterministic, bounded pool of
+popular local models and exposes the exact runnable command.
 
-## Page 1 — Home (`/`)
+## Discovery
 
-### Layout & Design
+### Search and sorting
 
-- ✅ **Minimal hero section** — single-screen, no scroll required on desktop
-- ✅ **Headline + subline** — short, typographic, black/white only
-- ✅ **CTA button** — "Explore Models" → navigates to `/models`
-- ✅ **Model count badge** — displays total number of indexed models (dynamic, from data)
-- 🔵 **Stats row** — 3–4 key data highlights derived from `models.json`:
-  - Total models indexed (214)
-  - Total unique domains (7)
-  - Highest pull count model
-  - Smallest runnable model (min RAM)
-- 🔵 **Dark/Light mode toggle** — top-right, icon only (sun/moon)
-- 🔵 **Minimal navigation header** — logo/wordmark left, nav links right
+- ✅ Fuse.js fuzzy search across name, description, applications, capabilities, family, license, and parameter labels
+- ✅ 200 ms debounced input and `?q=` URL state
+- ✅ Relevance order while searching
+- ✅ Popular, recently updated, smallest download, largest context, and A–Z sorting
+- ✅ Unknown numeric or date values sort last instead of becoming zero
 
----
+### Filters
 
-## Page 2 — Models (`/models`)
+- ✅ Availability: `Local`, `Cloud`, or `All`; local is the default
+- ✅ Task: chat and writing, coding, vision, agents and tools, reasoning, embeddings, and audio
+- ✅ Source-listed capabilities
+- ✅ Source-listed applications
+- ✅ Aggregate input modalities and parsed quantizations across every variant
+- ✅ Source-updated windows: 7, 30, 90, and 365 days
+- ✅ Parameter buckets: `≤ 1B`, `1B–4B`, `4B–14B`, `14B–35B`, and `35B+`
+- ✅ Memory budgets: 8, 16, 32, and 64 GB
+- ✅ Minimum context: 8K, 32K, 128K, and 1M
+- ✅ Family and verified-license filters when those fields contain source-backed values
+- ✅ Dynamic counts computed against the other active facets
+- ✅ URL serialization, dismissible active chips, and reset controls
+- ✅ Sticky desktop filters and a native `<dialog>` drawer on smaller screens
 
-### 2A. Search
+Task filters are deterministic mappings over source capabilities, applications, and input modalities. They are not AI classifications.
+The current source exposes no normalized family or verified-license values, so those two facets stay hidden instead of guessing; source-backed normalization remains deferred.
 
-- ✅ **Full-text keyword search** — searches across `model_name`, `description`, `use_cases`, `best_for`
-- ✅ **Debounced input** — 300ms delay before triggering filter evaluation
-- ✅ **URL-synced search** — query is stored in `?q=` param for shareable/bookmarkable URLs
-- ✅ **Result count indicator** — "Showing 42 of 214 models"
-- ✅ **Clear search button** — `×` icon clears input and resets results
-- 🔵 **Search highlights** — matched terms are highlighted in card text
-- 🟡 **Semantic search (client-side)** — using lightweight TF-IDF or cosine similarity on pre-computed vectors stored alongside `models.json`. No server/API required. Triggered by toggle "Smart Search".
-- 🔴 **Semantic search (server-side / embeddings)** — integration with an embedding model (e.g., `nomic-embed-text` via Ollama API) for vector similarity search. Optional future feature gated behind env flag.
+### Results
 
-### 2B. Filtering (All Options Derived Dynamically from Data)
+- ✅ Responsive one-, two-, and three-column card grid
+- ✅ 24 results initially, followed by explicit “Load more” batches
+- ✅ Source description, availability, verified license when present, applications, capabilities, parameters, popularity, context, and update time
+- ✅ Variant choice respects the selected memory budget and never treats missing size as zero
+- ✅ Exact copy command from the selected variant's full ref: `ollama run model:tag`
+- ✅ Accessible empty state and filter reset
 
-All filter values are computed at build time from `models.json` via `lib/data/filters.ts`. No hardcoded option lists in UI components.
+## Model detail and comparison
 
-#### Capability filter (multi-select pills)
+- ✅ Static detail page for every catalog record, including preserved unlisted records
+- ✅ Searchable variant table with local/cloud filter
+- ✅ Exact ref and tag, digest, download size, parsed parameter label, parsed quantization, context, modality, and memory estimate where known
+- ✅ Source-listed applications and direct Ollama source link
+- ✅ Source-correction issue link
+- ✅ Related models from shared source facts and size proximity
+- ✅ Selection and side-by-side comparison of up to four unique models
+- ✅ Optional comparison memory budget with per-model fitting variant selection
+- ✅ Unknown comparison values remain visibly unknown
 
-From `capabilities` field — **5 values**:
+An unlisted record stays addressable for old links but receives `noindex` metadata and is omitted from browse results and the sitemap.
 
-- `Tools` · `Thinking` · `Embedding` · `Vision` · `Cloud`
+## Memory behavior
 
-#### Domain filter (single-select or multi-select pills)
+Memory filtering applies only to local variants with a known download size. The estimate is:
 
-From `domain` field — **7 values**:
-
-- `General` · `Code` · `Language` · `Vision` · `Math` · `Medical` · `Embedding`
-
-#### Use Case filter (multi-select dropdown)
-
-From `use_cases[]` — **14 values**:
-
-- Chat Assistant · Code Generation · Code Review · Creative Writing · Function Calling · Image Understanding · Math · Question Answering · RAG / Retrieval · Reasoning · Role Play · Text Embedding · Text Summarization · Translation
-
-#### Complexity filter (toggle group)
-
-From `complexity` — **2 values**:
-
-- `Intermediate` · `Advanced`
-
-#### AI Language filter (multi-select dropdown)
-
-From `ai_languages[]` — **9 values**:
-
-- English · Multilingual · Chinese · Arabic · Japanese · German · French · Spanish · Korean
-
-#### Parameter Size filter (multi-select chips)
-
-From `labels[]` — e.g.:
-
-- `≤ 1B` · `1B–4B` · `4B–14B` · `14B–35B` · `35B+`  
-  _(buckets computed dynamically from numeric label values)_
-
-#### RAM Requirement filter (range slider or preset buckets)
-
-From `min_ram_gb` — **5 buckets**:
-
-- `< 4 GB` · `4–8 GB` · `8–16 GB` · `16–32 GB` · `32 GB+`
-
-#### Sort options (select / toggle)
-
-- Most Popular (pulls, descending) — **default**
-- Least Popular (pulls, ascending)
-- Smallest Model (min_ram_gb ascending)
-- Largest Model (min_ram_gb descending)
-- Recently Updated (last_updated descending)
-- A–Z (model_name)
-
-### 2C. Filter UX
-
-- ✅ **Active filter chips** — each applied filter shown as a dismissible chip above the grid
-- ✅ **Reset all filters** button — clears all active filters + search
-- ✅ **Filter state in URL** — all active filters serialized into query params for shareability
-- 🔵 **Filter count badge** — button/icon shows how many filters are currently active
-- 🔵 **Collapsible filter sidebar** on desktop; **bottom sheet/drawer** on mobile
-- 🔵 **Filter option counts** — show how many models match each option: e.g., `Code (31)`
-- 🔵 **No results state** — friendly empty state with clear instructions + reset CTA
-
-### 2D. Model Grid / List
-
-- ✅ **Card grid layout** — responsive: 1 col mobile → 2 col tablet → 3 col desktop
-- ✅ **ModelCard** displays:
-  - Model name (prominent)
-  - Domain badge
-  - Short description (truncated to 2 lines)
-  - Capability badges (Tools, Vision, Thinking, etc.)
-  - Min RAM requirement
-  - Pull count (formatted: `110.5M`)
-  - Available parameter sizes (from `labels[]`)
-  - Last updated date
-- 🔵 **List view toggle** — switch between card grid and compact list
-- 🔵 **Infinite scroll or pagination** — 24 models per page
-- 🔵 **Hover state** — subtle border/shadow lift effect
-- 🔵 **ollama run command** — `ollama run {model_identifier}` shown on hover or card footer, one-click copy
-
-### 2E. Model Detail (`/models/[id]`)
-
-- ✅ **Full model info** — all available fields rendered
-- ✅ **Memory requirements table** — all tags with size, quantization, RAM, context window
-- ✅ **Capabilities + Use cases** displayed as badge groups
-- ✅ **`ollama run` install command** — copyable code block
-- ✅ **Supported languages** list
-- ✅ **Ollama.com link** — external link to source page
-- 🔵 **Complexity indicator** — visual meter or badge
-- 🔵 **"More like this"** — 3–4 similar models by domain + capability
-- 🔵 **Back to results** — returns to `/models` preserving filter/search state (via URL params)
-
----
-
-## Page 3 — About (`/about`)
-
-- ✅ **Project description** — what this site is and why it exists
-- ✅ **Data source attribution** — credit to Ollama.com, explain scraping approach
-- ✅ **Tech stack section** — Next.js, React, TypeScript, Tailwind
-- ✅ **Data freshness** — last updated timestamp derived from `timestamp` field in data
-- 🔵 **Stats summary** — total models, total domains, capabilities covered
-
----
-
-## Global / Cross-Cutting Features
-
-### Theme
-
-- ✅ **Light / Dark mode** — CSS variable tokens, Tailwind `dark:` strategy, `localStorage` persistence
-- ✅ **System preference detection** — respects `prefers-color-scheme` on first visit
-- ✅ **No flash of unstyled content (FOUC)** — theme script injected in `<head>` before paint
-
-### Layout
-
-- ✅ **Header** — site wordmark + nav links (`Home`, `Models`, `About`) + theme toggle
-- ✅ **Footer** — minimal: copyright + data source link
-- ✅ **Responsive** — mobile-first, breakpoints: `sm:640` `md:768` `lg:1024` `xl:1280`
-
-### Accessibility
-
-- ✅ **Keyboard navigation** — all interactive elements focusable and operable via keyboard
-- ✅ **ARIA labels** on icon-only buttons (theme toggle, close, copy)
-- ✅ **Focus rings** — visible, token-consistent outline on focus
-- ✅ **Skip to main content** link — screen reader / keyboard shortcut
-- ✅ **Semantic HTML** — proper use of `<main>`, `<nav>`, `<section>`, `<article>`, `<header>`, `<footer>`
-
-### Performance
-
-- ✅ **Static generation** — all pages statically generated at build time (no server runtime required)
-- ✅ **Lazy client components** — filter panel, search, theme toggle loaded as client bundles; list/grid is server-rendered
-- 🔵 **Virtual list** — only visible model cards rendered in DOM when list is long
-
----
-
-## Data Model Reference
-
-```ts
-interface Model {
-  id: string;
-  model_identifier: string; // e.g. "llama3.1"
-  model_name: string; // display name
-  model_type: 'official';
-  namespace: string | null;
-  url: string; // ollama.com source URL
-  description: string;
-  capabilities: Capability[]; // Tools | Thinking | Embedding | Vision | Cloud
-  capability: string; // primary capability
-  labels: string[]; // ["8b", "70b", "405b"]
-  memory_requirements: MemoryRequirement[];
-  min_ram_gb: number;
-  use_cases: string[];
-  domain: Domain; // General | Code | Vision | Math | Medical | Language | Embedding
-  ai_languages: string[];
-  complexity: 'advanced' | 'intermediate';
-  best_for: string;
-  pulls: number;
-  tags: number;
-  last_updated: string; // ISO date
-  last_updated_str: string; // e.g. "1 year ago"
-  timestamp: string; // scrape timestamp
-}
-
-interface MemoryRequirement {
-  tag: string;
-  size: string;
-  size_gb: number;
-  recommended_ram_gb: number;
-  quantization: string; // q4_k_m | q8_0 | f16 | etc.
-  context: string;
-  context_window: number;
-}
+```text
+ceil_to_0.5_GiB(download_size_GiB × 1.2 + 1 GiB)
 ```
 
----
+This is a rough selection aid, not a promise that a model will run. Context length, Ollama/runtime overhead, GPU offload, the operating system, and concurrent workloads can increase real usage.
 
-## Dynamic Filter Derivation Strategy
-
-All filter options are derived in `lib/data/filters.ts` at build time:
+## Schema v2
 
 ```ts
-export function deriveFilterOptions(models: Model[]): FilterOptions {
-  return {
-    capabilities: unique(models.flatMap((m) => m.capabilities)).sort(),
-    domains: unique(models.map((m) => m.domain)).sort(),
-    useCases: unique(models.flatMap((m) => m.use_cases)).sort(),
-    complexities: unique(models.map((m) => m.complexity)).sort(),
-    languages: unique(models.flatMap((m) => m.ai_languages)).sort(),
-    paramSizes: deriveParamSizeBuckets(models),
-    ramBuckets: deriveRamBuckets(models),
+interface Catalog {
+  schema_version: 2;
+  generated_at: string;
+  source: {
+    name: 'ollama';
+    url: string;
+    model_count: number; // active records returned by the source
   };
+  models: ModelSummary[];
+}
+
+interface ModelSummary {
+  slug: string;
+  name: string;
+  description: string;
+  source_url: string;
+  status: 'active' | 'unlisted';
+  availability: 'local' | 'cloud' | 'both';
+  capabilities: string[];
+  applications: string[];
+  categories: ('chat' | 'coding' | 'vision' | 'tools' | 'reasoning' | 'embedding' | 'audio')[];
+  input_modalities: string[];
+  quantizations: string[];
+  local_variant_count: number;
+  cloud_variant_count: number;
+  pulls: number | null;
+  tag_count: number;
+  source_updated_at: string | null;
+  parameter_sizes: string[];
+  min_download_size_bytes: number | null;
+  max_download_size_bytes: number | null;
+  max_context_window: number | null;
+  default_variant: Variant | null;
+  smallest_local_variant: Variant | null;
+  cloud_variant: Variant | null;
+  family: string | null;
+  license: string | null;
+}
+
+interface ModelDetail extends ModelSummary {
+  variants: Variant[];
+}
+
+interface Variant {
+  ref: string; // complete source ref, e.g. "llama3.1:8b-instruct-q4_K_M"
+  tag: string;
+  digest: string | null;
+  availability: 'local' | 'cloud';
+  download_size_bytes: number | null;
+  parameter: {
+    raw: string;
+    total_billion: number | null;
+    active_billion: number | null;
+  } | null;
+  quantization: string | null;
+  context_window: number | null;
+  input_modalities: string[];
+  source_updated_at: string | null;
+  is_default: boolean;
 }
 ```
 
-This ensures: adding new models to `models.json` automatically makes new filter values appear — no manual UI maintenance required.
+### Provenance rules
 
----
+- Model listing/detail pages provide names, descriptions, URLs, capabilities, applications, pulls, tag counts, update times, and parameter labels.
+- Tag pages provide exact refs, digests, download sizes or cloud usage, context windows, and input modalities.
+- Parameter and quantization values are parsed from the exact tag string.
+- Task categories, aggregate modalities/quantizations, variant counts, availability, official default, smallest known local, cloud recommendation, download-size bounds, and maximum context are deterministic summaries of source fields and variants.
+- Missing values remain `null` or empty. A missing license is shown as `Not verified`.
+- The catalog performs no LLM or AI enrichment and makes no blanket open-source claim.
 
-## Semantic Search Plan (v2)
+## Catalog builder
 
-### Option A — Client-side TF-IDF (No Backend)
+- ✅ Small Python package under `tools/miner`
+- ✅ No database, orchestrator, or LLM dependency
+- ✅ Reads the accepted static catalog as its incremental cache
+- ✅ Refuses network access unless `OLLAMA_CRAWL_AUTHORIZED=true`
+- ✅ Reuses unchanged details; `--force-refresh` is available after parser changes
+- ✅ Quarantines a new model whose detail/tags fail and preserves the last good record for an existing model
+- ✅ Rejects an empty source, duplicate slugs/tags, catalog/detail mismatches, and a configurable large source-count drop
+- ✅ Atomic writes, with detail files written before `catalog.json`
+- ✅ Dry run, offline legacy migration, pytest, and Ruff checks
+- ✅ Opt-in weekly GitHub workflow that opens or updates a reviewable catalog pull request
 
-1. At build time, generate a lightweight inverted index from `model_name + description + use_cases + best_for`.
-2. Store as a JSON artifact in `public/search-index.json`.
-3. On the client, load index lazily on first keystroke.
-4. Score query against index using TF-IDF cosine similarity.
-5. Return ranked results beyond exact keyword matches.
+## Cross-cutting behavior
 
-**Trade-off:** Adds ~50–100KB to client bundle (JSON index). No API dependency.
+- ✅ Statically generated home, browse, informational, and model detail pages
+- ✅ Light/dark theme with stored preference and first-paint protection
+- ✅ Responsive layouts and 44 px minimum icon-button targets
+- ✅ Skip link, semantic landmarks, accessible labels, keyboard controls, and focus styles
+- ✅ Canonicals, robots and sitemap metadata, global/per-model Open Graph images, and JSON-LD
+- ✅ Vercel Analytics with the documented privacy banner
 
-### Option B — Ollama Embedding API (Future)
+## Deferred
 
-1. When user has a local Ollama instance running, POST search query to `localhost:11434/api/embeddings` using `nomic-embed-text`.
-2. Compare query embedding against pre-computed model embeddings (stored in `public/embeddings.json`).
-3. Return top-k results by cosine similarity.
+- ⏸ Measured Apple Silicon/CPU/GPU RAM, VRAM, and tokens-per-second benchmarks
+- ⏸ Local Ollama `/api/tags` integration for installed models and direct launch
+- ⏸ Source-backed license normalization and commercial-use filtering
+- ⏸ Benchmark comparison with identical model, tag, quantization, hardware, and method
+- ⏸ Model/pull history, trending models, and opt-in alerts
+- ⏸ LocalStorage favorites and shortlists
+- ⏸ Semantic search only if deterministic-search metrics show a real gap
+- ⏸ A versioned public API only after independent consumer demand
+- ⏸ Accounts, cloud sync, comments, and ratings only after measured need
+- ⏸ Localization and additional open-license registry sources
 
-**Trade-off:** Requires running Ollama locally. Gate behind env flag or opt-in toggle.
+Still out of scope: a vector database, runtime backend, PostgreSQL, a new orchestrator,
+provider/plugin matrices, AI chat, review/moderation infrastructure, a design-system rewrite,
+and list virtualization.
 
-**Recommended for MVP:** Option A (no server needed, fully static deployment).
+Deferred work should preserve the current rules: source facts remain attributable, unknown data stays unknown, and exact variant refs remain the command source of truth.

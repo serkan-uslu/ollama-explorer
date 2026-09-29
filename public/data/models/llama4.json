@@ -1,0 +1,295 @@
+{
+  "slug": "llama4",
+  "name": "llama4",
+  "description": "Meta's latest collection of multimodal models.",
+  "source_url": "https://ollama.com/library/llama4",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1900000,
+  "tag_count": 11,
+  "source_updated_at": "2025-06-16T20:45:00Z",
+  "parameter_sizes": [
+    "16x17b",
+    "128x17b",
+    "17b"
+  ],
+  "min_download_size_bytes": 67000000000,
+  "max_download_size_bytes": 803000000000,
+  "max_context_window": 10000000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 11,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llama4:latest",
+    "tag": "latest",
+    "digest": "bf31604e25c2",
+    "availability": "local",
+    "download_size_bytes": 67000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 10000000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llama4:16x17b",
+    "tag": "16x17b",
+    "digest": "bf31604e25c2",
+    "availability": "local",
+    "download_size_bytes": 67000000000,
+    "parameter": {
+      "raw": "16x17b",
+      "total_billion": 272.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 10000000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llama4:128x17b",
+      "tag": "128x17b",
+      "digest": "b4832b93e292",
+      "availability": "local",
+      "download_size_bytes": 245000000000,
+      "parameter": {
+        "raw": "128x17b",
+        "total_billion": 2176.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:16x17b",
+      "tag": "16x17b",
+      "digest": "bf31604e25c2",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": {
+        "raw": "16x17b",
+        "total_billion": 272.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 10000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:17b-maverick-128e-instruct-fp16",
+      "tag": "17b-maverick-128e-instruct-fp16",
+      "digest": "c9a3a4d149af",
+      "availability": "local",
+      "download_size_bytes": 803000000000,
+      "parameter": {
+        "raw": "17b",
+        "total_billion": 17.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:17b-maverick-128e-instruct-q4_K_M",
+      "tag": "17b-maverick-128e-instruct-q4_K_M",
+      "digest": "b4832b93e292",
+      "availability": "local",
+      "download_size_bytes": 245000000000,
+      "parameter": {
+        "raw": "17b",
+        "total_billion": 17.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:17b-maverick-128e-instruct-q8_0",
+      "tag": "17b-maverick-128e-instruct-q8_0",
+      "digest": "7fb6f3e69a28",
+      "availability": "local",
+      "download_size_bytes": 428000000000,
+      "parameter": {
+        "raw": "17b",
+        "total_billion": 17.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:17b-scout-16e-instruct-fp16",
+      "tag": "17b-scout-16e-instruct-fp16",
+      "digest": "f390ec6c1a81",
+      "availability": "local",
+      "download_size_bytes": 217000000000,
+      "parameter": {
+        "raw": "17b",
+        "total_billion": 17.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 10000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:17b-scout-16e-instruct-q4_K_M",
+      "tag": "17b-scout-16e-instruct-q4_K_M",
+      "digest": "bf31604e25c2",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": {
+        "raw": "17b",
+        "total_billion": 17.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 10000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:17b-scout-16e-instruct-q8_0",
+      "tag": "17b-scout-16e-instruct-q8_0",
+      "digest": "244249e6cd64",
+      "availability": "local",
+      "download_size_bytes": 117000000000,
+      "parameter": {
+        "raw": "17b",
+        "total_billion": 17.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 10000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:latest",
+      "tag": "latest",
+      "digest": "bf31604e25c2",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 10000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "llama4:maverick",
+      "tag": "maverick",
+      "digest": "b4832b93e292",
+      "availability": "local",
+      "download_size_bytes": 245000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama4:scout",
+      "tag": "scout",
+      "digest": "bf31604e25c2",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 10000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

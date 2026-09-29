@@ -1,0 +1,213 @@
+{
+  "slug": "qwen3.8-flash-next",
+  "name": "qwen3.8-flash-next",
+  "description": "This experimental preview of the architecture that will underpin Qwen4.",
+  "source_url": "https://ollama.com/library/qwen3.8-flash-next",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 159700,
+  "tag_count": 6,
+  "source_updated_at": "2026-09-05T17:55:00Z",
+  "parameter_sizes": [
+    "125b-a6b",
+    "125b"
+  ],
+  "min_download_size_bytes": 105000000000,
+  "max_download_size_bytes": 360000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 6,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "qwen3.8-flash-next:125b-mlx",
+    "tag": "125b-mlx",
+    "digest": "c7b96ffe21af",
+    "availability": "local",
+    "download_size_bytes": 105000000000,
+    "parameter": {
+      "raw": "125b",
+      "total_billion": 125.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "qwen3.8-flash-next:125b-a6b-nvfp4",
+    "tag": "125b-a6b-nvfp4",
+    "digest": "c7b96ffe21af",
+    "availability": "local",
+    "download_size_bytes": 105000000000,
+    "parameter": {
+      "raw": "125b-a6b",
+      "total_billion": 125.0,
+      "active_billion": 6.0
+    },
+    "quantization": "NVFP4",
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "qwen3.8-flash-next:125b-a6b-bf16",
+      "tag": "125b-a6b-bf16",
+      "digest": "860af341daa0",
+      "availability": "local",
+      "download_size_bytes": 355000000000,
+      "parameter": {
+        "raw": "125b-a6b",
+        "total_billion": 125.0,
+        "active_billion": 6.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.8-flash-next:125b-a6b-mlx-bf16",
+      "tag": "125b-a6b-mlx-bf16",
+      "digest": "ae2130e55774",
+      "availability": "local",
+      "download_size_bytes": 360000000000,
+      "parameter": {
+        "raw": "125b-a6b",
+        "total_billion": 125.0,
+        "active_billion": 6.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.8-flash-next:125b-a6b-nvfp4",
+      "tag": "125b-a6b-nvfp4",
+      "digest": "c7b96ffe21af",
+      "availability": "local",
+      "download_size_bytes": 105000000000,
+      "parameter": {
+        "raw": "125b-a6b",
+        "total_billion": 125.0,
+        "active_billion": 6.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.8-flash-next:125b-a6b-q4_K_M",
+      "tag": "125b-a6b-q4_K_M",
+      "digest": "f79436a1cc83",
+      "availability": "local",
+      "download_size_bytes": 120000000000,
+      "parameter": {
+        "raw": "125b-a6b",
+        "total_billion": 125.0,
+        "active_billion": 6.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.8-flash-next:125b-a6b-q8_0",
+      "tag": "125b-a6b-q8_0",
+      "digest": "068643f34f42",
+      "availability": "local",
+      "download_size_bytes": 189000000000,
+      "parameter": {
+        "raw": "125b-a6b",
+        "total_billion": 125.0,
+        "active_billion": 6.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.8-flash-next:125b-mlx",
+      "tag": "125b-mlx",
+      "digest": "c7b96ffe21af",
+      "availability": "local",
+      "download_size_bytes": 105000000000,
+      "parameter": {
+        "raw": "125b",
+        "total_billion": 125.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

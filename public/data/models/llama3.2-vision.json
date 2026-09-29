@@ -1,0 +1,254 @@
+{
+  "slug": "llama3.2-vision",
+  "name": "llama3.2-vision",
+  "description": "Llama 3.2 Vision is a collection of instruction-tuned image reasoning generative models in 11B and 90B sizes.",
+  "source_url": "https://ollama.com/library/llama3.2-vision",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 5400000,
+  "tag_count": 9,
+  "source_updated_at": "2025-05-22T19:15:00Z",
+  "parameter_sizes": [
+    "11b",
+    "90b"
+  ],
+  "min_download_size_bytes": 7800000000,
+  "max_download_size_bytes": 177000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llama3.2-vision:latest",
+    "tag": "latest",
+    "digest": "6f2f9757ae97",
+    "availability": "local",
+    "download_size_bytes": 7800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llama3.2-vision:11b",
+    "tag": "11b",
+    "digest": "6f2f9757ae97",
+    "availability": "local",
+    "download_size_bytes": 7800000000,
+    "parameter": {
+      "raw": "11b",
+      "total_billion": 11.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llama3.2-vision:11b",
+      "tag": "11b",
+      "digest": "6f2f9757ae97",
+      "availability": "local",
+      "download_size_bytes": 7800000000,
+      "parameter": {
+        "raw": "11b",
+        "total_billion": 11.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:11b-instruct-fp16",
+      "tag": "11b-instruct-fp16",
+      "digest": "24c59ad3b10a",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "11b",
+        "total_billion": 11.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:11b-instruct-q4_K_M",
+      "tag": "11b-instruct-q4_K_M",
+      "digest": "6f2f9757ae97",
+      "availability": "local",
+      "download_size_bytes": 7800000000,
+      "parameter": {
+        "raw": "11b",
+        "total_billion": 11.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:11b-instruct-q8_0",
+      "tag": "11b-instruct-q8_0",
+      "digest": "a5b7471a68aa",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "11b",
+        "total_billion": 11.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:90b",
+      "tag": "90b",
+      "digest": "bee2a956f3a8",
+      "availability": "local",
+      "download_size_bytes": 55000000000,
+      "parameter": {
+        "raw": "90b",
+        "total_billion": 90.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:90b-instruct-fp16",
+      "tag": "90b-instruct-fp16",
+      "digest": "7592aaa4a219",
+      "availability": "local",
+      "download_size_bytes": 177000000000,
+      "parameter": {
+        "raw": "90b",
+        "total_billion": 90.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:90b-instruct-q4_K_M",
+      "tag": "90b-instruct-q4_K_M",
+      "digest": "bee2a956f3a8",
+      "availability": "local",
+      "download_size_bytes": 55000000000,
+      "parameter": {
+        "raw": "90b",
+        "total_billion": 90.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:90b-instruct-q8_0",
+      "tag": "90b-instruct-q8_0",
+      "digest": "0882d58d0635",
+      "availability": "local",
+      "download_size_bytes": 95000000000,
+      "parameter": {
+        "raw": "90b",
+        "total_billion": 90.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.2-vision:latest",
+      "tag": "latest",
+      "digest": "6f2f9757ae97",
+      "availability": "local",
+      "download_size_bytes": 7800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

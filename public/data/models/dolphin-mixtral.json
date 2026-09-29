@@ -1,0 +1,1398 @@
+{
+  "slug": "dolphin-mixtral",
+  "name": "dolphin-mixtral",
+  "description": "Uncensored, 8x7b and 8x22b fine-tuned models based on the Mixtral mixture of experts models that excels at coding tasks. Created by Eric Hartford.",
+  "source_url": "https://ollama.com/library/dolphin-mixtral",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1900000,
+  "tag_count": 70,
+  "source_updated_at": "2024-12-20T02:11:00Z",
+  "parameter_sizes": [
+    "8x7b",
+    "8x22b"
+  ],
+  "min_download_size_bytes": 17000000000,
+  "max_download_size_bytes": 281000000000,
+  "max_context_window": 64000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 70,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "dolphin-mixtral:latest",
+    "tag": "latest",
+    "digest": "4f76c28c0414",
+    "availability": "local",
+    "download_size_bytes": 26000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "dolphin-mixtral:8x7b-v2.5-q2_K",
+    "tag": "8x7b-v2.5-q2_K",
+    "digest": "448b185c2a3e",
+    "availability": "local",
+    "download_size_bytes": 17000000000,
+    "parameter": {
+      "raw": "8x7b",
+      "total_billion": 56.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "dolphin-mixtral:8x22b",
+      "tag": "8x22b",
+      "digest": "0772a1b884bf",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9",
+      "tag": "8x22b-v2.9",
+      "digest": "0772a1b884bf",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-fp16",
+      "tag": "8x22b-v2.9-fp16",
+      "digest": "39195710503e",
+      "availability": "local",
+      "download_size_bytes": 281000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q2_K",
+      "tag": "8x22b-v2.9-q2_K",
+      "digest": "5dd54f8ff492",
+      "availability": "local",
+      "download_size_bytes": 52000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q3_K_L",
+      "tag": "8x22b-v2.9-q3_K_L",
+      "digest": "3c5371c23577",
+      "availability": "local",
+      "download_size_bytes": 73000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q3_K_M",
+      "tag": "8x22b-v2.9-q3_K_M",
+      "digest": "ef2b7524d28d",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q3_K_S",
+      "tag": "8x22b-v2.9-q3_K_S",
+      "digest": "cad2f9d2e01d",
+      "availability": "local",
+      "download_size_bytes": 61000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q4_0",
+      "tag": "8x22b-v2.9-q4_0",
+      "digest": "0772a1b884bf",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q4_1",
+      "tag": "8x22b-v2.9-q4_1",
+      "digest": "3e58e962deb8",
+      "availability": "local",
+      "download_size_bytes": 88000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q4_K_M",
+      "tag": "8x22b-v2.9-q4_K_M",
+      "digest": "1ba3655b0de7",
+      "availability": "local",
+      "download_size_bytes": 86000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q4_K_S",
+      "tag": "8x22b-v2.9-q4_K_S",
+      "digest": "f7c583f24605",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q5_0",
+      "tag": "8x22b-v2.9-q5_0",
+      "digest": "abfd3a87f905",
+      "availability": "local",
+      "download_size_bytes": 97000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q5_1",
+      "tag": "8x22b-v2.9-q5_1",
+      "digest": "a3561f68b65d",
+      "availability": "local",
+      "download_size_bytes": 106000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q5_K_M",
+      "tag": "8x22b-v2.9-q5_K_M",
+      "digest": "d4e513dcc2e6",
+      "availability": "local",
+      "download_size_bytes": 100000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q5_K_S",
+      "tag": "8x22b-v2.9-q5_K_S",
+      "digest": "a1cd7a6d8a79",
+      "availability": "local",
+      "download_size_bytes": 97000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q6_K",
+      "tag": "8x22b-v2.9-q6_K",
+      "digest": "f5aac890745a",
+      "availability": "local",
+      "download_size_bytes": 116000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x22b-v2.9-q8_0",
+      "tag": "8x22b-v2.9-q8_0",
+      "digest": "b82986a3ed4f",
+      "availability": "local",
+      "download_size_bytes": 149000000000,
+      "parameter": {
+        "raw": "8x22b",
+        "total_billion": 176.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b",
+      "tag": "8x7b",
+      "digest": "4f76c28c0414",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5",
+      "tag": "8x7b-v2.5",
+      "digest": "f924f2f0e484",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-fp16",
+      "tag": "8x7b-v2.5-fp16",
+      "digest": "d1f36c28485e",
+      "availability": "local",
+      "download_size_bytes": 93000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q2_K",
+      "tag": "8x7b-v2.5-q2_K",
+      "digest": "448b185c2a3e",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q3_K_L",
+      "tag": "8x7b-v2.5-q3_K_L",
+      "digest": "e6278d65e9dc",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q3_K_M",
+      "tag": "8x7b-v2.5-q3_K_M",
+      "digest": "a04451f03648",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q3_K_S",
+      "tag": "8x7b-v2.5-q3_K_S",
+      "digest": "ea9ed37491b3",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q4_0",
+      "tag": "8x7b-v2.5-q4_0",
+      "digest": "f924f2f0e484",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q4_1",
+      "tag": "8x7b-v2.5-q4_1",
+      "digest": "11dee8e97379",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q4_K_M",
+      "tag": "8x7b-v2.5-q4_K_M",
+      "digest": "66adba445821",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q4_K_S",
+      "tag": "8x7b-v2.5-q4_K_S",
+      "digest": "6534902e1e54",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q5_0",
+      "tag": "8x7b-v2.5-q5_0",
+      "digest": "8a9fd615b610",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q5_1",
+      "tag": "8x7b-v2.5-q5_1",
+      "digest": "36450117b011",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q5_K_M",
+      "tag": "8x7b-v2.5-q5_K_M",
+      "digest": "5389198274fa",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q5_K_S",
+      "tag": "8x7b-v2.5-q5_K_S",
+      "digest": "8e662aef3892",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q6_K",
+      "tag": "8x7b-v2.5-q6_K",
+      "digest": "7ef1f6ce2be5",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.5-q8_0",
+      "tag": "8x7b-v2.5-q8_0",
+      "digest": "2dbedb652781",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6",
+      "tag": "8x7b-v2.6",
+      "digest": "ccc9d1f5d17c",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-fp16",
+      "tag": "8x7b-v2.6-fp16",
+      "digest": "0e865bb9631d",
+      "availability": "local",
+      "download_size_bytes": 93000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q2_K",
+      "tag": "8x7b-v2.6-q2_K",
+      "digest": "2f562aa89564",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q3_K_L",
+      "tag": "8x7b-v2.6-q3_K_L",
+      "digest": "87f7ec7f238f",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q3_K_M",
+      "tag": "8x7b-v2.6-q3_K_M",
+      "digest": "3a283d1a237d",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q3_K_S",
+      "tag": "8x7b-v2.6-q3_K_S",
+      "digest": "ab8763452984",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q4_0",
+      "tag": "8x7b-v2.6-q4_0",
+      "digest": "ccc9d1f5d17c",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q4_1",
+      "tag": "8x7b-v2.6-q4_1",
+      "digest": "9f3b6fc34751",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q4_K_M",
+      "tag": "8x7b-v2.6-q4_K_M",
+      "digest": "725fbbf8d5e0",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q4_K_S",
+      "tag": "8x7b-v2.6-q4_K_S",
+      "digest": "f3dd3e93270a",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q5_0",
+      "tag": "8x7b-v2.6-q5_0",
+      "digest": "ab28fea4d551",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q5_1",
+      "tag": "8x7b-v2.6-q5_1",
+      "digest": "0d332b78ce70",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q5_K_M",
+      "tag": "8x7b-v2.6-q5_K_M",
+      "digest": "616dad4c275d",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q5_K_S",
+      "tag": "8x7b-v2.6-q5_K_S",
+      "digest": "15ecf506c50c",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q6_K",
+      "tag": "8x7b-v2.6-q6_K",
+      "digest": "a14b88f77235",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.6-q8_0",
+      "tag": "8x7b-v2.6-q8_0",
+      "digest": "2812998a47df",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7",
+      "tag": "8x7b-v2.7",
+      "digest": "4f76c28c0414",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-fp16",
+      "tag": "8x7b-v2.7-fp16",
+      "digest": "4ac207dbc68b",
+      "availability": "local",
+      "download_size_bytes": 93000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q2_K",
+      "tag": "8x7b-v2.7-q2_K",
+      "digest": "67959cb58058",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q3_K_L",
+      "tag": "8x7b-v2.7-q3_K_L",
+      "digest": "8b94203d838d",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q3_K_M",
+      "tag": "8x7b-v2.7-q3_K_M",
+      "digest": "c7bb43548a49",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q3_K_S",
+      "tag": "8x7b-v2.7-q3_K_S",
+      "digest": "102b0d4f9403",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q4_0",
+      "tag": "8x7b-v2.7-q4_0",
+      "digest": "4f76c28c0414",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q4_1",
+      "tag": "8x7b-v2.7-q4_1",
+      "digest": "d0c44def2b5e",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q4_K_M",
+      "tag": "8x7b-v2.7-q4_K_M",
+      "digest": "9edda92db764",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q4_K_S",
+      "tag": "8x7b-v2.7-q4_K_S",
+      "digest": "61d2d0129a1b",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q5_0",
+      "tag": "8x7b-v2.7-q5_0",
+      "digest": "c9b1ccc63176",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q5_1",
+      "tag": "8x7b-v2.7-q5_1",
+      "digest": "0e06aa33814f",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q5_K_M",
+      "tag": "8x7b-v2.7-q5_K_M",
+      "digest": "48c8a1692c8d",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q5_K_S",
+      "tag": "8x7b-v2.7-q5_K_S",
+      "digest": "6b10b15cfd86",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q6_K",
+      "tag": "8x7b-v2.7-q6_K",
+      "digest": "1673eadc5474",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:8x7b-v2.7-q8_0",
+      "tag": "8x7b-v2.7-q8_0",
+      "digest": "1e3dbaccc823",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "8x7b",
+        "total_billion": 56.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:latest",
+      "tag": "latest",
+      "digest": "4f76c28c0414",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "dolphin-mixtral:v2.5",
+      "tag": "v2.5",
+      "digest": "f924f2f0e484",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:v2.6",
+      "tag": "v2.6",
+      "digest": "ccc9d1f5d17c",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "dolphin-mixtral:v2.7",
+      "tag": "v2.7",
+      "digest": "4f76c28c0414",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

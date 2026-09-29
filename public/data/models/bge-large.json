@@ -1,0 +1,110 @@
+{
+  "slug": "bge-large",
+  "name": "bge-large",
+  "description": "Embedding model from BAAI mapping texts to vectors.",
+  "source_url": "https://ollama.com/library/bge-large",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "embedding"
+  ],
+  "applications": [],
+  "pulls": 287700,
+  "tag_count": 3,
+  "source_updated_at": "2024-08-07T00:04:00Z",
+  "parameter_sizes": [
+    "335m"
+  ],
+  "min_download_size_bytes": 671000000,
+  "max_download_size_bytes": 671000000,
+  "max_context_window": 512,
+  "categories": [
+    "embedding"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16"
+  ],
+  "local_variant_count": 3,
+  "cloud_variant_count": 0,
+  "default_variant": null,
+  "smallest_local_variant": {
+    "ref": "bge-large:335m",
+    "tag": "335m",
+    "digest": "b3d71c928059",
+    "availability": "local",
+    "download_size_bytes": 671000000,
+    "parameter": {
+      "raw": "335m",
+      "total_billion": 0.335,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 512,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "bge-large:335m",
+      "tag": "335m",
+      "digest": "b3d71c928059",
+      "availability": "local",
+      "download_size_bytes": 671000000,
+      "parameter": {
+        "raw": "335m",
+        "total_billion": 0.335,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "bge-large:335m-en-v1.5-fp16",
+      "tag": "335m-en-v1.5-fp16",
+      "digest": "b3d71c928059",
+      "availability": "local",
+      "download_size_bytes": 671000000,
+      "parameter": {
+        "raw": "335m",
+        "total_billion": 0.335,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "bge-large:latest",
+      "tag": "latest",
+      "digest": "b3d71c928059",
+      "availability": "local",
+      "download_size_bytes": 671000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

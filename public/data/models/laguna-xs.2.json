@@ -1,0 +1,183 @@
+{
+  "slug": "laguna-xs.2",
+  "name": "laguna-xs.2",
+  "description": "Laguna XS.2 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine.",
+  "source_url": "https://ollama.com/library/laguna-xs.2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 32000,
+  "tag_count": 7,
+  "source_updated_at": "2026-07-25T18:19:00Z",
+  "parameter_sizes": [],
+  "min_download_size_bytes": 19000000000,
+  "max_download_size_bytes": 67000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 7,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "laguna-xs.2:latest",
+    "tag": "latest",
+    "digest": "ba9ecde43b0e",
+    "availability": "local",
+    "download_size_bytes": 23000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "laguna-xs.2:nvfp4",
+    "tag": "nvfp4",
+    "digest": "5bc4c3edeb0c",
+    "availability": "local",
+    "download_size_bytes": 19000000000,
+    "parameter": null,
+    "quantization": "NVFP4",
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "laguna-xs.2:bf16",
+      "tag": "bf16",
+      "digest": "cb0fe684dd63",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": null,
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "laguna-xs.2:latest",
+      "tag": "latest",
+      "digest": "ba9ecde43b0e",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "laguna-xs.2:mlx-bf16",
+      "tag": "mlx-bf16",
+      "digest": "77c0711e5d46",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": null,
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "laguna-xs.2:mxfp8",
+      "tag": "mxfp8",
+      "digest": "573baf5fcf0c",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": null,
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "laguna-xs.2:nvfp4",
+      "tag": "nvfp4",
+      "digest": "5bc4c3edeb0c",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": null,
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "laguna-xs.2:q4_K_M",
+      "tag": "q4_K_M",
+      "digest": "ba9ecde43b0e",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": null,
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "laguna-xs.2:q8_0",
+      "tag": "q8_0",
+      "digest": "de0c566abd07",
+      "availability": "local",
+      "download_size_bytes": 37000000000,
+      "parameter": null,
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

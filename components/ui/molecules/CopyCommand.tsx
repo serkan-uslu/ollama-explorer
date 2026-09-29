@@ -9,10 +9,9 @@ interface CopyCommandProps {
   command: string;
   className?: string;
   modelName?: string;
-  modelIdentifier?: string;
 }
 
-export function CopyCommand({ command, className, modelName, modelIdentifier }: CopyCommandProps) {
+export function CopyCommand({ command, className, modelName }: CopyCommandProps) {
   const [copied, setCopied] = useState(false);
 
   function handleCopy() {
@@ -21,8 +20,8 @@ export function CopyCommand({ command, className, modelName, modelIdentifier }: 
       setTimeout(() => setCopied(false), 2000);
 
       // Track GA4 event
-      if (modelName && modelIdentifier) {
-        trackCopyCommand(modelName, modelIdentifier);
+      if (modelName) {
+        trackCopyCommand(modelName, command);
       }
     });
   }
@@ -30,12 +29,12 @@ export function CopyCommand({ command, className, modelName, modelIdentifier }: 
   return (
     <div
       className={cn(
-        'flex items-center gap-2 px-3 py-2 rounded-[var(--radius-md)] bg-[var(--color-bg-muted)] border border-[var(--color-border)] group',
+        'group flex w-full min-w-0 items-center gap-2 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-bg-muted)] py-1.5 pr-1.5 pl-3',
         className,
       )}
     >
       <Terminal size={14} className="shrink-0 text-[var(--color-text-subtle)]" aria-hidden />
-      <code className="flex-1 text-xs font-mono text-[var(--color-text-muted)] truncate">
+      <code className="min-w-0 flex-1 break-normal font-mono text-xs leading-5 whitespace-normal text-[var(--color-text-muted)] [overflow-wrap:anywhere] sm:truncate sm:whitespace-nowrap">
         {command}
       </code>
       <button
@@ -50,6 +49,9 @@ export function CopyCommand({ command, className, modelName, modelIdentifier }: 
           <Copy size={14} />
         )}
       </button>
+      <span className="sr-only" aria-live="polite">
+        {copied ? `${command} copied` : ''}
+      </span>
     </div>
   );
 }

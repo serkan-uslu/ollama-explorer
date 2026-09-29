@@ -1,92 +1,79 @@
-# SEO Guide — Ollama Model Explorer
+# SEO Guide — Ollama Explorer
 
-## Current State
+## Implemented
 
-### Implemented ✅
+| Item                                   | Location                              | Behavior                                                                         |
+| -------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
+| Title template and default description | `app/layout.tsx`                      | Shared site metadata with page-level overrides                                   |
+| Canonicals                             | Public indexable pages                | Stable production URL for home, browse, informational, and slug detail pages     |
+| Model metadata                         | `app/models/[id]/page.tsx`            | Source name, description, capabilities, and applications                         |
+| Production robots policy               | `app/layout.tsx`, `app/robots.ts`     | Index and follow public production pages                                         |
+| Preview protection                     | `next.config.ts`                      | `X-Robots-Tag: noindex, nofollow` on non-production Vercel deployments           |
+| Sitemap                                | `app/sitemap.ts`                      | Static routes plus active model slugs; dates come from source/catalog timestamps |
+| Global Open Graph image                | `app/opengraph-image.tsx`             | Generated 1200×630 product image                                                 |
+| Model Open Graph metadata              | `app/models/[id]/page.tsx`            | Page-specific title and description with the shared product image                |
+| WebSite JSON-LD                        | `app/page.tsx`                        | Site identity plus `SearchAction` for `/models?q=`                               |
+| Model JSON-LD                          | `app/models/[id]/page.tsx`            | `SoftwareApplication` and `BreadcrumbList`                                       |
+| Visible breadcrumbs                    | `app/models/[id]/page.tsx`            | Home → Models → model                                                            |
+| Semantic layout                        | App pages and shared layout           | Landmarks, heading hierarchy, skip link, and accessible controls                 |
 
-| Item                                 | Location                                   | Notes                                                                                |
-| ------------------------------------ | ------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `<title>` with template              | `app/layout.tsx`                           | `%s \| Ollama Model Explorer`                                                        |
-| `metadataBase`                       | `app/layout.tsx`                           | `https://ollama-explorer.vercel.app`                                                 |
-| `description`                        | all pages                                  | unique per page                                                                      |
-| `keywords`                           | `app/layout.tsx`, `/models/[id]`           | global + per-model dynamic keywords                                                  |
-| `authors` + `creator`                | `app/layout.tsx`                           | serkan-uslu                                                                          |
-| `robots` directive                   | `app/layout.tsx`                           | index + follow, googleBot extended                                                   |
-| OpenGraph tags                       | `app/layout.tsx` (global) + all pages      | type, url, title, description, image                                                 |
-| Twitter Card                         | `app/layout.tsx` (global) + `/models/[id]` | `summary_large_image` on layout, `summary` on detail                                 |
-| `canonical` links                    | all pages                                  | `alternates.canonical` per page                                                      |
-| `robots.ts`                          | `app/robots.ts`                            | auto-generates `/robots.txt`                                                         |
-| `sitemap.ts`                         | `app/sitemap.ts`                           | static routes + all 214 model detail pages                                           |
-| **Dynamic OG image (global)**        | `app/opengraph-image.tsx`                  | Next.js `ImageResponse` (edge runtime), dark bg, badges row                          |
-| **Dynamic OG image (per model)**     | `app/models/[id]/opengraph-image.tsx`      | model name, domain badge, description, run command preview                           |
-| **JSON-LD — WebSite + SearchAction** | `app/page.tsx`                             | Google Sitelinks Searchbox eligible                                                  |
-| **JSON-LD — SoftwareApplication**    | `app/models/[id]/page.tsx`                 | per-model structured data                                                            |
-| **JSON-LD — BreadcrumbList**         | `app/models/[id]/page.tsx`                 | rich breadcrumb results in Google                                                    |
-| **Breadcrumb UI**                    | `app/models/[id]/page.tsx`                 | visible `<nav aria-label="Breadcrumb">` above back button                            |
-| **X-Robots-Tag: noindex**            | `next.config.ts`                           | auto-applied on non-production Vercel deployments                                    |
-| FOUC-free theme                      | `app/layout.tsx`                           | inline script before first paint                                                     |
-| Static generation                    | all pages                                  | `force-static` + `generateStaticParams`                                              |
-| Semantic HTML                        | all pages                                  | `<main id="main">`, `<header>`, `<footer>`, `<nav>`, `<article>`, headings hierarchy |
-| Skip-to-main                         | `Header.tsx`                               | `href="#main"`, sr-only, visible on focus                                            |
-| `lang="en"`                          | `app/layout.tsx`                           |                                                                                      |
-| `suppressHydrationWarning`           | `<html>`                                   | prevents theme-related hydration mismatch                                            |
-| GitHub source link                   | `Footer.tsx`                               | `https://github.com/serkan-uslu/ollama-explorer`                                     |
+The root layout supplies global Open Graph and Twitter defaults; model routes provide page-specific title and description values while reusing the shared product image.
 
----
+## Indexing rules
 
-## Pending / Recommended ⚠️
+- Active model slugs are statically generated and included in the sitemap.
+- Legacy UUID routes permanently redirect to the canonical slug.
+- Preserved `unlisted` model pages use `noindex, follow` and are omitted from browse results and the sitemap.
+- `/models/compare` uses `noindex, follow` because query parameters create many equivalent comparison combinations.
+- Non-production Vercel deployments send an `X-Robots-Tag` header that blocks indexing.
+- The sitemap uses each model's source update time when known and falls back to the catalog generation time.
 
-### High Priority
+No model count is hard-coded into metadata or the sitemap; both read the checked-in schema-v2 catalog.
 
-#### ~~1. OG Social Image~~ ✅ Done
+## Content and data rules
 
-`app/opengraph-image.tsx` — dynamic `ImageResponse` (edge runtime). Renders dark background, hexagon icon, title, description, four feature badges.
+- Describe the catalog as **source-backed**, not AI-enriched.
+- Do not call every catalog entry open source. A missing license is `Not verified`, and model licensing is separate from this repository's MIT license.
+- Use the complete source variant ref in command copy and previews: `ollama run model:tag`.
+- Distinguish `local`, `cloud`, and `both` availability.
+- Label memory as an estimate derived from download size. It varies with context, runtime, GPU offload, the operating system, and other workloads.
+- Keep unknown values unknown; do not turn missing sizes, dates, licenses, or counts into zero-value claims.
+- Link model assertions back to each record's `source_url` on Ollama.
 
-#### ~~2. Per-Model OG Image~~ ✅ Done
+These rules keep search snippets and social previews aligned with the product instead of overstating catalog completeness or model licensing.
 
-`app/models/[id]/opengraph-image.tsx` — per-model dynamic image with name, domain badge, description, run command preview.
+## Structured data
 
-#### ~~3. JSON-LD Structured Data~~ ✅ Done
+### Homepage
 
-- **Homepage** — `WebSite` + `SearchAction` (Sitelinks Searchbox eligible)
-- **Model detail pages** — `SoftwareApplication` + `BreadcrumbList`
-- Reusable `<JsonLd>` atom at `components/ui/atoms/JsonLd.tsx`
+`WebSite` includes the production URL, source-backed product description, and a `SearchAction` targeting:
 
-#### ~~4. Breadcrumb Navigation on Detail Pages~~ ✅ Done
+```text
+https://ollama-explorer.vercel.app/models?q={search_term_string}
+```
 
-Visible `<nav aria-label="Breadcrumb">` + `BreadcrumbList` JSON-LD on every `/models/[id]` page.
+### Model detail
 
-#### ~~5. X-Robots-Tag for Non-Production~~ ✅ Done
+Each model page emits:
 
-`next.config.ts` — sets `X-Robots-Tag: noindex, nofollow` on all routes when `VERCEL_ENV !== 'production'`.
+- `SoftwareApplication` with the source name, description, capabilities/applications as keywords, and supported desktop operating systems
+- `BreadcrumbList` matching the visible breadcrumb navigation
 
----
+Structured data intentionally omits ratings, prices, benchmark claims, and license assertions that are not in the source-backed catalog.
 
-### Medium Priority
+## Deferred
 
----
+- `hreflang` until localized routes exist
+- PWA manifest and install metadata until offline/PWA support exists
+- Review/rating structured data until a real moderated review system exists
+- Dataset/API structured data until a stable hosted API is published
 
-## Lighthouse / Core Web Vitals Targets
+## Release checklist
 
-| Metric                         | Target   | Current Risk                                                                      |
-| ------------------------------ | -------- | --------------------------------------------------------------------------------- |
-| LCP (Largest Contentful Paint) | < 2.5 s  | Low — all pages are statically generated                                          |
-| FID / INP                      | < 200 ms | Low — minimal JS on initial load                                                  |
-| CLS                            | < 0.1    | Medium — theme toggle could cause layout shift if OG image placeholder mismatches |
-| FCP                            | < 1.8 s  | Low                                                                               |
-| TTFB                           | < 600 ms | Low — Vercel edge cache on static pages                                           |
-
----
-
-## Quick Wins Checklist
-
-- [x] Create `/public/og-image.png` → replaced by `app/opengraph-image.tsx` (dynamic, edge)
-- [x] Add `app/opengraph-image.tsx` for dynamic OG image
-- [x] Add `app/models/[id]/opengraph-image.tsx` for per-model OG image
-- [x] Add JSON-LD `WebSite` + `SearchAction` schema to homepage
-- [x] Add JSON-LD `SoftwareApplication` schema to model detail pages
-- [x] Add breadcrumb UI + `BreadcrumbList` JSON-LD to detail pages
-- [x] Add `X-Robots-Tag: noindex` to non-production environments
-- [ ] Migrate filter state to URL search params (shareable filtered views)
-- [ ] Add `hreflang` if multilingual support is added
-- [ ] Add PWA manifest (`public/manifest.json`)
+- [ ] Production canonical host is unchanged or every metadata constant is updated together
+- [ ] `npm test` passes the catalog contract
+- [ ] `npm run build` generates active model routes and the sitemap
+- [ ] Unlisted records remain absent from `/models` and `/sitemap.xml`
+- [ ] A local-only, cloud-only, and mixed model show the correct availability and exact command
+- [ ] Rich Results Test accepts the homepage and a representative model page
+- [ ] A production response is indexable and a preview deployment returns `X-Robots-Tag: noindex, nofollow`

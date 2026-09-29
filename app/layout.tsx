@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 import { Header, Footer, CookieBanner } from '@/components/features/layout';
 import { CompareWrapper } from '@/components/features/compare/CompareWrapper';
@@ -20,13 +21,12 @@ export const metadata: Metadata = {
     default: 'Ollama Model Explorer',
     template: '%s | Ollama Model Explorer',
   },
-  description:
-    'Browse, search and filter 200+ open-source AI models available via Ollama. Find the right model by capability, domain, RAM requirement and more.',
+  description: 'Find the right Ollama model and exact tag for your task and memory budget.',
   metadataBase: new URL('https://ollama-explorer.vercel.app'),
   keywords: [
     'ollama',
     'AI models',
-    'open-source LLM',
+    'local LLM',
     'large language model',
     'local AI',
     'llama',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: 'https://ollama-explorer.vercel.app',
     siteName: 'Ollama Model Explorer',
     title: 'Ollama Model Explorer',
-    description: 'Browse, search and filter 200+ open-source AI models available via Ollama.',
+    description: 'Find the right Ollama model and exact tag for your task and memory budget.',
     images: [
       {
         url: '/opengraph-image',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ollama Model Explorer',
-    description: 'Browse, search and filter 200+ open-source AI models available via Ollama.',
+    description: 'Find the right Ollama model and exact tag for your task and memory budget.',
     images: ['/opengraph-image'],
     creator: '@serkanuslu',
   },
@@ -93,7 +93,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <Script
+          id="theme-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}

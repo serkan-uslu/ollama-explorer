@@ -1,0 +1,220 @@
+{
+  "slug": "devstral-small-2",
+  "name": "devstral-small-2",
+  "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
+  "source_url": "https://ollama.com/library/devstral-small-2",
+  "status": "active",
+  "availability": "both",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1400000,
+  "tag_count": 6,
+  "source_updated_at": "2025-12-13T06:47:00Z",
+  "parameter_sizes": [
+    "24b"
+  ],
+  "min_download_size_bytes": 15000000000,
+  "max_download_size_bytes": 48000000000,
+  "max_context_window": 384000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 1,
+  "default_variant": {
+    "ref": "devstral-small-2:latest",
+    "tag": "latest",
+    "digest": "24277f07f62d",
+    "availability": "local",
+    "download_size_bytes": 15000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 384000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "devstral-small-2:24b",
+    "tag": "24b",
+    "digest": "24277f07f62d",
+    "availability": "local",
+    "download_size_bytes": 15000000000,
+    "parameter": {
+      "raw": "24b",
+      "total_billion": 24.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 384000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": {
+    "ref": "devstral-small-2:24b-cloud",
+    "tag": "24b-cloud",
+    "digest": "ec4a591da58a",
+    "availability": "cloud",
+    "download_size_bytes": null,
+    "parameter": {
+      "raw": "24b",
+      "total_billion": 24.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "devstral-small-2:24b",
+      "tag": "24b",
+      "digest": "24277f07f62d",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 384000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "devstral-small-2:24b-cloud",
+      "tag": "24b-cloud",
+      "digest": "ec4a591da58a",
+      "availability": "cloud",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "devstral-small-2:24b-instruct-2512-fp16",
+      "tag": "24b-instruct-2512-fp16",
+      "digest": "15c77ff5438a",
+      "availability": "local",
+      "download_size_bytes": 48000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 384000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "tag": "24b-instruct-2512-q4_K_M",
+      "digest": "24277f07f62d",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 384000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "devstral-small-2:24b-instruct-2512-q8_0",
+      "tag": "24b-instruct-2512-q8_0",
+      "digest": "691a8e03a6dd",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 384000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "devstral-small-2:latest",
+      "tag": "latest",
+      "digest": "24277f07f62d",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 384000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

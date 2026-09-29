@@ -1,0 +1,436 @@
+{
+  "slug": "megadolphin",
+  "name": "megadolphin",
+  "description": "MegaDolphin-2.2-120b is a transformation of Dolphin-2.2-70b created by interleaving the model with itself.",
+  "source_url": "https://ollama.com/library/megadolphin",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 576600,
+  "tag_count": 19,
+  "source_updated_at": "2024-01-11T01:25:00Z",
+  "parameter_sizes": [
+    "120b"
+  ],
+  "min_download_size_bytes": 51000000000,
+  "max_download_size_bytes": 241000000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 19,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "megadolphin:latest",
+    "tag": "latest",
+    "digest": "8fa55398527b",
+    "availability": "local",
+    "download_size_bytes": 68000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "megadolphin:120b-v2.2-q2_K",
+    "tag": "120b-v2.2-q2_K",
+    "digest": "e1b1887eddd5",
+    "availability": "local",
+    "download_size_bytes": 51000000000,
+    "parameter": {
+      "raw": "120b",
+      "total_billion": 120.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "megadolphin:120b",
+      "tag": "120b",
+      "digest": "8fa55398527b",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2",
+      "tag": "120b-v2.2",
+      "digest": "8fa55398527b",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-fp16",
+      "tag": "120b-v2.2-fp16",
+      "digest": "cf54e31cfdd8",
+      "availability": "local",
+      "download_size_bytes": 241000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q2_K",
+      "tag": "120b-v2.2-q2_K",
+      "digest": "e1b1887eddd5",
+      "availability": "local",
+      "download_size_bytes": 51000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q3_K_L",
+      "tag": "120b-v2.2-q3_K_L",
+      "digest": "a27d38e0cacc",
+      "availability": "local",
+      "download_size_bytes": 63000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q3_K_M",
+      "tag": "120b-v2.2-q3_K_M",
+      "digest": "65fd60e22eea",
+      "availability": "local",
+      "download_size_bytes": 58000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q3_K_S",
+      "tag": "120b-v2.2-q3_K_S",
+      "digest": "51cfd8967e4b",
+      "availability": "local",
+      "download_size_bytes": 52000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q4_0",
+      "tag": "120b-v2.2-q4_0",
+      "digest": "8fa55398527b",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q4_1",
+      "tag": "120b-v2.2-q4_1",
+      "digest": "9868ed4c72c3",
+      "availability": "local",
+      "download_size_bytes": 75000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q4_K_M",
+      "tag": "120b-v2.2-q4_K_M",
+      "digest": "b92822f58f1d",
+      "availability": "local",
+      "download_size_bytes": 72000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q4_K_S",
+      "tag": "120b-v2.2-q4_K_S",
+      "digest": "62050e584c58",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q5_0",
+      "tag": "120b-v2.2-q5_0",
+      "digest": "83e48c89c1be",
+      "availability": "local",
+      "download_size_bytes": 83000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q5_1",
+      "tag": "120b-v2.2-q5_1",
+      "digest": "9b53d1dc0471",
+      "availability": "local",
+      "download_size_bytes": 90000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q5_K_M",
+      "tag": "120b-v2.2-q5_K_M",
+      "digest": "559d2beee57b",
+      "availability": "local",
+      "download_size_bytes": 85000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q5_K_S",
+      "tag": "120b-v2.2-q5_K_S",
+      "digest": "253565c3099b",
+      "availability": "local",
+      "download_size_bytes": 83000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q6_K",
+      "tag": "120b-v2.2-q6_K",
+      "digest": "dcaaf2d5d42c",
+      "availability": "local",
+      "download_size_bytes": 99000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:120b-v2.2-q8_0",
+      "tag": "120b-v2.2-q8_0",
+      "digest": "8f2b4b5ff548",
+      "availability": "local",
+      "download_size_bytes": 128000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "megadolphin:latest",
+      "tag": "latest",
+      "digest": "8fa55398527b",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "megadolphin:v2.2",
+      "tag": "v2.2",
+      "digest": "8fa55398527b",
+      "availability": "local",
+      "download_size_bytes": 68000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

@@ -1,112 +1,145 @@
-import Link from 'next/link';
-import { ArrowRight, Cpu, MemoryStick, BookOpen } from 'lucide-react';
-import { Badge } from '@/components/ui/atoms/Badge';
-import { formatPulls, formatRam, formatContextWindow } from '@/lib/utils';
-import type { Model } from '@/lib/types';
+'use client';
 
-interface ModelOfTheDayProps {
-  model: Model;
+import Link from 'next/link';
+import { ArrowRight, BookOpen, Download, MemoryStick } from 'lucide-react';
+import { useSyncExternalStore } from 'react';
+import { Badge } from '@/components/ui/atoms/Badge';
+import { CopyCommand } from '@/components/ui/molecules/CopyCommand';
+import { estimateMemoryGiB, selectVariantForMemory } from '@/lib/data/model-math';
+import { formatBytes, formatContextWindow, formatPulls, formatRam } from '@/lib/utils/format';
+import type { ModelSummary } from '@/lib/types/model';
+import { pickModelOfTheDay, utcDay } from './model-of-the-day';
+
+function currentUtcDay() {
+  return utcDay(new Date());
 }
 
-export function ModelOfTheDay({ model }: ModelOfTheDayProps) {
-  const maxCtx = Math.max(
-    ...(model.memory_requirements ?? []).map((r) => r.context_window ?? 0),
-    0,
-  );
+function subscribeToUtcDay(onChange: () => void) {
+  let timer: number;
+
+  function scheduleNextDay() {
+    const now = Date.now();
+    const nextDay = (Math.floor(now / 86_400_000) + 1) * 86_400_000;
+    timer = window.setTimeout(
+      () => {
+        onChange();
+        scheduleNextDay();
+      },
+      nextDay - now + 100,
+    );
+  }
+
+  scheduleNextDay();
+  return () => window.clearTimeout(timer);
+}
+
+interface ModelOfTheDayProps {
+  models: ModelSummary[];
+  initialUtcDay: number;
+}
+
+export function ModelOfTheDay({ models, initialUtcDay }: ModelOfTheDayProps) {
+  const day = useSyncExternalStore(subscribeToUtcDay, currentUtcDay, () => initialUtcDay);
+  const model = pickModelOfTheDay(models, day);
+  if (!model) return null;
+
+  const variant = selectVariantForMemory(model, null, 'local');
+  const estimatedMemory = estimateMemoryGiB(variant?.download_size_bytes);
+  const labels = [
+    ...new Set([...model.parameter_sizes, ...model.capabilities, ...model.applications]),
+  ].slice(0, 5);
 
   return (
     <section className="border-t border-[var(--color-border)] bg-[var(--color-bg-subtle)]">
-      <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 py-12">
-        {/* Header */}
-        <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-semibold uppercase tracking-widest text-[var(--color-text-subtle)]">
+      <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10 lg:px-20">
+        <div className="mb-6 flex items-center gap-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--color-text-subtle)]">
             Model of the Day
-          </span>
-          <span className="flex-1 h-px bg-[var(--color-border)]" />
+          </p>
+          <span aria-hidden className="h-px flex-1 bg-[var(--color-border)]" />
+          <p className="hidden text-xs text-[var(--color-text-subtle)] sm:block">
+            Deterministic daily pick from popular local models
+          </p>
         </div>
 
-        {/* Card */}
-        <Link
-          href={`/models/${model.id}`}
-          className="group block rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)] p-6 sm:p-8 hover:border-[var(--color-border-strong)] hover:shadow-md transition-all"
-        >
-          <div className="flex flex-col sm:flex-row sm:items-start gap-6">
-            {/* Left — name + meta */}
-            <div className="flex-1 min-w-0 flex flex-col gap-3">
+        <article className="rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg)] p-6 shadow-[var(--shadow-sm)] sm:p-8">
+          <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-7 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start">
+            <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-2">
-                <h2 className="text-xl sm:text-2xl font-semibold text-[var(--color-text)] tracking-tight">
-                  {model.model_name}
-                </h2>
-                {model.domain && (
-                  <Badge variant="outline" size="sm">
-                    {model.domain}
-                  </Badge>
-                )}
+                <Link
+                  href={`/models/${model.slug}`}
+                  className="group inline-flex min-w-0 items-center gap-2 break-words text-2xl font-semibold tracking-tight text-[var(--color-text)] underline-offset-4 [overflow-wrap:anywhere] hover:underline"
+                >
+                  {model.name}
+                  <ArrowRight
+                    size={18}
+                    aria-hidden
+                    className="shrink-0 transition-transform group-hover:translate-x-1"
+                  />
+                </Link>
+                <Badge variant="outline">Local</Badge>
+                {model.license && <Badge variant="muted">{model.license}</Badge>}
               </div>
 
-              {model.description && (
-                <p className="text-sm text-[var(--color-text-muted)] leading-relaxed line-clamp-3">
-                  {model.description}
-                </p>
-              )}
+              <p className="mt-4 max-w-3xl text-sm leading-6 text-[var(--color-text-muted)]">
+                {model.description}
+              </p>
 
-              {/* Capabilities */}
-              {model.capabilities.length > 0 && (
-                <div className="flex flex-wrap gap-1.5">
-                  {model.capabilities.map((cap) => (
-                    <Badge key={cap} variant="outline" size="sm">
-                      {cap}
+              {labels.length > 0 && (
+                <div className="mt-5 flex flex-wrap gap-1.5">
+                  {labels.map((label) => (
+                    <Badge key={label} variant="outline">
+                      {label}
                     </Badge>
                   ))}
                 </div>
               )}
+            </div>
 
-              {/* Best for */}
-              {model.best_for && (
+            <div className="min-w-0 space-y-4 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-bg-subtle)] p-4">
+              <dl className="grid grid-cols-2 gap-4 text-xs">
+                <div>
+                  <dt className="flex items-center gap-1.5 text-[var(--color-text-subtle)]">
+                    <Download size={14} aria-hidden /> Download
+                  </dt>
+                  <dd className="mt-1 font-medium text-[var(--color-text)]">
+                    {formatBytes(variant?.download_size_bytes)}
+                  </dd>
+                </div>
+                <div>
+                  <dt className="flex items-center gap-1.5 text-[var(--color-text-subtle)]">
+                    <MemoryStick size={14} aria-hidden /> Est. memory
+                  </dt>
+                  <dd className="mt-1 font-medium text-[var(--color-text)]">
+                    {formatRam(estimatedMemory)}
+                  </dd>
+                </div>
+                <div>
+                  <dt className="flex items-center gap-1.5 text-[var(--color-text-subtle)]">
+                    <BookOpen size={14} aria-hidden /> Context
+                  </dt>
+                  <dd className="mt-1 font-medium text-[var(--color-text)]">
+                    {formatContextWindow(variant?.context_window)}
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-[var(--color-text-subtle)]">Popularity</dt>
+                  <dd className="mt-1 font-medium text-[var(--color-text)]">
+                    {formatPulls(model.pulls)} pulls
+                  </dd>
+                </div>
+              </dl>
+
+              {variant ? (
+                <CopyCommand command={`ollama run ${variant.ref}`} modelName={model.name} />
+              ) : (
                 <p className="text-xs text-[var(--color-text-subtle)]">
-                  <span className="font-medium text-[var(--color-text-muted)]">Best for:</span>{' '}
-                  {model.best_for}
+                  No runnable local tag is available.
                 </p>
               )}
             </div>
-
-            {/* Right — stats */}
-            <div className="shrink-0 flex sm:flex-col gap-4 sm:gap-3 flex-wrap">
-              <div className="flex items-center gap-1.5 text-sm text-[var(--color-text-muted)]">
-                <MemoryStick size={14} className="text-[var(--color-text-subtle)]" />
-                <span>{formatRam(model.min_ram_gb)} RAM</span>
-              </div>
-              {maxCtx > 0 && (
-                <div className="flex items-center gap-1.5 text-sm text-[var(--color-text-muted)]">
-                  <BookOpen size={14} className="text-[var(--color-text-subtle)]" />
-                  <span>{formatContextWindow(maxCtx)} ctx</span>
-                </div>
-              )}
-              <div className="flex items-center gap-1.5 text-sm text-[var(--color-text-muted)]">
-                <Cpu size={14} className="text-[var(--color-text-subtle)]" />
-                <span>{formatPulls(model.pulls)} pulls</span>
-              </div>
-              <div className="flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] group-hover:gap-2.5 transition-all mt-auto">
-                <span>View model</span>
-                <ArrowRight size={14} />
-              </div>
-            </div>
           </div>
-
-          {/* Use cases */}
-          {model.use_cases.length > 0 && (
-            <div className="mt-5 pt-5 border-t border-[var(--color-border)] flex flex-wrap gap-1.5">
-              {model.use_cases.map((uc) => (
-                <span
-                  key={uc}
-                  className="text-xs px-2.5 py-1 rounded-full bg-[var(--color-bg-subtle)] text-[var(--color-text-muted)] border border-[var(--color-border)]"
-                >
-                  {uc}
-                </span>
-              ))}
-            </div>
-          )}
-        </Link>
+        </article>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Divider } from '@/components/ui/atoms/Divider';
-import { Button } from '@/components/ui/atoms/Button';
+import { buttonClassName } from '@/components/ui/atoms/Button';
 import { CheckCircle2, Circle } from 'lucide-react';
 
 export const dynamic = 'force-static';
@@ -9,62 +9,91 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'Roadmap',
   description:
-    'Discover what is coming next to Ollama Explorer. Check out our roadmap for future features like AI-powered chat, model ratings, and advanced comparison.',
+    'See what Ollama Explorer ships today and which additions are deliberately deferred.',
   alternates: {
     canonical: 'https://ollama-explorer.vercel.app/roadmap',
   },
   openGraph: {
     url: 'https://ollama-explorer.vercel.app/roadmap',
     title: 'Roadmap | Ollama Model Explorer',
-    description: 'Discover what is coming next to Ollama Explorer.',
+    description: 'Current scope and deferred ideas for Ollama Explorer.',
   },
 };
 
 const ROADMAP_ITEMS = [
   {
-    title: 'AI-powered Chat Interface',
+    title: 'Source-backed Schema-v2 Catalog',
     description:
-      'Help users discover the right model through natural conversation instead of manual filtering.',
+      'Static browse summaries and per-model variant files generated from Ollama source pages.',
+    status: 'completed',
+  },
+  {
+    title: 'Exact Variant Commands',
+    description:
+      'Local and cloud tags stay intact through filtering, detail pages and copy actions.',
+    status: 'completed',
+  },
+  {
+    title: 'Memory-aware Discovery',
+    description:
+      'Browse and compare likely-to-fit local variants with a clearly labelled size-based estimate.',
+    status: 'completed',
+  },
+  {
+    title: 'Shareable Filters and Comparison',
+    description: 'URL-synced discovery plus source-backed comparison for up to four models.',
+    status: 'completed',
+  },
+  {
+    title: 'Measured Hardware Benchmarks',
+    description: 'Apple Silicon, CPU and GPU measurements for RAM, VRAM and tokens per second.',
     status: 'planned',
   },
   {
-    title: 'Model Rating & Review System',
-    description: 'Community-driven ratings to help surface the best models in each domain.',
+    title: 'Local Ollama Connection',
+    description: 'Use /api/tags to mark installed models and launch them directly.',
     status: 'planned',
   },
   {
-    title: 'User Favorites & Collections',
-    description: 'Save models to custom lists for easy access later.',
+    title: 'Verified Family and License Metadata',
+    description: 'Source-backed family/license names and a commercial-use filter.',
     status: 'planned',
   },
   {
-    title: 'Advanced Comparison Features',
-    description: 'Deep dive side-by-side comparison of up to 4 models with benchmark data.',
+    title: 'Controlled Benchmark Comparison',
+    description: 'Compare the same model, tag and quantization on documented hardware and methods.',
     status: 'planned',
   },
   {
-    title: 'API for Model Data Access',
-    description: 'Public API endpoint to programmatically query our enriched model directory.',
+    title: 'Catalog History and Alerts',
+    description: 'Model and pull changes, trending models and opt-in notifications.',
     status: 'planned',
   },
   {
-    title: 'Dark Mode Schedule (Auto-Switch)',
-    description: 'Respect system level dark/light mode scheduling.',
+    title: 'Local Favorites and Shortlists',
+    description: 'Browser-local saved models without introducing an account system.',
     status: 'planned',
   },
   {
-    title: 'More Language Support',
-    description: 'Expand tagging for non-English language support in models.',
+    title: 'Semantic Search',
+    description:
+      'Only if search metrics show that the deterministic Fuse.js experience is insufficient.',
     status: 'planned',
   },
   {
-    title: 'Export Comparison Results',
-    description: 'Download model comparisons as CSV or sharing link.',
+    title: 'Versioned Public API',
+    description: 'Only after independent consumers need more than the published static JSON.',
     status: 'planned',
   },
   {
-    title: 'Model Recommendations Based on Use Case',
-    description: 'Automatic algorithm to suggest alternatives when viewing a model.',
+    title: 'Accounts and Community',
+    description: 'Cloud sync, comments and ratings only after measured demand.',
+    status: 'planned',
+  },
+  {
+    title: 'More Languages and Registries',
+    description:
+      'Localized UI and additional open-license registries after the core pipeline proves itself.',
     status: 'planned',
   },
 ];
@@ -77,9 +106,8 @@ export default function RoadmapPage() {
           Roadmap
         </h1>
         <p className="text-base text-[var(--color-text-muted)] leading-relaxed">
-          Ollama Explorer is actively being developed. Our goal is to make discovering and choosing
-          the right open-source AI model as seamless as possible. Here is a look at what we are
-          planning to build next.
+          The current product is a static, source-backed catalog for choosing an Ollama model and
+          exact tag. Checkmarks are shipped; open circles are ideas kept outside the current scope.
         </p>
       </div>
 
@@ -87,11 +115,11 @@ export default function RoadmapPage() {
 
       {/* Roadmap List */}
       <div className="flex flex-col gap-4">
-        <h2 className="text-base font-semibold text-[var(--color-text)]">Upcoming Features</h2>
+        <h2 className="text-base font-semibold text-[var(--color-text)]">Shipped and deferred</h2>
         <div className="flex flex-col gap-3">
-          {ROADMAP_ITEMS.map((item, i) => (
+          {ROADMAP_ITEMS.map((item) => (
             <div
-              key={i}
+              key={item.title}
               className="flex items-start gap-3 p-4 rounded-[var(--radius-md)] bg-[var(--color-bg-subtle)] border border-[var(--color-border)] transition-colors hover:border-[var(--color-border-strong)]"
             >
               <div className="mt-0.5 shrink-0 text-[var(--color-text-subtle)]">
@@ -116,21 +144,21 @@ export default function RoadmapPage() {
       <div className="flex flex-col gap-3">
         <h2 className="text-base font-semibold text-[var(--color-text)]">Help Build the Future</h2>
         <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-          This project is fully open-source and community-driven. If you&rsquo;re interested in
-          helping out with any of these roadmap items, we would love your contributions on GitHub.
+          The Explorer code is MIT licensed and community-driven. Model licenses vary and should be
+          checked at their source. Contributions to the catalog, interface and deferred ideas are
+          welcome on GitHub.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 mt-2">
           <a
             href="https://github.com/serkan-uslu/ollama-explorer"
             target="_blank"
             rel="noopener noreferrer"
+            className={buttonClassName()}
           >
-            <Button size="md">Contribute on GitHub</Button>
+            Contribute on GitHub
           </a>
-          <Link href="/models">
-            <Button variant="outline" size="md">
-              Browse current models
-            </Button>
+          <Link href="/models" className={buttonClassName('outline')}>
+            Browse current models
           </Link>
         </div>
       </div>

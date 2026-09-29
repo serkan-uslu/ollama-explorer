@@ -1,9 +1,20 @@
-export type { Domain, Complexity, Capability, MemoryRequirement, Model, SortOption } from './model';
+export type {
+  Availability,
+  BrowseSort,
+  Catalog,
+  LegacyIdMap,
+  ModelDetail,
+  ModelParameter,
+  ModelStatus,
+  ModelSummary,
+  Variant,
+  VariantSummary,
+} from './model';
 
 export type {
-  ParamSizeBucket,
-  RamBucket,
-  ContextWindowBucket,
-  FilterOptions,
   ActiveFilters,
+  ChoiceOption,
+  FacetCounts,
+  FilterOptions,
+  RangeOption,
 } from './filter';

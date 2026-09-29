@@ -12,7 +12,9 @@ export function Footer() {
         <div className="flex items-start gap-2">
           <AlertCircle size={14} className="text-[var(--color-text-subtle)] mt-0.5 flex-shrink-0" />
           <p className="text-[11px] sm:text-[11px] text-[var(--color-text-subtle)] leading-relaxed">
-            Model metadata is automatically enriched and may contain errors. Always verify with the{' '}
+            Catalog and tag fields are parsed from Ollama; unknown values stay unknown and missing
+            licenses are unverified. Memory is a rough download-size estimate and varies with
+            context, runtime, GPU offload and your OS. Verify requirements and licensing in the{' '}
             <Link
               href="https://ollama.com/library"
               target="_blank"

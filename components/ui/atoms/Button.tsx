@@ -18,10 +18,23 @@ const variantClasses: Record<Variant, string> = {
 };
 
 const sizeClasses: Record<Size, string> = {
-  sm: 'h-8 px-3 text-xs gap-1.5',
-  md: 'h-10 px-4 text-sm gap-2',
+  sm: 'min-h-11 px-3 text-xs gap-1.5',
+  md: 'min-h-11 px-4 text-sm gap-2',
   lg: 'h-12 px-6 text-base gap-2',
 };
+
+export function buttonClassName(
+  variant: Variant = 'primary',
+  size: Size = 'md',
+  className?: string,
+) {
+  return cn(
+    'inline-flex items-center justify-center font-medium rounded-[var(--radius-md)] transition-colors cursor-pointer disabled:opacity-50 disabled:pointer-events-none select-none',
+    variantClasses[variant],
+    sizeClasses[size],
+    className,
+  );
+}
 
 export function Button({
   variant = 'primary',
@@ -31,15 +44,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   return (
-    <button
-      className={cn(
-        'inline-flex items-center justify-center font-medium rounded-[var(--radius-md)] transition-colors cursor-pointer disabled:opacity-50 disabled:pointer-events-none select-none',
-        variantClasses[variant],
-        sizeClasses[size],
-        className,
-      )}
-      {...rest}
-    >
+    <button className={buttonClassName(variant, size, className)} {...rest}>
       {children}
     </button>
   );

@@ -1,0 +1,168 @@
+{
+  "slug": "granite-embedding",
+  "name": "granite-embedding",
+  "description": "The IBM Granite Embedding 30M and 278M models models are text-only dense biencoder embedding models, with 30M available in English only and 278M serving multilingual use cases.",
+  "source_url": "https://ollama.com/library/granite-embedding",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "embedding"
+  ],
+  "applications": [],
+  "pulls": 376200,
+  "tag_count": 6,
+  "source_updated_at": "2024-12-18T04:11:00Z",
+  "parameter_sizes": [
+    "30m",
+    "278m"
+  ],
+  "min_download_size_bytes": 63000000,
+  "max_download_size_bytes": 563000000,
+  "max_context_window": 512,
+  "categories": [
+    "embedding"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16"
+  ],
+  "local_variant_count": 6,
+  "cloud_variant_count": 0,
+  "default_variant": null,
+  "smallest_local_variant": {
+    "ref": "granite-embedding:30m",
+    "tag": "30m",
+    "digest": "eb4c533ba6f7",
+    "availability": "local",
+    "download_size_bytes": 63000000,
+    "parameter": {
+      "raw": "30m",
+      "total_billion": 0.03,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 512,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "granite-embedding:278m",
+      "tag": "278m",
+      "digest": "1a37926bf842",
+      "availability": "local",
+      "download_size_bytes": 563000000,
+      "parameter": {
+        "raw": "278m",
+        "total_billion": 0.278,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-embedding:278m-fp16",
+      "tag": "278m-fp16",
+      "digest": "1a37926bf842",
+      "availability": "local",
+      "download_size_bytes": 563000000,
+      "parameter": {
+        "raw": "278m",
+        "total_billion": 0.278,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-embedding:30m",
+      "tag": "30m",
+      "digest": "eb4c533ba6f7",
+      "availability": "local",
+      "download_size_bytes": 63000000,
+      "parameter": {
+        "raw": "30m",
+        "total_billion": 0.03,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-embedding:30m-en",
+      "tag": "30m-en",
+      "digest": "eb4c533ba6f7",
+      "availability": "local",
+      "download_size_bytes": 63000000,
+      "parameter": {
+        "raw": "30m",
+        "total_billion": 0.03,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-embedding:30m-en-fp16",
+      "tag": "30m-en-fp16",
+      "digest": "eb4c533ba6f7",
+      "availability": "local",
+      "download_size_bytes": 63000000,
+      "parameter": {
+        "raw": "30m",
+        "total_billion": 0.03,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-embedding:latest",
+      "tag": "latest",
+      "digest": "eb4c533ba6f7",
+      "availability": "local",
+      "download_size_bytes": 63000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

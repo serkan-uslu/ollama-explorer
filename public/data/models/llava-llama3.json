@@ -1,0 +1,152 @@
+{
+  "slug": "llava-llama3",
+  "name": "llava-llama3",
+  "description": "A LLaVA model fine-tuned from Llama 3 Instruct with better scores in several benchmarks.",
+  "source_url": "https://ollama.com/library/llava-llama3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 2300000,
+  "tag_count": 4,
+  "source_updated_at": "2024-05-07T21:01:00Z",
+  "parameter_sizes": [
+    "8b"
+  ],
+  "min_download_size_bytes": 5500000000,
+  "max_download_size_bytes": 17000000000,
+  "max_context_window": 8000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_0"
+  ],
+  "local_variant_count": 4,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llava-llama3:latest",
+    "tag": "latest",
+    "digest": "44c161b1f465",
+    "availability": "local",
+    "download_size_bytes": 5500000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llava-llama3:8b",
+    "tag": "8b",
+    "digest": "44c161b1f465",
+    "availability": "local",
+    "download_size_bytes": 5500000000,
+    "parameter": {
+      "raw": "8b",
+      "total_billion": 8.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llava-llama3:8b",
+      "tag": "8b",
+      "digest": "44c161b1f465",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llava-llama3:8b-v1.1-fp16",
+      "tag": "8b-v1.1-fp16",
+      "digest": "7d4b165b1c5e",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llava-llama3:8b-v1.1-q4_0",
+      "tag": "8b-v1.1-q4_0",
+      "digest": "44c161b1f465",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llava-llama3:latest",
+      "tag": "latest",
+      "digest": "44c161b1f465",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

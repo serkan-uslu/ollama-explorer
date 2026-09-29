@@ -1,0 +1,385 @@
+{
+  "slug": "muse-glimmer",
+  "name": "muse-glimmer",
+  "description": "Meta's latest open model built for always-on local agents. 30B parameters, licensed under Apache 2.0 and runs on a single GPU — tuned for tool use, long tasks, and failure recovery.",
+  "source_url": "https://ollama.com/library/muse-glimmer",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 240200,
+  "tag_count": 15,
+  "source_updated_at": "2026-08-28T19:09:00Z",
+  "parameter_sizes": [
+    "30b"
+  ],
+  "min_download_size_bytes": 17000000000,
+  "max_download_size_bytes": 65000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 15,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "muse-glimmer:latest",
+    "tag": "latest",
+    "digest": "de878ce33ad8",
+    "availability": "local",
+    "download_size_bytes": 18000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "muse-glimmer:30b-nvfp4",
+    "tag": "30b-nvfp4",
+    "digest": "6a78d632287f",
+    "availability": "local",
+    "download_size_bytes": 17000000000,
+    "parameter": {
+      "raw": "30b",
+      "total_billion": 30.0,
+      "active_billion": null
+    },
+    "quantization": "NVFP4",
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "muse-glimmer:30b",
+      "tag": "30b",
+      "digest": "de878ce33ad8",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-bf16",
+      "tag": "30b-bf16",
+      "digest": "318fb1b9b816",
+      "availability": "local",
+      "download_size_bytes": 57000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-bf16-dflash",
+      "tag": "30b-bf16-dflash",
+      "digest": "bd22c6664845",
+      "availability": "local",
+      "download_size_bytes": 59000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-mlx",
+      "tag": "30b-mlx",
+      "digest": "015fa21845be",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-mlx-bf16",
+      "tag": "30b-mlx-bf16",
+      "digest": "43511b65122d",
+      "availability": "local",
+      "download_size_bytes": 60000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-mlx-bf16-dflash",
+      "tag": "30b-mlx-bf16-dflash",
+      "digest": "db7968c9dcb3",
+      "availability": "local",
+      "download_size_bytes": 65000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-mxfp8",
+      "tag": "30b-mxfp8",
+      "digest": "783458ca3191",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-mxfp8-dflash",
+      "tag": "30b-mxfp8-dflash",
+      "digest": "14bd0cb8d43f",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-nvfp4",
+      "tag": "30b-nvfp4",
+      "digest": "6a78d632287f",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-nvfp4-dflash",
+      "tag": "30b-nvfp4-dflash",
+      "digest": "015fa21845be",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-q4_K_M",
+      "tag": "30b-q4_K_M",
+      "digest": "de878ce33ad8",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-q4_K_M-dflash",
+      "tag": "30b-q4_K_M-dflash",
+      "digest": "da643f4663ab",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-q8_0",
+      "tag": "30b-q8_0",
+      "digest": "6ffafcdbd728",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:30b-q8_0-dflash",
+      "tag": "30b-q8_0-dflash",
+      "digest": "51675ea1db04",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "muse-glimmer:latest",
+      "tag": "latest",
+      "digest": "de878ce33ad8",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

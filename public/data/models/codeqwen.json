@@ -1,0 +1,629 @@
+{
+  "slug": "codeqwen",
+  "name": "codeqwen",
+  "description": "CodeQwen1.5 is a large language model pretrained on a large amount of code data.",
+  "source_url": "https://ollama.com/library/codeqwen",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1100000,
+  "tag_count": 30,
+  "source_updated_at": "2024-06-24T07:00:00Z",
+  "parameter_sizes": [
+    "7b"
+  ],
+  "min_download_size_bytes": 3100000000,
+  "max_download_size_bytes": 15000000000,
+  "max_context_window": 64000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 30,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "codeqwen:latest",
+    "tag": "latest",
+    "digest": "df352abf55b1",
+    "availability": "local",
+    "download_size_bytes": 4200000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 64000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "codeqwen:7b-chat-v1.5-q2_K",
+    "tag": "7b-chat-v1.5-q2_K",
+    "digest": "58bf9e268b33",
+    "availability": "local",
+    "download_size_bytes": 3100000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 64000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "codeqwen:7b",
+      "tag": "7b",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat",
+      "tag": "7b-chat",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-fp16",
+      "tag": "7b-chat-v1.5-fp16",
+      "digest": "f1b41fd8b5cc",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q2_K",
+      "tag": "7b-chat-v1.5-q2_K",
+      "digest": "58bf9e268b33",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q3_K_L",
+      "tag": "7b-chat-v1.5-q3_K_L",
+      "digest": "3dc83ecb767e",
+      "availability": "local",
+      "download_size_bytes": 4000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q3_K_M",
+      "tag": "7b-chat-v1.5-q3_K_M",
+      "digest": "60e192727d09",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q3_K_S",
+      "tag": "7b-chat-v1.5-q3_K_S",
+      "digest": "8ac6e4f8622c",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q4_0",
+      "tag": "7b-chat-v1.5-q4_0",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q4_1",
+      "tag": "7b-chat-v1.5-q4_1",
+      "digest": "659a8d7026c9",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q4_K_M",
+      "tag": "7b-chat-v1.5-q4_K_M",
+      "digest": "9cb4225e1c5d",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q4_K_S",
+      "tag": "7b-chat-v1.5-q4_K_S",
+      "digest": "bafc9e528fc3",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q5_0",
+      "tag": "7b-chat-v1.5-q5_0",
+      "digest": "5fa058937b9d",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q5_1",
+      "tag": "7b-chat-v1.5-q5_1",
+      "digest": "656f0c7923b8",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q5_K_M",
+      "tag": "7b-chat-v1.5-q5_K_M",
+      "digest": "1e38f440836a",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q5_K_S",
+      "tag": "7b-chat-v1.5-q5_K_S",
+      "digest": "353c5070c5db",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q6_K",
+      "tag": "7b-chat-v1.5-q6_K",
+      "digest": "1140b50f25a0",
+      "availability": "local",
+      "download_size_bytes": 6400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-chat-v1.5-q8_0",
+      "tag": "7b-chat-v1.5-q8_0",
+      "digest": "19343b80cbc6",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code",
+      "tag": "7b-code",
+      "digest": "d469cddb7d04",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code-v1.5-fp16",
+      "tag": "7b-code-v1.5-fp16",
+      "digest": "18f779849b86",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code-v1.5-q4_0",
+      "tag": "7b-code-v1.5-q4_0",
+      "digest": "d469cddb7d04",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code-v1.5-q4_1",
+      "tag": "7b-code-v1.5-q4_1",
+      "digest": "1054e6ce1430",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code-v1.5-q5_0",
+      "tag": "7b-code-v1.5-q5_0",
+      "digest": "df00ae037785",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code-v1.5-q5_1",
+      "tag": "7b-code-v1.5-q5_1",
+      "digest": "f9f1cdb01bda",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:7b-code-v1.5-q8_0",
+      "tag": "7b-code-v1.5-q8_0",
+      "digest": "f076b41b0d2e",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:chat",
+      "tag": "chat",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:code",
+      "tag": "code",
+      "digest": "d469cddb7d04",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:latest",
+      "tag": "latest",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "codeqwen:v1.5",
+      "tag": "v1.5",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:v1.5-chat",
+      "tag": "v1.5-chat",
+      "digest": "df352abf55b1",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codeqwen:v1.5-code",
+      "tag": "v1.5-code",
+      "digest": "d469cddb7d04",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

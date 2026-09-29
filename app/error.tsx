@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/atoms/Button';
+import { Button, buttonClassName } from '@/components/ui/atoms/Button';
 
 interface ErrorProps {
   error: Error & { digest?: string };
@@ -28,10 +28,8 @@ export default function Error({ error, reset }: ErrorProps) {
         <Button size="md" onClick={reset}>
           Try again
         </Button>
-        <Link href="/models">
-          <Button variant="outline" size="md">
-            Browse models
-          </Button>
+        <Link href="/models" className={buttonClassName('outline')}>
+          Browse models
         </Link>
       </div>
     </main>
