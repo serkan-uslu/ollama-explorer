@@ -1,0 +1,411 @@
+{
+  "slug": "nemotron",
+  "name": "nemotron",
+  "description": "Llama-3.1-Nemotron-70B-Instruct is a large language model customized by NVIDIA to improve the helpfulness of LLM generated responses to user queries.",
+  "source_url": "https://ollama.com/library/nemotron",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 632100,
+  "tag_count": 17,
+  "source_updated_at": "2024-10-16T23:10:00Z",
+  "parameter_sizes": [
+    "70b"
+  ],
+  "min_download_size_bytes": 26000000000,
+  "max_download_size_bytes": 141000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 17,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nemotron:latest",
+    "tag": "latest",
+    "digest": "2262f047a28a",
+    "availability": "local",
+    "download_size_bytes": 43000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nemotron:70b-instruct-q2_K",
+    "tag": "70b-instruct-q2_K",
+    "digest": "f4743c4c6e52",
+    "availability": "local",
+    "download_size_bytes": 26000000000,
+    "parameter": {
+      "raw": "70b",
+      "total_billion": 70.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nemotron:70b",
+      "tag": "70b",
+      "digest": "2262f047a28a",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-fp16",
+      "tag": "70b-instruct-fp16",
+      "digest": "e02a46ff1109",
+      "availability": "local",
+      "download_size_bytes": 141000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q2_K",
+      "tag": "70b-instruct-q2_K",
+      "digest": "f4743c4c6e52",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q3_K_L",
+      "tag": "70b-instruct-q3_K_L",
+      "digest": "a6c94d07d7c9",
+      "availability": "local",
+      "download_size_bytes": 37000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q3_K_M",
+      "tag": "70b-instruct-q3_K_M",
+      "digest": "a0a786c3dc39",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q3_K_S",
+      "tag": "70b-instruct-q3_K_S",
+      "digest": "49258a4a766a",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q4_0",
+      "tag": "70b-instruct-q4_0",
+      "digest": "aade1b26eba3",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q4_1",
+      "tag": "70b-instruct-q4_1",
+      "digest": "c463f99d4c5e",
+      "availability": "local",
+      "download_size_bytes": 44000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q4_K_M",
+      "tag": "70b-instruct-q4_K_M",
+      "digest": "2262f047a28a",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q4_K_S",
+      "tag": "70b-instruct-q4_K_S",
+      "digest": "0e32f30ad742",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q5_0",
+      "tag": "70b-instruct-q5_0",
+      "digest": "4c83a56211a0",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q5_1",
+      "tag": "70b-instruct-q5_1",
+      "digest": "32ce9fe7477b",
+      "availability": "local",
+      "download_size_bytes": 53000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q5_K_M",
+      "tag": "70b-instruct-q5_K_M",
+      "digest": "def2cefbe818",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q5_K_S",
+      "tag": "70b-instruct-q5_K_S",
+      "digest": "c5dfebb28f5f",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q6_K",
+      "tag": "70b-instruct-q6_K",
+      "digest": "8d12c48f836a",
+      "availability": "local",
+      "download_size_bytes": 58000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:70b-instruct-q8_0",
+      "tag": "70b-instruct-q8_0",
+      "digest": "8865b9ab3285",
+      "availability": "local",
+      "download_size_bytes": 75000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron:latest",
+      "tag": "latest",
+      "digest": "2262f047a28a",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "slug": "opencoder",
+  "name": "opencoder",
+  "description": "OpenCoder is an open and reproducible code LLM family which includes 1.5B and 8B models, supporting chat in English and Chinese languages.",
+  "source_url": "https://ollama.com/library/opencoder",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 655900,
+  "tag_count": 9,
+  "source_updated_at": "2024-11-18T07:31:00Z",
+  "parameter_sizes": [
+    "1.5b",
+    "8b"
+  ],
+  "min_download_size_bytes": 1400000000,
+  "max_download_size_bytes": 16000000000,
+  "max_context_window": 8000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "opencoder:latest",
+    "tag": "latest",
+    "digest": "cd882db52297",
+    "availability": "local",
+    "download_size_bytes": 4700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "opencoder:1.5b",
+    "tag": "1.5b",
+    "digest": "8573dfc23c16",
+    "availability": "local",
+    "download_size_bytes": 1400000000,
+    "parameter": {
+      "raw": "1.5b",
+      "total_billion": 1.5,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "opencoder:1.5b",
+      "tag": "1.5b",
+      "digest": "8573dfc23c16",
+      "availability": "local",
+      "download_size_bytes": 1400000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:1.5b-instruct-fp16",
+      "tag": "1.5b-instruct-fp16",
+      "digest": "466920be6f15",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:1.5b-instruct-q4_K_M",
+      "tag": "1.5b-instruct-q4_K_M",
+      "digest": "8573dfc23c16",
+      "availability": "local",
+      "download_size_bytes": 1400000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:1.5b-instruct-q8_0",
+      "tag": "1.5b-instruct-q8_0",
+      "digest": "8c1234514258",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:8b",
+      "tag": "8b",
+      "digest": "cd882db52297",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:8b-instruct-fp16",
+      "tag": "8b-instruct-fp16",
+      "digest": "51ed11a37a94",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:8b-instruct-q4_K_M",
+      "tag": "8b-instruct-q4_K_M",
+      "digest": "cd882db52297",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:8b-instruct-q8_0",
+      "tag": "8b-instruct-q8_0",
+      "digest": "b43cccd5b8e1",
+      "availability": "local",
+      "download_size_bytes": 8300000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "opencoder:latest",
+      "tag": "latest",
+      "digest": "cd882db52297",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

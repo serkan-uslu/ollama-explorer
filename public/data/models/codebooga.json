@@ -1,0 +1,382 @@
+{
+  "slug": "codebooga",
+  "name": "codebooga",
+  "description": "A high-performing code instruct model created by merging two existing code models.",
+  "source_url": "https://ollama.com/library/codebooga",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 507000,
+  "tag_count": 16,
+  "source_updated_at": "2023-10-29T10:48:00Z",
+  "parameter_sizes": [
+    "34b"
+  ],
+  "min_download_size_bytes": 14000000000,
+  "max_download_size_bytes": 67000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 16,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "codebooga:latest",
+    "tag": "latest",
+    "digest": "05b83c5673dc",
+    "availability": "local",
+    "download_size_bytes": 19000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "codebooga:34b-v0.1-q2_K",
+    "tag": "34b-v0.1-q2_K",
+    "digest": "66d0bfbea65d",
+    "availability": "local",
+    "download_size_bytes": 14000000000,
+    "parameter": {
+      "raw": "34b",
+      "total_billion": 34.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "codebooga:34b",
+      "tag": "34b",
+      "digest": "05b83c5673dc",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-fp16",
+      "tag": "34b-v0.1-fp16",
+      "digest": "1500811547ff",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q2_K",
+      "tag": "34b-v0.1-q2_K",
+      "digest": "66d0bfbea65d",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q3_K_L",
+      "tag": "34b-v0.1-q3_K_L",
+      "digest": "25a417277d3f",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q3_K_M",
+      "tag": "34b-v0.1-q3_K_M",
+      "digest": "2c0498ca682e",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q3_K_S",
+      "tag": "34b-v0.1-q3_K_S",
+      "digest": "f3b33c3f73de",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q4_0",
+      "tag": "34b-v0.1-q4_0",
+      "digest": "05b83c5673dc",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q4_1",
+      "tag": "34b-v0.1-q4_1",
+      "digest": "cd14b581918a",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q4_K_M",
+      "tag": "34b-v0.1-q4_K_M",
+      "digest": "e08c0bf3eb90",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q5_0",
+      "tag": "34b-v0.1-q5_0",
+      "digest": "6d9156fb2f46",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q5_1",
+      "tag": "34b-v0.1-q5_1",
+      "digest": "22e1b1573c42",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q5_K_M",
+      "tag": "34b-v0.1-q5_K_M",
+      "digest": "4545d39783a5",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q5_K_S",
+      "tag": "34b-v0.1-q5_K_S",
+      "digest": "cb658befaadb",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q6_K",
+      "tag": "34b-v0.1-q6_K",
+      "digest": "0053ef0367fd",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:34b-v0.1-q8_0",
+      "tag": "34b-v0.1-q8_0",
+      "digest": "b6a9ff468c49",
+      "availability": "local",
+      "download_size_bytes": 36000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "codebooga:latest",
+      "tag": "latest",
+      "digest": "05b83c5673dc",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

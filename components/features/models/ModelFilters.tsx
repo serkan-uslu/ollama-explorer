@@ -1,13 +1,13 @@
 'use client';
 
 import { SlidersHorizontal, X } from 'lucide-react';
-import { useState } from 'react';
+import { useRef } from 'react';
 import { FilterChip } from '@/components/ui/molecules/FilterChip';
 import { Button } from '@/components/ui/atoms/Button';
 import { Divider } from '@/components/ui/atoms/Divider';
-import { trackFilterApply, trackFilterRemove, trackFilterReset } from '@/lib/utils/ga';
-import type { FilterOptions } from '@/lib/types/filter';
-import type { Capability, Complexity, Domain, SpeedTier } from '@/lib/types/model';
+import { trackFilterReset } from '@/lib/utils/ga';
+import type { AvailabilityFilter, FacetCounts, FilterOptions } from '@/lib/types/filter';
+import type { BrowseSort } from '@/lib/types/model';
 import type { useFilters } from '@/lib/hooks/useFilters';
 import { SORT_OPTIONS } from '@/lib/constants';
 
@@ -15,331 +15,107 @@ type FiltersHook = ReturnType<typeof useFilters>;
 
 interface ModelFiltersProps {
   options: FilterOptions;
+  counts: FacetCounts;
   hook: FiltersHook;
   totalResults: number;
   totalModels: number;
 }
 
-interface SectionProps {
-  title: string;
-  children: React.ReactNode;
-}
-
-function Section({ title, children }: SectionProps) {
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-2.5">
-      <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide">
+    <fieldset className="flex flex-col gap-2.5">
+      <legend className="mb-2.5 text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide">
         {title}
-      </p>
-      {children}
-    </div>
+      </legend>
+      <div className="flex flex-wrap gap-1.5">{children}</div>
+    </fieldset>
   );
 }
 
-function FilterContent({ options, hook }: { options: FilterOptions; hook: FiltersHook }) {
-  const {
-    filters,
-    toggleCapability,
-    toggleDomain,
-    toggleUseCase,
-    toggleComplexity,
-    toggleLanguage,
-    toggleSpeedTier,
-    toggleModelFamily,
-    toggleCreatorOrg,
-    toggleApplication,
-    toggleFineTuned,
-    toggleUncensored,
-    setRamBucket,
-    setParamSizeBucket,
-    setContextWindowBucket,
-  } = hook;
+function labelWithCount(label: string, count: number | undefined) {
+  return `${label} (${count ?? 0})`;
+}
 
-  // Wrapper functions to track filter changes
-  const handleToggleCapability = (cap: Capability) => {
-    toggleCapability(cap);
-    const isRemoving = filters.capabilities.includes(cap);
-    if (isRemoving) {
-      trackFilterRemove('capability', cap);
-    }
-  };
+function SortSelect({ hook }: { hook: FiltersHook }) {
+  const options = SORT_OPTIONS.filter(
+    (option) => option.value !== 'relevance' || hook.filters.search.trim(),
+  );
+  return (
+    <label className="flex flex-col gap-2 text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide">
+      Sort by
+      <select
+        value={hook.filters.sort}
+        onChange={(event) => hook.setSort(event.target.value as BrowseSort)}
+        className="h-11 w-full rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3 text-sm font-normal normal-case text-[var(--color-text)] outline-none focus:border-[var(--color-border-strong)]"
+      >
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
 
-  const handleToggleDomain = (domain: Domain) => {
-    toggleDomain(domain);
-    const isRemoving = filters.domains.includes(domain);
-    if (isRemoving) {
-      trackFilterRemove('domain', domain);
-    }
-  };
-
-  const handleToggleUseCase = (uc: string) => {
-    toggleUseCase(uc);
-    const isRemoving = filters.useCases.includes(uc);
-    if (isRemoving) {
-      trackFilterRemove('use_case', uc);
-    }
-  };
-
-  const handleToggleComplexity = (c: Complexity) => {
-    toggleComplexity(c);
-    const isRemoving = filters.complexities.includes(c);
-    if (isRemoving) {
-      trackFilterRemove('complexity', c);
-    }
-  };
-
-  const handleToggleLanguage = (lang: string) => {
-    toggleLanguage(lang);
-    const isRemoving = filters.languages.includes(lang);
-    if (isRemoving) {
-      trackFilterRemove('language', lang);
-    }
-  };
-
-  const handleToggleSpeedTier = (tier: SpeedTier) => {
-    toggleSpeedTier(tier);
-    const isRemoving = filters.speedTiers.includes(tier);
-    if (isRemoving) {
-      trackFilterRemove('speed_tier', tier);
-    }
-  };
-
-  const handleToggleModelFamily = (family: string) => {
-    toggleModelFamily(family);
-    const isRemoving = filters.modelFamilies.includes(family);
-    if (isRemoving) {
-      trackFilterRemove('model_family', family);
-    }
-  };
-
-  const handleToggleCreatorOrg = (org: string) => {
-    toggleCreatorOrg(org);
-    const isRemoving = filters.creatorOrgs.includes(org);
-    if (isRemoving) {
-      trackFilterRemove('creator_org', org);
-    }
-  };
-
-  const handleToggleApplication = (app: string) => {
-    toggleApplication(app);
-    const isRemoving = filters.applications.includes(app);
-    if (isRemoving) {
-      trackFilterRemove('application', app);
-    }
-  };
-
-  const handleToggleFineTuned = () => {
-    toggleFineTuned();
-    trackFilterRemove('fine_tuned', filters.isFineTuned ? 'true' : 'false');
-  };
-
-  const handleToggleUncensored = () => {
-    toggleUncensored();
-    trackFilterRemove('uncensored', filters.isUncensored ? 'true' : 'false');
-  };
-
-  const handleSetRamBucket = (bucket: string) => {
-    setRamBucket(bucket);
-    trackFilterApply('ram', bucket, 0);
-  };
-
-  const handleSetParamSizeBucket = (bucket: string) => {
-    setParamSizeBucket(bucket);
-    trackFilterApply('param_size', bucket, 0);
-  };
-
-  const handleSetContextWindowBucket = (bucket: string) => {
-    setContextWindowBucket(bucket);
-    trackFilterApply('context_window', bucket, 0);
-  };
-
+function FilterContent({
+  options,
+  counts,
+  hook,
+}: Pick<ModelFiltersProps, 'options' | 'counts' | 'hook'>) {
+  const { filters } = hook;
   return (
     <div className="flex flex-col gap-5">
-      {/* Capabilities */}
-      <Section title="Capability">
-        <div className="flex flex-wrap gap-1.5">
-          {options.capabilities.map((cap) => (
-            <FilterChip
-              key={cap}
-              label={cap}
-              active={filters.capabilities.includes(cap)}
-              onToggle={() => handleToggleCapability(cap as Capability)}
-            />
-          ))}
-        </div>
+      <Section title="Run on">
+        {options.availabilities.map((option) => (
+          <FilterChip
+            key={option.value}
+            label={labelWithCount(option.label, counts.availability[option.value])}
+            active={filters.availability === option.value}
+            onToggle={() => hook.setAvailability(option.value as AvailabilityFilter)}
+          />
+        ))}
       </Section>
 
       <Divider />
-
-      {/* Domain */}
-      <Section title="Domain">
-        <div className="flex flex-wrap gap-1.5">
-          {options.domains.map((d) => (
-            <FilterChip
-              key={d}
-              label={d}
-              active={filters.domains.includes(d)}
-              onToggle={() => handleToggleDomain(d as Domain)}
-            />
-          ))}
-        </div>
+      <Section title="Task">
+        {options.tasks.map((option) => (
+          <FilterChip
+            key={option.value}
+            label={labelWithCount(option.label, counts.tasks[option.value])}
+            active={filters.tasks.includes(option.value)}
+            onToggle={() => hook.toggleTask(option.value)}
+          />
+        ))}
       </Section>
 
       <Divider />
-
-      {/* Complexity */}
-      <Section title="Complexity">
-        <div className="flex flex-wrap gap-1.5">
-          {options.complexities.map((c) => (
-            <FilterChip
-              key={c}
-              label={c ? c.charAt(0).toUpperCase() + c.slice(1) : c}
-              active={filters.complexities.includes(c)}
-              onToggle={() => handleToggleComplexity(c as Complexity)}
-            />
-          ))}
-        </div>
+      <Section title="Memory budget">
+        {options.memoryBudgets.map((option) => (
+          <FilterChip
+            key={option.value}
+            label={labelWithCount(option.label, counts.memory[option.value])}
+            active={filters.memory === Number(option.value)}
+            onToggle={() => hook.setMemory(Number(option.value))}
+          />
+        ))}
+        <p className="w-full text-xs leading-5 text-[var(--color-text-subtle)]">
+          Estimated from download size. Long contexts, GPU offload and your OS can require more.
+        </p>
       </Section>
 
-      <Divider />
-
-      {/* Param Size */}
-      <Section title="Parameter Size">
-        <div className="flex flex-wrap gap-1.5">
-          {options.paramSizeBuckets.map((b) => {
-            const key = `${b.min}-${b.max}`;
-            return (
-              <FilterChip
-                key={key}
-                label={b.label}
-                active={filters.paramSizeBucket === key}
-                onToggle={() => handleSetParamSizeBucket(key)}
-              />
-            );
-          })}
-        </div>
-      </Section>
-
-      <Divider />
-
-      {/* RAM */}
-      <Section title="RAM Required">
-        <div className="flex flex-wrap gap-1.5">
-          {options.ramBuckets.map((b) => {
-            const key = `${b.min}-${b.max}`;
-            return (
-              <FilterChip
-                key={key}
-                label={b.label}
-                active={filters.ramBucket === key}
-                onToggle={() => handleSetRamBucket(key)}
-              />
-            );
-          })}
-        </div>
-      </Section>
-
-      <Divider />
-
-      {/* Context Window */}
-      <Section title="Context Window">
-        <div className="flex flex-wrap gap-1.5">
-          {options.contextWindowBuckets.map((b) => {
-            const key = `${b.min}-${b.max}`;
-            return (
-              <FilterChip
-                key={key}
-                label={b.label}
-                active={filters.contextWindowBucket === key}
-                onToggle={() => handleSetContextWindowBucket(key)}
-              />
-            );
-          })}
-        </div>
-      </Section>
-
-      <Divider />
-
-      {/* Use Cases */}
-      <Section title="Use Case">
-        <div className="flex flex-wrap gap-1.5">
-          {options.useCases.map((uc) => (
-            <FilterChip
-              key={uc}
-              label={uc}
-              active={filters.useCases.includes(uc)}
-              onToggle={() => handleToggleUseCase(uc)}
-            />
-          ))}
-        </div>
-      </Section>
-
-      <Divider />
-
-      {/* Language */}
-      <Section title="Language">
-        <div className="flex flex-wrap gap-1.5">
-          {options.languages.map((lang) => (
-            <FilterChip
-              key={lang}
-              label={lang}
-              active={filters.languages.includes(lang)}
-              onToggle={() => handleToggleLanguage(lang)}
-            />
-          ))}
-        </div>
-      </Section>
-
-      {options.speedTiers.length > 0 && (
+      {options.capabilities.length > 0 && (
         <>
           <Divider />
-          <Section title="Speed">
-            <div className="flex flex-wrap gap-1.5">
-              {options.speedTiers.map((tier) => (
-                <FilterChip
-                  key={tier}
-                  label={tier.charAt(0).toUpperCase() + tier.slice(1)}
-                  active={filters.speedTiers.includes(tier)}
-                  onToggle={() => handleToggleSpeedTier(tier as SpeedTier)}
-                />
-              ))}
-            </div>
-          </Section>
-        </>
-      )}
-
-      {options.modelFamilies.length > 0 && (
-        <>
-          <Divider />
-          <Section title="Model Family">
-            <div className="flex flex-wrap gap-1.5">
-              {options.modelFamilies.map((family) => (
-                <FilterChip
-                  key={family}
-                  label={family}
-                  active={filters.modelFamilies.includes(family)}
-                  onToggle={() => handleToggleModelFamily(family)}
-                />
-              ))}
-            </div>
-          </Section>
-        </>
-      )}
-
-      {options.creatorOrgs.length > 0 && (
-        <>
-          <Divider />
-          <Section title="Creator">
-            <div className="flex flex-wrap gap-1.5">
-              {options.creatorOrgs.map((org) => (
-                <FilterChip
-                  key={org}
-                  label={org}
-                  active={filters.creatorOrgs.includes(org)}
-                  onToggle={() => handleToggleCreatorOrg(org)}
-                />
-              ))}
-            </div>
+          <Section title="Capability">
+            {options.capabilities.map((option) => (
+              <FilterChip
+                key={option.value}
+                label={labelWithCount(option.label, counts.capabilities[option.value])}
+                active={filters.capabilities.includes(option.value)}
+                onToggle={() => hook.toggleCapability(option.value)}
+              />
+            ))}
           </Section>
         </>
       )}
@@ -348,147 +124,230 @@ function FilterContent({ options, hook }: { options: FilterOptions; hook: Filter
         <>
           <Divider />
           <Section title="Application">
-            <div className="flex flex-wrap gap-1.5">
-              {options.applications.map((app) => (
-                <FilterChip
-                  key={app}
-                  label={app}
-                  active={filters.applications.includes(app)}
-                  onToggle={() => handleToggleApplication(app)}
-                />
-              ))}
-            </div>
+            {options.applications.map((option) => (
+              <FilterChip
+                key={option.value}
+                label={labelWithCount(option.label, counts.applications[option.value])}
+                active={filters.applications.includes(option.value)}
+                onToggle={() => hook.toggleApplication(option.value)}
+              />
+            ))}
           </Section>
         </>
       )}
 
-      <Divider />
-      <Section title="Model Traits">
-        <div className="flex flex-wrap gap-1.5">
-          <FilterChip
-            label="Fine-tuned"
-            active={filters.isFineTuned === true}
-            onToggle={handleToggleFineTuned}
-          />
-          <FilterChip
-            label="Uncensored"
-            active={filters.isUncensored === true}
-            onToggle={handleToggleUncensored}
-          />
+      <details className="group border-t border-[var(--color-border)] pt-5">
+        <summary className="flex min-h-11 cursor-pointer items-center text-sm font-medium text-[var(--color-text)]">
+          More filters
+        </summary>
+        <div className="mt-5 flex flex-col gap-5">
+          {options.modalities.length > 0 && (
+            <>
+              <Section title="Input modality">
+                {options.modalities.map((option) => (
+                  <FilterChip
+                    key={option.value}
+                    label={labelWithCount(option.label, counts.modalities[option.value])}
+                    active={filters.modalities.includes(option.value)}
+                    onToggle={() => hook.toggleModality(option.value)}
+                  />
+                ))}
+              </Section>
+              <Divider />
+            </>
+          )}
+
+          {options.quantizations.length > 0 && (
+            <>
+              <Section title="Quantization">
+                {options.quantizations.map((option) => (
+                  <FilterChip
+                    key={option.value}
+                    label={labelWithCount(option.label, counts.quantizations[option.value])}
+                    active={filters.quantizations.includes(option.value)}
+                    onToggle={() => hook.toggleQuantization(option.value)}
+                  />
+                ))}
+              </Section>
+              <Divider />
+            </>
+          )}
+
+          <Section title="Parameter size">
+            {options.parameterBuckets.map((option) => (
+              <FilterChip
+                key={option.value}
+                label={labelWithCount(option.label, counts.parameters[option.value])}
+                active={filters.parameterBuckets.includes(option.value)}
+                onToggle={() => hook.toggleParameterBucket(option.value)}
+              />
+            ))}
+          </Section>
+
+          <Divider />
+          <Section title="Minimum context">
+            {options.contextThresholds.map((option) => (
+              <FilterChip
+                key={option.value}
+                label={labelWithCount(option.label, counts.context[option.value])}
+                active={filters.context === Number(option.value)}
+                onToggle={() => hook.setContext(Number(option.value))}
+              />
+            ))}
+          </Section>
+
+          <Divider />
+          <Section title="Source updated">
+            {options.updatedRanges.map((option) => (
+              <FilterChip
+                key={option.value}
+                label={labelWithCount(option.label, counts.updated[option.value])}
+                active={filters.updatedWithinDays === Number(option.value)}
+                onToggle={() => hook.setUpdatedWithinDays(Number(option.value))}
+              />
+            ))}
+          </Section>
+
+          {options.families.length > 0 && (
+            <>
+              <Divider />
+              <Section title="Family">
+                {options.families.map((option) => (
+                  <FilterChip
+                    key={option.value}
+                    label={labelWithCount(option.label, counts.families[option.value])}
+                    active={filters.families.includes(option.value)}
+                    onToggle={() => hook.toggleFamily(option.value)}
+                  />
+                ))}
+              </Section>
+            </>
+          )}
+
+          {options.licenses.length > 0 && (
+            <>
+              <Divider />
+              <Section title="Verified license">
+                {options.licenses.map((option) => (
+                  <FilterChip
+                    key={option.value}
+                    label={labelWithCount(option.label, counts.licenses[option.value])}
+                    active={filters.licenses.includes(option.value)}
+                    onToggle={() => hook.toggleLicense(option.value)}
+                  />
+                ))}
+              </Section>
+            </>
+          )}
         </div>
-      </Section>
+      </details>
     </div>
   );
 }
 
-export function ModelFilters({ options, hook, totalResults, totalModels }: ModelFiltersProps) {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const { filters, activeCount, reset, setSort } = hook;
-
+export function ModelFilters({
+  options,
+  counts,
+  hook,
+  totalResults,
+  totalModels,
+}: ModelFiltersProps) {
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const sortOptions = SORT_OPTIONS.filter(
+    (option) => option.value !== 'relevance' || hook.filters.search.trim(),
+  );
   const handleReset = () => {
-    reset();
+    hook.reset();
     trackFilterReset();
   };
 
   return (
     <>
-      {/* ── Mobile: trigger bar ── */}
-      <div className="lg:hidden flex items-center justify-between gap-3 py-3 border-b border-[var(--color-border)]">
-        <p className="text-sm text-[var(--color-text-muted)]">
+      <div className="flex flex-wrap items-center gap-2 border-b border-[var(--color-border)] py-3 sm:flex-nowrap lg:hidden">
+        <p
+          className="w-full text-sm text-[var(--color-text-muted)] sm:w-auto sm:shrink-0"
+          aria-live="polite"
+        >
           <span className="font-medium text-[var(--color-text)]">{totalResults}</span> of{' '}
-          {totalModels} models
+          {totalModels}
         </p>
-        <div className="flex items-center gap-2">
-          {activeCount > 0 && (
-            <Button variant="ghost" size="sm" onClick={handleReset}>
-              Reset
-            </Button>
-          )}
-          <Button variant="outline" size="sm" onClick={() => setMobileOpen(true)}>
-            <SlidersHorizontal size={14} />
-            Filters{activeCount > 0 ? ` (${activeCount})` : ''}
-          </Button>
-        </div>
+        <select
+          value={hook.filters.sort}
+          onChange={(event) => hook.setSort(event.target.value as BrowseSort)}
+          className="h-11 min-w-0 flex-1 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3 text-sm text-[var(--color-text)]"
+          aria-label="Sort models"
+        >
+          {sortOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <Button
+          variant="outline"
+          size="md"
+          className="shrink-0"
+          onClick={() => dialogRef.current?.showModal()}
+        >
+          <SlidersHorizontal size={14} aria-hidden />
+          Filters{hook.activeCount > 0 ? ` (${hook.activeCount})` : ''}
+        </Button>
       </div>
 
-      {/* ── Mobile: bottom sheet ── */}
-      {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 flex flex-col justify-end">
-          <div
-            className="absolute inset-0 bg-black/40"
-            onClick={() => setMobileOpen(false)}
-            aria-hidden
-          />
-          <div className="relative z-10 bg-[var(--color-bg)] rounded-t-[var(--radius-lg)] max-h-[85dvh] flex flex-col">
-            <div className="flex items-center justify-between px-5 py-4 border-b border-[var(--color-border)]">
-              <p className="font-semibold text-sm text-[var(--color-text)]">
-                Filters{activeCount > 0 ? ` (${activeCount})` : ''}
-              </p>
-              <button
-                type="button"
-                onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center min-h-[44px] min-w-[44px] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-                aria-label="Close filters"
-              >
-                <X size={20} />
-              </button>
-            </div>
-            <div className="overflow-y-auto flex-1 px-5 py-5">
-              <FilterContent options={options} hook={hook} />
-            </div>
-            <div className="px-5 py-4 border-t border-[var(--color-border)] flex gap-3">
-              <Button variant="ghost" size="md" className="flex-1" onClick={handleReset}>
-                Reset all
+      <dialog
+        ref={dialogRef}
+        onClick={(event) => {
+          if (event.target === dialogRef.current) dialogRef.current.close();
+        }}
+        className="m-0 ml-auto h-dvh max-h-dvh w-full max-w-none bg-transparent p-0 backdrop:bg-black/40 sm:w-[min(92vw,28rem)]"
+        aria-labelledby="mobile-filter-title"
+      >
+        <div className="flex h-full min-h-0 flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
+          <div className="flex shrink-0 items-center justify-between border-b border-[var(--color-border)] px-5 py-3">
+            <h2 id="mobile-filter-title" className="text-sm font-semibold">
+              Filters{hook.activeCount > 0 ? ` (${hook.activeCount})` : ''}
+            </h2>
+            <button
+              type="button"
+              onClick={() => dialogRef.current?.close()}
+              className="flex min-h-11 min-w-11 items-center justify-center text-[var(--color-text-muted)]"
+              aria-label="Close filters"
+            >
+              <X size={20} />
+            </button>
+          </div>
+          <div className="min-h-0 flex-1 touch-pan-y overflow-y-auto overscroll-contain px-5 py-5 [scrollbar-gutter:stable]">
+            <FilterContent options={options} counts={counts} hook={hook} />
+          </div>
+          <div className="flex shrink-0 gap-3 border-t border-[var(--color-border)] px-5 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <Button variant="ghost" size="md" className="flex-1" onClick={handleReset}>
+              Reset all
+            </Button>
+            <form method="dialog" className="flex-1">
+              <Button type="submit" size="md" className="w-full">
+                Show {totalResults}
               </Button>
-              <Button
-                variant="primary"
-                size="md"
-                className="flex-1"
-                onClick={() => setMobileOpen(false)}
-              >
-                Show {totalResults} results
-              </Button>
-            </div>
+            </form>
           </div>
         </div>
-      )}
+      </dialog>
 
-      {/* ── Desktop: sticky sidebar ── */}
       <aside
-        className="hidden lg:flex flex-col gap-5 w-64 xl:w-72 shrink-0 sticky top-[calc(3.5rem+1.5rem)]"
-        aria-label="Filter sidebar"
+        className="sticky top-[calc(3.5rem+1.5rem)] hidden max-h-[calc(100dvh-6.5rem)] w-64 shrink-0 flex-col gap-5 overflow-y-auto overscroll-contain pb-4 pr-2 [scrollbar-gutter:stable] lg:flex xl:w-72"
+        aria-label="Model filters"
       >
         <div className="flex items-center justify-between">
           <p className="text-sm font-semibold text-[var(--color-text)]">
-            Filters{activeCount > 0 ? ` (${activeCount})` : ''}
+            Filters{hook.activeCount > 0 ? ` (${hook.activeCount})` : ''}
           </p>
-          {activeCount > 0 && (
+          {hook.activeCount > 0 && (
             <Button variant="ghost" size="sm" onClick={handleReset}>
               Reset all
             </Button>
           )}
         </div>
-
-        {/* Sort */}
-        <div className="flex flex-col gap-2.5">
-          <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide">
-            Sort by
-          </p>
-          <select
-            value={filters.sort}
-            onChange={(e) => setSort(e.target.value)}
-            className="w-full h-9 px-3 text-sm rounded-[var(--radius-md)] bg-[var(--color-bg)] text-[var(--color-text)] border border-[var(--color-border)] focus:border-[var(--color-border-strong)] outline-none cursor-pointer"
-            aria-label="Sort models"
-          >
-            {SORT_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>
-                {o.label}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <FilterContent options={options} hook={hook} />
+        <SortSelect hook={hook} />
+        <FilterContent options={options} counts={counts} hook={hook} />
       </aside>
     </>
   );

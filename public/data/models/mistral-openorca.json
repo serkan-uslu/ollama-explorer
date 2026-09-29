@@ -1,0 +1,402 @@
+{
+  "slug": "mistral-openorca",
+  "name": "mistral-openorca",
+  "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
+  "source_url": "https://ollama.com/library/mistral-openorca",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 799900,
+  "tag_count": 17,
+  "source_updated_at": "2023-10-11T22:00:00Z",
+  "parameter_sizes": [
+    "7b"
+  ],
+  "min_download_size_bytes": 3100000000,
+  "max_download_size_bytes": 14000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 17,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "mistral-openorca:latest",
+    "tag": "latest",
+    "digest": "12dc6acc14d0",
+    "availability": "local",
+    "download_size_bytes": 4100000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "mistral-openorca:7b-q2_K",
+    "tag": "7b-q2_K",
+    "digest": "977fdfe52b7c",
+    "availability": "local",
+    "download_size_bytes": 3100000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "mistral-openorca:7b",
+      "tag": "7b",
+      "digest": "12dc6acc14d0",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-fp16",
+      "tag": "7b-fp16",
+      "digest": "c3544390282f",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q2_K",
+      "tag": "7b-q2_K",
+      "digest": "977fdfe52b7c",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q3_K_L",
+      "tag": "7b-q3_K_L",
+      "digest": "e80eba13740d",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q3_K_M",
+      "tag": "7b-q3_K_M",
+      "digest": "1c71a3f469da",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q3_K_S",
+      "tag": "7b-q3_K_S",
+      "digest": "2274bf658e73",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q4_0",
+      "tag": "7b-q4_0",
+      "digest": "12dc6acc14d0",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q4_1",
+      "tag": "7b-q4_1",
+      "digest": "185461182e00",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q4_K_M",
+      "tag": "7b-q4_K_M",
+      "digest": "d4fd6870e8eb",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q4_K_S",
+      "tag": "7b-q4_K_S",
+      "digest": "b8b68de9a6c0",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q5_0",
+      "tag": "7b-q5_0",
+      "digest": "da128676aa71",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q5_1",
+      "tag": "7b-q5_1",
+      "digest": "864f8be0fd03",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q5_K_M",
+      "tag": "7b-q5_K_M",
+      "digest": "30b5e000fa20",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q5_K_S",
+      "tag": "7b-q5_K_S",
+      "digest": "dc071e3647c7",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q6_K",
+      "tag": "7b-q6_K",
+      "digest": "74e3eb59f041",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:7b-q8_0",
+      "tag": "7b-q8_0",
+      "digest": "d7fd37191d96",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-openorca:latest",
+      "tag": "latest",
+      "digest": "12dc6acc14d0",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

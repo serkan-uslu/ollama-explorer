@@ -1,0 +1,173 @@
+{
+  "slug": "magistral",
+  "name": "magistral",
+  "description": "Magistral is a small, efficient reasoning model with 24B parameters.",
+  "source_url": "https://ollama.com/library/magistral",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1500000,
+  "tag_count": 5,
+  "source_updated_at": "2025-06-16T20:46:00Z",
+  "parameter_sizes": [
+    "24b"
+  ],
+  "min_download_size_bytes": 14000000000,
+  "max_download_size_bytes": 47000000000,
+  "max_context_window": 39000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "magistral:latest",
+    "tag": "latest",
+    "digest": "27bcbbf6d324",
+    "availability": "local",
+    "download_size_bytes": 14000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 39000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "magistral:24b",
+    "tag": "24b",
+    "digest": "27bcbbf6d324",
+    "availability": "local",
+    "download_size_bytes": 14000000000,
+    "parameter": {
+      "raw": "24b",
+      "total_billion": 24.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 39000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "magistral:24b",
+      "tag": "24b",
+      "digest": "27bcbbf6d324",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 39000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magistral:24b-small-2506-fp16",
+      "tag": "24b-small-2506-fp16",
+      "digest": "0a0e2be3b6c4",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 39000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magistral:24b-small-2506-q4_K_M",
+      "tag": "24b-small-2506-q4_K_M",
+      "digest": "27bcbbf6d324",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 39000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magistral:24b-small-2506-q8_0",
+      "tag": "24b-small-2506-q8_0",
+      "digest": "02423f83f1a1",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 39000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magistral:latest",
+      "tag": "latest",
+      "digest": "27bcbbf6d324",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 39000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

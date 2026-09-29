@@ -1,0 +1,1664 @@
+{
+  "slug": "mistral",
+  "name": "mistral",
+  "description": "The 7B model released by Mistral AI, updated to version 0.3.",
+  "source_url": "https://ollama.com/library/mistral",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 33700000,
+  "tag_count": 84,
+  "source_updated_at": "2025-07-13T00:56:00Z",
+  "parameter_sizes": [
+    "7b"
+  ],
+  "min_download_size_bytes": 2700000000,
+  "max_download_size_bytes": 14000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 84,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "mistral:latest",
+    "tag": "latest",
+    "digest": "6577803aa9a0",
+    "availability": "local",
+    "download_size_bytes": 4400000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "mistral:7b-instruct-v0.3-q2_K",
+    "tag": "7b-instruct-v0.3-q2_K",
+    "digest": "8bada5a287d3",
+    "availability": "local",
+    "download_size_bytes": 2700000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "mistral:7b",
+      "tag": "7b",
+      "digest": "6577803aa9a0",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct",
+      "tag": "7b-instruct",
+      "digest": "6577803aa9a0",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-fp16",
+      "tag": "7b-instruct-fp16",
+      "digest": "7334da3db4d2",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q2_K",
+      "tag": "7b-instruct-q2_K",
+      "digest": "1344ecf13c2e",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q3_K_L",
+      "tag": "7b-instruct-q3_K_L",
+      "digest": "7f1b28865005",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q3_K_M",
+      "tag": "7b-instruct-q3_K_M",
+      "digest": "9fddddabfd5d",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q3_K_S",
+      "tag": "7b-instruct-q3_K_S",
+      "digest": "30ead8e09346",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q4_0",
+      "tag": "7b-instruct-q4_0",
+      "digest": "b17615239298",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q4_1",
+      "tag": "7b-instruct-q4_1",
+      "digest": "4455f2ee0189",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q4_K_M",
+      "tag": "7b-instruct-q4_K_M",
+      "digest": "1a85656b534f",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q4_K_S",
+      "tag": "7b-instruct-q4_K_S",
+      "digest": "d8ee783f8c73",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q5_0",
+      "tag": "7b-instruct-q5_0",
+      "digest": "69b94d2f2086",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q5_1",
+      "tag": "7b-instruct-q5_1",
+      "digest": "0aeff8418eda",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q5_K_M",
+      "tag": "7b-instruct-q5_K_M",
+      "digest": "8397c99c426f",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q5_K_S",
+      "tag": "7b-instruct-q5_K_S",
+      "digest": "6e47e694bb5c",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q6_K",
+      "tag": "7b-instruct-q6_K",
+      "digest": "bb307cbab5aa",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-q8_0",
+      "tag": "7b-instruct-q8_0",
+      "digest": "2162e081e7f0",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-fp16",
+      "tag": "7b-instruct-v0.2-fp16",
+      "digest": "094d67ff087c",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q2_K",
+      "tag": "7b-instruct-v0.2-q2_K",
+      "digest": "6deedd139c2a",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q3_K_L",
+      "tag": "7b-instruct-v0.2-q3_K_L",
+      "digest": "efe60f8368f7",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q3_K_M",
+      "tag": "7b-instruct-v0.2-q3_K_M",
+      "digest": "6897f015d8dc",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q3_K_S",
+      "tag": "7b-instruct-v0.2-q3_K_S",
+      "digest": "a0adecf535f4",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q4_0",
+      "tag": "7b-instruct-v0.2-q4_0",
+      "digest": "61e88e884507",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q4_1",
+      "tag": "7b-instruct-v0.2-q4_1",
+      "digest": "658e1f4c66cc",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q4_K_M",
+      "tag": "7b-instruct-v0.2-q4_K_M",
+      "digest": "eb14864c7427",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q4_K_S",
+      "tag": "7b-instruct-v0.2-q4_K_S",
+      "digest": "ba00d3a5239e",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q5_0",
+      "tag": "7b-instruct-v0.2-q5_0",
+      "digest": "0e6b5e504307",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q5_1",
+      "tag": "7b-instruct-v0.2-q5_1",
+      "digest": "ff048d9b25be",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q5_K_M",
+      "tag": "7b-instruct-v0.2-q5_K_M",
+      "digest": "bec2cbe92b28",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q5_K_S",
+      "tag": "7b-instruct-v0.2-q5_K_S",
+      "digest": "db882a87043d",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q6_K",
+      "tag": "7b-instruct-v0.2-q6_K",
+      "digest": "1019a5160773",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.2-q8_0",
+      "tag": "7b-instruct-v0.2-q8_0",
+      "digest": "3f321fd2a1c3",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-fp16",
+      "tag": "7b-instruct-v0.3-fp16",
+      "digest": "b7c44a30bb65",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q2_K",
+      "tag": "7b-instruct-v0.3-q2_K",
+      "digest": "8bada5a287d3",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q3_K_L",
+      "tag": "7b-instruct-v0.3-q3_K_L",
+      "digest": "9c690c1791aa",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q3_K_M",
+      "tag": "7b-instruct-v0.3-q3_K_M",
+      "digest": "5f4359ac850d",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q3_K_S",
+      "tag": "7b-instruct-v0.3-q3_K_S",
+      "digest": "89f2f40a58a5",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q4_0",
+      "tag": "7b-instruct-v0.3-q4_0",
+      "digest": "3944fe81ec14",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q4_1",
+      "tag": "7b-instruct-v0.3-q4_1",
+      "digest": "571250ebd2d9",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q4_K_M",
+      "tag": "7b-instruct-v0.3-q4_K_M",
+      "digest": "6577803aa9a0",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q4_K_S",
+      "tag": "7b-instruct-v0.3-q4_K_S",
+      "digest": "4567baa854e6",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q5_0",
+      "tag": "7b-instruct-v0.3-q5_0",
+      "digest": "78fdb100e03d",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q5_1",
+      "tag": "7b-instruct-v0.3-q5_1",
+      "digest": "8b786c3ade1f",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q5_K_M",
+      "tag": "7b-instruct-v0.3-q5_K_M",
+      "digest": "e6968ec1decc",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q5_K_S",
+      "tag": "7b-instruct-v0.3-q5_K_S",
+      "digest": "13690c9631b6",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q6_K",
+      "tag": "7b-instruct-v0.3-q6_K",
+      "digest": "80cca373bdb2",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-instruct-v0.3-q8_0",
+      "tag": "7b-instruct-v0.3-q8_0",
+      "digest": "7aae4c4eed11",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text",
+      "tag": "7b-text",
+      "digest": "495ae085225b",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-fp16",
+      "tag": "7b-text-fp16",
+      "digest": "0c3d49e38913",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q2_K",
+      "tag": "7b-text-q2_K",
+      "digest": "741772b3543d",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q3_K_L",
+      "tag": "7b-text-q3_K_L",
+      "digest": "ae1eaf0c61df",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q3_K_M",
+      "tag": "7b-text-q3_K_M",
+      "digest": "633491386324",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q3_K_S",
+      "tag": "7b-text-q3_K_S",
+      "digest": "ec0a4bd34689",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q4_0",
+      "tag": "7b-text-q4_0",
+      "digest": "d19e34de4cb6",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q4_1",
+      "tag": "7b-text-q4_1",
+      "digest": "14d146cb57dc",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q4_K_M",
+      "tag": "7b-text-q4_K_M",
+      "digest": "60eca258468e",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q4_K_S",
+      "tag": "7b-text-q4_K_S",
+      "digest": "e6aa05445f6e",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q5_0",
+      "tag": "7b-text-q5_0",
+      "digest": "efb1aa205985",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q5_1",
+      "tag": "7b-text-q5_1",
+      "digest": "05b86a2ea9de",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q5_K_M",
+      "tag": "7b-text-q5_K_M",
+      "digest": "71cd339e522c",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q5_K_S",
+      "tag": "7b-text-q5_K_S",
+      "digest": "be6784da326c",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q6_K",
+      "tag": "7b-text-q6_K",
+      "digest": "08f5c2f86290",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-q8_0",
+      "tag": "7b-text-q8_0",
+      "digest": "3197b6e23271",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-fp16",
+      "tag": "7b-text-v0.2-fp16",
+      "digest": "06b91ca50a5e",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q2_K",
+      "tag": "7b-text-v0.2-q2_K",
+      "digest": "748b32627509",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q3_K_L",
+      "tag": "7b-text-v0.2-q3_K_L",
+      "digest": "991a9afb3a73",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q3_K_M",
+      "tag": "7b-text-v0.2-q3_K_M",
+      "digest": "519ef17de46e",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q3_K_S",
+      "tag": "7b-text-v0.2-q3_K_S",
+      "digest": "1cd170493ae6",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q4_0",
+      "tag": "7b-text-v0.2-q4_0",
+      "digest": "495ae085225b",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q4_1",
+      "tag": "7b-text-v0.2-q4_1",
+      "digest": "fae6ab253307",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q4_K_M",
+      "tag": "7b-text-v0.2-q4_K_M",
+      "digest": "33518cc91a4d",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q4_K_S",
+      "tag": "7b-text-v0.2-q4_K_S",
+      "digest": "1a6db06e5aa7",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q5_0",
+      "tag": "7b-text-v0.2-q5_0",
+      "digest": "de4b5d95fa55",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q5_1",
+      "tag": "7b-text-v0.2-q5_1",
+      "digest": "719e139683a3",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q5_K_M",
+      "tag": "7b-text-v0.2-q5_K_M",
+      "digest": "d4e74c03817c",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q5_K_S",
+      "tag": "7b-text-v0.2-q5_K_S",
+      "digest": "d419d7d9e74a",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q6_K",
+      "tag": "7b-text-v0.2-q6_K",
+      "digest": "017da36fcc18",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:7b-text-v0.2-q8_0",
+      "tag": "7b-text-v0.2-q8_0",
+      "digest": "e844517e7eaf",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:instruct",
+      "tag": "instruct",
+      "digest": "3944fe81ec14",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:latest",
+      "tag": "latest",
+      "digest": "6577803aa9a0",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "mistral:text",
+      "tag": "text",
+      "digest": "495ae085225b",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:v0.1",
+      "tag": "v0.1",
+      "digest": "b17615239298",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:v0.2",
+      "tag": "v0.2",
+      "digest": "61e88e884507",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral:v0.3",
+      "tag": "v0.3",
+      "digest": "6577803aa9a0",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

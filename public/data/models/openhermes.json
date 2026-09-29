@@ -1,0 +1,736 @@
+{
+  "slug": "openhermes",
+  "name": "openhermes",
+  "description": "OpenHermes 2.5 is a 7B model fine-tuned by Teknium on Mistral with fully open datasets.",
+  "source_url": "https://ollama.com/library/openhermes",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1200000,
+  "tag_count": 35,
+  "source_updated_at": "2023-12-29T21:45:00Z",
+  "parameter_sizes": [
+    "7b"
+  ],
+  "min_download_size_bytes": 3100000000,
+  "max_download_size_bytes": 14000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 35,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "openhermes:latest",
+    "tag": "latest",
+    "digest": "95477a2659b7",
+    "availability": "local",
+    "download_size_bytes": 4100000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "openhermes:7b-mistral-v2-q2_K",
+    "tag": "7b-mistral-v2-q2_K",
+    "digest": "7382e175bc40",
+    "availability": "local",
+    "download_size_bytes": 3100000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "openhermes:7b-mistral-v2-fp16",
+      "tag": "7b-mistral-v2-fp16",
+      "digest": "7363c7974aad",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q2_K",
+      "tag": "7b-mistral-v2-q2_K",
+      "digest": "7382e175bc40",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q3_K_L",
+      "tag": "7b-mistral-v2-q3_K_L",
+      "digest": "92639a59090e",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q3_K_M",
+      "tag": "7b-mistral-v2-q3_K_M",
+      "digest": "943cbcfdf34c",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q3_K_S",
+      "tag": "7b-mistral-v2-q3_K_S",
+      "digest": "9293e87ebeee",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q4_0",
+      "tag": "7b-mistral-v2-q4_0",
+      "digest": "f04d5fa80594",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q4_1",
+      "tag": "7b-mistral-v2-q4_1",
+      "digest": "578862b7c2c4",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q4_K_M",
+      "tag": "7b-mistral-v2-q4_K_M",
+      "digest": "c834aea088da",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q4_K_S",
+      "tag": "7b-mistral-v2-q4_K_S",
+      "digest": "2b693162c0b1",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q5_0",
+      "tag": "7b-mistral-v2-q5_0",
+      "digest": "c7ee3129a817",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q5_1",
+      "tag": "7b-mistral-v2-q5_1",
+      "digest": "6c0627dce78f",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q5_K_M",
+      "tag": "7b-mistral-v2-q5_K_M",
+      "digest": "d021fbb0cb08",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q5_K_S",
+      "tag": "7b-mistral-v2-q5_K_S",
+      "digest": "0e5722600e00",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q6_K",
+      "tag": "7b-mistral-v2-q6_K",
+      "digest": "cfc008d96677",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2-q8_0",
+      "tag": "7b-mistral-v2-q8_0",
+      "digest": "911a100c0637",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-fp16",
+      "tag": "7b-mistral-v2.5-fp16",
+      "digest": "579d40574c77",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q2_K",
+      "tag": "7b-mistral-v2.5-q2_K",
+      "digest": "44645d418862",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q3_K_L",
+      "tag": "7b-mistral-v2.5-q3_K_L",
+      "digest": "4d3c347d9140",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q3_K_M",
+      "tag": "7b-mistral-v2.5-q3_K_M",
+      "digest": "2356b5964d77",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q3_K_S",
+      "tag": "7b-mistral-v2.5-q3_K_S",
+      "digest": "e7a7de3e60a0",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q4_0",
+      "tag": "7b-mistral-v2.5-q4_0",
+      "digest": "95477a2659b7",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q4_1",
+      "tag": "7b-mistral-v2.5-q4_1",
+      "digest": "c8ceb7530412",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q4_K_M",
+      "tag": "7b-mistral-v2.5-q4_K_M",
+      "digest": "e898ef9a562f",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q4_K_S",
+      "tag": "7b-mistral-v2.5-q4_K_S",
+      "digest": "2528f369c9e5",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q5_0",
+      "tag": "7b-mistral-v2.5-q5_0",
+      "digest": "67bd911a9e96",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q5_1",
+      "tag": "7b-mistral-v2.5-q5_1",
+      "digest": "1e67d8f3ad40",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q5_K_M",
+      "tag": "7b-mistral-v2.5-q5_K_M",
+      "digest": "16eab97b0cd1",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q5_K_S",
+      "tag": "7b-mistral-v2.5-q5_K_S",
+      "digest": "90f1eb6110b6",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q6_K",
+      "tag": "7b-mistral-v2.5-q6_K",
+      "digest": "a63bb944ae62",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-mistral-v2.5-q8_0",
+      "tag": "7b-mistral-v2.5-q8_0",
+      "digest": "1617b8a38b70",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-v2",
+      "tag": "7b-v2",
+      "digest": "f04d5fa80594",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:7b-v2.5",
+      "tag": "7b-v2.5",
+      "digest": "95477a2659b7",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:latest",
+      "tag": "latest",
+      "digest": "95477a2659b7",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "openhermes:v2",
+      "tag": "v2",
+      "digest": "f04d5fa80594",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openhermes:v2.5",
+      "tag": "v2.5",
+      "digest": "95477a2659b7",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

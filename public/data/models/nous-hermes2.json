@@ -1,0 +1,707 @@
+{
+  "slug": "nous-hermes2",
+  "name": "nous-hermes2",
+  "description": "The powerful family of models by Nous Research that excels at scientific discussion and coding tasks.",
+  "source_url": "https://ollama.com/library/nous-hermes2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1100000,
+  "tag_count": 33,
+  "source_updated_at": "2024-01-02T14:26:00Z",
+  "parameter_sizes": [
+    "10.7b",
+    "34b"
+  ],
+  "min_download_size_bytes": 4500000000,
+  "max_download_size_bytes": 69000000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 33,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nous-hermes2:latest",
+    "tag": "latest",
+    "digest": "d50977d0b36a",
+    "availability": "local",
+    "download_size_bytes": 6100000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nous-hermes2:10.7b-solar-q2_K",
+    "tag": "10.7b-solar-q2_K",
+    "digest": "2931d5c846b2",
+    "availability": "local",
+    "download_size_bytes": 4500000000,
+    "parameter": {
+      "raw": "10.7b",
+      "total_billion": 10.7,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nous-hermes2:10.7b",
+      "tag": "10.7b",
+      "digest": "d50977d0b36a",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-fp16",
+      "tag": "10.7b-solar-fp16",
+      "digest": "d1a6005a734e",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q2_K",
+      "tag": "10.7b-solar-q2_K",
+      "digest": "2931d5c846b2",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q3_K_L",
+      "tag": "10.7b-solar-q3_K_L",
+      "digest": "36b57986a223",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q3_K_M",
+      "tag": "10.7b-solar-q3_K_M",
+      "digest": "20bed3473bc5",
+      "availability": "local",
+      "download_size_bytes": 5200000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q3_K_S",
+      "tag": "10.7b-solar-q3_K_S",
+      "digest": "5b55664515d5",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q4_0",
+      "tag": "10.7b-solar-q4_0",
+      "digest": "d50977d0b36a",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q4_1",
+      "tag": "10.7b-solar-q4_1",
+      "digest": "7486b76cccbc",
+      "availability": "local",
+      "download_size_bytes": 6700000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q4_K_M",
+      "tag": "10.7b-solar-q4_K_M",
+      "digest": "3901698f9529",
+      "availability": "local",
+      "download_size_bytes": 6500000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q4_K_S",
+      "tag": "10.7b-solar-q4_K_S",
+      "digest": "674107bfb50e",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q5_0",
+      "tag": "10.7b-solar-q5_0",
+      "digest": "9b7a0ddf5539",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q5_1",
+      "tag": "10.7b-solar-q5_1",
+      "digest": "ade17e89ce44",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q5_K_M",
+      "tag": "10.7b-solar-q5_K_M",
+      "digest": "c21ad0ffb1e8",
+      "availability": "local",
+      "download_size_bytes": 7600000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q5_K_S",
+      "tag": "10.7b-solar-q5_K_S",
+      "digest": "b0a593650c5a",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q6_K",
+      "tag": "10.7b-solar-q6_K",
+      "digest": "46a4c005c00c",
+      "availability": "local",
+      "download_size_bytes": 8800000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:10.7b-solar-q8_0",
+      "tag": "10.7b-solar-q8_0",
+      "digest": "04509546373b",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "10.7b",
+        "total_billion": 10.7,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b",
+      "tag": "34b",
+      "digest": "1fbb49caabbd",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-fp16",
+      "tag": "34b-yi-fp16",
+      "digest": "ba6742bba2e3",
+      "availability": "local",
+      "download_size_bytes": 69000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q2_K",
+      "tag": "34b-yi-q2_K",
+      "digest": "5880153d6216",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q3_K_L",
+      "tag": "34b-yi-q3_K_L",
+      "digest": "d9e569fe62f4",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q3_K_M",
+      "tag": "34b-yi-q3_K_M",
+      "digest": "f2531c88caf1",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q3_K_S",
+      "tag": "34b-yi-q3_K_S",
+      "digest": "0bc80f2f5fd8",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q4_0",
+      "tag": "34b-yi-q4_0",
+      "digest": "1fbb49caabbd",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q4_1",
+      "tag": "34b-yi-q4_1",
+      "digest": "692a7d97562c",
+      "availability": "local",
+      "download_size_bytes": 22000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q4_K_M",
+      "tag": "34b-yi-q4_K_M",
+      "digest": "d0e1b2a20bbd",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q4_K_S",
+      "tag": "34b-yi-q4_K_S",
+      "digest": "83c068cc2a03",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q5_0",
+      "tag": "34b-yi-q5_0",
+      "digest": "b3a3236a26f1",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q5_1",
+      "tag": "34b-yi-q5_1",
+      "digest": "9a77070e0a87",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q5_K_M",
+      "tag": "34b-yi-q5_K_M",
+      "digest": "9f0dea62722f",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q5_K_S",
+      "tag": "34b-yi-q5_K_S",
+      "digest": "8f6909b8327b",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q6_K",
+      "tag": "34b-yi-q6_K",
+      "digest": "2e9855cc9f21",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:34b-yi-q8_0",
+      "tag": "34b-yi-q8_0",
+      "digest": "a1e70aa6a163",
+      "availability": "local",
+      "download_size_bytes": 37000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nous-hermes2:latest",
+      "tag": "latest",
+      "digest": "d50977d0b36a",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

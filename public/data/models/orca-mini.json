@@ -1,0 +1,2343 @@
+{
+  "slug": "orca-mini",
+  "name": "orca-mini",
+  "description": "A general-purpose model ranging from 3 billion parameters to 70 billion, suitable for entry-level hardware.",
+  "source_url": "https://ollama.com/library/orca-mini",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 3100000,
+  "tag_count": 119,
+  "source_updated_at": "2023-10-29T05:30:00Z",
+  "parameter_sizes": [
+    "3b",
+    "7b",
+    "13b",
+    "70b"
+  ],
+  "min_download_size_bytes": 2000000000,
+  "max_download_size_bytes": 138000000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 119,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "orca-mini:latest",
+    "tag": "latest",
+    "digest": "2dbd9f439647",
+    "availability": "local",
+    "download_size_bytes": 2000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "orca-mini:3b",
+    "tag": "3b",
+    "digest": "2dbd9f439647",
+    "availability": "local",
+    "download_size_bytes": 2000000000,
+    "parameter": {
+      "raw": "3b",
+      "total_billion": 3.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "orca-mini:13b",
+      "tag": "13b",
+      "digest": "1b4877c90807",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-fp16",
+      "tag": "13b-fp16",
+      "digest": "ff60f06ce009",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q2_K",
+      "tag": "13b-q2_K",
+      "digest": "13923842f12d",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q3_K_L",
+      "tag": "13b-q3_K_L",
+      "digest": "93a769d0dbc0",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q3_K_M",
+      "tag": "13b-q3_K_M",
+      "digest": "1cf7f5e0163b",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q3_K_S",
+      "tag": "13b-q3_K_S",
+      "digest": "8e57088234d8",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q4_0",
+      "tag": "13b-q4_0",
+      "digest": "d19fe19c0624",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q4_1",
+      "tag": "13b-q4_1",
+      "digest": "06f127c8a31d",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q4_K_M",
+      "tag": "13b-q4_K_M",
+      "digest": "b13d43a9ea63",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q4_K_S",
+      "tag": "13b-q4_K_S",
+      "digest": "0b621a2c68ae",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q5_0",
+      "tag": "13b-q5_0",
+      "digest": "d345f07d4365",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q5_1",
+      "tag": "13b-q5_1",
+      "digest": "4c782fea6ce4",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q5_K_M",
+      "tag": "13b-q5_K_M",
+      "digest": "9880bed763a2",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q5_K_S",
+      "tag": "13b-q5_K_S",
+      "digest": "6531b87ef17f",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q6_K",
+      "tag": "13b-q6_K",
+      "digest": "c3ec450a59ec",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-q8_0",
+      "tag": "13b-q8_0",
+      "digest": "bab5d684679e",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-fp16",
+      "tag": "13b-v2-fp16",
+      "digest": "5fc4f577304e",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q2_K",
+      "tag": "13b-v2-q2_K",
+      "digest": "77cd66457900",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q3_K_L",
+      "tag": "13b-v2-q3_K_L",
+      "digest": "039cea827fd3",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q3_K_M",
+      "tag": "13b-v2-q3_K_M",
+      "digest": "ced974fd937d",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q3_K_S",
+      "tag": "13b-v2-q3_K_S",
+      "digest": "e87e20ccd984",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q4_0",
+      "tag": "13b-v2-q4_0",
+      "digest": "3e438b472999",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q4_1",
+      "tag": "13b-v2-q4_1",
+      "digest": "4ad005e5c90a",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q4_K_M",
+      "tag": "13b-v2-q4_K_M",
+      "digest": "0c79490ff43d",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q4_K_S",
+      "tag": "13b-v2-q4_K_S",
+      "digest": "579e615a7534",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q5_0",
+      "tag": "13b-v2-q5_0",
+      "digest": "988d2d90b3b0",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q5_1",
+      "tag": "13b-v2-q5_1",
+      "digest": "b293ce5356ed",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q5_K_M",
+      "tag": "13b-v2-q5_K_M",
+      "digest": "402e1a70ed67",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q5_K_S",
+      "tag": "13b-v2-q5_K_S",
+      "digest": "f4332ae13e4a",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q6_K",
+      "tag": "13b-v2-q6_K",
+      "digest": "12cfa06b9762",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v2-q8_0",
+      "tag": "13b-v2-q8_0",
+      "digest": "17a9f01a8364",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3",
+      "tag": "13b-v3",
+      "digest": "1b4877c90807",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-fp16",
+      "tag": "13b-v3-fp16",
+      "digest": "80bfde71168d",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q2_K",
+      "tag": "13b-v3-q2_K",
+      "digest": "18c6529c1b31",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q3_K_L",
+      "tag": "13b-v3-q3_K_L",
+      "digest": "1e0ea2702693",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q3_K_M",
+      "tag": "13b-v3-q3_K_M",
+      "digest": "cd15b977684b",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q3_K_S",
+      "tag": "13b-v3-q3_K_S",
+      "digest": "fb5fe5934d97",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q4_0",
+      "tag": "13b-v3-q4_0",
+      "digest": "1b4877c90807",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q4_1",
+      "tag": "13b-v3-q4_1",
+      "digest": "bcffade49332",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q4_K_M",
+      "tag": "13b-v3-q4_K_M",
+      "digest": "47eb784e0b94",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q4_K_S",
+      "tag": "13b-v3-q4_K_S",
+      "digest": "e71486a020f5",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q5_0",
+      "tag": "13b-v3-q5_0",
+      "digest": "4d0b6a1fe56b",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q5_1",
+      "tag": "13b-v3-q5_1",
+      "digest": "bc17480cecbd",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q5_K_M",
+      "tag": "13b-v3-q5_K_M",
+      "digest": "e0062a6345f2",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q5_K_S",
+      "tag": "13b-v3-q5_K_S",
+      "digest": "25597b7203a0",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q6_K",
+      "tag": "13b-v3-q6_K",
+      "digest": "c67733d5f521",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:13b-v3-q8_0",
+      "tag": "13b-v3-q8_0",
+      "digest": "22202d7bf265",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b",
+      "tag": "3b",
+      "digest": "2dbd9f439647",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b-fp16",
+      "tag": "3b-fp16",
+      "digest": "f85802731409",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b-q4_0",
+      "tag": "3b-q4_0",
+      "digest": "2dbd9f439647",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b-q4_1",
+      "tag": "3b-q4_1",
+      "digest": "baaaf6d7885b",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b-q5_0",
+      "tag": "3b-q5_0",
+      "digest": "6ab5f5489601",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b-q5_1",
+      "tag": "3b-q5_1",
+      "digest": "4ad394056d0b",
+      "availability": "local",
+      "download_size_bytes": 2600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:3b-q8_0",
+      "tag": "3b-q8_0",
+      "digest": "e31654abca22",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b",
+      "tag": "70b",
+      "digest": "f184c0860491",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3",
+      "tag": "70b-v3",
+      "digest": "f184c0860491",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-fp16",
+      "tag": "70b-v3-fp16",
+      "digest": "423e70feb86a",
+      "availability": "local",
+      "download_size_bytes": 138000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q2_K",
+      "tag": "70b-v3-q2_K",
+      "digest": "28e06621edf0",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q3_K_L",
+      "tag": "70b-v3-q3_K_L",
+      "digest": "f7b928c050eb",
+      "availability": "local",
+      "download_size_bytes": 36000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q3_K_M",
+      "tag": "70b-v3-q3_K_M",
+      "digest": "1d12e3416527",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q3_K_S",
+      "tag": "70b-v3-q3_K_S",
+      "digest": "5df07f064756",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q4_0",
+      "tag": "70b-v3-q4_0",
+      "digest": "f184c0860491",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q4_1",
+      "tag": "70b-v3-q4_1",
+      "digest": "210abd8a7b7a",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q4_K_M",
+      "tag": "70b-v3-q4_K_M",
+      "digest": "89313d84c131",
+      "availability": "local",
+      "download_size_bytes": 41000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q4_K_S",
+      "tag": "70b-v3-q4_K_S",
+      "digest": "7f5fe7119c64",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q5_0",
+      "tag": "70b-v3-q5_0",
+      "digest": "0873d4fc8a05",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q5_1",
+      "tag": "70b-v3-q5_1",
+      "digest": "614a4b7f8c2d",
+      "availability": "local",
+      "download_size_bytes": 52000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q5_K_M",
+      "tag": "70b-v3-q5_K_M",
+      "digest": "f6557e9aa182",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q5_K_S",
+      "tag": "70b-v3-q5_K_S",
+      "digest": "de93e5b2d85f",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q6_K",
+      "tag": "70b-v3-q6_K",
+      "digest": "cfdca07d69a0",
+      "availability": "local",
+      "download_size_bytes": 57000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:70b-v3-q8_0",
+      "tag": "70b-v3-q8_0",
+      "digest": "8f078884138d",
+      "availability": "local",
+      "download_size_bytes": 73000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b",
+      "tag": "7b",
+      "digest": "9c9618e2e895",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-fp16",
+      "tag": "7b-fp16",
+      "digest": "8b7dcffd0a8a",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q2_K",
+      "tag": "7b-q2_K",
+      "digest": "629f61a16f8d",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q3_K_L",
+      "tag": "7b-q3_K_L",
+      "digest": "678f10ad8ea6",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q3_K_M",
+      "tag": "7b-q3_K_M",
+      "digest": "6f68c8ff61cc",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q3_K_S",
+      "tag": "7b-q3_K_S",
+      "digest": "32d73761c966",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q4_0",
+      "tag": "7b-q4_0",
+      "digest": "52f6f01e3ce0",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q4_1",
+      "tag": "7b-q4_1",
+      "digest": "a8d2800046a7",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q4_K_M",
+      "tag": "7b-q4_K_M",
+      "digest": "913e18f06270",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q4_K_S",
+      "tag": "7b-q4_K_S",
+      "digest": "ffb8dddf6fab",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q5_0",
+      "tag": "7b-q5_0",
+      "digest": "4ab6288e4914",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q5_1",
+      "tag": "7b-q5_1",
+      "digest": "2d46758c14de",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q5_K_M",
+      "tag": "7b-q5_K_M",
+      "digest": "c7ba573e08a3",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q5_K_S",
+      "tag": "7b-q5_K_S",
+      "digest": "3817a43d9eba",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q6_K",
+      "tag": "7b-q6_K",
+      "digest": "637ee36ed8eb",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-q8_0",
+      "tag": "7b-q8_0",
+      "digest": "51fea4a8a2ce",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-fp16",
+      "tag": "7b-v2-fp16",
+      "digest": "1a716fc27577",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q2_K",
+      "tag": "7b-v2-q2_K",
+      "digest": "cf92e423fb3c",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q3_K_L",
+      "tag": "7b-v2-q3_K_L",
+      "digest": "07065b6e4ff7",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q3_K_M",
+      "tag": "7b-v2-q3_K_M",
+      "digest": "2b42986f156b",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q3_K_S",
+      "tag": "7b-v2-q3_K_S",
+      "digest": "8fa2889ecb51",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q4_0",
+      "tag": "7b-v2-q4_0",
+      "digest": "db096cc7b3f9",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q4_1",
+      "tag": "7b-v2-q4_1",
+      "digest": "aee6823a849a",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q4_K_M",
+      "tag": "7b-v2-q4_K_M",
+      "digest": "eb586ac4d97f",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q4_K_S",
+      "tag": "7b-v2-q4_K_S",
+      "digest": "7ed973ab6559",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q5_0",
+      "tag": "7b-v2-q5_0",
+      "digest": "2c7a2952ffe9",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q5_1",
+      "tag": "7b-v2-q5_1",
+      "digest": "e9d24fc8a9ee",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q5_K_M",
+      "tag": "7b-v2-q5_K_M",
+      "digest": "3d950d4864ea",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q5_K_S",
+      "tag": "7b-v2-q5_K_S",
+      "digest": "e38ccaaaed8a",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q6_K",
+      "tag": "7b-v2-q6_K",
+      "digest": "d55eb108b6d2",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v2-q8_0",
+      "tag": "7b-v2-q8_0",
+      "digest": "755b6f0925e9",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3",
+      "tag": "7b-v3",
+      "digest": "9c9618e2e895",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-fp16",
+      "tag": "7b-v3-fp16",
+      "digest": "089339690b0a",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q2_K",
+      "tag": "7b-v3-q2_K",
+      "digest": "1b17d4503dd9",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q3_K_L",
+      "tag": "7b-v3-q3_K_L",
+      "digest": "0c6a46e8fc6d",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q3_K_M",
+      "tag": "7b-v3-q3_K_M",
+      "digest": "5a6e8b1fe604",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q3_K_S",
+      "tag": "7b-v3-q3_K_S",
+      "digest": "f876ae8b69c2",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q4_0",
+      "tag": "7b-v3-q4_0",
+      "digest": "9c9618e2e895",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q4_1",
+      "tag": "7b-v3-q4_1",
+      "digest": "85670bb801a0",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q4_K_M",
+      "tag": "7b-v3-q4_K_M",
+      "digest": "2c472475e892",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q4_K_S",
+      "tag": "7b-v3-q4_K_S",
+      "digest": "df1ac2dbb3eb",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q5_0",
+      "tag": "7b-v3-q5_0",
+      "digest": "98d33166886d",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q5_1",
+      "tag": "7b-v3-q5_1",
+      "digest": "c144d27c6729",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q5_K_M",
+      "tag": "7b-v3-q5_K_M",
+      "digest": "6518fa5b7aed",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q5_K_S",
+      "tag": "7b-v3-q5_K_S",
+      "digest": "806eac42db69",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q6_K",
+      "tag": "7b-v3-q6_K",
+      "digest": "702e61f3cc0a",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:7b-v3-q8_0",
+      "tag": "7b-v3-q8_0",
+      "digest": "7707879d3793",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca-mini:latest",
+      "tag": "latest",
+      "digest": "2dbd9f439647",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

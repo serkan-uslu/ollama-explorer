@@ -1,0 +1,726 @@
+{
+  "slug": "llama2-uncensored",
+  "name": "llama2-uncensored",
+  "description": "Uncensored Llama 2 model by George Sung and Jarrad Hope.",
+  "source_url": "https://ollama.com/library/llama2-uncensored",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 2700000,
+  "tag_count": 34,
+  "source_updated_at": "2023-10-29T02:31:00Z",
+  "parameter_sizes": [
+    "7b",
+    "70b"
+  ],
+  "min_download_size_bytes": 2800000000,
+  "max_download_size_bytes": 73000000000,
+  "max_context_window": 2000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 34,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llama2-uncensored:latest",
+    "tag": "latest",
+    "digest": "44040b922233",
+    "availability": "local",
+    "download_size_bytes": 3800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llama2-uncensored:7b-chat-q2_K",
+    "tag": "7b-chat-q2_K",
+    "digest": "74ae83e72254",
+    "availability": "local",
+    "download_size_bytes": 2800000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llama2-uncensored:70b",
+      "tag": "70b",
+      "digest": "bdd0ec2f5ec5",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat",
+      "tag": "70b-chat",
+      "digest": "bdd0ec2f5ec5",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q2_K",
+      "tag": "70b-chat-q2_K",
+      "digest": "07eb9c33537f",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q3_K_L",
+      "tag": "70b-chat-q3_K_L",
+      "digest": "36c29a76fcc6",
+      "availability": "local",
+      "download_size_bytes": 36000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q3_K_M",
+      "tag": "70b-chat-q3_K_M",
+      "digest": "dc1b2e6eadcb",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q3_K_S",
+      "tag": "70b-chat-q3_K_S",
+      "digest": "493a8291671f",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q4_0",
+      "tag": "70b-chat-q4_0",
+      "digest": "bdd0ec2f5ec5",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q4_1",
+      "tag": "70b-chat-q4_1",
+      "digest": "26fa2e1dcc70",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q4_K_M",
+      "tag": "70b-chat-q4_K_M",
+      "digest": "97d4d2728756",
+      "availability": "local",
+      "download_size_bytes": 41000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q4_K_S",
+      "tag": "70b-chat-q4_K_S",
+      "digest": "ccd1d1a41ec7",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q5_0",
+      "tag": "70b-chat-q5_0",
+      "digest": "16ddcf15080c",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q5_1",
+      "tag": "70b-chat-q5_1",
+      "digest": "1eda65206a66",
+      "availability": "local",
+      "download_size_bytes": 52000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q5_K_M",
+      "tag": "70b-chat-q5_K_M",
+      "digest": "cb930df97107",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q5_K_S",
+      "tag": "70b-chat-q5_K_S",
+      "digest": "90ac8e79f29b",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q6_K",
+      "tag": "70b-chat-q6_K",
+      "digest": "38f49b2673e7",
+      "availability": "local",
+      "download_size_bytes": 57000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:70b-chat-q8_0",
+      "tag": "70b-chat-q8_0",
+      "digest": "256b13d53838",
+      "availability": "local",
+      "download_size_bytes": 73000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b",
+      "tag": "7b",
+      "digest": "44040b922233",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat",
+      "tag": "7b-chat",
+      "digest": "44040b922233",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-fp16",
+      "tag": "7b-chat-fp16",
+      "digest": "b29ffe78e250",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q2_K",
+      "tag": "7b-chat-q2_K",
+      "digest": "74ae83e72254",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q3_K_L",
+      "tag": "7b-chat-q3_K_L",
+      "digest": "4c971d36df3a",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q3_K_M",
+      "tag": "7b-chat-q3_K_M",
+      "digest": "e74d204469c8",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q3_K_S",
+      "tag": "7b-chat-q3_K_S",
+      "digest": "3f56c4266b91",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q4_0",
+      "tag": "7b-chat-q4_0",
+      "digest": "44040b922233",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q4_1",
+      "tag": "7b-chat-q4_1",
+      "digest": "0126058e3693",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q4_K_M",
+      "tag": "7b-chat-q4_K_M",
+      "digest": "a91c5baf8d31",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q4_K_S",
+      "tag": "7b-chat-q4_K_S",
+      "digest": "7c0b8e49e54b",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q5_0",
+      "tag": "7b-chat-q5_0",
+      "digest": "48c918f41b91",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q5_1",
+      "tag": "7b-chat-q5_1",
+      "digest": "4ba18e066719",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q5_K_M",
+      "tag": "7b-chat-q5_K_M",
+      "digest": "db0d5a17b770",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q5_K_S",
+      "tag": "7b-chat-q5_K_S",
+      "digest": "f2f04ee3b17e",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q6_K",
+      "tag": "7b-chat-q6_K",
+      "digest": "f3040de79519",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:7b-chat-q8_0",
+      "tag": "7b-chat-q8_0",
+      "digest": "a3a460233379",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama2-uncensored:latest",
+      "tag": "latest",
+      "digest": "44040b922233",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

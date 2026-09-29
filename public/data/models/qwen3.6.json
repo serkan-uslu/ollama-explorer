@@ -1,0 +1,787 @@
+{
+  "slug": "qwen3.6",
+  "name": "qwen3.6",
+  "description": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models.",
+  "source_url": "https://ollama.com/library/qwen3.6",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 6800000,
+  "tag_count": 35,
+  "source_updated_at": "2026-09-01T17:04:00Z",
+  "parameter_sizes": [
+    "27b",
+    "35b",
+    "35b-a3b"
+  ],
+  "min_download_size_bytes": 17000000000,
+  "max_download_size_bytes": 72000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 35,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "qwen3.6:latest",
+    "tag": "latest",
+    "digest": "096fdbd02fe6",
+    "availability": "local",
+    "download_size_bytes": 23000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "qwen3.6:27b-q4_K_M",
+    "tag": "27b-q4_K_M",
+    "digest": "3a40c32f1450",
+    "availability": "local",
+    "download_size_bytes": 17000000000,
+    "parameter": {
+      "raw": "27b",
+      "total_billion": 27.0,
+      "active_billion": null
+    },
+    "quantization": "Q4_K_M",
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "qwen3.6:27b",
+      "tag": "27b",
+      "digest": "9d5803d493a9",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-bf16",
+      "tag": "27b-bf16",
+      "digest": "c3a702fca756",
+      "availability": "local",
+      "download_size_bytes": 56000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-coding",
+      "tag": "27b-coding",
+      "digest": "3a12a518a499",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-coding-bf16",
+      "tag": "27b-coding-bf16",
+      "digest": "aa7f9b4e8d3b",
+      "availability": "local",
+      "download_size_bytes": 55000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-coding-mtp-q4_K_M",
+      "tag": "27b-coding-mtp-q4_K_M",
+      "digest": "3a12a518a499",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-coding-mxfp8",
+      "tag": "27b-coding-mxfp8",
+      "digest": "55e00ff2ac60",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-coding-nvfp4",
+      "tag": "27b-coding-nvfp4",
+      "digest": "42a2d9de99b0",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-mlx",
+      "tag": "27b-mlx",
+      "digest": "d49fd9e0da45",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-mlx-bf16",
+      "tag": "27b-mlx-bf16",
+      "digest": "a5a683796d20",
+      "availability": "local",
+      "download_size_bytes": 56000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-mtp-bf16",
+      "tag": "27b-mtp-bf16",
+      "digest": "df430f32c9db",
+      "availability": "local",
+      "download_size_bytes": 56000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-mtp-q4_K_M",
+      "tag": "27b-mtp-q4_K_M",
+      "digest": "9d5803d493a9",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-mtp-q8_0",
+      "tag": "27b-mtp-q8_0",
+      "digest": "7e11e6ecb134",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-mxfp8",
+      "tag": "27b-mxfp8",
+      "digest": "4ef566e80abd",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-nvfp4",
+      "tag": "27b-nvfp4",
+      "digest": "d49fd9e0da45",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-q4_K_M",
+      "tag": "27b-q4_K_M",
+      "digest": "3a40c32f1450",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:27b-q8_0",
+      "tag": "27b-q8_0",
+      "digest": "cd0210c667bf",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b",
+      "tag": "35b",
+      "digest": "096fdbd02fe6",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "35b",
+        "total_billion": 35.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b",
+      "tag": "35b-a3b",
+      "digest": "096fdbd02fe6",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-bf16",
+      "tag": "35b-a3b-bf16",
+      "digest": "94061ddd23a7",
+      "availability": "local",
+      "download_size_bytes": 71000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-coding",
+      "tag": "35b-a3b-coding",
+      "digest": "6f7983cafbe2",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-coding-bf16",
+      "tag": "35b-a3b-coding-bf16",
+      "digest": "8d3c7ad727e7",
+      "availability": "local",
+      "download_size_bytes": 70000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-coding-mtp-q4_K_M",
+      "tag": "35b-a3b-coding-mtp-q4_K_M",
+      "digest": "6f7983cafbe2",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-coding-mxfp8",
+      "tag": "35b-a3b-coding-mxfp8",
+      "digest": "47f49b2845d7",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-coding-nvfp4",
+      "tag": "35b-a3b-coding-nvfp4",
+      "digest": "cd2692a833e6",
+      "availability": "local",
+      "download_size_bytes": 22000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-mlx-bf16",
+      "tag": "35b-a3b-mlx-bf16",
+      "digest": "bbf3a1458a4f",
+      "availability": "local",
+      "download_size_bytes": 72000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-mtp-bf16",
+      "tag": "35b-a3b-mtp-bf16",
+      "digest": "42f15217f5ae",
+      "availability": "local",
+      "download_size_bytes": 72000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-mtp-q4_K_M",
+      "tag": "35b-a3b-mtp-q4_K_M",
+      "digest": "096fdbd02fe6",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-mtp-q8_0",
+      "tag": "35b-a3b-mtp-q8_0",
+      "digest": "c61138a79add",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-mxfp8",
+      "tag": "35b-a3b-mxfp8",
+      "digest": "9e9c1b51dd90",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-nvfp4",
+      "tag": "35b-a3b-nvfp4",
+      "digest": "e92a3e94bbca",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-q4_K_M",
+      "tag": "35b-a3b-q4_K_M",
+      "digest": "07d35212591f",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-a3b-q8_0",
+      "tag": "35b-a3b-q8_0",
+      "digest": "0218f872e86b",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-coding",
+      "tag": "35b-coding",
+      "digest": "6f7983cafbe2",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "35b",
+        "total_billion": 35.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:35b-mlx",
+      "tag": "35b-mlx",
+      "digest": "e92a3e94bbca",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "35b",
+        "total_billion": 35.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.6:latest",
+      "tag": "latest",
+      "digest": "096fdbd02fe6",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

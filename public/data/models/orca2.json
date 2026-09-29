@@ -1,0 +1,707 @@
+{
+  "slug": "orca2",
+  "name": "orca2",
+  "description": "Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models.  The model is designed to excel particularly in reasoning.",
+  "source_url": "https://ollama.com/library/orca2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 951000,
+  "tag_count": 33,
+  "source_updated_at": "2023-11-22T22:13:00Z",
+  "parameter_sizes": [
+    "7b",
+    "13b"
+  ],
+  "min_download_size_bytes": 2800000000,
+  "max_download_size_bytes": 26000000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 33,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "orca2:latest",
+    "tag": "latest",
+    "digest": "ea98cc422de3",
+    "availability": "local",
+    "download_size_bytes": 3800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "orca2:7b-q2_K",
+    "tag": "7b-q2_K",
+    "digest": "2f2dab4b40ee",
+    "availability": "local",
+    "download_size_bytes": 2800000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "orca2:13b",
+      "tag": "13b",
+      "digest": "a8dcfac3ac32",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-fp16",
+      "tag": "13b-fp16",
+      "digest": "05c18f850182",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q2_K",
+      "tag": "13b-q2_K",
+      "digest": "1894951dcdf4",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q3_K_L",
+      "tag": "13b-q3_K_L",
+      "digest": "9fcd1fe1c136",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q3_K_M",
+      "tag": "13b-q3_K_M",
+      "digest": "bfb9c1d63867",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q3_K_S",
+      "tag": "13b-q3_K_S",
+      "digest": "2f11b018f3d9",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q4_0",
+      "tag": "13b-q4_0",
+      "digest": "a8dcfac3ac32",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q4_1",
+      "tag": "13b-q4_1",
+      "digest": "5f4ea0781d67",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q4_K_M",
+      "tag": "13b-q4_K_M",
+      "digest": "d379f87d30c1",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q4_K_S",
+      "tag": "13b-q4_K_S",
+      "digest": "474f0b43f3d9",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q5_0",
+      "tag": "13b-q5_0",
+      "digest": "eee22c031e7b",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q5_1",
+      "tag": "13b-q5_1",
+      "digest": "3a321577ac7e",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q5_K_M",
+      "tag": "13b-q5_K_M",
+      "digest": "d5e443067226",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q5_K_S",
+      "tag": "13b-q5_K_S",
+      "digest": "f8e9283dfba9",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q6_K",
+      "tag": "13b-q6_K",
+      "digest": "4c059cbdfec7",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:13b-q8_0",
+      "tag": "13b-q8_0",
+      "digest": "4e9ddd77d77f",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b",
+      "tag": "7b",
+      "digest": "ea98cc422de3",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-fp16",
+      "tag": "7b-fp16",
+      "digest": "61bd6364c766",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q2_K",
+      "tag": "7b-q2_K",
+      "digest": "2f2dab4b40ee",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q3_K_L",
+      "tag": "7b-q3_K_L",
+      "digest": "49d05d9decd4",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q3_K_M",
+      "tag": "7b-q3_K_M",
+      "digest": "d4399b54aee2",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q3_K_S",
+      "tag": "7b-q3_K_S",
+      "digest": "f0dd7ec070fa",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q4_0",
+      "tag": "7b-q4_0",
+      "digest": "ea98cc422de3",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q4_1",
+      "tag": "7b-q4_1",
+      "digest": "3fea2b93215d",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q4_K_M",
+      "tag": "7b-q4_K_M",
+      "digest": "93619d71625e",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q4_K_S",
+      "tag": "7b-q4_K_S",
+      "digest": "d535ef02a017",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q5_0",
+      "tag": "7b-q5_0",
+      "digest": "0da3e963986f",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q5_1",
+      "tag": "7b-q5_1",
+      "digest": "9e505122b129",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q5_K_M",
+      "tag": "7b-q5_K_M",
+      "digest": "156c325b1780",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q5_K_S",
+      "tag": "7b-q5_K_S",
+      "digest": "8e8d3fad4a9c",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q6_K",
+      "tag": "7b-q6_K",
+      "digest": "5268e870e74e",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:7b-q8_0",
+      "tag": "7b-q8_0",
+      "digest": "74bc8213e567",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "orca2:latest",
+      "tag": "latest",
+      "digest": "ea98cc422de3",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "slug": "magicoder",
+  "name": "magicoder",
+  "description": "🎩 Magicoder is a family of 7B parameter models trained on 75K synthetic instruction data using OSS-Instruct, a novel approach to enlightening LLMs with open-source code snippets.",
+  "source_url": "https://ollama.com/library/magicoder",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 563200,
+  "tag_count": 18,
+  "source_updated_at": "2023-12-05T23:59:00Z",
+  "parameter_sizes": [
+    "7b"
+  ],
+  "min_download_size_bytes": 2800000000,
+  "max_download_size_bytes": 13000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 18,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "magicoder:latest",
+    "tag": "latest",
+    "digest": "8007de06f5d9",
+    "availability": "local",
+    "download_size_bytes": 3800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "magicoder:7b-s-cl-q2_K",
+    "tag": "7b-s-cl-q2_K",
+    "digest": "86fd329c64b6",
+    "availability": "local",
+    "download_size_bytes": 2800000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "magicoder:7b",
+      "tag": "7b",
+      "digest": "8007de06f5d9",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl",
+      "tag": "7b-s-cl",
+      "digest": "8007de06f5d9",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-fp16",
+      "tag": "7b-s-cl-fp16",
+      "digest": "859e1ae4f566",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q2_K",
+      "tag": "7b-s-cl-q2_K",
+      "digest": "86fd329c64b6",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q3_K_L",
+      "tag": "7b-s-cl-q3_K_L",
+      "digest": "2bf1232fd9c1",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q3_K_M",
+      "tag": "7b-s-cl-q3_K_M",
+      "digest": "b2a3d9987ff3",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q3_K_S",
+      "tag": "7b-s-cl-q3_K_S",
+      "digest": "b7e2d7a303f8",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q4_0",
+      "tag": "7b-s-cl-q4_0",
+      "digest": "8007de06f5d9",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q4_1",
+      "tag": "7b-s-cl-q4_1",
+      "digest": "b29bf322a686",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q4_K_M",
+      "tag": "7b-s-cl-q4_K_M",
+      "digest": "902b6b028113",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q4_K_S",
+      "tag": "7b-s-cl-q4_K_S",
+      "digest": "42b56dd9b1da",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q5_0",
+      "tag": "7b-s-cl-q5_0",
+      "digest": "10fa66c827ee",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q5_1",
+      "tag": "7b-s-cl-q5_1",
+      "digest": "7da1fdad5251",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q5_K_M",
+      "tag": "7b-s-cl-q5_K_M",
+      "digest": "057c4f587f41",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q5_K_S",
+      "tag": "7b-s-cl-q5_K_S",
+      "digest": "ce0b81d40da6",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q6_K",
+      "tag": "7b-s-cl-q6_K",
+      "digest": "cf853951ae4a",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:7b-s-cl-q8_0",
+      "tag": "7b-s-cl-q8_0",
+      "digest": "96b5e4193464",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "magicoder:latest",
+      "tag": "latest",
+      "digest": "8007de06f5d9",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "slug": "nemotron-3-super",
+  "name": "nemotron-3-super",
+  "description": "NVIDIA Nemotron 3 Super is a 120B open MoE model activating just 12B parameters to deliver maximum compute efficiency and accuracy for complex multi-agent applications.",
+  "source_url": "https://ollama.com/library/nemotron-3-super",
+  "status": "active",
+  "availability": "both",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 3000000,
+  "tag_count": 7,
+  "source_updated_at": "2026-03-11T16:00:00Z",
+  "parameter_sizes": [
+    "120b",
+    "120b-a12b"
+  ],
+  "min_download_size_bytes": 87000000000,
+  "max_download_size_bytes": 247000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 6,
+  "cloud_variant_count": 1,
+  "default_variant": {
+    "ref": "nemotron-3-super:latest",
+    "tag": "latest",
+    "digest": "95acc78b3ffd",
+    "availability": "local",
+    "download_size_bytes": 87000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nemotron-3-super:120b",
+    "tag": "120b",
+    "digest": "95acc78b3ffd",
+    "availability": "local",
+    "download_size_bytes": 87000000000,
+    "parameter": {
+      "raw": "120b",
+      "total_billion": 120.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": {
+    "ref": "nemotron-3-super:cloud",
+    "tag": "cloud",
+    "digest": "be3943c5a818",
+    "availability": "cloud",
+    "download_size_bytes": null,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nemotron-3-super:120b",
+      "tag": "120b",
+      "digest": "95acc78b3ffd",
+      "availability": "local",
+      "download_size_bytes": 87000000000,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-super:120b-a12b",
+      "tag": "120b-a12b",
+      "digest": "95acc78b3ffd",
+      "availability": "local",
+      "download_size_bytes": 87000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-super:120b-a12b-bf16",
+      "tag": "120b-a12b-bf16",
+      "digest": "c14fcbcdc70e",
+      "availability": "local",
+      "download_size_bytes": 247000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-super:120b-a12b-q4_K_M",
+      "tag": "120b-a12b-q4_K_M",
+      "digest": "95acc78b3ffd",
+      "availability": "local",
+      "download_size_bytes": 87000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-super:120b-a12b-q8_0",
+      "tag": "120b-a12b-q8_0",
+      "digest": "b935f8ec0f40",
+      "availability": "local",
+      "download_size_bytes": 132000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-super:cloud",
+      "tag": "cloud",
+      "digest": "be3943c5a818",
+      "availability": "cloud",
+      "download_size_bytes": null,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-super:latest",
+      "tag": "latest",
+      "digest": "95acc78b3ffd",
+      "availability": "local",
+      "download_size_bytes": 87000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

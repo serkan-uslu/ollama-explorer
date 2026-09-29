@@ -1,0 +1,411 @@
+{
+  "slug": "athene-v2",
+  "name": "athene-v2",
+  "description": "Athene-V2 is a 72B parameter model which excels at code completion, mathematics, and log extraction tasks.",
+  "source_url": "https://ollama.com/library/athene-v2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 597200,
+  "tag_count": 17,
+  "source_updated_at": "2024-11-15T23:37:00Z",
+  "parameter_sizes": [
+    "72b"
+  ],
+  "min_download_size_bytes": 30000000000,
+  "max_download_size_bytes": 145000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 17,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "athene-v2:latest",
+    "tag": "latest",
+    "digest": "d14346ed7d55",
+    "availability": "local",
+    "download_size_bytes": 47000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "athene-v2:72b-q2_K",
+    "tag": "72b-q2_K",
+    "digest": "e566d713f2ce",
+    "availability": "local",
+    "download_size_bytes": 30000000000,
+    "parameter": {
+      "raw": "72b",
+      "total_billion": 72.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "athene-v2:72b",
+      "tag": "72b",
+      "digest": "d14346ed7d55",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-fp16",
+      "tag": "72b-fp16",
+      "digest": "1efa8264c375",
+      "availability": "local",
+      "download_size_bytes": 145000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q2_K",
+      "tag": "72b-q2_K",
+      "digest": "e566d713f2ce",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q3_K_L",
+      "tag": "72b-q3_K_L",
+      "digest": "b05ead18ed8a",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q3_K_M",
+      "tag": "72b-q3_K_M",
+      "digest": "f74199e5b2ed",
+      "availability": "local",
+      "download_size_bytes": 38000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q3_K_S",
+      "tag": "72b-q3_K_S",
+      "digest": "c213bdad39e6",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q4_0",
+      "tag": "72b-q4_0",
+      "digest": "5ce9f00e1aaa",
+      "availability": "local",
+      "download_size_bytes": 41000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q4_1",
+      "tag": "72b-q4_1",
+      "digest": "3e10d6a1cc6c",
+      "availability": "local",
+      "download_size_bytes": 46000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q4_K_M",
+      "tag": "72b-q4_K_M",
+      "digest": "d14346ed7d55",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q4_K_S",
+      "tag": "72b-q4_K_S",
+      "digest": "1bb9b315e5a1",
+      "availability": "local",
+      "download_size_bytes": 44000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q5_0",
+      "tag": "72b-q5_0",
+      "digest": "2d45e35efb78",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q5_1",
+      "tag": "72b-q5_1",
+      "digest": "17eadb34276c",
+      "availability": "local",
+      "download_size_bytes": 55000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q5_K_M",
+      "tag": "72b-q5_K_M",
+      "digest": "d82d1d08a629",
+      "availability": "local",
+      "download_size_bytes": 54000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q5_K_S",
+      "tag": "72b-q5_K_S",
+      "digest": "f3b97798cb4b",
+      "availability": "local",
+      "download_size_bytes": 51000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q6_K",
+      "tag": "72b-q6_K",
+      "digest": "70b90bce364f",
+      "availability": "local",
+      "download_size_bytes": 64000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:72b-q8_0",
+      "tag": "72b-q8_0",
+      "digest": "4ce011a86fef",
+      "availability": "local",
+      "download_size_bytes": 77000000000,
+      "parameter": {
+        "raw": "72b",
+        "total_billion": 72.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "athene-v2:latest",
+      "tag": "latest",
+      "digest": "d14346ed7d55",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

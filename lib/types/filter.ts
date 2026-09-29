@@ -1,53 +1,64 @@
-import type { Capability, Complexity, Domain, SpeedTier } from './model';
+import type { Availability, BrowseSort } from './model';
 
-export interface ParamSizeBucket {
+export type AvailabilityFilter = Exclude<Availability, 'both'> | 'all';
+
+export interface RangeOption {
+  value: string;
   label: string;
   min: number;
   max: number;
+  maxInclusive: boolean;
 }
 
-export interface RamBucket {
+export interface ChoiceOption {
+  value: string;
   label: string;
-  min: number;
-  max: number;
-}
-
-export interface ContextWindowBucket {
-  label: string;
-  min: number;
-  max: number;
 }
 
 export interface FilterOptions {
-  capabilities: Capability[];
-  domains: Domain[];
-  useCases: string[];
-  complexities: Complexity[];
-  languages: string[];
-  speedTiers: SpeedTier[];
-  modelFamilies: string[];
-  creatorOrgs: string[];
-  applications: string[];
-  paramSizeBuckets: ParamSizeBucket[];
-  ramBuckets: RamBucket[];
-  contextWindowBuckets: ContextWindowBucket[];
+  tasks: ChoiceOption[];
+  availabilities: ChoiceOption[];
+  capabilities: ChoiceOption[];
+  applications: ChoiceOption[];
+  modalities: ChoiceOption[];
+  quantizations: ChoiceOption[];
+  families: ChoiceOption[];
+  licenses: ChoiceOption[];
+  parameterBuckets: RangeOption[];
+  memoryBudgets: ChoiceOption[];
+  contextThresholds: ChoiceOption[];
+  updatedRanges: ChoiceOption[];
 }
 
 export interface ActiveFilters {
   search: string;
-  capabilities: Capability[];
-  domains: Domain[];
-  useCases: string[];
-  complexities: Complexity[];
-  languages: string[];
-  speedTiers: SpeedTier[];
-  modelFamilies: string[];
-  creatorOrgs: string[];
+  availability: AvailabilityFilter;
+  tasks: string[];
+  capabilities: string[];
   applications: string[];
-  isFineTuned: boolean | null;
-  isUncensored: boolean | null;
-  paramSizeBucket: string | null;
-  ramBucket: string | null;
-  contextWindowBucket: string | null;
-  sort: string;
+  modalities: string[];
+  quantizations: string[];
+  families: string[];
+  licenses: string[];
+  parameterBuckets: string[];
+  memory: number | null;
+  context: number | null;
+  updatedWithinDays: number | null;
+  sort: BrowseSort;
+  page: number;
+}
+
+export interface FacetCounts {
+  availability: Record<string, number>;
+  tasks: Record<string, number>;
+  capabilities: Record<string, number>;
+  applications: Record<string, number>;
+  modalities: Record<string, number>;
+  quantizations: Record<string, number>;
+  families: Record<string, number>;
+  licenses: Record<string, number>;
+  parameters: Record<string, number>;
+  memory: Record<string, number>;
+  context: Record<string, number>;
+  updated: Record<string, number>;
 }

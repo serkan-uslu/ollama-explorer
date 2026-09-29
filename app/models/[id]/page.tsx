@@ -1,18 +1,22 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle2, XCircle, Terminal } from 'lucide-react';
-import { getAllModels, getModelById, getRelatedModels } from '@/lib/data/models';
+import { ArrowLeft, Cloud, HardDrive, Layers3 } from 'lucide-react';
+import {
+  getAllModelKeys,
+  getCatalog,
+  getLegacyIdMap,
+  getModelDetail,
+  getRelatedModels,
+} from '@/lib/data/models';
 import { Badge } from '@/components/ui/atoms/Badge';
-import { Button } from '@/components/ui/atoms/Button';
 import { Divider } from '@/components/ui/atoms/Divider';
 import { JsonLd } from '@/components/ui/atoms/JsonLd';
 import { CopyCommand } from '@/components/ui/molecules/CopyCommand';
 import { DetailLayout } from '@/components/templates/DetailLayout';
 import { ModelDetailActions } from '@/components/features/models/ModelDetailActions';
-import { formatPulls, formatRam, formatDate, formatContextWindow } from '@/lib/utils/format';
-import { getDomainAccent } from '@/lib/utils/domain';
-import { normalizeCreatorOrg } from '@/lib/utils/normalize';
+import { VariantTable } from '@/components/features/models/VariantTable';
+import { formatBytes, formatContextWindow, formatDate, formatPulls } from '@/lib/utils/format';
 
 export const dynamic = 'force-static';
 
@@ -20,80 +24,56 @@ interface PageProps {
   params: Promise<{ id: string }>;
 }
 
-export async function generateStaticParams() {
-  const models = getAllModels();
-  return models.map((m) => ({ id: m.id }));
+export function generateStaticParams() {
+  return getAllModelKeys().flatMap(({ slug, legacyIds }) =>
+    [slug, ...legacyIds].map((id) => ({ id })),
+  );
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
-  const model = getModelById(id);
+  const model = getModelDetail(id);
   if (!model) return {};
 
-  const url = `https://ollama-explorer.vercel.app/models/${model.id}`;
-  const keywords = [
-    model.model_name,
-    model.domain,
-    ...model.capabilities,
-    ...(model.use_cases ?? []),
-    'ollama',
-    'AI model',
-    'LLM',
-  ].filter(Boolean);
-
+  const url = `https://ollama-explorer.vercel.app/models/${model.slug}`;
   return {
-    title: model.model_name,
+    title: model.name,
     description: model.description,
-    keywords,
+    keywords: [model.name, ...model.capabilities, ...model.applications, 'ollama', 'local AI'],
     alternates: { canonical: url },
+    robots: model.status === 'unlisted' ? { index: false, follow: true } : undefined,
     openGraph: {
       type: 'article',
       url,
-      title: `${model.model_name} | Ollama Model Explorer`,
+      title: `${model.name} | Ollama Model Explorer`,
       description: model.description,
-    },
-    twitter: {
-      card: 'summary',
-      title: `${model.model_name} | Ollama Model Explorer`,
-      description: model.description,
+      images: ['/opengraph-image'],
     },
   };
 }
 
 export default async function ModelDetailPage({ params }: PageProps) {
   const { id } = await params;
-  const model = getModelById(id);
+  const legacySlug = getLegacyIdMap()[id];
+  if (legacySlug) permanentRedirect(`/models/${legacySlug}`);
+
+  const model = getModelDetail(id);
   if (!model) notFound();
 
-  const url = `https://ollama-explorer.vercel.app/models/${model.id}`;
+  const catalog = getCatalog();
+  const url = `https://ollama-explorer.vercel.app/models/${model.slug}`;
   const related = getRelatedModels(model, 4);
-
-  const strengths = model.strengths ?? [];
-  const limitations = model.limitations ?? [];
-  const accentColor = getDomainAccent(model.domain);
-  const creatorDisplay = normalizeCreatorOrg(model.creator_org);
-
-  // Deduplicate memory_requirements: keep first occurrence of each normalised base tag
-  // e.g. "llama3.1:latest" and "latest" both normalise to "latest" — keep the full-qualified one
-  const seenBaseTags = new Set<string>();
-  const dedupedRequirements = model.memory_requirements.filter((r) => {
-    const base = r.tag.includes(':') ? r.tag.split(':')[1] : r.tag;
-    if (seenBaseTags.has(base)) return false;
-    seenBaseTags.add(base);
-    return true;
-  });
+  const defaultVariant = model.default_variant ?? model.smallest_local_variant;
 
   const softwareSchema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: model.model_name,
+    name: model.name,
     description: model.description,
     url,
     applicationCategory: 'AI / Machine Learning',
     operatingSystem: 'Linux, macOS, Windows',
-    keywords: [model.domain, ...model.capabilities, ...(model.use_cases ?? [])]
-      .filter(Boolean)
-      .join(', '),
+    keywords: [...model.capabilities, ...model.applications].join(', '),
   };
 
   const breadcrumbSchema = {
@@ -112,7 +92,7 @@ export default async function ModelDetailPage({ params }: PageProps) {
         name: 'Models',
         item: 'https://ollama-explorer.vercel.app/models',
       },
-      { '@type': 'ListItem', position: 3, name: model.model_name, item: url },
+      { '@type': 'ListItem', position: 3, name: model.name, item: url },
     ],
   };
 
@@ -123,293 +103,138 @@ export default async function ModelDetailPage({ params }: PageProps) {
       <DetailLayout
         back={
           <div className="flex flex-col gap-2">
-            {/* Breadcrumb nav — visible UI */}
             <nav
               aria-label="Breadcrumb"
-              className="flex items-center gap-1.5 text-xs text-[var(--color-text-subtle)]"
+              className="flex min-w-0 items-center gap-1.5 overflow-hidden text-xs text-[var(--color-text-subtle)]"
             >
-              <Link href="/" className="hover:text-[var(--color-text-muted)] transition-colors">
+              <Link
+                href="/"
+                className="inline-flex min-h-11 shrink-0 items-center px-2 hover:text-[var(--color-text)]"
+              >
                 Home
               </Link>
-              <span aria-hidden>/</span>
+              <span className="shrink-0" aria-hidden>
+                /
+              </span>
               <Link
                 href="/models"
-                className="hover:text-[var(--color-text-muted)] transition-colors"
+                className="inline-flex min-h-11 shrink-0 items-center px-2 hover:text-[var(--color-text)]"
               >
                 Models
               </Link>
-              <span aria-hidden>/</span>
-              <span className="text-[var(--color-text-muted)] truncate max-w-[160px]">
-                {model.model_name}
+              <span className="shrink-0" aria-hidden>
+                /
               </span>
+              <span className="min-w-0 truncate text-[var(--color-text-muted)]">{model.name}</span>
             </nav>
-            <Link href="/models">
-              <Button variant="ghost" size="sm">
-                <ArrowLeft size={14} />
-                Back to models
-              </Button>
+            <Link
+              href="/models"
+              className="inline-flex min-h-11 w-fit items-center gap-2 rounded-[var(--radius-md)] px-3 text-sm text-[var(--color-text-muted)] hover:bg-[var(--color-bg-muted)] hover:text-[var(--color-text)]"
+            >
+              <ArrowLeft size={15} aria-hidden />
+              Back to models
             </Link>
           </div>
         }
         header={
           <div className="flex flex-col gap-3">
+            {model.status === 'unlisted' && (
+              <p className="rounded-[var(--radius-md)] border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-[var(--color-text)]">
+                This model is no longer listed in the current Ollama catalog. This page is kept so
+                old links continue to work.
+              </p>
+            )}
             <div className="flex flex-wrap items-center gap-2">
-              <Badge
-                variant="default"
-                style={{ background: accentColor, color: '#fff', borderColor: accentColor }}
-              >
-                {model.domain}
+              <Badge variant={model.availability === 'cloud' ? 'muted' : 'default'}>
+                {model.availability}
               </Badge>
-              <Badge variant="outline">{model.complexity}</Badge>
-              {model.capabilities.map((cap) => (
-                <Badge key={cap} variant="outline">
-                  {cap}
+              {model.capabilities.map((capability) => (
+                <Badge key={capability} variant="outline">
+                  {capability}
                 </Badge>
               ))}
             </div>
-            <h1 className="flex items-center gap-2.5 text-2xl sm:text-3xl font-semibold text-[var(--color-text)] tracking-tight">
-              <span
-                className="inline-block w-3 h-3 rounded-full shrink-0"
-                style={{ background: accentColor }}
-              />
-              {model.model_name}
+            <h1 className="text-2xl font-semibold tracking-tight break-words text-[var(--color-text)] [overflow-wrap:anywhere] sm:text-3xl">
+              {model.name}
             </h1>
-            {(creatorDisplay || model.model_family) && (
-              <p className="flex items-center gap-1.5 text-sm text-[var(--color-text-subtle)]">
-                {creatorDisplay && <span>{creatorDisplay}</span>}
-                {creatorDisplay && model.model_family && <span aria-hidden>·</span>}
-                {model.model_family && <span>{model.model_family}</span>}
-              </p>
-            )}
-            <p className="text-base text-[var(--color-text-muted)] max-w-2xl leading-relaxed">
+            <p className="max-w-3xl text-base leading-relaxed text-[var(--color-text-muted)]">
               {model.description}
             </p>
-            <div className="flex flex-wrap gap-4 text-sm text-[var(--color-text-subtle)]">
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--color-text-subtle)]">
               <span>{formatPulls(model.pulls)} pulls</span>
-              <span>Updated {formatDate(model.last_updated)}</span>
-              <span>{model.tags} tags</span>
-              {model.context_window > 0 && (
-                <span>{formatContextWindow(model.context_window)} context</span>
+              <span>{model.tag_count} tags</span>
+              <span>Source updated {formatDate(model.source_updated_at)}</span>
+              {model.max_context_window && (
+                <span>{formatContextWindow(model.max_context_window)} max context</span>
               )}
             </div>
           </div>
         }
         main={
           <>
-            {/* Quick run command */}
-            <section>
-              <h2 className="text-sm font-semibold text-[var(--color-text)] mb-3">Quick start</h2>
-              <CopyCommand
-                command={`ollama run ${model.model_identifier}`}
-                modelName={model.model_name}
-                modelIdentifier={model.model_identifier}
-              />
-            </section>
-
-            <Divider />
-
-            {/* Memory requirements table */}
-            <section>
-              <h2 className="text-sm font-semibold text-[var(--color-text)] mb-3">
-                Available sizes
+            <section aria-labelledby="quick-start-heading">
+              <h2
+                id="quick-start-heading"
+                className="mb-3 text-sm font-semibold text-[var(--color-text)]"
+              >
+                Quick start
               </h2>
-              <div className="overflow-x-auto -mx-4 sm:mx-0">
-                <table className="min-w-full text-xs border-collapse">
-                  <thead>
-                    <tr className="border-b border-[var(--color-border)] bg-[var(--color-bg-subtle)]">
-                      {['Tag', 'Size', 'Quantization', 'Context', 'Min RAM'].map((h) => (
-                        <th
-                          key={h}
-                          className="text-left px-4 sm:px-3 py-2.5 font-medium text-[var(--color-text-subtle)] whitespace-nowrap first:pl-4 sm:first:pl-0"
-                        >
-                          {h}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {dedupedRequirements.map((r, i) => (
-                      <tr
-                        key={i}
-                        className="border-b border-[var(--color-border)] hover:bg-[var(--color-bg-subtle)] transition-colors"
-                      >
-                        <td className="px-4 sm:px-3 py-2.5 font-mono text-[var(--color-text-muted)] whitespace-nowrap first:pl-4 sm:first:pl-0">
-                          {r.tag}
-                        </td>
-                        <td className="px-4 sm:px-3 py-2.5 text-[var(--color-text-muted)] whitespace-nowrap">
-                          {r.size}
-                        </td>
-                        <td className="px-4 sm:px-3 py-2.5 text-[var(--color-text-subtle)] whitespace-nowrap">
-                          {r.quantization}
-                        </td>
-                        <td className="px-4 sm:px-3 py-2.5 text-[var(--color-text-subtle)] whitespace-nowrap">
-                          {r.context}
-                        </td>
-                        <td className="px-4 sm:px-3 py-2.5 text-[var(--color-text-muted)] whitespace-nowrap">
-                          {formatRam(r.recommended_ram_gb)}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              {defaultVariant ? (
+                <CopyCommand command={`ollama run ${defaultVariant.ref}`} modelName={model.name} />
+              ) : (
+                <p className="text-sm text-[var(--color-text-muted)]">
+                  No runnable local tag is currently available.
+                </p>
+              )}
             </section>
 
             <Divider />
 
-            {/* Applications */}
-            {model.applications && model.applications.length > 0 && (
+            <VariantTable variants={model.variants} modelName={model.name} />
+
+            {model.applications.length > 0 && (
               <>
+                <Divider />
                 <section>
-                  <h2 className="text-sm font-semibold text-[var(--color-text)] mb-3">Run with</h2>
-                  <div className="flex flex-col gap-2">
-                    {model.applications.map((app) => (
-                      <div
-                        key={app.name}
-                        className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 p-3 rounded-[var(--radius-md)] bg-[var(--color-bg-subtle)] border border-[var(--color-border)]"
-                      >
-                        <div className="flex items-center gap-2 min-w-0 sm:w-32 shrink-0">
-                          <Terminal
-                            size={13}
-                            className="shrink-0 text-[var(--color-text-subtle)]"
-                          />
-                          <span className="text-xs font-medium text-[var(--color-text)]">
-                            {app.name}
-                          </span>
-                        </div>
-                        <code className="text-xs font-mono text-[var(--color-text-muted)] bg-[var(--color-bg-muted)] px-2 py-1 rounded truncate">
-                          {app.launch_command}
-                        </code>
-                      </div>
+                  <h2 className="mb-3 text-sm font-semibold text-[var(--color-text)]">
+                    Source-listed applications
+                  </h2>
+                  <div className="flex flex-wrap gap-2">
+                    {model.applications.map((application) => (
+                      <Badge key={application} variant="outline">
+                        {application}
+                      </Badge>
                     ))}
                   </div>
                 </section>
-                <Divider />
               </>
             )}
 
-            {/* Strengths & Limitations */}
-            {(strengths.length > 0 || limitations.length > 0) && (
-              <section>
-                <h2 className="text-sm font-semibold text-[var(--color-text)] mb-4">
-                  Strengths &amp; Limitations
-                </h2>
-                <div className="grid sm:grid-cols-2 gap-6">
-                  {strengths.length > 0 && (
-                    <div className="flex flex-col gap-2.5">
-                      <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide">
-                        Strengths
-                      </p>
-                      <ul className="flex flex-col gap-2">
-                        {strengths.map((s) => (
-                          <li
-                            key={s}
-                            className="flex items-start gap-2 text-xs text-[var(--color-text-muted)] leading-relaxed"
-                          >
-                            <CheckCircle2 size={13} className="shrink-0 mt-0.5 text-emerald-500" />
-                            {s}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  {limitations.length > 0 && (
-                    <div className="flex flex-col gap-2.5">
-                      <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide">
-                        Limitations
-                      </p>
-                      <ul className="flex flex-col gap-2">
-                        {limitations.map((l) => (
-                          <li
-                            key={l}
-                            className="flex items-start gap-2 text-xs text-[var(--color-text-muted)] leading-relaxed"
-                          >
-                            <XCircle size={13} className="shrink-0 mt-0.5 text-orange-400" />
-                            {l}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              </section>
-            )}
-
-            {/* Benchmark Scores */}
-            {model.benchmark_scores && model.benchmark_scores.length > 0 && (
-              <>
-                <Divider />
-                <section>
-                  <h2 className="text-sm font-semibold text-[var(--color-text)] mb-3">
-                    Benchmarks
-                  </h2>
-                  <div className="overflow-x-auto -mx-4 sm:mx-0">
-                    <table className="min-w-full text-xs border-collapse">
-                      <thead>
-                        <tr className="border-b border-[var(--color-border)] bg-[var(--color-bg-subtle)]">
-                          {['Benchmark', 'Score', 'Unit'].map((h) => (
-                            <th
-                              key={h}
-                              className="text-left px-4 sm:px-3 py-2.5 font-medium text-[var(--color-text-subtle)] whitespace-nowrap first:pl-4 sm:first:pl-0"
-                            >
-                              {h}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {model.benchmark_scores.map((b) => (
-                          <tr
-                            key={b.name}
-                            className="border-b border-[var(--color-border)] hover:bg-[var(--color-bg-subtle)] transition-colors"
-                          >
-                            <td className="px-4 sm:px-3 py-2.5 font-medium text-[var(--color-text-muted)] whitespace-nowrap first:pl-4 sm:first:pl-0">
-                              {b.name}
-                            </td>
-                            <td className="px-4 sm:px-3 py-2.5 text-[var(--color-text)] tabular-nums whitespace-nowrap">
-                              {b.score !== null ? b.score : '—'}
-                            </td>
-                            <td className="px-4 sm:px-3 py-2.5 text-[var(--color-text-subtle)] whitespace-nowrap">
-                              {b.unit ?? '—'}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </section>
-              </>
-            )}
-
-            {/* Related models */}
             {related.length > 0 && (
               <>
                 <Divider />
                 <section>
-                  <h2 className="text-sm font-semibold text-[var(--color-text)] mb-4">
+                  <h2 className="mb-4 text-sm font-semibold text-[var(--color-text)]">
                     Related models
                   </h2>
-                  <div className="grid sm:grid-cols-2 gap-3">
-                    {related.map((rel) => (
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {related.map((candidate) => (
                       <Link
-                        key={rel.id}
-                        href={`/models/${rel.id}`}
-                        className="group flex flex-col gap-1.5 p-3.5 rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-bg-subtle)] shadow-[var(--shadow-sm)] hover:border-[var(--color-border-strong)] hover:bg-[var(--color-bg-muted)] transition-all"
+                        key={candidate.slug}
+                        href={`/models/${candidate.slug}`}
+                        className="rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-bg-subtle)] p-4 hover:border-[var(--color-border-strong)]"
                       >
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="text-xs font-semibold text-[var(--color-text)] group-hover:underline underline-offset-2">
-                            {rel.model_name}
+                        <div className="flex min-w-0 items-center justify-between gap-3">
+                          <span className="min-w-0 break-words font-medium text-[var(--color-text)] [overflow-wrap:anywhere]">
+                            {candidate.name}
                           </span>
                           <Badge variant="muted" size="sm">
-                            {rel.domain}
+                            {candidate.availability}
                           </Badge>
                         </div>
-                        <p className="text-xs text-[var(--color-text-subtle)] line-clamp-2 leading-relaxed">
-                          {rel.description}
+                        <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-[var(--color-text-muted)]">
+                          {candidate.description}
                         </p>
-                        <span className="text-xs text-[var(--color-text-subtle)]">
-                          {formatPulls(rel.pulls)} pulls
-                        </span>
                       </Link>
                     ))}
                   </div>
@@ -420,115 +245,57 @@ export default async function ModelDetailPage({ params }: PageProps) {
         }
         sidebar={
           <div className="flex flex-col gap-5">
-            {/* Creator / Family info */}
-            {(creatorDisplay || model.model_family) && (
-              <>
-                <div className="flex flex-col gap-2">
-                  {creatorDisplay && (
-                    <div>
-                      <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-1">
-                        Creator
-                      </p>
-                      <p className="text-sm text-[var(--color-text-muted)]">{creatorDisplay}</p>
-                    </div>
-                  )}
-                  {model.model_family && (
-                    <div>
-                      <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-1">
-                        Model family
-                      </p>
-                      <p className="text-sm text-[var(--color-text-muted)]">{model.model_family}</p>
-                    </div>
-                  )}
-                  {model.license && (
-                    <div>
-                      <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-1">
-                        License
-                      </p>
-                      <p className="text-sm text-[var(--color-text-muted)]">{model.license}</p>
-                    </div>
-                  )}
-                </div>
-                <Divider />
-              </>
-            )}
-
-            {/* Badges */}
-            <div className="flex flex-wrap gap-1.5">
-              {model.is_multimodal && <Badge variant="default">Multimodal</Badge>}
-              {model.is_fine_tuned && <Badge variant="outline">Fine-tuned</Badge>}
-              {model.is_uncensored && <Badge variant="outline">Uncensored</Badge>}
-            </div>
-
-            {/* Use cases */}
-            <div>
-              <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-2.5">
-                Use cases
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                {model.use_cases.map((uc) => (
-                  <Badge key={uc} variant="default">
-                    {uc}
-                  </Badge>
-                ))}
+            <div className="grid grid-cols-1 gap-3 min-[360px]:grid-cols-2 lg:grid-cols-1">
+              <div className="rounded-[var(--radius-md)] bg-[var(--color-bg-subtle)] p-3">
+                <HardDrive size={16} aria-hidden className="mb-2 text-[var(--color-text-subtle)]" />
+                <p className="text-xs text-[var(--color-text-subtle)]">Smallest download</p>
+                <p className="mt-1 text-sm font-medium text-[var(--color-text)]">
+                  {formatBytes(model.min_download_size_bytes)}
+                </p>
               </div>
-            </div>
-
-            {model.target_audience && model.target_audience.length > 0 && (
-              <>
-                <Divider />
-                <div>
-                  <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-2.5">
-                    Target audience
-                  </p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {model.target_audience.map((t) => (
-                      <Badge key={t} variant="muted">
-                        {t}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </>
-            )}
-
-            <Divider />
-
-            {/* Languages */}
-            <div>
-              <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-2.5">
-                Languages
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                {model.ai_languages.map((lang) => (
-                  <Badge key={lang} variant="outline">
-                    {lang}
-                  </Badge>
-                ))}
+              <div className="rounded-[var(--radius-md)] bg-[var(--color-bg-subtle)] p-3">
+                <Layers3 size={16} aria-hidden className="mb-2 text-[var(--color-text-subtle)]" />
+                <p className="text-xs text-[var(--color-text-subtle)]">Family</p>
+                <p className="mt-1 break-words text-sm font-medium text-[var(--color-text)] [overflow-wrap:anywhere]">
+                  {model.family ?? 'Unknown'}
+                </p>
+              </div>
+              <div className="rounded-[var(--radius-md)] bg-[var(--color-bg-subtle)] p-3 min-[360px]:col-span-2 lg:col-span-1">
+                <Cloud size={16} aria-hidden className="mb-2 text-[var(--color-text-subtle)]" />
+                <p className="text-xs text-[var(--color-text-subtle)]">Availability</p>
+                <p className="mt-1 text-sm font-medium capitalize text-[var(--color-text)]">
+                  {model.availability}
+                </p>
               </div>
             </div>
 
             <Divider />
 
-            {/* Best for */}
-            <div className="rounded-[var(--radius-md)] bg-[var(--color-bg-muted)] border border-[var(--color-border-strong)] p-4">
-              <p className="text-xs font-semibold text-[var(--color-text-subtle)] uppercase tracking-wide mb-2">
-                Best for
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-text-subtle)]">
+                License
               </p>
-              <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                {model.best_for}
+              <p className="text-sm text-[var(--color-text-muted)]">
+                {model.license ?? 'Not verified'}
+              </p>
+            </div>
+
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-text-subtle)]">
+                Catalog version
+              </p>
+              <p className="text-sm text-[var(--color-text-muted)]">
+                {formatDate(catalog.generated_at)} · schema v{catalog.schema_version}
               </p>
             </div>
 
             <Divider />
 
-            {/* External links with analytics tracking */}
             <ModelDetailActions
-              modelName={model.model_name}
-              modelId={model.id}
-              domain={model.domain}
-              ollamaUrl={model.url}
-              huggingFaceUrl={model.huggingface_url ?? undefined}
+              modelName={model.name}
+              modelSlug={model.slug}
+              availability={model.availability}
+              sourceUrl={model.source_url}
             />
           </div>
         }

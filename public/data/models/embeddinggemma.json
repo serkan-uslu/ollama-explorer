@@ -1,0 +1,150 @@
+{
+  "slug": "embeddinggemma",
+  "name": "embeddinggemma",
+  "description": "EmbeddingGemma is a 300M parameter embedding model from Google.",
+  "source_url": "https://ollama.com/library/embeddinggemma",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "embedding"
+  ],
+  "applications": [],
+  "pulls": 2300000,
+  "tag_count": 5,
+  "source_updated_at": "2025-09-09T00:17:00Z",
+  "parameter_sizes": [
+    "300m"
+  ],
+  "min_download_size_bytes": 239000000,
+  "max_download_size_bytes": 622000000,
+  "max_context_window": 2000,
+  "categories": [
+    "embedding"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "Q4_0",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": null,
+  "smallest_local_variant": {
+    "ref": "embeddinggemma:300m-qat-q4_0",
+    "tag": "300m-qat-q4_0",
+    "digest": "101341d65c2c",
+    "availability": "local",
+    "download_size_bytes": 239000000,
+    "parameter": {
+      "raw": "300m",
+      "total_billion": 0.3,
+      "active_billion": null
+    },
+    "quantization": "Q4_0",
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "embeddinggemma:300m",
+      "tag": "300m",
+      "digest": "85462619ee72",
+      "availability": "local",
+      "download_size_bytes": 622000000,
+      "parameter": {
+        "raw": "300m",
+        "total_billion": 0.3,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "embeddinggemma:300m-bf16",
+      "tag": "300m-bf16",
+      "digest": "85462619ee72",
+      "availability": "local",
+      "download_size_bytes": 622000000,
+      "parameter": {
+        "raw": "300m",
+        "total_billion": 0.3,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "embeddinggemma:300m-qat-q4_0",
+      "tag": "300m-qat-q4_0",
+      "digest": "101341d65c2c",
+      "availability": "local",
+      "download_size_bytes": 239000000,
+      "parameter": {
+        "raw": "300m",
+        "total_billion": 0.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "embeddinggemma:300m-qat-q8_0",
+      "tag": "300m-qat-q8_0",
+      "digest": "e84a7acc2394",
+      "availability": "local",
+      "download_size_bytes": 338000000,
+      "parameter": {
+        "raw": "300m",
+        "total_billion": 0.3,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "embeddinggemma:latest",
+      "tag": "latest",
+      "digest": "85462619ee72",
+      "availability": "local",
+      "download_size_bytes": 622000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

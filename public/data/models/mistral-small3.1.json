@@ -1,0 +1,181 @@
+{
+  "slug": "mistral-small3.1",
+  "name": "mistral-small3.1",
+  "description": "Building upon Mistral Small 3, Mistral Small 3.1 (2503) adds state-of-the-art vision understanding and enhances long context capabilities up to 128k tokens without compromising text performance.",
+  "source_url": "https://ollama.com/library/mistral-small3.1",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 793300,
+  "tag_count": 5,
+  "source_updated_at": "2025-04-07T16:59:00Z",
+  "parameter_sizes": [
+    "24b"
+  ],
+  "min_download_size_bytes": 15000000000,
+  "max_download_size_bytes": 48000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "mistral-small3.1:latest",
+    "tag": "latest",
+    "digest": "b9aaf0c2586a",
+    "availability": "local",
+    "download_size_bytes": 15000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "mistral-small3.1:24b",
+    "tag": "24b",
+    "digest": "b9aaf0c2586a",
+    "availability": "local",
+    "download_size_bytes": 15000000000,
+    "parameter": {
+      "raw": "24b",
+      "total_billion": 24.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "mistral-small3.1:24b",
+      "tag": "24b",
+      "digest": "b9aaf0c2586a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-small3.1:24b-instruct-2503-fp16",
+      "tag": "24b-instruct-2503-fp16",
+      "digest": "5b05d65a969a",
+      "availability": "local",
+      "download_size_bytes": 48000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-small3.1:24b-instruct-2503-q4_K_M",
+      "tag": "24b-instruct-2503-q4_K_M",
+      "digest": "b9aaf0c2586a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-small3.1:24b-instruct-2503-q8_0",
+      "tag": "24b-instruct-2503-q8_0",
+      "digest": "79252b8a3eb5",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-small3.1:latest",
+      "tag": "latest",
+      "digest": "b9aaf0c2586a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

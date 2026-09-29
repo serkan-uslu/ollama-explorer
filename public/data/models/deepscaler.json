@@ -1,0 +1,162 @@
+{
+  "slug": "deepscaler",
+  "name": "deepscaler",
+  "description": "A fine-tuned version of Deepseek-R1-Distilled-Qwen-1.5B that surpasses the performance of OpenAI’s o1-preview with just 1.5B parameters on popular math evaluations.",
+  "source_url": "https://ollama.com/library/deepscaler",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1300000,
+  "tag_count": 5,
+  "source_updated_at": "2025-02-12T01:53:00Z",
+  "parameter_sizes": [
+    "1.5b"
+  ],
+  "min_download_size_bytes": 1100000000,
+  "max_download_size_bytes": 3600000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "deepscaler:latest",
+    "tag": "latest",
+    "digest": "0031bcf7459f",
+    "availability": "local",
+    "download_size_bytes": 3600000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "deepscaler:1.5b-preview-q4_K_M",
+    "tag": "1.5b-preview-q4_K_M",
+    "digest": "305c4a53269d",
+    "availability": "local",
+    "download_size_bytes": 1100000000,
+    "parameter": {
+      "raw": "1.5b",
+      "total_billion": 1.5,
+      "active_billion": null
+    },
+    "quantization": "Q4_K_M",
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "deepscaler:1.5b",
+      "tag": "1.5b",
+      "digest": "0031bcf7459f",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepscaler:1.5b-preview-fp16",
+      "tag": "1.5b-preview-fp16",
+      "digest": "0031bcf7459f",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepscaler:1.5b-preview-q4_K_M",
+      "tag": "1.5b-preview-q4_K_M",
+      "digest": "305c4a53269d",
+      "availability": "local",
+      "download_size_bytes": 1100000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepscaler:1.5b-preview-q8_0",
+      "tag": "1.5b-preview-q8_0",
+      "digest": "37b8148c7f55",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "1.5b",
+        "total_billion": 1.5,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepscaler:latest",
+      "tag": "latest",
+      "digest": "0031bcf7459f",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

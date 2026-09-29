@@ -1,0 +1,402 @@
+{
+  "slug": "duckdb-nsql",
+  "name": "duckdb-nsql",
+  "description": "7B parameter text-to-SQL model made by MotherDuck and Numbers Station.",
+  "source_url": "https://ollama.com/library/duckdb-nsql",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 534800,
+  "tag_count": 17,
+  "source_updated_at": "2024-01-29T23:52:00Z",
+  "parameter_sizes": [
+    "7b"
+  ],
+  "min_download_size_bytes": 2500000000,
+  "max_download_size_bytes": 13000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 17,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "duckdb-nsql:latest",
+    "tag": "latest",
+    "digest": "3ed734989690",
+    "availability": "local",
+    "download_size_bytes": 3800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "duckdb-nsql:7b-q2_K",
+    "tag": "7b-q2_K",
+    "digest": "1cbb7e381e0d",
+    "availability": "local",
+    "download_size_bytes": 2500000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "duckdb-nsql:7b",
+      "tag": "7b",
+      "digest": "3ed734989690",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-fp16",
+      "tag": "7b-fp16",
+      "digest": "542d129a0ebd",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q2_K",
+      "tag": "7b-q2_K",
+      "digest": "1cbb7e381e0d",
+      "availability": "local",
+      "download_size_bytes": 2500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q3_K_L",
+      "tag": "7b-q3_K_L",
+      "digest": "2ad0663e4dc5",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q3_K_M",
+      "tag": "7b-q3_K_M",
+      "digest": "df78bad24127",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q3_K_S",
+      "tag": "7b-q3_K_S",
+      "digest": "6e301c3680be",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q4_0",
+      "tag": "7b-q4_0",
+      "digest": "3ed734989690",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q4_1",
+      "tag": "7b-q4_1",
+      "digest": "ab2326ca8b79",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q4_K_M",
+      "tag": "7b-q4_K_M",
+      "digest": "d5214ab09cf5",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q4_K_S",
+      "tag": "7b-q4_K_S",
+      "digest": "2933e36bfa35",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q5_0",
+      "tag": "7b-q5_0",
+      "digest": "3b9715ade8b6",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q5_1",
+      "tag": "7b-q5_1",
+      "digest": "2ea8ccb73272",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q5_K_M",
+      "tag": "7b-q5_K_M",
+      "digest": "084b49941207",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q5_K_S",
+      "tag": "7b-q5_K_S",
+      "digest": "49c1d3c130d2",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q6_K",
+      "tag": "7b-q6_K",
+      "digest": "4ac244b368af",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:7b-q8_0",
+      "tag": "7b-q8_0",
+      "digest": "a63220880981",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "duckdb-nsql:latest",
+      "tag": "latest",
+      "digest": "3ed734989690",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

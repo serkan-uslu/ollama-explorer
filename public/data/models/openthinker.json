@@ -1,0 +1,353 @@
+{
+  "slug": "openthinker",
+  "name": "openthinker",
+  "description": "A fully open-source family of reasoning models built using a dataset derived by distilling DeepSeek-R1.",
+  "source_url": "https://ollama.com/library/openthinker",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1200000,
+  "tag_count": 15,
+  "source_updated_at": "2025-04-04T21:52:00Z",
+  "parameter_sizes": [
+    "7b",
+    "32b"
+  ],
+  "min_download_size_bytes": 4700000000,
+  "max_download_size_bytes": 66000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 15,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "openthinker:latest",
+    "tag": "latest",
+    "digest": "4e61774f7d1c",
+    "availability": "local",
+    "download_size_bytes": 4700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "openthinker:7b",
+    "tag": "7b",
+    "digest": "4e61774f7d1c",
+    "availability": "local",
+    "download_size_bytes": 4700000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "openthinker:32b",
+      "tag": "32b",
+      "digest": "04b5937dcb16",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:32b-fp16",
+      "tag": "32b-fp16",
+      "digest": "fe656527fabb",
+      "availability": "local",
+      "download_size_bytes": 66000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:32b-q4_K_M",
+      "tag": "32b-q4_K_M",
+      "digest": "b3f4e577e166",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:32b-q8_0",
+      "tag": "32b-q8_0",
+      "digest": "58ba37ade26f",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:32b-v2-fp16",
+      "tag": "32b-v2-fp16",
+      "digest": "bedb555dcf18",
+      "availability": "local",
+      "download_size_bytes": 66000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:32b-v2-q4_K_M",
+      "tag": "32b-v2-q4_K_M",
+      "digest": "04b5937dcb16",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:32b-v2-q8_0",
+      "tag": "32b-v2-q8_0",
+      "digest": "3d6e61f31c17",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b",
+      "tag": "7b",
+      "digest": "4e61774f7d1c",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b-fp16",
+      "tag": "7b-fp16",
+      "digest": "51b87c56a25a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b-q4_K_M",
+      "tag": "7b-q4_K_M",
+      "digest": "aaffe05a5e2e",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b-q8_0",
+      "tag": "7b-q8_0",
+      "digest": "a0b1973d2ae4",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b-v2-fp16",
+      "tag": "7b-v2-fp16",
+      "digest": "31607c6db34a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b-v2-q4_K_M",
+      "tag": "7b-v2-q4_K_M",
+      "digest": "4e61774f7d1c",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:7b-v2-q8_0",
+      "tag": "7b-v2-q8_0",
+      "digest": "452fb1b5c878",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "openthinker:latest",
+      "tag": "latest",
+      "digest": "4e61774f7d1c",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

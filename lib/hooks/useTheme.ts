@@ -4,20 +4,14 @@ import { useCallback, useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark';
 
-function resolveInitialTheme(): Theme {
-  if (typeof window === 'undefined') return 'light';
-  const stored = localStorage.getItem('theme') as Theme | null;
-  if (stored) return stored;
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-}
-
 export function useTheme(): { theme: Theme; toggle: () => void } {
-  const [theme, setTheme] = useState<Theme>(resolveInitialTheme);
+  const [theme, setTheme] = useState<Theme>('light');
 
-  // Keep DOM in sync with state (external system update only — no setState here)
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
+    // The pre-hydration script owns the initial DOM class; mirror it after hydration.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+  }, []);
 
   const toggle = useCallback(() => {
     setTheme((prev) => {

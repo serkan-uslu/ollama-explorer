@@ -8,7 +8,7 @@ export function Input({ hasError = false, className, ...rest }: InputProps) {
   return (
     <input
       className={cn(
-        'w-full h-10 px-3 text-sm rounded-[var(--radius-md)]',
+        'w-full h-11 px-3 text-sm rounded-[var(--radius-md)]',
         'bg-[var(--color-bg)] text-[var(--color-text)] placeholder:text-[var(--color-text-subtle)]',
         'border transition-colors',
         hasError

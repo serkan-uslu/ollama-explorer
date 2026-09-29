@@ -1,0 +1,131 @@
+{
+  "slug": "deepseek-ocr",
+  "name": "deepseek-ocr",
+  "description": "DeepSeek-OCR is a vision-language model that can perform token-efficient OCR.",
+  "source_url": "https://ollama.com/library/deepseek-ocr",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 541300,
+  "tag_count": 3,
+  "source_updated_at": "2025-11-19T20:26:00Z",
+  "parameter_sizes": [
+    "3b"
+  ],
+  "min_download_size_bytes": 6700000000,
+  "max_download_size_bytes": 6700000000,
+  "max_context_window": 8000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16"
+  ],
+  "local_variant_count": 3,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "deepseek-ocr:latest",
+    "tag": "latest",
+    "digest": "0e7b018b8a22",
+    "availability": "local",
+    "download_size_bytes": 6700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "deepseek-ocr:3b",
+    "tag": "3b",
+    "digest": "0e7b018b8a22",
+    "availability": "local",
+    "download_size_bytes": 6700000000,
+    "parameter": {
+      "raw": "3b",
+      "total_billion": 3.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "deepseek-ocr:3b",
+      "tag": "3b",
+      "digest": "0e7b018b8a22",
+      "availability": "local",
+      "download_size_bytes": 6700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-ocr:3b-bf16",
+      "tag": "3b-bf16",
+      "digest": "0e7b018b8a22",
+      "availability": "local",
+      "download_size_bytes": 6700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-ocr:latest",
+      "tag": "latest",
+      "digest": "0e7b018b8a22",
+      "availability": "local",
+      "download_size_bytes": 6700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

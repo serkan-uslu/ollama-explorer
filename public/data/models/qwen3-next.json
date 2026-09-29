@@ -1,0 +1,250 @@
+{
+  "slug": "qwen3-next",
+  "name": "qwen3-next",
+  "description": "The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed.",
+  "source_url": "https://ollama.com/library/qwen3-next",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 593300,
+  "tag_count": 9,
+  "source_updated_at": "2025-12-05T04:37:00Z",
+  "parameter_sizes": [
+    "80b",
+    "80b-a3b"
+  ],
+  "min_download_size_bytes": 50000000000,
+  "max_download_size_bytes": 159000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "qwen3-next:latest",
+    "tag": "latest",
+    "digest": "b2ebb986e4e9",
+    "availability": "local",
+    "download_size_bytes": 50000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "qwen3-next:80b",
+    "tag": "80b",
+    "digest": "b2ebb986e4e9",
+    "availability": "local",
+    "download_size_bytes": 50000000000,
+    "parameter": {
+      "raw": "80b",
+      "total_billion": 80.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "qwen3-next:80b",
+      "tag": "80b",
+      "digest": "b2ebb986e4e9",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "80b",
+        "total_billion": 80.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-instruct-fp16",
+      "tag": "80b-a3b-instruct-fp16",
+      "digest": "b6caabaf6c37",
+      "availability": "local",
+      "download_size_bytes": 159000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": "FP16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-instruct-q4_K_M",
+      "tag": "80b-a3b-instruct-q4_K_M",
+      "digest": "5bb9dcc938cc",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-instruct-q8_0",
+      "tag": "80b-a3b-instruct-q8_0",
+      "digest": "fc9e251d7f37",
+      "availability": "local",
+      "download_size_bytes": 85000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-thinking",
+      "tag": "80b-a3b-thinking",
+      "digest": "b2ebb986e4e9",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-thinking-fp16",
+      "tag": "80b-a3b-thinking-fp16",
+      "digest": "e98f2371bd81",
+      "availability": "local",
+      "download_size_bytes": 159000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": "FP16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-thinking-q4_K_M",
+      "tag": "80b-a3b-thinking-q4_K_M",
+      "digest": "b2ebb986e4e9",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:80b-a3b-thinking-q8_0",
+      "tag": "80b-a3b-thinking-q8_0",
+      "digest": "033d9a6ae231",
+      "availability": "local",
+      "download_size_bytes": 85000000000,
+      "parameter": {
+        "raw": "80b-a3b",
+        "total_billion": 80.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3-next:latest",
+      "tag": "latest",
+      "digest": "b2ebb986e4e9",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

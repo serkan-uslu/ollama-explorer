@@ -1,0 +1,343 @@
+{
+  "slug": "ministral-3",
+  "name": "ministral-3",
+  "description": "The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware.",
+  "source_url": "https://ollama.com/library/ministral-3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1500000,
+  "tag_count": 13,
+  "source_updated_at": "2025-12-13T01:59:00Z",
+  "parameter_sizes": [
+    "3b",
+    "8b",
+    "14b"
+  ],
+  "min_download_size_bytes": 3000000000,
+  "max_download_size_bytes": 28000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 13,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "ministral-3:latest",
+    "tag": "latest",
+    "digest": "1922accd5827",
+    "availability": "local",
+    "download_size_bytes": 6000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "ministral-3:3b",
+    "tag": "3b",
+    "digest": "f04aa1c738f6",
+    "availability": "local",
+    "download_size_bytes": 3000000000,
+    "parameter": {
+      "raw": "3b",
+      "total_billion": 3.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "ministral-3:14b",
+      "tag": "14b",
+      "digest": "4760c35aeb9d",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "14b",
+        "total_billion": 14.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:14b-instruct-2512-fp16",
+      "tag": "14b-instruct-2512-fp16",
+      "digest": "ba5a5da1e89b",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "14b",
+        "total_billion": 14.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:14b-instruct-2512-q4_K_M",
+      "tag": "14b-instruct-2512-q4_K_M",
+      "digest": "4760c35aeb9d",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "14b",
+        "total_billion": 14.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:14b-instruct-2512-q8_0",
+      "tag": "14b-instruct-2512-q8_0",
+      "digest": "e189ca022343",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "14b",
+        "total_billion": 14.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:3b",
+      "tag": "3b",
+      "digest": "f04aa1c738f6",
+      "availability": "local",
+      "download_size_bytes": 3000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:3b-instruct-2512-fp16",
+      "tag": "3b-instruct-2512-fp16",
+      "digest": "c3575e1e54be",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:3b-instruct-2512-q4_K_M",
+      "tag": "3b-instruct-2512-q4_K_M",
+      "digest": "f04aa1c738f6",
+      "availability": "local",
+      "download_size_bytes": 3000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:3b-instruct-2512-q8_0",
+      "tag": "3b-instruct-2512-q8_0",
+      "digest": "c269e5748d11",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:8b",
+      "tag": "8b",
+      "digest": "1922accd5827",
+      "availability": "local",
+      "download_size_bytes": 6000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:8b-instruct-2512-fp16",
+      "tag": "8b-instruct-2512-fp16",
+      "digest": "1db367e98f75",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:8b-instruct-2512-q4_K_M",
+      "tag": "8b-instruct-2512-q4_K_M",
+      "digest": "1922accd5827",
+      "availability": "local",
+      "download_size_bytes": 6000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:8b-instruct-2512-q8_0",
+      "tag": "8b-instruct-2512-q8_0",
+      "digest": "51a27715a326",
+      "availability": "local",
+      "download_size_bytes": 9900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ministral-3:latest",
+      "tag": "latest",
+      "digest": "1922accd5827",
+      "availability": "local",
+      "download_size_bytes": 6000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -1,91 +1,81 @@
-export type Domain =
-  | 'General'
-  | 'Code'
-  | 'Vision'
-  | 'Math'
-  | 'Medical'
-  | 'Language'
-  | 'Embedding'
-  | 'Multimodal'
-  | 'Reasoning'
-  | 'Science';
+export type Availability = 'local' | 'cloud' | 'both';
+export type ModelStatus = 'active' | 'unlisted';
+export type ModelCategory =
+  | 'chat'
+  | 'coding'
+  | 'vision'
+  | 'tools'
+  | 'reasoning'
+  | 'embedding'
+  | 'audio';
 
-export type Complexity = 'advanced' | 'intermediate' | 'beginner';
-
-export type Capability = 'Tools' | 'Thinking' | 'Embedding' | 'Vision' | 'Cloud';
-
-export type SpeedTier = 'fast' | 'medium' | 'slow';
-
-export interface Application {
-  name: string;
-  launch_command: string;
+export interface ModelParameter {
+  raw: string;
+  total_billion: number | null;
+  active_billion: number | null;
 }
 
-export interface BenchmarkScore {
-  name: string;
-  score: number | null;
-  unit: string | null;
-}
-
-export interface MemoryRequirement {
+export interface Variant {
+  ref: string;
   tag: string;
-  size: string;
-  size_gb: number;
-  recommended_ram_gb: number;
-  quantization: string;
-  context: string;
-  context_window: number;
+  digest: string | null;
+  availability: Exclude<Availability, 'both'>;
+  download_size_bytes: number | null;
+  parameter: ModelParameter | null;
+  quantization: string | null;
+  context_window: number | null;
+  input_modalities: string[];
+  source_updated_at: string | null;
+  is_default: boolean;
 }
 
-export interface Model {
-  id: string;
-  model_identifier: string;
-  model_name: string;
-  model_type: 'official';
-  namespace: string | null;
-  url: string;
+export type VariantSummary = Variant;
+
+export interface ModelSummary {
+  slug: string;
+  name: string;
   description: string;
-  readme: string;
-  capabilities: Capability[];
-  capability: string;
-  labels: string[];
-  applications: Application[];
-  memory_requirements: MemoryRequirement[];
-  min_ram_gb: number;
-  context_window: number;
-  speed_tier: SpeedTier | null;
-  use_cases: string[];
-  domain: Domain;
-  ai_languages: string[];
-  complexity: Complexity;
-  best_for: string;
-  model_family: string | null;
-  base_model: string | null;
-  is_fine_tuned: boolean;
-  is_uncensored: boolean;
-  is_multimodal: boolean;
-  license: string | null;
-  strengths: string[];
-  limitations: string[];
-  target_audience: string[];
-  creator_org: string | null;
-  huggingface_url: string | null;
-  benchmark_scores: BenchmarkScore[];
+  source_url: string;
+  status: ModelStatus;
+  availability: Availability;
+  capabilities: string[];
+  applications: string[];
+  /** Deterministic task categories derived from source capabilities, applications and variants. */
+  categories: ModelCategory[];
+  /** Deterministic aggregate values across every exported variant. */
+  input_modalities: string[];
+  quantizations: string[];
+  local_variant_count: number;
+  cloud_variant_count: number;
+  pulls: number | null;
+  tag_count: number;
+  source_updated_at: string | null;
   parameter_sizes: string[];
-  pulls: number;
-  tags: number;
-  last_updated: string;
-  last_updated_str: string;
-  timestamp: string;
-  enrich_version: number;
-  validated: boolean;
-  validation_failed: string | null;
+  min_download_size_bytes: number | null;
+  max_download_size_bytes: number | null;
+  max_context_window: number | null;
+  default_variant: VariantSummary | null;
+  smallest_local_variant: VariantSummary | null;
+  cloud_variant: VariantSummary | null;
+  family: string | null;
+  license: string | null;
 }
 
-export type SortOption =
-  | 'pulls_desc'
-  | 'pulls_asc'
-  | 'ram_asc'
-  | 'ram_desc'
-  | 'updated_desc'
-  | 'name_asc';
+export interface ModelDetail extends ModelSummary {
+  variants: Variant[];
+}
+
+export interface Catalog {
+  schema_version: 2;
+  generated_at: string;
+  source: {
+    name: 'ollama';
+    url: string;
+    model_count: number;
+  };
+  models: ModelSummary[];
+}
+
+export type LegacyIdMap = Record<string, string>;
+
+export type BrowseSort = 'relevance' | 'popular' | 'updated' | 'smallest' | 'context' | 'name';

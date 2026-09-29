@@ -1,0 +1,2011 @@
+{
+  "slug": "deepseek-coder",
+  "name": "deepseek-coder",
+  "description": "DeepSeek Coder is a capable coding model trained on two trillion code and natural language tokens.",
+  "source_url": "https://ollama.com/library/deepseek-coder",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 4700000,
+  "tag_count": 102,
+  "source_updated_at": "2023-12-28T01:05:00Z",
+  "parameter_sizes": [
+    "1.3b",
+    "6.7b",
+    "33b"
+  ],
+  "min_download_size_bytes": 632000000,
+  "max_download_size_bytes": 67000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 102,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "deepseek-coder:latest",
+    "tag": "latest",
+    "digest": "3ddd2d3fc8d2",
+    "availability": "local",
+    "download_size_bytes": 776000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "deepseek-coder:1.3b-base-q2_K",
+    "tag": "1.3b-base-q2_K",
+    "digest": "b4f8c7285df8",
+    "availability": "local",
+    "download_size_bytes": 632000000,
+    "parameter": {
+      "raw": "1.3b",
+      "total_billion": 1.3,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "deepseek-coder:1.3b",
+      "tag": "1.3b",
+      "digest": "3ddd2d3fc8d2",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base",
+      "tag": "1.3b-base",
+      "digest": "3b417b786925",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-fp16",
+      "tag": "1.3b-base-fp16",
+      "digest": "02b95acb6d92",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q2_K",
+      "tag": "1.3b-base-q2_K",
+      "digest": "b4f8c7285df8",
+      "availability": "local",
+      "download_size_bytes": 632000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q3_K_L",
+      "tag": "1.3b-base-q3_K_L",
+      "digest": "9884474f8e97",
+      "availability": "local",
+      "download_size_bytes": 745000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q3_K_M",
+      "tag": "1.3b-base-q3_K_M",
+      "digest": "08722dd8ec98",
+      "availability": "local",
+      "download_size_bytes": 705000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q3_K_S",
+      "tag": "1.3b-base-q3_K_S",
+      "digest": "3a3c3bc11d11",
+      "availability": "local",
+      "download_size_bytes": 659000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q4_0",
+      "tag": "1.3b-base-q4_0",
+      "digest": "3b417b786925",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q4_1",
+      "tag": "1.3b-base-q4_1",
+      "digest": "75c6c24f8b9a",
+      "availability": "local",
+      "download_size_bytes": 856000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q4_K_M",
+      "tag": "1.3b-base-q4_K_M",
+      "digest": "4e17652b15c5",
+      "availability": "local",
+      "download_size_bytes": 874000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q4_K_S",
+      "tag": "1.3b-base-q4_K_S",
+      "digest": "2c83b95953cd",
+      "availability": "local",
+      "download_size_bytes": 815000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q5_0",
+      "tag": "1.3b-base-q5_0",
+      "digest": "2d4798d07377",
+      "availability": "local",
+      "download_size_bytes": 936000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q5_1",
+      "tag": "1.3b-base-q5_1",
+      "digest": "2eb01ebad3f6",
+      "availability": "local",
+      "download_size_bytes": 1000000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q5_K_M",
+      "tag": "1.3b-base-q5_K_M",
+      "digest": "2940f35e76bc",
+      "availability": "local",
+      "download_size_bytes": 1000000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q5_K_S",
+      "tag": "1.3b-base-q5_K_S",
+      "digest": "f2689d6fec98",
+      "availability": "local",
+      "download_size_bytes": 953000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q6_K",
+      "tag": "1.3b-base-q6_K",
+      "digest": "87397ba29cd4",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-base-q8_0",
+      "tag": "1.3b-base-q8_0",
+      "digest": "71f702eff852",
+      "availability": "local",
+      "download_size_bytes": 1400000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct",
+      "tag": "1.3b-instruct",
+      "digest": "3ddd2d3fc8d2",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-fp16",
+      "tag": "1.3b-instruct-fp16",
+      "digest": "89aaa860fc95",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q2_K",
+      "tag": "1.3b-instruct-q2_K",
+      "digest": "1ad28239dd09",
+      "availability": "local",
+      "download_size_bytes": 632000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q3_K_L",
+      "tag": "1.3b-instruct-q3_K_L",
+      "digest": "0d2f32faf31e",
+      "availability": "local",
+      "download_size_bytes": 745000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q3_K_M",
+      "tag": "1.3b-instruct-q3_K_M",
+      "digest": "1cd27a52ef39",
+      "availability": "local",
+      "download_size_bytes": 705000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q3_K_S",
+      "tag": "1.3b-instruct-q3_K_S",
+      "digest": "4c1eaf4c63f8",
+      "availability": "local",
+      "download_size_bytes": 659000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q4_0",
+      "tag": "1.3b-instruct-q4_0",
+      "digest": "3ddd2d3fc8d2",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q4_1",
+      "tag": "1.3b-instruct-q4_1",
+      "digest": "403b7eec078d",
+      "availability": "local",
+      "download_size_bytes": 856000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q4_K_M",
+      "tag": "1.3b-instruct-q4_K_M",
+      "digest": "d84d8a173290",
+      "availability": "local",
+      "download_size_bytes": 874000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q4_K_S",
+      "tag": "1.3b-instruct-q4_K_S",
+      "digest": "47ca84afbf6d",
+      "availability": "local",
+      "download_size_bytes": 815000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q5_0",
+      "tag": "1.3b-instruct-q5_0",
+      "digest": "5f4cd944cf61",
+      "availability": "local",
+      "download_size_bytes": 936000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q5_1",
+      "tag": "1.3b-instruct-q5_1",
+      "digest": "334319021268",
+      "availability": "local",
+      "download_size_bytes": 1000000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q5_K_M",
+      "tag": "1.3b-instruct-q5_K_M",
+      "digest": "2ff0e9282aba",
+      "availability": "local",
+      "download_size_bytes": 1000000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q5_K_S",
+      "tag": "1.3b-instruct-q5_K_S",
+      "digest": "ca290ca9a10a",
+      "availability": "local",
+      "download_size_bytes": 953000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q6_K",
+      "tag": "1.3b-instruct-q6_K",
+      "digest": "ce574ed6d34f",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:1.3b-instruct-q8_0",
+      "tag": "1.3b-instruct-q8_0",
+      "digest": "44e92342b6c8",
+      "availability": "local",
+      "download_size_bytes": 1400000000,
+      "parameter": {
+        "raw": "1.3b",
+        "total_billion": 1.3,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b",
+      "tag": "33b",
+      "digest": "acec7c0b0fd9",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base",
+      "tag": "33b-base",
+      "digest": "ca50732c8ee1",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-fp16",
+      "tag": "33b-base-fp16",
+      "digest": "eed8d5b0dfcc",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q2_K",
+      "tag": "33b-base-q2_K",
+      "digest": "c1a84861e5df",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q3_K_L",
+      "tag": "33b-base-q3_K_L",
+      "digest": "e47bf0616d0d",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q3_K_M",
+      "tag": "33b-base-q3_K_M",
+      "digest": "fdb6068cec14",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q3_K_S",
+      "tag": "33b-base-q3_K_S",
+      "digest": "29b391c03801",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q4_0",
+      "tag": "33b-base-q4_0",
+      "digest": "ca50732c8ee1",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q4_1",
+      "tag": "33b-base-q4_1",
+      "digest": "d09dd3fe1448",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q4_K_M",
+      "tag": "33b-base-q4_K_M",
+      "digest": "a205c1c80cf6",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q4_K_S",
+      "tag": "33b-base-q4_K_S",
+      "digest": "012e92746442",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q5_0",
+      "tag": "33b-base-q5_0",
+      "digest": "a6c33a2e9332",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q5_1",
+      "tag": "33b-base-q5_1",
+      "digest": "ba34d0e6ade6",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q5_K_M",
+      "tag": "33b-base-q5_K_M",
+      "digest": "2260429a178c",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q5_K_S",
+      "tag": "33b-base-q5_K_S",
+      "digest": "b9fef6f330c5",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q6_K",
+      "tag": "33b-base-q6_K",
+      "digest": "4cb5c88ab035",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-base-q8_0",
+      "tag": "33b-base-q8_0",
+      "digest": "1779efbb95d3",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct",
+      "tag": "33b-instruct",
+      "digest": "acec7c0b0fd9",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-fp16",
+      "tag": "33b-instruct-fp16",
+      "digest": "b54904179335",
+      "availability": "local",
+      "download_size_bytes": 67000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q2_K",
+      "tag": "33b-instruct-q2_K",
+      "digest": "cb08fe026ad3",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q3_K_L",
+      "tag": "33b-instruct-q3_K_L",
+      "digest": "070ae915fa23",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q3_K_M",
+      "tag": "33b-instruct-q3_K_M",
+      "digest": "e31fcc644c53",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q3_K_S",
+      "tag": "33b-instruct-q3_K_S",
+      "digest": "a97a97b70cb4",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q4_0",
+      "tag": "33b-instruct-q4_0",
+      "digest": "acec7c0b0fd9",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q4_1",
+      "tag": "33b-instruct-q4_1",
+      "digest": "d59c6d5d79ac",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q4_K_M",
+      "tag": "33b-instruct-q4_K_M",
+      "digest": "92b0c569c0df",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q4_K_S",
+      "tag": "33b-instruct-q4_K_S",
+      "digest": "8f5d0f5ef4e5",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q5_0",
+      "tag": "33b-instruct-q5_0",
+      "digest": "c41da1e19678",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q5_1",
+      "tag": "33b-instruct-q5_1",
+      "digest": "11fccea78dbe",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q5_K_M",
+      "tag": "33b-instruct-q5_K_M",
+      "digest": "bd4a96fb44c0",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q5_K_S",
+      "tag": "33b-instruct-q5_K_S",
+      "digest": "f1d23826a886",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q6_K",
+      "tag": "33b-instruct-q6_K",
+      "digest": "d44c67a95e2a",
+      "availability": "local",
+      "download_size_bytes": 27000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:33b-instruct-q8_0",
+      "tag": "33b-instruct-q8_0",
+      "digest": "1b30ba8b1b95",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "33b",
+        "total_billion": 33.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b",
+      "tag": "6.7b",
+      "digest": "ce298d984115",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base",
+      "tag": "6.7b-base",
+      "digest": "585a5cb3b219",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-fp16",
+      "tag": "6.7b-base-fp16",
+      "digest": "bc2d4c7ea23e",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q2_K",
+      "tag": "6.7b-base-q2_K",
+      "digest": "e13d22daf157",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q3_K_L",
+      "tag": "6.7b-base-q3_K_L",
+      "digest": "29f806615022",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q3_K_M",
+      "tag": "6.7b-base-q3_K_M",
+      "digest": "22ce0a5b45b2",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q3_K_S",
+      "tag": "6.7b-base-q3_K_S",
+      "digest": "ef853316467f",
+      "availability": "local",
+      "download_size_bytes": 3000000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q4_0",
+      "tag": "6.7b-base-q4_0",
+      "digest": "585a5cb3b219",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q4_1",
+      "tag": "6.7b-base-q4_1",
+      "digest": "a269275b3473",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q4_K_M",
+      "tag": "6.7b-base-q4_K_M",
+      "digest": "c12c864e1264",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q4_K_S",
+      "tag": "6.7b-base-q4_K_S",
+      "digest": "b199f259ba9d",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q5_0",
+      "tag": "6.7b-base-q5_0",
+      "digest": "bcea528a2f2f",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q5_1",
+      "tag": "6.7b-base-q5_1",
+      "digest": "c5ee75dc71c8",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q5_K_M",
+      "tag": "6.7b-base-q5_K_M",
+      "digest": "5d67f76f7c57",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q5_K_S",
+      "tag": "6.7b-base-q5_K_S",
+      "digest": "dcff193117f4",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q6_K",
+      "tag": "6.7b-base-q6_K",
+      "digest": "b91bf20f5a3c",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-base-q8_0",
+      "tag": "6.7b-base-q8_0",
+      "digest": "570c490f997d",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct",
+      "tag": "6.7b-instruct",
+      "digest": "ce298d984115",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-fp16",
+      "tag": "6.7b-instruct-fp16",
+      "digest": "5421a6319130",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q2_K",
+      "tag": "6.7b-instruct-q2_K",
+      "digest": "6fd7b2652ba7",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q3_K_L",
+      "tag": "6.7b-instruct-q3_K_L",
+      "digest": "ea00a885753e",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q3_K_M",
+      "tag": "6.7b-instruct-q3_K_M",
+      "digest": "27c2e4ed6a59",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q3_K_S",
+      "tag": "6.7b-instruct-q3_K_S",
+      "digest": "38bce866b00f",
+      "availability": "local",
+      "download_size_bytes": 3000000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q4_0",
+      "tag": "6.7b-instruct-q4_0",
+      "digest": "ce298d984115",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q4_1",
+      "tag": "6.7b-instruct-q4_1",
+      "digest": "4c147a2a4536",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q4_K_M",
+      "tag": "6.7b-instruct-q4_K_M",
+      "digest": "af6da0444f84",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q4_K_S",
+      "tag": "6.7b-instruct-q4_K_S",
+      "digest": "aa47b230dd4a",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q5_0",
+      "tag": "6.7b-instruct-q5_0",
+      "digest": "24c6f279a2a3",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q5_1",
+      "tag": "6.7b-instruct-q5_1",
+      "digest": "e13a2f5b13e6",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q5_K_M",
+      "tag": "6.7b-instruct-q5_K_M",
+      "digest": "d6a1221fb5ff",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q5_K_S",
+      "tag": "6.7b-instruct-q5_K_S",
+      "digest": "fa9d8a78ef0d",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q6_K",
+      "tag": "6.7b-instruct-q6_K",
+      "digest": "5b1241961817",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:6.7b-instruct-q8_0",
+      "tag": "6.7b-instruct-q8_0",
+      "digest": "54b58e32d587",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "6.7b",
+        "total_billion": 6.7,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:base",
+      "tag": "base",
+      "digest": "3b417b786925",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:instruct",
+      "tag": "instruct",
+      "digest": "3ddd2d3fc8d2",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-coder:latest",
+      "tag": "latest",
+      "digest": "3ddd2d3fc8d2",
+      "availability": "local",
+      "download_size_bytes": 776000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

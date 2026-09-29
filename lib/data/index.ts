@@ -1,14 +1,17 @@
 export {
+  getAllModelKeys,
   getAllModels,
+  getCatalog,
+  getLegacyIdMap,
   getModelById,
   getModelByIdentifier,
-  getTotalCount,
-  getTopModel,
-  getSmallestModel,
-  getModelOfTheDay,
-  filterAndSortModels,
-  sortModels,
+  getModelByKey,
+  getModelDetail,
   getRelatedModels,
+  getSmallestModel,
+  getTopModel,
+  getTotalCount,
 } from './models';
-
-export { deriveFilterOptions } from './filters';
+export { deriveFacetCounts, deriveFilterOptions } from './filters';
+export { estimateMemoryGiB, parseParameterSize, selectVariantForMemory } from './model-math';
+export { resolveCompareModels } from './compare';

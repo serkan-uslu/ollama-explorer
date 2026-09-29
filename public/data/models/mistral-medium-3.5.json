@@ -1,0 +1,183 @@
+{
+  "slug": "mistral-medium-3.5",
+  "name": "mistral-medium-3.5",
+  "description": "Mistral Medium 3.5 is the first flagship model of Mistral AI that merged instruction-following, reasoning, and coding in a single set of 128B weights.",
+  "source_url": "https://ollama.com/library/mistral-medium-3.5",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 418600,
+  "tag_count": 5,
+  "source_updated_at": "2026-05-05T23:14:00Z",
+  "parameter_sizes": [
+    "128b"
+  ],
+  "min_download_size_bytes": 80000000000,
+  "max_download_size_bytes": 255000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "mistral-medium-3.5:latest",
+    "tag": "latest",
+    "digest": "0341632adb05",
+    "availability": "local",
+    "download_size_bytes": 80000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "mistral-medium-3.5:128b",
+    "tag": "128b",
+    "digest": "0341632adb05",
+    "availability": "local",
+    "download_size_bytes": 80000000000,
+    "parameter": {
+      "raw": "128b",
+      "total_billion": 128.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "mistral-medium-3.5:128b",
+      "tag": "128b",
+      "digest": "0341632adb05",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "128b",
+        "total_billion": 128.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-medium-3.5:128b-bf16",
+      "tag": "128b-bf16",
+      "digest": "03b1ca2260f6",
+      "availability": "local",
+      "download_size_bytes": 255000000000,
+      "parameter": {
+        "raw": "128b",
+        "total_billion": 128.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-medium-3.5:128b-q4_K_M",
+      "tag": "128b-q4_K_M",
+      "digest": "0341632adb05",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "128b",
+        "total_billion": 128.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-medium-3.5:128b-q8_0",
+      "tag": "128b-q8_0",
+      "digest": "4e309f1ff6ce",
+      "availability": "local",
+      "download_size_bytes": 138000000000,
+      "parameter": {
+        "raw": "128b",
+        "total_billion": 128.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mistral-medium-3.5:latest",
+      "tag": "latest",
+      "digest": "0341632adb05",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

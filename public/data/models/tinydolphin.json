@@ -1,0 +1,417 @@
+{
+  "slug": "tinydolphin",
+  "name": "tinydolphin",
+  "description": "An experimental 1.1B parameter model trained on the new Dolphin 2.8 dataset by Eric Hartford and based on TinyLlama.",
+  "source_url": "https://ollama.com/library/tinydolphin",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 734500,
+  "tag_count": 18,
+  "source_updated_at": "2024-01-30T09:39:00Z",
+  "parameter_sizes": [
+    "1.1b"
+  ],
+  "min_download_size_bytes": 432000000,
+  "max_download_size_bytes": 2200000000,
+  "max_context_window": 4000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 18,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "tinydolphin:latest",
+    "tag": "latest",
+    "digest": "0f9dd11f824c",
+    "availability": "local",
+    "download_size_bytes": 637000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "tinydolphin:1.1b-v2.8-q2_K",
+    "tag": "1.1b-v2.8-q2_K",
+    "digest": "053ceac566b6",
+    "availability": "local",
+    "download_size_bytes": 432000000,
+    "parameter": {
+      "raw": "1.1b",
+      "total_billion": 1.1,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 4000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "tinydolphin:1.1b",
+      "tag": "1.1b",
+      "digest": "0f9dd11f824c",
+      "availability": "local",
+      "download_size_bytes": 637000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-fp16",
+      "tag": "1.1b-v2.8-fp16",
+      "digest": "adb3e462abb8",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q2_K",
+      "tag": "1.1b-v2.8-q2_K",
+      "digest": "053ceac566b6",
+      "availability": "local",
+      "download_size_bytes": 432000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q3_K_L",
+      "tag": "1.1b-v2.8-q3_K_L",
+      "digest": "d744f6260a5a",
+      "availability": "local",
+      "download_size_bytes": 592000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q3_K_M",
+      "tag": "1.1b-v2.8-q3_K_M",
+      "digest": "a269253dc7d8",
+      "availability": "local",
+      "download_size_bytes": 548000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q3_K_S",
+      "tag": "1.1b-v2.8-q3_K_S",
+      "digest": "1334375595f1",
+      "availability": "local",
+      "download_size_bytes": 499000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q4_0",
+      "tag": "1.1b-v2.8-q4_0",
+      "digest": "0f9dd11f824c",
+      "availability": "local",
+      "download_size_bytes": 637000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q4_1",
+      "tag": "1.1b-v2.8-q4_1",
+      "digest": "3775322fd876",
+      "availability": "local",
+      "download_size_bytes": 701000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q4_K_M",
+      "tag": "1.1b-v2.8-q4_K_M",
+      "digest": "0cf10b4bfdca",
+      "availability": "local",
+      "download_size_bytes": 668000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q4_K_S",
+      "tag": "1.1b-v2.8-q4_K_S",
+      "digest": "47eefa638255",
+      "availability": "local",
+      "download_size_bytes": 640000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q5_0",
+      "tag": "1.1b-v2.8-q5_0",
+      "digest": "bd9464ab8450",
+      "availability": "local",
+      "download_size_bytes": 766000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q5_1",
+      "tag": "1.1b-v2.8-q5_1",
+      "digest": "2a519cd98a34",
+      "availability": "local",
+      "download_size_bytes": 831000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q5_K_M",
+      "tag": "1.1b-v2.8-q5_K_M",
+      "digest": "4a56f53dcad5",
+      "availability": "local",
+      "download_size_bytes": 782000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q5_K_S",
+      "tag": "1.1b-v2.8-q5_K_S",
+      "digest": "635e25aae973",
+      "availability": "local",
+      "download_size_bytes": 766000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q6_K",
+      "tag": "1.1b-v2.8-q6_K",
+      "digest": "014f5ec4120f",
+      "availability": "local",
+      "download_size_bytes": 903000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:1.1b-v2.8-q8_0",
+      "tag": "1.1b-v2.8-q8_0",
+      "digest": "852afb95a69e",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinydolphin:latest",
+      "tag": "latest",
+      "digest": "0f9dd11f824c",
+      "availability": "local",
+      "download_size_bytes": 637000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "tinydolphin:v2.8",
+      "tag": "v2.8",
+      "digest": "0f9dd11f824c",
+      "availability": "local",
+      "download_size_bytes": 637000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

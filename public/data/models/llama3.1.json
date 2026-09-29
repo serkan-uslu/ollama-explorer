@@ -1,0 +1,1857 @@
+{
+  "slug": "llama3.1",
+  "name": "llama3.1",
+  "description": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes.",
+  "source_url": "https://ollama.com/library/llama3.1",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 119900000,
+  "tag_count": 93,
+  "source_updated_at": "2024-11-30T22:34:00Z",
+  "parameter_sizes": [
+    "8b",
+    "70b",
+    "405b"
+  ],
+  "min_download_size_bytes": 3200000000,
+  "max_download_size_bytes": 812000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 93,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llama3.1:latest",
+    "tag": "latest",
+    "digest": "46e0c10c039e",
+    "availability": "local",
+    "download_size_bytes": 4900000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llama3.1:8b-instruct-q2_K",
+    "tag": "8b-instruct-q2_K",
+    "digest": "44a139eeb344",
+    "availability": "local",
+    "download_size_bytes": 3200000000,
+    "parameter": {
+      "raw": "8b",
+      "total_billion": 8.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llama3.1:405b",
+      "tag": "405b",
+      "digest": "dbd6b9ea93de",
+      "availability": "local",
+      "download_size_bytes": 243000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-fp16",
+      "tag": "405b-instruct-fp16",
+      "digest": "8ca13bcda28b",
+      "availability": "local",
+      "download_size_bytes": 812000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q2_K",
+      "tag": "405b-instruct-q2_K",
+      "digest": "57c259aa0162",
+      "availability": "local",
+      "download_size_bytes": 149000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q3_K_L",
+      "tag": "405b-instruct-q3_K_L",
+      "digest": "fcd77ab1d261",
+      "availability": "local",
+      "download_size_bytes": 213000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q3_K_M",
+      "tag": "405b-instruct-q3_K_M",
+      "digest": "9ab0ea61e9d6",
+      "availability": "local",
+      "download_size_bytes": 195000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q3_K_S",
+      "tag": "405b-instruct-q3_K_S",
+      "digest": "5629943379da",
+      "availability": "local",
+      "download_size_bytes": 175000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q4_0",
+      "tag": "405b-instruct-q4_0",
+      "digest": "65fa6b82bfda",
+      "availability": "local",
+      "download_size_bytes": 229000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q4_1",
+      "tag": "405b-instruct-q4_1",
+      "digest": "283fcc3a816a",
+      "availability": "local",
+      "download_size_bytes": 254000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q4_K_M",
+      "tag": "405b-instruct-q4_K_M",
+      "digest": "dbd6b9ea93de",
+      "availability": "local",
+      "download_size_bytes": 243000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q4_K_S",
+      "tag": "405b-instruct-q4_K_S",
+      "digest": "4a745087e617",
+      "availability": "local",
+      "download_size_bytes": 231000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q5_0",
+      "tag": "405b-instruct-q5_0",
+      "digest": "441bbd85e453",
+      "availability": "local",
+      "download_size_bytes": 279000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q5_1",
+      "tag": "405b-instruct-q5_1",
+      "digest": "b80f0c0aea72",
+      "availability": "local",
+      "download_size_bytes": 305000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q5_K_M",
+      "tag": "405b-instruct-q5_K_M",
+      "digest": "fed1ac5214db",
+      "availability": "local",
+      "download_size_bytes": 287000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q5_K_S",
+      "tag": "405b-instruct-q5_K_S",
+      "digest": "5e5285368f59",
+      "availability": "local",
+      "download_size_bytes": 279000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q6_K",
+      "tag": "405b-instruct-q6_K",
+      "digest": "5478eb23c5fb",
+      "availability": "local",
+      "download_size_bytes": 333000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-instruct-q8_0",
+      "tag": "405b-instruct-q8_0",
+      "digest": "b674ab2e9d34",
+      "availability": "local",
+      "download_size_bytes": 431000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-fp16",
+      "tag": "405b-text-fp16",
+      "digest": "bc01fb5255d5",
+      "availability": "local",
+      "download_size_bytes": 812000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q2_K",
+      "tag": "405b-text-q2_K",
+      "digest": "f7b0ab60bfbe",
+      "availability": "local",
+      "download_size_bytes": 149000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q3_K_L",
+      "tag": "405b-text-q3_K_L",
+      "digest": "94bf2a77e235",
+      "availability": "local",
+      "download_size_bytes": 213000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q3_K_M",
+      "tag": "405b-text-q3_K_M",
+      "digest": "b9fb97304e8e",
+      "availability": "local",
+      "download_size_bytes": 195000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q3_K_S",
+      "tag": "405b-text-q3_K_S",
+      "digest": "6c66c6eac804",
+      "availability": "local",
+      "download_size_bytes": 175000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q4_0",
+      "tag": "405b-text-q4_0",
+      "digest": "320335002c0c",
+      "availability": "local",
+      "download_size_bytes": 229000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q4_1",
+      "tag": "405b-text-q4_1",
+      "digest": "fea44733a09c",
+      "availability": "local",
+      "download_size_bytes": 254000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q4_K_M",
+      "tag": "405b-text-q4_K_M",
+      "digest": "d8a18ddb2815",
+      "availability": "local",
+      "download_size_bytes": 243000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q4_K_S",
+      "tag": "405b-text-q4_K_S",
+      "digest": "06c63988889d",
+      "availability": "local",
+      "download_size_bytes": 231000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q5_0",
+      "tag": "405b-text-q5_0",
+      "digest": "8d3fd1384383",
+      "availability": "local",
+      "download_size_bytes": 279000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q5_1",
+      "tag": "405b-text-q5_1",
+      "digest": "105c1a731c53",
+      "availability": "local",
+      "download_size_bytes": 305000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q5_K_M",
+      "tag": "405b-text-q5_K_M",
+      "digest": "0d410297a920",
+      "availability": "local",
+      "download_size_bytes": 287000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q5_K_S",
+      "tag": "405b-text-q5_K_S",
+      "digest": "8be1c5b6185d",
+      "availability": "local",
+      "download_size_bytes": 279000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q6_K",
+      "tag": "405b-text-q6_K",
+      "digest": "0217d822dee9",
+      "availability": "local",
+      "download_size_bytes": 333000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:405b-text-q8_0",
+      "tag": "405b-text-q8_0",
+      "digest": "394d4ab99b16",
+      "availability": "local",
+      "download_size_bytes": 431000000000,
+      "parameter": {
+        "raw": "405b",
+        "total_billion": 405.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b",
+      "tag": "70b",
+      "digest": "711a9e8463af",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-fp16",
+      "tag": "70b-instruct-fp16",
+      "digest": "80d34437631f",
+      "availability": "local",
+      "download_size_bytes": 141000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q2_K",
+      "tag": "70b-instruct-q2_K",
+      "digest": "3cbf499d6905",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q3_K_L",
+      "tag": "70b-instruct-q3_K_L",
+      "digest": "dfa642c7de3f",
+      "availability": "local",
+      "download_size_bytes": 37000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q3_K_M",
+      "tag": "70b-instruct-q3_K_M",
+      "digest": "0e97a7709799",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q3_K_S",
+      "tag": "70b-instruct-q3_K_S",
+      "digest": "aae9a850239c",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q4_0",
+      "tag": "70b-instruct-q4_0",
+      "digest": "c0df3564cfe8",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q4_K_M",
+      "tag": "70b-instruct-q4_K_M",
+      "digest": "711a9e8463af",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q4_K_S",
+      "tag": "70b-instruct-q4_K_S",
+      "digest": "826ee833d0c5",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q5_0",
+      "tag": "70b-instruct-q5_0",
+      "digest": "97b688346a84",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q5_1",
+      "tag": "70b-instruct-q5_1",
+      "digest": "84421db620ee",
+      "availability": "local",
+      "download_size_bytes": 53000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q5_K_M",
+      "tag": "70b-instruct-q5_K_M",
+      "digest": "1201b5de8650",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q5_K_S",
+      "tag": "70b-instruct-q5_K_S",
+      "digest": "9acd76c5572e",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q6_K",
+      "tag": "70b-instruct-q6_K",
+      "digest": "eb2f022cab3c",
+      "availability": "local",
+      "download_size_bytes": 58000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-instruct-q8_0",
+      "tag": "70b-instruct-q8_0",
+      "digest": "5dd991fa92a4",
+      "availability": "local",
+      "download_size_bytes": 75000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-fp16",
+      "tag": "70b-text-fp16",
+      "digest": "391fbe608631",
+      "availability": "local",
+      "download_size_bytes": 141000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q2_K",
+      "tag": "70b-text-q2_K",
+      "digest": "4dff43d37532",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q3_K_L",
+      "tag": "70b-text-q3_K_L",
+      "digest": "92b790ee5c4e",
+      "availability": "local",
+      "download_size_bytes": 37000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q3_K_M",
+      "tag": "70b-text-q3_K_M",
+      "digest": "521811adfd14",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q3_K_S",
+      "tag": "70b-text-q3_K_S",
+      "digest": "5d0e57a281be",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q4_0",
+      "tag": "70b-text-q4_0",
+      "digest": "89e7cf894d3c",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q4_1",
+      "tag": "70b-text-q4_1",
+      "digest": "dc22a40d439c",
+      "availability": "local",
+      "download_size_bytes": 44000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q4_K_M",
+      "tag": "70b-text-q4_K_M",
+      "digest": "f2348d28d33b",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q4_K_S",
+      "tag": "70b-text-q4_K_S",
+      "digest": "6da906aeecc4",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q5_0",
+      "tag": "70b-text-q5_0",
+      "digest": "853b4f3150a5",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q5_1",
+      "tag": "70b-text-q5_1",
+      "digest": "fb7068813a93",
+      "availability": "local",
+      "download_size_bytes": 53000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q5_K_M",
+      "tag": "70b-text-q5_K_M",
+      "digest": "d06cbd1da457",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q5_K_S",
+      "tag": "70b-text-q5_K_S",
+      "digest": "540ebde70524",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q6_K",
+      "tag": "70b-text-q6_K",
+      "digest": "ff11f01d22b1",
+      "availability": "local",
+      "download_size_bytes": 58000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:70b-text-q8_0",
+      "tag": "70b-text-q8_0",
+      "digest": "2da4cc56a344",
+      "availability": "local",
+      "download_size_bytes": 75000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b",
+      "tag": "8b",
+      "digest": "46e0c10c039e",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-fp16",
+      "tag": "8b-instruct-fp16",
+      "digest": "4aacac419454",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q2_K",
+      "tag": "8b-instruct-q2_K",
+      "digest": "44a139eeb344",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q3_K_L",
+      "tag": "8b-instruct-q3_K_L",
+      "digest": "04a2f1e44de7",
+      "availability": "local",
+      "download_size_bytes": 4300000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q3_K_M",
+      "tag": "8b-instruct-q3_K_M",
+      "digest": "4faa21fca5a2",
+      "availability": "local",
+      "download_size_bytes": 4000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q3_K_S",
+      "tag": "8b-instruct-q3_K_S",
+      "digest": "16268e519444",
+      "availability": "local",
+      "download_size_bytes": 3700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q4_0",
+      "tag": "8b-instruct-q4_0",
+      "digest": "42182419e950",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q4_1",
+      "tag": "8b-instruct-q4_1",
+      "digest": "e129e608a752",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q4_K_M",
+      "tag": "8b-instruct-q4_K_M",
+      "digest": "46e0c10c039e",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q4_K_S",
+      "tag": "8b-instruct-q4_K_S",
+      "digest": "778e1e675704",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q5_0",
+      "tag": "8b-instruct-q5_0",
+      "digest": "26bc223a1709",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q5_1",
+      "tag": "8b-instruct-q5_1",
+      "digest": "8faaa53f9cda",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q5_K_M",
+      "tag": "8b-instruct-q5_K_M",
+      "digest": "27fe1b0ab52c",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q5_K_S",
+      "tag": "8b-instruct-q5_K_S",
+      "digest": "2d79e69bc236",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q6_K",
+      "tag": "8b-instruct-q6_K",
+      "digest": "81e7664fda9c",
+      "availability": "local",
+      "download_size_bytes": 6600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-instruct-q8_0",
+      "tag": "8b-instruct-q8_0",
+      "digest": "b158ded76fa0",
+      "availability": "local",
+      "download_size_bytes": 8500000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-fp16",
+      "tag": "8b-text-fp16",
+      "digest": "722fd1ff1fda",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q2_K",
+      "tag": "8b-text-q2_K",
+      "digest": "82bedef0ef47",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q3_K_L",
+      "tag": "8b-text-q3_K_L",
+      "digest": "4d9a56f79245",
+      "availability": "local",
+      "download_size_bytes": 4300000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q3_K_M",
+      "tag": "8b-text-q3_K_M",
+      "digest": "abcf9215e3df",
+      "availability": "local",
+      "download_size_bytes": 4000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q3_K_S",
+      "tag": "8b-text-q3_K_S",
+      "digest": "92c2cffe1a17",
+      "availability": "local",
+      "download_size_bytes": 3700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q4_0",
+      "tag": "8b-text-q4_0",
+      "digest": "025059e83055",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q4_1",
+      "tag": "8b-text-q4_1",
+      "digest": "4b32d52187b4",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q4_K_M",
+      "tag": "8b-text-q4_K_M",
+      "digest": "6f98b5a6e4b7",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q4_K_S",
+      "tag": "8b-text-q4_K_S",
+      "digest": "d1a421604a57",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q5_0",
+      "tag": "8b-text-q5_0",
+      "digest": "ee0f9a2ffa00",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q5_1",
+      "tag": "8b-text-q5_1",
+      "digest": "ad68371dbd08",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q5_K_M",
+      "tag": "8b-text-q5_K_M",
+      "digest": "e0b14a625560",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q5_K_S",
+      "tag": "8b-text-q5_K_S",
+      "digest": "a7562b693302",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q6_K",
+      "tag": "8b-text-q6_K",
+      "digest": "40e61b3c96cc",
+      "availability": "local",
+      "download_size_bytes": 6600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:8b-text-q8_0",
+      "tag": "8b-text-q8_0",
+      "digest": "56fd90f1aa19",
+      "availability": "local",
+      "download_size_bytes": 8500000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.1:latest",
+      "tag": "latest",
+      "digest": "46e0c10c039e",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

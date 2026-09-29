@@ -1,0 +1,239 @@
+{
+  "slug": "r1-1776",
+  "name": "r1-1776",
+  "description": "A version of the DeepSeek-R1 model that has been post trained to provide unbiased, accurate, and factual information by Perplexity.",
+  "source_url": "https://ollama.com/library/r1-1776",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 425800,
+  "tag_count": 9,
+  "source_updated_at": "2025-02-21T15:28:00Z",
+  "parameter_sizes": [
+    "70b",
+    "671b"
+  ],
+  "min_download_size_bytes": 43000000000,
+  "max_download_size_bytes": 1300000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "r1-1776:latest",
+    "tag": "latest",
+    "digest": "140ea940f21d",
+    "availability": "local",
+    "download_size_bytes": 43000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "r1-1776:70b",
+    "tag": "70b",
+    "digest": "140ea940f21d",
+    "availability": "local",
+    "download_size_bytes": 43000000000,
+    "parameter": {
+      "raw": "70b",
+      "total_billion": 70.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "r1-1776:671b",
+      "tag": "671b",
+      "digest": "dfa713736c7b",
+      "availability": "local",
+      "download_size_bytes": 404000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:671b-fp16",
+      "tag": "671b-fp16",
+      "digest": "eef5438a1488",
+      "availability": "local",
+      "download_size_bytes": 1300000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:671b-q4_K_M",
+      "tag": "671b-q4_K_M",
+      "digest": "dfa713736c7b",
+      "availability": "local",
+      "download_size_bytes": 404000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:671b-q8_0",
+      "tag": "671b-q8_0",
+      "digest": "83aca4100872",
+      "availability": "local",
+      "download_size_bytes": 713000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:70b",
+      "tag": "70b",
+      "digest": "140ea940f21d",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:70b-distill-llama-fp16",
+      "tag": "70b-distill-llama-fp16",
+      "digest": "b6dc7e0e17ed",
+      "availability": "local",
+      "download_size_bytes": 141000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:70b-distill-llama-q4_K_M",
+      "tag": "70b-distill-llama-q4_K_M",
+      "digest": "140ea940f21d",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:70b-distill-llama-q8_0",
+      "tag": "70b-distill-llama-q8_0",
+      "digest": "e19a3de39ed7",
+      "availability": "local",
+      "download_size_bytes": 75000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "r1-1776:latest",
+      "tag": "latest",
+      "digest": "140ea940f21d",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

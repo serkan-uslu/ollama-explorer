@@ -1,0 +1,191 @@
+{
+  "slug": "lfm2",
+  "name": "lfm2",
+  "description": "LFM2 is a family of hybrid models designed for on-device deployment. LFM2-24B-A2B is the largest model in the family, scaling the architecture to 24 billion parameters while keeping inference efficient.",
+  "source_url": "https://ollama.com/library/lfm2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1100000,
+  "tag_count": 6,
+  "source_updated_at": "2026-02-24T01:17:00Z",
+  "parameter_sizes": [
+    "24b",
+    "24b-a2b"
+  ],
+  "min_download_size_bytes": 14000000000,
+  "max_download_size_bytes": 48000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 6,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "lfm2:latest",
+    "tag": "latest",
+    "digest": "d6c816d74887",
+    "availability": "local",
+    "download_size_bytes": 14000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "lfm2:24b",
+    "tag": "24b",
+    "digest": "d6c816d74887",
+    "availability": "local",
+    "download_size_bytes": 14000000000,
+    "parameter": {
+      "raw": "24b",
+      "total_billion": 24.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "lfm2:24b",
+      "tag": "24b",
+      "digest": "d6c816d74887",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2:24b-a2b",
+      "tag": "24b-a2b",
+      "digest": "d6c816d74887",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "24b-a2b",
+        "total_billion": 24.0,
+        "active_billion": 2.0
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2:24b-bf16",
+      "tag": "24b-bf16",
+      "digest": "aa84dcec6c70",
+      "availability": "local",
+      "download_size_bytes": 48000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2:24b-q4_K_M",
+      "tag": "24b-q4_K_M",
+      "digest": "d6c816d74887",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2:24b-q8_0",
+      "tag": "24b-q8_0",
+      "digest": "a6771778beca",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2:latest",
+      "tag": "latest",
+      "digest": "d6c816d74887",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

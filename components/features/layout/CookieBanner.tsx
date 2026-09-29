@@ -6,25 +6,9 @@ import { X } from 'lucide-react';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 const COOKIE_CONSENT_KEY = 'cookie-consent';
+type Consent = 'accepted' | 'declined' | null;
 
-function GoogleAnalyticsWrapper() {
-  const [consent, setConsent] = useState<'accepted' | 'declined' | null>(() => {
-    if (typeof window === 'undefined') return null;
-    return localStorage.getItem(COOKIE_CONSENT_KEY) as 'accepted' | 'declined' | null;
-  });
-
-  useEffect(() => {
-    // Listen for storage changes
-    const handleStorageChange = () => {
-      const newConsent = localStorage.getItem(COOKIE_CONSENT_KEY) as 'accepted' | 'declined' | null;
-      setConsent(newConsent);
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, []);
-
-  // Only load GA4 if user accepted and GA_ID is configured
+function GoogleAnalyticsWrapper({ consent }: { consent: Consent }) {
   if (consent === 'accepted' && process.env.NEXT_PUBLIC_GA_ID) {
     return <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />;
   }
@@ -33,62 +17,79 @@ function GoogleAnalyticsWrapper() {
 }
 
 export function CookieBanner() {
+  const [consent, setConsent] = useState<Consent>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    // Check if user has already made a choice
-    const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
-    if (!consent) {
-      // Small delay before showing banner
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-        setIsAnimating(true);
-      }, 1500);
-      return () => clearTimeout(timer);
-    }
+    const stored = localStorage.getItem(COOKIE_CONSENT_KEY) as Consent;
+    // Consent is intentionally read after hydration so the server and first client render match.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setConsent(stored);
+    const timer = !stored
+      ? setTimeout(() => {
+          setIsVisible(true);
+          setIsAnimating(true);
+        }, 1500)
+      : undefined;
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key !== COOKIE_CONSENT_KEY) return;
+      setConsent(event.newValue as Consent);
+      setIsVisible(false);
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('storage', handleStorage);
+    };
   }, []);
 
   const handleAccept = () => {
     localStorage.setItem(COOKIE_CONSENT_KEY, 'accepted');
+    setConsent('accepted');
     setIsAnimating(false);
     setTimeout(() => setIsVisible(false), 300);
   };
 
   const handleDecline = () => {
     localStorage.setItem(COOKIE_CONSENT_KEY, 'declined');
+    setConsent('declined');
     setIsAnimating(false);
     setTimeout(() => setIsVisible(false), 300);
   };
 
   return (
     <>
-      <GoogleAnalyticsWrapper />
+      <GoogleAnalyticsWrapper consent={consent} />
 
       {!isVisible ? null : (
         <div
-          className={`fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6 transition-transform duration-300 ease-out ${
+          role="region"
+          aria-label="Cookie preferences"
+          aria-live="polite"
+          aria-atomic="true"
+          className={`fixed right-0 bottom-0 left-0 z-[60] px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] transition-transform duration-300 ease-out sm:p-6 ${
             isAnimating ? 'translate-y-0' : 'translate-y-full'
           }`}
         >
-          <div className="max-w-4xl mx-auto">
-            <div className="rounded-xl shadow-2xl border border-[var(--color-border-strong)] p-4 sm:p-6 bg-[var(--color-bg)] relative">
+          <div className="mx-auto max-w-4xl">
+            <div className="relative max-h-[calc(100dvh-1rem)] overflow-y-auto rounded-xl border border-[var(--color-border-strong)] bg-[var(--color-bg)] p-3 shadow-2xl sm:p-6">
               {/* Close button */}
               <button
                 onClick={handleDecline}
                 aria-label="Close cookie banner"
-                className="absolute top-3 right-3 flex items-center justify-center w-8 h-8 rounded-full text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-[var(--color-bg-subtle)] transition-colors"
+                className="absolute right-2 top-2 flex min-h-11 min-w-11 items-center justify-center rounded-full text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-bg-subtle)] hover:text-[var(--color-text)]"
               >
                 <X size={16} />
               </button>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+              <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-6">
                 {/* Icon */}
-                <div className="flex-shrink-0 text-3xl">🍪</div>
+                <div className="hidden flex-shrink-0 text-3xl sm:block">🍪</div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <p className="text-sm text-[var(--color-text)] leading-relaxed">
+                  <p className="pr-10 text-xs leading-5 text-[var(--color-text)] sm:pr-0 sm:text-sm sm:leading-relaxed">
                     We use cookies to analyze site traffic and improve your experience. By using our
                     site, you agree to our{' '}
                     <Link
@@ -102,16 +103,16 @@ export function CookieBanner() {
                 </div>
 
                 {/* Actions */}
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 flex-shrink-0 w-full sm:w-auto">
+                <div className="grid w-full flex-shrink-0 grid-cols-2 gap-2 sm:flex sm:w-auto sm:flex-row sm:gap-3">
                   <button
                     onClick={handleDecline}
-                    className="px-4 py-2 text-sm font-medium rounded-lg border border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-[var(--color-bg-subtle)] transition-colors order-2 sm:order-1"
+                    className="min-h-11 px-4 text-sm font-medium rounded-lg border border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-[var(--color-bg-subtle)] transition-colors"
                   >
                     Decline
                   </button>
                   <button
                     onClick={handleAccept}
-                    className="px-4 py-2 text-sm font-medium rounded-lg bg-[var(--color-accent)] text-[var(--color-on-accent)] hover:opacity-90 transition-opacity order-1 sm:order-2"
+                    className="min-h-11 px-4 text-sm font-medium rounded-lg bg-[var(--color-accent)] text-[var(--color-on-accent)] hover:opacity-90 transition-opacity"
                   >
                     Accept
                   </button>
@@ -123,24 +124,4 @@ export function CookieBanner() {
       )}
     </>
   );
-}
-
-export function useCookieConsent() {
-  const [consent, setConsent] = useState<'accepted' | 'declined' | null>(() => {
-    if (typeof window === 'undefined') return null;
-    return localStorage.getItem(COOKIE_CONSENT_KEY) as 'accepted' | 'declined' | null;
-  });
-
-  useEffect(() => {
-    // Listen for storage changes (in case user accepts/declines in another tab)
-    const handleStorageChange = () => {
-      const newConsent = localStorage.getItem(COOKIE_CONSENT_KEY) as 'accepted' | 'declined' | null;
-      setConsent(newConsent);
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, []);
-
-  return consent;
 }

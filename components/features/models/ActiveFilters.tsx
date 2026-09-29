@@ -3,7 +3,6 @@
 import { X } from 'lucide-react';
 import type { FilterOptions } from '@/lib/types/filter';
 import type { useFilters } from '@/lib/hooks/useFilters';
-import type { Capability, Complexity, Domain, SpeedTier } from '@/lib/types/model';
 
 type FiltersHook = ReturnType<typeof useFilters>;
 
@@ -19,170 +18,120 @@ interface Chip {
 }
 
 export function ActiveFilters({ hook, options }: ActiveFiltersProps) {
-  const {
-    filters,
-    toggleCapability,
-    toggleDomain,
-    toggleUseCase,
-    toggleComplexity,
-    toggleLanguage,
-    toggleSpeedTier,
-    toggleModelFamily,
-    toggleCreatorOrg,
-    toggleApplication,
-    toggleFineTuned,
-    toggleUncensored,
-    setRamBucket,
-    setParamSizeBucket,
-    setContextWindowBucket,
-    reset,
-  } = hook;
-
+  const { filters } = hook;
+  const label = (entries: { value: string; label: string }[], value: string) =>
+    entries.find((entry) => entry.value === value)?.label ?? value;
   const chips: Chip[] = [];
 
-  filters.capabilities.forEach((cap) => {
+  if (filters.availability !== 'local') {
     chips.push({
-      key: `cap-${cap}`,
-      label: cap,
-      onRemove: () => toggleCapability(cap as Capability),
-    });
-  });
-
-  filters.domains.forEach((d) => {
-    chips.push({
-      key: `domain-${d}`,
-      label: d,
-      onRemove: () => toggleDomain(d as Domain),
-    });
-  });
-
-  filters.complexities.forEach((c) => {
-    chips.push({
-      key: `complexity-${c}`,
-      label: c ? c.charAt(0).toUpperCase() + c.slice(1) : c,
-      onRemove: () => toggleComplexity(c as Complexity),
-    });
-  });
-
-  filters.useCases.forEach((uc) => {
-    chips.push({
-      key: `uc-${uc}`,
-      label: uc,
-      onRemove: () => toggleUseCase(uc),
-    });
-  });
-
-  filters.languages.forEach((lang) => {
-    chips.push({
-      key: `lang-${lang}`,
-      label: lang,
-      onRemove: () => toggleLanguage(lang),
-    });
-  });
-
-  filters.speedTiers.forEach((tier) => {
-    chips.push({
-      key: `speed-${tier}`,
-      label: `Speed: ${tier.charAt(0).toUpperCase() + tier.slice(1)}`,
-      onRemove: () => toggleSpeedTier(tier as SpeedTier),
-    });
-  });
-
-  filters.modelFamilies.forEach((family) => {
-    chips.push({
-      key: `family-${family}`,
-      label: `Family: ${family}`,
-      onRemove: () => toggleModelFamily(family),
-    });
-  });
-
-  filters.creatorOrgs.forEach((org) => {
-    chips.push({
-      key: `creator-${org}`,
-      label: `Creator: ${org}`,
-      onRemove: () => toggleCreatorOrg(org),
-    });
-  });
-
-  filters.applications.forEach((app) => {
-    chips.push({
-      key: `app-${app}`,
-      label: `App: ${app}`,
-      onRemove: () => toggleApplication(app),
-    });
-  });
-
-  if (filters.isFineTuned === true) {
-    chips.push({
-      key: 'fine-tuned',
-      label: 'Fine-tuned',
-      onRemove: () => toggleFineTuned(),
+      key: 'availability',
+      label: `Run on: ${label(options.availabilities, filters.availability)}`,
+      onRemove: () => hook.setAvailability('local'),
     });
   }
-
-  if (filters.isUncensored === true) {
+  filters.tasks.forEach((value) =>
     chips.push({
-      key: 'uncensored',
-      label: 'Uncensored',
-      onRemove: () => toggleUncensored(),
+      key: `task-${value}`,
+      label: label(options.tasks, value),
+      onRemove: () => hook.toggleTask(value),
+    }),
+  );
+  filters.capabilities.forEach((value) =>
+    chips.push({
+      key: `capability-${value}`,
+      label: value,
+      onRemove: () => hook.toggleCapability(value),
+    }),
+  );
+  filters.applications.forEach((value) =>
+    chips.push({
+      key: `application-${value}`,
+      label: `Application: ${label(options.applications, value)}`,
+      onRemove: () => hook.toggleApplication(value),
+    }),
+  );
+  filters.modalities.forEach((value) =>
+    chips.push({
+      key: `modality-${value}`,
+      label: `Input: ${label(options.modalities, value)}`,
+      onRemove: () => hook.toggleModality(value),
+    }),
+  );
+  filters.quantizations.forEach((value) =>
+    chips.push({
+      key: `quantization-${value}`,
+      label: `Quantization: ${label(options.quantizations, value)}`,
+      onRemove: () => hook.toggleQuantization(value),
+    }),
+  );
+  filters.families.forEach((value) =>
+    chips.push({
+      key: `family-${value}`,
+      label: `Family: ${value}`,
+      onRemove: () => hook.toggleFamily(value),
+    }),
+  );
+  filters.licenses.forEach((value) =>
+    chips.push({
+      key: `license-${value}`,
+      label: `License: ${value}`,
+      onRemove: () => hook.toggleLicense(value),
+    }),
+  );
+  filters.parameterBuckets.forEach((value) =>
+    chips.push({
+      key: `parameter-${value}`,
+      label: label(options.parameterBuckets, value),
+      onRemove: () => hook.toggleParameterBucket(value),
+    }),
+  );
+  if (filters.memory !== null) {
+    chips.push({
+      key: 'memory',
+      label: `Memory: ${filters.memory} GB`,
+      onRemove: () => hook.setMemory(null),
     });
   }
-
-  if (filters.paramSizeBucket) {
-    const bucket = options.paramSizeBuckets.find(
-      (b) => `${b.min}-${b.max}` === filters.paramSizeBucket,
-    );
+  if (filters.context !== null) {
     chips.push({
-      key: 'paramSize',
-      label: bucket?.label ?? filters.paramSizeBucket,
-      onRemove: () => setParamSizeBucket(null),
+      key: 'context',
+      label: `Context: ${label(options.contextThresholds, String(filters.context))}`,
+      onRemove: () => hook.setContext(null),
     });
   }
-
-  if (filters.ramBucket) {
-    const bucket = options.ramBuckets.find((b) => `${b.min}-${b.max}` === filters.ramBucket);
+  if (filters.updatedWithinDays !== null) {
     chips.push({
-      key: 'ram',
-      label: `RAM: ${bucket?.label ?? filters.ramBucket}`,
-      onRemove: () => setRamBucket(null),
-    });
-  }
-
-  if (filters.contextWindowBucket) {
-    const bucket = options.contextWindowBuckets.find(
-      (b) => `${b.min}-${b.max}` === filters.contextWindowBucket,
-    );
-    chips.push({
-      key: 'ctx',
-      label: `Ctx: ${bucket?.label ?? filters.contextWindowBucket}`,
-      onRemove: () => setContextWindowBucket(null),
+      key: 'updated',
+      label: `Updated: ${label(options.updatedRanges, String(filters.updatedWithinDays))}`,
+      onRemove: () => hook.setUpdatedWithinDays(null),
     });
   }
 
   if (chips.length === 0) return null;
 
   return (
-    <div className="flex flex-wrap items-center gap-2">
+    <div className="flex flex-wrap items-center gap-2" aria-label="Active filters">
       {chips.map((chip) => (
         <span
           key={chip.key}
-          className="inline-flex items-center gap-1 px-2.5 h-7 rounded-[var(--radius-full)] text-xs font-medium bg-[var(--color-accent)]/15 text-[var(--color-accent)] border border-[var(--color-accent)]/30"
+          className="inline-flex min-h-11 items-center gap-1 rounded-[var(--radius-full)] border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/15 pl-2.5 text-xs font-medium text-[var(--color-accent)]"
         >
           {chip.label}
           <button
             type="button"
             onClick={chip.onRemove}
             aria-label={`Remove ${chip.label} filter`}
-            className="flex items-center justify-center ml-0.5 hover:opacity-60 transition-opacity"
+            className="flex min-h-11 min-w-11 items-center justify-center transition-opacity hover:opacity-60"
           >
-            <X size={11} />
+            <X size={12} />
           </button>
         </span>
       ))}
       <button
         type="button"
-        onClick={reset}
-        className="text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text)] underline underline-offset-2 transition-colors ml-1"
+        onClick={hook.reset}
+        className="min-h-11 px-2 text-xs text-[var(--color-text-muted)] underline underline-offset-2 transition-colors hover:text-[var(--color-text)]"
       >
         Clear all
       </button>

@@ -1,0 +1,3160 @@
+{
+  "slug": "granite-code",
+  "name": "granite-code",
+  "description": "A family of open foundation models by IBM for Code Intelligence",
+  "source_url": "https://ollama.com/library/granite-code",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1600000,
+  "tag_count": 162,
+  "source_updated_at": "2024-09-03T00:45:00Z",
+  "parameter_sizes": [
+    "3b",
+    "8b",
+    "20b",
+    "34b"
+  ],
+  "min_download_size_bytes": 1300000000,
+  "max_download_size_bytes": 40000000000,
+  "max_context_window": 125000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 162,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "granite-code:latest",
+    "tag": "latest",
+    "digest": "becc94fe1876",
+    "availability": "local",
+    "download_size_bytes": 2000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 125000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "granite-code:3b-base-q2_K",
+    "tag": "3b-base-q2_K",
+    "digest": "e36887a9a821",
+    "availability": "local",
+    "download_size_bytes": 1300000000,
+    "parameter": {
+      "raw": "3b",
+      "total_billion": 3.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "granite-code:20b",
+      "tag": "20b",
+      "digest": "59db7b531bb4",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base",
+      "tag": "20b-base",
+      "digest": "8ab7e91e85ff",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-fp16",
+      "tag": "20b-base-fp16",
+      "digest": "30d0d41d27a1",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q2_K",
+      "tag": "20b-base-q2_K",
+      "digest": "80e7dd534ffd",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q3_K_L",
+      "tag": "20b-base-q3_K_L",
+      "digest": "d25be157479e",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q3_K_M",
+      "tag": "20b-base-q3_K_M",
+      "digest": "c7252c0c6703",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q3_K_S",
+      "tag": "20b-base-q3_K_S",
+      "digest": "67f3e156f5ba",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q4_0",
+      "tag": "20b-base-q4_0",
+      "digest": "8ab7e91e85ff",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q4_1",
+      "tag": "20b-base-q4_1",
+      "digest": "e3a238721ec9",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q4_K_M",
+      "tag": "20b-base-q4_K_M",
+      "digest": "81b9da645827",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q4_K_S",
+      "tag": "20b-base-q4_K_S",
+      "digest": "850228967095",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q5_0",
+      "tag": "20b-base-q5_0",
+      "digest": "0b840e35cc32",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q5_1",
+      "tag": "20b-base-q5_1",
+      "digest": "a864d1a8a08a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q5_K_M",
+      "tag": "20b-base-q5_K_M",
+      "digest": "f036fe711fb1",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q5_K_S",
+      "tag": "20b-base-q5_K_S",
+      "digest": "e5bdfcf66c14",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q6_K",
+      "tag": "20b-base-q6_K",
+      "digest": "a655ca093ef3",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-base-q8_0",
+      "tag": "20b-base-q8_0",
+      "digest": "caf48ed2d622",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct",
+      "tag": "20b-instruct",
+      "digest": "59db7b531bb4",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-fp16",
+      "tag": "20b-instruct-8k-fp16",
+      "digest": "be2ec1259ab5",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q2_K",
+      "tag": "20b-instruct-8k-q2_K",
+      "digest": "4e3dff04ee5b",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q3_K_L",
+      "tag": "20b-instruct-8k-q3_K_L",
+      "digest": "4c929cf47a4e",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q3_K_M",
+      "tag": "20b-instruct-8k-q3_K_M",
+      "digest": "9a3be6de6096",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q3_K_S",
+      "tag": "20b-instruct-8k-q3_K_S",
+      "digest": "cbd8989e4e53",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q4_0",
+      "tag": "20b-instruct-8k-q4_0",
+      "digest": "59db7b531bb4",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q4_1",
+      "tag": "20b-instruct-8k-q4_1",
+      "digest": "6e6ff60ff742",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q4_K_M",
+      "tag": "20b-instruct-8k-q4_K_M",
+      "digest": "69917162166a",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q4_K_S",
+      "tag": "20b-instruct-8k-q4_K_S",
+      "digest": "a012104b6642",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q5_0",
+      "tag": "20b-instruct-8k-q5_0",
+      "digest": "4670ab1f3599",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q5_1",
+      "tag": "20b-instruct-8k-q5_1",
+      "digest": "0e1290bc14f7",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q5_K_M",
+      "tag": "20b-instruct-8k-q5_K_M",
+      "digest": "0f7b0be5131a",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q5_K_S",
+      "tag": "20b-instruct-8k-q5_K_S",
+      "digest": "f9f9a21acb5f",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q6_K",
+      "tag": "20b-instruct-8k-q6_K",
+      "digest": "a6b84d465ddc",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-8k-q8_0",
+      "tag": "20b-instruct-8k-q8_0",
+      "digest": "d0054322b45c",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q2_K",
+      "tag": "20b-instruct-q2_K",
+      "digest": "dec9b6ea432f",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q3_K_L",
+      "tag": "20b-instruct-q3_K_L",
+      "digest": "461f5d8eba68",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q3_K_M",
+      "tag": "20b-instruct-q3_K_M",
+      "digest": "71837d435f0c",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q3_K_S",
+      "tag": "20b-instruct-q3_K_S",
+      "digest": "c06f1e43b32b",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q4_0",
+      "tag": "20b-instruct-q4_0",
+      "digest": "31d8bc61e506",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q4_1",
+      "tag": "20b-instruct-q4_1",
+      "digest": "f9efbe4f8959",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q4_K_M",
+      "tag": "20b-instruct-q4_K_M",
+      "digest": "47eeb409e478",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q4_K_S",
+      "tag": "20b-instruct-q4_K_S",
+      "digest": "644444b999f8",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q5_0",
+      "tag": "20b-instruct-q5_0",
+      "digest": "5db756969808",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q5_1",
+      "tag": "20b-instruct-q5_1",
+      "digest": "7b08c7a6dc75",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q5_K_M",
+      "tag": "20b-instruct-q5_K_M",
+      "digest": "818c70f50940",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q5_K_S",
+      "tag": "20b-instruct-q5_K_S",
+      "digest": "b5d7d53400a9",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q6_K",
+      "tag": "20b-instruct-q6_K",
+      "digest": "bd2f4bcf34bb",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:20b-instruct-q8_0",
+      "tag": "20b-instruct-q8_0",
+      "digest": "b10dca01d737",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "20b",
+        "total_billion": 20.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b",
+      "tag": "34b",
+      "digest": "4ce00960ca84",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base",
+      "tag": "34b-base",
+      "digest": "42c7e6e2af53",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q2_K",
+      "tag": "34b-base-q2_K",
+      "digest": "c74c785f9aad",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q3_K_L",
+      "tag": "34b-base-q3_K_L",
+      "digest": "7c99e42e5deb",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q3_K_M",
+      "tag": "34b-base-q3_K_M",
+      "digest": "4485e027847c",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q3_K_S",
+      "tag": "34b-base-q3_K_S",
+      "digest": "31de19958232",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q4_0",
+      "tag": "34b-base-q4_0",
+      "digest": "42c7e6e2af53",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q4_1",
+      "tag": "34b-base-q4_1",
+      "digest": "3770a699dae1",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q4_K_M",
+      "tag": "34b-base-q4_K_M",
+      "digest": "f4ad76c0503a",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q4_K_S",
+      "tag": "34b-base-q4_K_S",
+      "digest": "d0fbbc626c30",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q5_0",
+      "tag": "34b-base-q5_0",
+      "digest": "fb7a2b093c21",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q5_1",
+      "tag": "34b-base-q5_1",
+      "digest": "0d64b22fd447",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q5_K_M",
+      "tag": "34b-base-q5_K_M",
+      "digest": "3da71b98ed2b",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q5_K_S",
+      "tag": "34b-base-q5_K_S",
+      "digest": "c5afa738c212",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q6_K",
+      "tag": "34b-base-q6_K",
+      "digest": "ddf66982e605",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-base-q8_0",
+      "tag": "34b-base-q8_0",
+      "digest": "a1d04f60bc5e",
+      "availability": "local",
+      "download_size_bytes": 36000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct",
+      "tag": "34b-instruct",
+      "digest": "4ce00960ca84",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q2_K",
+      "tag": "34b-instruct-q2_K",
+      "digest": "c74bd2d3910b",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q3_K_L",
+      "tag": "34b-instruct-q3_K_L",
+      "digest": "51d4b46e9649",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q3_K_M",
+      "tag": "34b-instruct-q3_K_M",
+      "digest": "97d3df0a98fb",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q3_K_S",
+      "tag": "34b-instruct-q3_K_S",
+      "digest": "941db8c58f05",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q4_0",
+      "tag": "34b-instruct-q4_0",
+      "digest": "4ce00960ca84",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q4_1",
+      "tag": "34b-instruct-q4_1",
+      "digest": "a1cca29491fd",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q4_K_M",
+      "tag": "34b-instruct-q4_K_M",
+      "digest": "74723d97951a",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q4_K_S",
+      "tag": "34b-instruct-q4_K_S",
+      "digest": "017ae7f3dba3",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q5_0",
+      "tag": "34b-instruct-q5_0",
+      "digest": "4d276c35489e",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q5_1",
+      "tag": "34b-instruct-q5_1",
+      "digest": "f0004bc4aba0",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q5_K_M",
+      "tag": "34b-instruct-q5_K_M",
+      "digest": "dad8cb2d266e",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q5_K_S",
+      "tag": "34b-instruct-q5_K_S",
+      "digest": "ad33350a1e2c",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q6_K",
+      "tag": "34b-instruct-q6_K",
+      "digest": "c71fa145605c",
+      "availability": "local",
+      "download_size_bytes": 28000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:34b-instruct-q8_0",
+      "tag": "34b-instruct-q8_0",
+      "digest": "abc2bbc41ce5",
+      "availability": "local",
+      "download_size_bytes": 36000000000,
+      "parameter": {
+        "raw": "34b",
+        "total_billion": 34.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b",
+      "tag": "3b",
+      "digest": "becc94fe1876",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base",
+      "tag": "3b-base",
+      "digest": "897c973ac371",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-fp16",
+      "tag": "3b-base-fp16",
+      "digest": "c05254111c3b",
+      "availability": "local",
+      "download_size_bytes": 7000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q2_K",
+      "tag": "3b-base-q2_K",
+      "digest": "e36887a9a821",
+      "availability": "local",
+      "download_size_bytes": 1300000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q3_K_L",
+      "tag": "3b-base-q3_K_L",
+      "digest": "efa391969797",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q3_K_M",
+      "tag": "3b-base-q3_K_M",
+      "digest": "6cd1bf544950",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q3_K_S",
+      "tag": "3b-base-q3_K_S",
+      "digest": "4ebfe349d653",
+      "availability": "local",
+      "download_size_bytes": 1600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q4_0",
+      "tag": "3b-base-q4_0",
+      "digest": "897c973ac371",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q4_1",
+      "tag": "3b-base-q4_1",
+      "digest": "289762e9c2de",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q4_K_M",
+      "tag": "3b-base-q4_K_M",
+      "digest": "074272cf1192",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q4_K_S",
+      "tag": "3b-base-q4_K_S",
+      "digest": "05d91372ce79",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q5_0",
+      "tag": "3b-base-q5_0",
+      "digest": "564f8e0abfff",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q5_1",
+      "tag": "3b-base-q5_1",
+      "digest": "bdb3c9b7c5e4",
+      "availability": "local",
+      "download_size_bytes": 2600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q5_K_M",
+      "tag": "3b-base-q5_K_M",
+      "digest": "9f543ec02c81",
+      "availability": "local",
+      "download_size_bytes": 2500000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q5_K_S",
+      "tag": "3b-base-q5_K_S",
+      "digest": "c2b4985e3261",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q6_K",
+      "tag": "3b-base-q6_K",
+      "digest": "ef18db8d2afc",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-base-q8_0",
+      "tag": "3b-base-q8_0",
+      "digest": "c3464b5e457a",
+      "availability": "local",
+      "download_size_bytes": 3700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct",
+      "tag": "3b-instruct",
+      "digest": "becc94fe1876",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-fp16",
+      "tag": "3b-instruct-128k-fp16",
+      "digest": "0a85292e9c4c",
+      "availability": "local",
+      "download_size_bytes": 7000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q2_K",
+      "tag": "3b-instruct-128k-q2_K",
+      "digest": "72154d08acee",
+      "availability": "local",
+      "download_size_bytes": 1300000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q3_K_L",
+      "tag": "3b-instruct-128k-q3_K_L",
+      "digest": "c794c5813849",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q3_K_M",
+      "tag": "3b-instruct-128k-q3_K_M",
+      "digest": "27350580d3ea",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q3_K_S",
+      "tag": "3b-instruct-128k-q3_K_S",
+      "digest": "c5827e0a7a55",
+      "availability": "local",
+      "download_size_bytes": 1600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q4_0",
+      "tag": "3b-instruct-128k-q4_0",
+      "digest": "becc94fe1876",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q4_1",
+      "tag": "3b-instruct-128k-q4_1",
+      "digest": "7e9329333607",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q4_K_M",
+      "tag": "3b-instruct-128k-q4_K_M",
+      "digest": "4702f6327ab5",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q4_K_S",
+      "tag": "3b-instruct-128k-q4_K_S",
+      "digest": "a6c4b37f0dc7",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q5_0",
+      "tag": "3b-instruct-128k-q5_0",
+      "digest": "dece491ce896",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q5_1",
+      "tag": "3b-instruct-128k-q5_1",
+      "digest": "275d6e2f4fcc",
+      "availability": "local",
+      "download_size_bytes": 2600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q5_K_M",
+      "tag": "3b-instruct-128k-q5_K_M",
+      "digest": "39570a508075",
+      "availability": "local",
+      "download_size_bytes": 2500000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q5_K_S",
+      "tag": "3b-instruct-128k-q5_K_S",
+      "digest": "07bebb9f1381",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q6_K",
+      "tag": "3b-instruct-128k-q6_K",
+      "digest": "aac7fdd35a84",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-128k-q8_0",
+      "tag": "3b-instruct-128k-q8_0",
+      "digest": "3ffa9e883e62",
+      "availability": "local",
+      "download_size_bytes": 3700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-fp16",
+      "tag": "3b-instruct-fp16",
+      "digest": "788453573810",
+      "availability": "local",
+      "download_size_bytes": 7000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q2_K",
+      "tag": "3b-instruct-q2_K",
+      "digest": "7f3ad6ca25f4",
+      "availability": "local",
+      "download_size_bytes": 1300000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q3_K_L",
+      "tag": "3b-instruct-q3_K_L",
+      "digest": "d9060e45c47c",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q3_K_M",
+      "tag": "3b-instruct-q3_K_M",
+      "digest": "70ec21a3004e",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q3_K_S",
+      "tag": "3b-instruct-q3_K_S",
+      "digest": "991c2ca80baf",
+      "availability": "local",
+      "download_size_bytes": 1600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q4_0",
+      "tag": "3b-instruct-q4_0",
+      "digest": "63bedbdffbf0",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q4_1",
+      "tag": "3b-instruct-q4_1",
+      "digest": "07c153ea8ba3",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q4_K_M",
+      "tag": "3b-instruct-q4_K_M",
+      "digest": "65861823ce7a",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q4_K_S",
+      "tag": "3b-instruct-q4_K_S",
+      "digest": "c681b8a19c05",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q5_0",
+      "tag": "3b-instruct-q5_0",
+      "digest": "8a64d99caa8b",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q5_1",
+      "tag": "3b-instruct-q5_1",
+      "digest": "c7b815a477d2",
+      "availability": "local",
+      "download_size_bytes": 2600000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q5_K_M",
+      "tag": "3b-instruct-q5_K_M",
+      "digest": "2db2e42160a0",
+      "availability": "local",
+      "download_size_bytes": 2500000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q5_K_S",
+      "tag": "3b-instruct-q5_K_S",
+      "digest": "c1cb0d4855f6",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q6_K",
+      "tag": "3b-instruct-q6_K",
+      "digest": "f9bad785d4c6",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:3b-instruct-q8_0",
+      "tag": "3b-instruct-q8_0",
+      "digest": "b93b1a15197d",
+      "availability": "local",
+      "download_size_bytes": 3700000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b",
+      "tag": "8b",
+      "digest": "36c3c3b9683b",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base",
+      "tag": "8b-base",
+      "digest": "446b079c08d8",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-fp16",
+      "tag": "8b-base-fp16",
+      "digest": "b9ad7693117c",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q2_K",
+      "tag": "8b-base-q2_K",
+      "digest": "e63080a27380",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q3_K_L",
+      "tag": "8b-base-q3_K_L",
+      "digest": "3e786e80fe43",
+      "availability": "local",
+      "download_size_bytes": 4300000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q3_K_M",
+      "tag": "8b-base-q3_K_M",
+      "digest": "ca4d1a480357",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q3_K_S",
+      "tag": "8b-base-q3_K_S",
+      "digest": "2ea64f1e1696",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q4_0",
+      "tag": "8b-base-q4_0",
+      "digest": "446b079c08d8",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q4_1",
+      "tag": "8b-base-q4_1",
+      "digest": "8188ceec7ebb",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q4_K_M",
+      "tag": "8b-base-q4_K_M",
+      "digest": "d1ff254e3ce3",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q4_K_S",
+      "tag": "8b-base-q4_K_S",
+      "digest": "8b5439b8f8fa",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q5_0",
+      "tag": "8b-base-q5_0",
+      "digest": "a2683a6426c6",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q5_1",
+      "tag": "8b-base-q5_1",
+      "digest": "1ac225f4921f",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q5_K_M",
+      "tag": "8b-base-q5_K_M",
+      "digest": "571e48fd3f79",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q5_K_S",
+      "tag": "8b-base-q5_K_S",
+      "digest": "ac18787cbd38",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q6_K",
+      "tag": "8b-base-q6_K",
+      "digest": "85c68aed2abf",
+      "availability": "local",
+      "download_size_bytes": 6600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-base-q8_0",
+      "tag": "8b-base-q8_0",
+      "digest": "98d17f9b29f7",
+      "availability": "local",
+      "download_size_bytes": 8600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct",
+      "tag": "8b-instruct",
+      "digest": "36c3c3b9683b",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-128k-q4_0",
+      "tag": "8b-instruct-128k-q4_0",
+      "digest": "36c3c3b9683b",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-128k-q4_1",
+      "tag": "8b-instruct-128k-q4_1",
+      "digest": "0f53e9c9d8be",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-fp16",
+      "tag": "8b-instruct-fp16",
+      "digest": "ba8f7888f7cd",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q2_K",
+      "tag": "8b-instruct-q2_K",
+      "digest": "e19d9843758d",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q3_K_L",
+      "tag": "8b-instruct-q3_K_L",
+      "digest": "e7a83854c109",
+      "availability": "local",
+      "download_size_bytes": 4300000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q3_K_M",
+      "tag": "8b-instruct-q3_K_M",
+      "digest": "bf18f4d1eac9",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q3_K_S",
+      "tag": "8b-instruct-q3_K_S",
+      "digest": "f432fe584c50",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q4_0",
+      "tag": "8b-instruct-q4_0",
+      "digest": "998bce918de0",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q4_1",
+      "tag": "8b-instruct-q4_1",
+      "digest": "d7b2698267fc",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q4_K_M",
+      "tag": "8b-instruct-q4_K_M",
+      "digest": "6b6cc77a3094",
+      "availability": "local",
+      "download_size_bytes": 4900000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q4_K_S",
+      "tag": "8b-instruct-q4_K_S",
+      "digest": "fd077fe10167",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q5_0",
+      "tag": "8b-instruct-q5_0",
+      "digest": "c577f70d1bcb",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q5_1",
+      "tag": "8b-instruct-q5_1",
+      "digest": "f5c70f717cd7",
+      "availability": "local",
+      "download_size_bytes": 6100000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q5_K_M",
+      "tag": "8b-instruct-q5_K_M",
+      "digest": "a8781d67d804",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q5_K_S",
+      "tag": "8b-instruct-q5_K_S",
+      "digest": "47b0d1d1779c",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q6_K",
+      "tag": "8b-instruct-q6_K",
+      "digest": "a929c1ec4cda",
+      "availability": "local",
+      "download_size_bytes": 6600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:8b-instruct-q8_0",
+      "tag": "8b-instruct-q8_0",
+      "digest": "068b1c745db2",
+      "availability": "local",
+      "download_size_bytes": 8600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite-code:latest",
+      "tag": "latest",
+      "digest": "becc94fe1876",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

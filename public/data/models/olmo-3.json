@@ -1,0 +1,364 @@
+{
+  "slug": "olmo-3",
+  "name": "olmo-3",
+  "description": "Olmo is a series of Open language models designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+  "source_url": "https://ollama.com/library/olmo-3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 463000,
+  "tag_count": 15,
+  "source_updated_at": "2025-12-16T05:55:00Z",
+  "parameter_sizes": [
+    "7b",
+    "32b"
+  ],
+  "min_download_size_bytes": 4500000000,
+  "max_download_size_bytes": 64000000000,
+  "max_context_window": 64000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 15,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "olmo-3:latest",
+    "tag": "latest",
+    "digest": "b8d4c92ac9c1",
+    "availability": "local",
+    "download_size_bytes": 4500000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 64000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "olmo-3:7b",
+    "tag": "7b",
+    "digest": "b8d4c92ac9c1",
+    "availability": "local",
+    "download_size_bytes": 4500000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 64000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "olmo-3:32b",
+      "tag": "32b",
+      "digest": "e9f1ab1d201f",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:32b-think",
+      "tag": "32b-think",
+      "digest": "e9f1ab1d201f",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:32b-think-fp16",
+      "tag": "32b-think-fp16",
+      "digest": "19507f95f179",
+      "availability": "local",
+      "download_size_bytes": 64000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:32b-think-q4_K_M",
+      "tag": "32b-think-q4_K_M",
+      "digest": "e9f1ab1d201f",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:32b-think-q8_0",
+      "tag": "32b-think-q8_0",
+      "digest": "029b051ac27f",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "32b",
+        "total_billion": 32.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b",
+      "tag": "7b",
+      "digest": "b8d4c92ac9c1",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-instruct",
+      "tag": "7b-instruct",
+      "digest": "ea72df8c85d7",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-instruct-fp16",
+      "tag": "7b-instruct-fp16",
+      "digest": "10bc19cdab78",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-instruct-q4_K_M",
+      "tag": "7b-instruct-q4_K_M",
+      "digest": "ea72df8c85d7",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-instruct-q8_0",
+      "tag": "7b-instruct-q8_0",
+      "digest": "d40368740fe9",
+      "availability": "local",
+      "download_size_bytes": 7800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-think",
+      "tag": "7b-think",
+      "digest": "b8d4c92ac9c1",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-think-fp16",
+      "tag": "7b-think-fp16",
+      "digest": "2ab176791f8c",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-think-q4_K_M",
+      "tag": "7b-think-q4_K_M",
+      "digest": "b8d4c92ac9c1",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:7b-think-q8_0",
+      "tag": "7b-think-q8_0",
+      "digest": "84ada4103830",
+      "availability": "local",
+      "download_size_bytes": 7800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "olmo-3:latest",
+      "tag": "latest",
+      "digest": "b8d4c92ac9c1",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

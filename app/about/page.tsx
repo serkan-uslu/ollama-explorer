@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllModels } from '@/lib/data/models';
-import { deriveFilterOptions } from '@/lib/data/filters';
+import { getAllModels, getCatalog } from '@/lib/data/models';
 import { Divider } from '@/components/ui/atoms/Divider';
-import { Button } from '@/components/ui/atoms/Button';
+import { buttonClassName } from '@/components/ui/atoms/Button';
 import { formatDate } from '@/lib/utils/format';
 
 export const dynamic = 'force-static';
@@ -11,7 +10,7 @@ export const dynamic = 'force-static';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Ollama Model Explorer is a fast, minimal directory for browsing 200+ open-source AI models scraped from ollama.com. Built with Next.js, React and Tailwind CSS.',
+    'Ollama Explorer helps you choose a local model and copy the exact Ollama command for a fitting variant.',
   alternates: {
     canonical: 'https://ollama-explorer.vercel.app/about',
   },
@@ -24,11 +23,9 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const models = getAllModels();
-  const options = deriveFilterOptions(models);
-  const lastUpdated = models
-    .map((m) => m.timestamp)
-    .sort()
-    .at(-1);
+  const catalog = getCatalog();
+  const capabilities = new Set(models.flatMap((model) => model.capabilities));
+  const variants = models.reduce((count, model) => count + model.tag_count, 0);
 
   return (
     <main id="main" className="max-w-2xl mx-auto px-4 sm:px-6 py-12 sm:py-20 flex flex-col gap-10">
@@ -37,8 +34,7 @@ export default function AboutPage() {
           About Ollama Explorer
         </h1>
         <p className="text-base text-[var(--color-text-muted)] leading-relaxed">
-          Open-source AI has never been more accessible — but that accessibility comes with a new
-          problem:{' '}
+          Local AI has never been more accessible — but that accessibility comes with a new problem:{' '}
           <strong className="text-[var(--color-text)]">
             too many choices, too little structure.
           </strong>
@@ -52,17 +48,14 @@ export default function AboutPage() {
           >
             Ollama
           </a>{' '}
-          provides the infrastructure to run open-source large language models locally with a single
-          command. Its library lists 200+ models — but with minimal filtering, discovering which
-          open-source model fits your hardware, use case, or language takes time you shouldn&rsquo;t
-          have to spend.
+          provides the infrastructure to run language models locally with a single command. Its
+          library is broad, but discovering which exact variant fits your task and memory budget
+          takes more work than it should.
         </p>
         <p className="text-base text-[var(--color-text-muted)] leading-relaxed">
-          Ollama Explorer solves this. Every model is enriched with structured metadata: capability
-          tags, domain classification, RAM requirements, context window sizes, parameter size
-          buckets, and language support. You can filter across all of these dimensions at once,
-          search with fuzzy matching (tolerates typos), and get to the right model in seconds — not
-          minutes.
+          Ollama Explorer turns source-backed catalog and tag data into task, capability, context,
+          parameter and memory-budget filters. It keeps unknown values unknown, labels memory as an
+          estimate, and always leads to a complete <code>ollama run model:tag</code> command.
         </p>
         <p className="text-base text-[var(--color-text-muted)] leading-relaxed">
           Whether you’re a developer picking a coding assistant, a researcher comparing reasoning
@@ -86,17 +79,23 @@ export default function AboutPage() {
           >
             ollama.com/library
           </a>{' '}
-          and processed into structured JSON, enriching each entry with domain classification,
-          use-case tagging, RAM requirements and complexity ratings.
+          and normalized into a compact catalog plus one detail file per model. Capabilities,
+          applications and variants come from the source; the catalog does not use AI enrichment.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-2">
           {[
             { label: 'Total models', value: models.length },
-            { label: 'Domains', value: options.domains.length },
-            { label: 'Capabilities', value: options.capabilities.length },
-            { label: 'Use cases', value: options.useCases.length },
-            { label: 'Languages', value: options.languages.length },
-            { label: 'Last indexed', value: lastUpdated ? formatDate(lastUpdated) : '—' },
+            {
+              label: 'Local-capable',
+              value: models.filter((model) => model.availability !== 'cloud').length,
+            },
+            {
+              label: 'Cloud-only',
+              value: models.filter((model) => model.availability === 'cloud').length,
+            },
+            { label: 'Capabilities', value: capabilities.size },
+            { label: 'Variants', value: variants.toLocaleString('en-US') },
+            { label: 'Last indexed', value: formatDate(catalog.generated_at) },
           ].map((s) => (
             <div
               key={s.label}
@@ -139,13 +138,16 @@ export default function AboutPage() {
       <Divider />
 
       <div className="flex flex-col sm:flex-row gap-3">
-        <Link href="/models">
-          <Button size="md">Browse models</Button>
+        <Link href="/models" className={buttonClassName()}>
+          Browse models
         </Link>
-        <a href="https://ollama.com" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" size="md">
-            Visit Ollama
-          </Button>
+        <a
+          href="https://ollama.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={buttonClassName('outline')}
+        >
+          Visit Ollama
         </a>
       </div>
     </main>

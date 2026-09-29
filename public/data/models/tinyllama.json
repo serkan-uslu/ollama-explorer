@@ -1,0 +1,751 @@
+{
+  "slug": "tinyllama",
+  "name": "tinyllama",
+  "description": "The TinyLlama project is an open endeavor to train a compact 1.1B Llama model on 3 trillion tokens.",
+  "source_url": "https://ollama.com/library/tinyllama",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 5900000,
+  "tag_count": 36,
+  "source_updated_at": "2024-01-01T02:44:00Z",
+  "parameter_sizes": [
+    "1.1b"
+  ],
+  "min_download_size_bytes": 483000000,
+  "max_download_size_bytes": 2200000000,
+  "max_context_window": 2000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 36,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "tinyllama:latest",
+    "tag": "latest",
+    "digest": "2644915ede35",
+    "availability": "local",
+    "download_size_bytes": 638000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "tinyllama:1.1b-chat-v0.6-q2_K",
+    "tag": "1.1b-chat-v0.6-q2_K",
+    "digest": "a2aa7f9e13b4",
+    "availability": "local",
+    "download_size_bytes": 483000000,
+    "parameter": {
+      "raw": "1.1b",
+      "total_billion": 1.1,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 2000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "tinyllama:1.1b",
+      "tag": "1.1b",
+      "digest": "2644915ede35",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat",
+      "tag": "1.1b-chat",
+      "digest": "2644915ede35",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-fp16",
+      "tag": "1.1b-chat-v0.6-fp16",
+      "digest": "a40b38e0c72d",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q2_K",
+      "tag": "1.1b-chat-v0.6-q2_K",
+      "digest": "a2aa7f9e13b4",
+      "availability": "local",
+      "download_size_bytes": 483000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q3_K_L",
+      "tag": "1.1b-chat-v0.6-q3_K_L",
+      "digest": "3dca23077eec",
+      "availability": "local",
+      "download_size_bytes": 593000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q3_K_M",
+      "tag": "1.1b-chat-v0.6-q3_K_M",
+      "digest": "d36765ee7b2a",
+      "availability": "local",
+      "download_size_bytes": 551000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q3_K_S",
+      "tag": "1.1b-chat-v0.6-q3_K_S",
+      "digest": "f09e5b1786e1",
+      "availability": "local",
+      "download_size_bytes": 500000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q4_0",
+      "tag": "1.1b-chat-v0.6-q4_0",
+      "digest": "cb4df2e70049",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q4_1",
+      "tag": "1.1b-chat-v0.6-q4_1",
+      "digest": "ad5344d40d22",
+      "availability": "local",
+      "download_size_bytes": 702000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q4_K_M",
+      "tag": "1.1b-chat-v0.6-q4_K_M",
+      "digest": "078cb72856ab",
+      "availability": "local",
+      "download_size_bytes": 669000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q4_K_S",
+      "tag": "1.1b-chat-v0.6-q4_K_S",
+      "digest": "e68e39e22c5c",
+      "availability": "local",
+      "download_size_bytes": 644000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q5_0",
+      "tag": "1.1b-chat-v0.6-q5_0",
+      "digest": "8df5040f8c77",
+      "availability": "local",
+      "download_size_bytes": 767000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q5_1",
+      "tag": "1.1b-chat-v0.6-q5_1",
+      "digest": "6b68a0890709",
+      "availability": "local",
+      "download_size_bytes": 832000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q5_K_M",
+      "tag": "1.1b-chat-v0.6-q5_K_M",
+      "digest": "630e23132e37",
+      "availability": "local",
+      "download_size_bytes": 783000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q5_K_S",
+      "tag": "1.1b-chat-v0.6-q5_K_S",
+      "digest": "86ebaf63decb",
+      "availability": "local",
+      "download_size_bytes": 767000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q6_K",
+      "tag": "1.1b-chat-v0.6-q6_K",
+      "digest": "4ea10b64d2c3",
+      "availability": "local",
+      "download_size_bytes": 904000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v0.6-q8_0",
+      "tag": "1.1b-chat-v0.6-q8_0",
+      "digest": "b939c0e77079",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-fp16",
+      "tag": "1.1b-chat-v1-fp16",
+      "digest": "71c2f9b69b52",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q2_K",
+      "tag": "1.1b-chat-v1-q2_K",
+      "digest": "721a0fc5ae2d",
+      "availability": "local",
+      "download_size_bytes": 483000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q3_K_L",
+      "tag": "1.1b-chat-v1-q3_K_L",
+      "digest": "317426342de6",
+      "availability": "local",
+      "download_size_bytes": 593000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q3_K_M",
+      "tag": "1.1b-chat-v1-q3_K_M",
+      "digest": "1bbb25f9a630",
+      "availability": "local",
+      "download_size_bytes": 551000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q3_K_S",
+      "tag": "1.1b-chat-v1-q3_K_S",
+      "digest": "5042a43d653b",
+      "availability": "local",
+      "download_size_bytes": 500000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q4_0",
+      "tag": "1.1b-chat-v1-q4_0",
+      "digest": "2644915ede35",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q4_1",
+      "tag": "1.1b-chat-v1-q4_1",
+      "digest": "2ce57eb5c622",
+      "availability": "local",
+      "download_size_bytes": 702000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q4_K_M",
+      "tag": "1.1b-chat-v1-q4_K_M",
+      "digest": "86b3ca80c6c5",
+      "availability": "local",
+      "download_size_bytes": 669000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q4_K_S",
+      "tag": "1.1b-chat-v1-q4_K_S",
+      "digest": "ac37fe61e9f7",
+      "availability": "local",
+      "download_size_bytes": 644000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q5_0",
+      "tag": "1.1b-chat-v1-q5_0",
+      "digest": "70c60394cb6e",
+      "availability": "local",
+      "download_size_bytes": 767000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q5_1",
+      "tag": "1.1b-chat-v1-q5_1",
+      "digest": "5efe2a172290",
+      "availability": "local",
+      "download_size_bytes": 832000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q5_K_M",
+      "tag": "1.1b-chat-v1-q5_K_M",
+      "digest": "920ba90fb00e",
+      "availability": "local",
+      "download_size_bytes": 783000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q5_K_S",
+      "tag": "1.1b-chat-v1-q5_K_S",
+      "digest": "913a3797a111",
+      "availability": "local",
+      "download_size_bytes": 767000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q6_K",
+      "tag": "1.1b-chat-v1-q6_K",
+      "digest": "d53bb0758e48",
+      "availability": "local",
+      "download_size_bytes": 904000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:1.1b-chat-v1-q8_0",
+      "tag": "1.1b-chat-v1-q8_0",
+      "digest": "3746473cdb1e",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "1.1b",
+        "total_billion": 1.1,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:chat",
+      "tag": "chat",
+      "digest": "2644915ede35",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:latest",
+      "tag": "latest",
+      "digest": "2644915ede35",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "tinyllama:v0.6",
+      "tag": "v0.6",
+      "digest": "cb4df2e70049",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tinyllama:v1",
+      "tag": "v1",
+      "digest": "2644915ede35",
+      "availability": "local",
+      "download_size_bytes": 638000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

@@ -1,56 +1,61 @@
 'use client';
 
 import { useEffect } from 'react';
-import { ExternalLink } from 'lucide-react';
-import { trackModelView, trackExternalLinkClick } from '@/lib/utils/ga';
+import { Bug, ExternalLink } from 'lucide-react';
+import { trackExternalLinkClick, trackModelView } from '@/lib/utils/ga';
 
 interface ModelDetailActionsProps {
   modelName: string;
-  modelId: string;
-  domain: string;
-  ollamaUrl: string;
-  huggingFaceUrl?: string;
+  modelSlug: string;
+  availability: string;
+  sourceUrl: string;
+}
+
+function safeOllamaUrl(value: string): string | null {
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && url.hostname === 'ollama.com' ? url.toString() : null;
+  } catch {
+    return null;
+  }
 }
 
 export function ModelDetailActions({
   modelName,
-  modelId,
-  domain,
-  ollamaUrl,
-  huggingFaceUrl,
+  modelSlug,
+  availability,
+  sourceUrl,
 }: ModelDetailActionsProps) {
-  // Track model view on mount
+  const ollamaUrl = safeOllamaUrl(sourceUrl);
+  const reportUrl = `https://github.com/serkan-uslu/ollama-explorer/issues/new?template=wrong_data.yml&title=${encodeURIComponent(`[Data] ${modelSlug}`)}`;
+
   useEffect(() => {
-    trackModelView(modelName, modelId, domain);
-  }, [modelName, modelId, domain]);
+    trackModelView(modelName, modelSlug, availability);
+  }, [availability, modelName, modelSlug]);
 
   return (
-    <>
-      {/* External links with event tracking */}
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-3">
+      {ollamaUrl && (
         <a
           href={ollamaUrl}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackExternalLinkClick(ollamaUrl, 'ollama')}
-          className="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+          className="inline-flex min-h-11 w-full items-center gap-2 rounded-[var(--radius-md)] px-3 text-sm text-[var(--color-text-muted)] hover:bg-[var(--color-bg-muted)] hover:text-[var(--color-text)]"
         >
-          <ExternalLink size={14} />
-          View on ollama.com
+          <ExternalLink size={16} aria-hidden />
+          View source on Ollama
         </a>
-        {huggingFaceUrl && (
-          <a
-            href={huggingFaceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => trackExternalLinkClick(huggingFaceUrl, 'huggingface')}
-            className="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
-          >
-            <ExternalLink size={14} />
-            View on Hugging Face
-          </a>
-        )}
-      </div>
-    </>
+      )}
+      <a
+        href={reportUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex min-h-11 w-full items-center gap-2 rounded-[var(--radius-md)] px-3 text-sm text-[var(--color-text-muted)] hover:bg-[var(--color-bg-muted)] hover:text-[var(--color-text)]"
+      >
+        <Bug size={16} aria-hidden />
+        Report incorrect data
+      </a>
+    </div>
   );
 }

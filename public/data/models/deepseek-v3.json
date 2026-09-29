@@ -1,0 +1,162 @@
+{
+  "slug": "deepseek-v3",
+  "name": "deepseek-v3",
+  "description": "A strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token.",
+  "source_url": "https://ollama.com/library/deepseek-v3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 3800000,
+  "tag_count": 5,
+  "source_updated_at": "2025-01-13T17:16:00Z",
+  "parameter_sizes": [
+    "671b"
+  ],
+  "min_download_size_bytes": 404000000000,
+  "max_download_size_bytes": 1300000000000,
+  "max_context_window": 160000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "deepseek-v3:latest",
+    "tag": "latest",
+    "digest": "5da0e2d4a9e0",
+    "availability": "local",
+    "download_size_bytes": 404000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 160000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "deepseek-v3:671b",
+    "tag": "671b",
+    "digest": "5da0e2d4a9e0",
+    "availability": "local",
+    "download_size_bytes": 404000000000,
+    "parameter": {
+      "raw": "671b",
+      "total_billion": 671.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 160000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "deepseek-v3:671b",
+      "tag": "671b",
+      "digest": "5da0e2d4a9e0",
+      "availability": "local",
+      "download_size_bytes": 404000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-v3:671b-fp16",
+      "tag": "671b-fp16",
+      "digest": "7770bf5a5ed8",
+      "availability": "local",
+      "download_size_bytes": 1300000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-v3:671b-q4_K_M",
+      "tag": "671b-q4_K_M",
+      "digest": "5da0e2d4a9e0",
+      "availability": "local",
+      "download_size_bytes": 404000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-v3:671b-q8_0",
+      "tag": "671b-q8_0",
+      "digest": "96061c74c1a5",
+      "availability": "local",
+      "download_size_bytes": 713000000000,
+      "parameter": {
+        "raw": "671b",
+        "total_billion": 671.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 4000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "deepseek-v3:latest",
+      "tag": "latest",
+      "digest": "5da0e2d4a9e0",
+      "availability": "local",
+      "download_size_bytes": 404000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 160000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

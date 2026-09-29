@@ -1,0 +1,441 @@
+{
+  "slug": "moondream",
+  "name": "moondream",
+  "description": "moondream2 is a small vision language model designed to run efficiently on edge devices.",
+  "source_url": "https://ollama.com/library/moondream",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 1900000,
+  "tag_count": 18,
+  "source_updated_at": "2024-05-07T21:18:00Z",
+  "parameter_sizes": [
+    "1.8b"
+  ],
+  "min_download_size_bytes": 1500000000,
+  "max_download_size_bytes": 3700000000,
+  "max_context_window": 2000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 18,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "moondream:latest",
+    "tag": "latest",
+    "digest": "55fc3abd3867",
+    "availability": "local",
+    "download_size_bytes": 1700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 2000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "moondream:1.8b-v2-q2_K",
+    "tag": "1.8b-v2-q2_K",
+    "digest": "60a4fe10cc8b",
+    "availability": "local",
+    "download_size_bytes": 1500000000,
+    "parameter": {
+      "raw": "1.8b",
+      "total_billion": 1.8,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 2000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "moondream:1.8b",
+      "tag": "1.8b",
+      "digest": "55fc3abd3867",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-fp16",
+      "tag": "1.8b-v2-fp16",
+      "digest": "8921b6c3990a",
+      "availability": "local",
+      "download_size_bytes": 3700000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q2_K",
+      "tag": "1.8b-v2-q2_K",
+      "digest": "60a4fe10cc8b",
+      "availability": "local",
+      "download_size_bytes": 1500000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q3_K_L",
+      "tag": "1.8b-v2-q3_K_L",
+      "digest": "119dd8c33e4e",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q3_K_M",
+      "tag": "1.8b-v2-q3_K_M",
+      "digest": "b7ca95d4df05",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q3_K_S",
+      "tag": "1.8b-v2-q3_K_S",
+      "digest": "c1f516864beb",
+      "availability": "local",
+      "download_size_bytes": 1600000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q4_0",
+      "tag": "1.8b-v2-q4_0",
+      "digest": "55fc3abd3867",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q4_1",
+      "tag": "1.8b-v2-q4_1",
+      "digest": "d3555a3ddc4b",
+      "availability": "local",
+      "download_size_bytes": 1800000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q4_K_M",
+      "tag": "1.8b-v2-q4_K_M",
+      "digest": "c865c80afc38",
+      "availability": "local",
+      "download_size_bytes": 1800000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q4_K_S",
+      "tag": "1.8b-v2-q4_K_S",
+      "digest": "6858752db2f4",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q5_0",
+      "tag": "1.8b-v2-q5_0",
+      "digest": "1d82a6c34daa",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q5_1",
+      "tag": "1.8b-v2-q5_1",
+      "digest": "0bc271bb633d",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q5_K_M",
+      "tag": "1.8b-v2-q5_K_M",
+      "digest": "521316e36d6e",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q5_K_S",
+      "tag": "1.8b-v2-q5_K_S",
+      "digest": "85200c02ea40",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q6_K",
+      "tag": "1.8b-v2-q6_K",
+      "digest": "5ff1472b766d",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:1.8b-v2-q8_0",
+      "tag": "1.8b-v2-q8_0",
+      "digest": "0e65c7807dc3",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "1.8b",
+        "total_billion": 1.8,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "moondream:latest",
+      "tag": "latest",
+      "digest": "55fc3abd3867",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "moondream:v2",
+      "tag": "v2",
+      "digest": "55fc3abd3867",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

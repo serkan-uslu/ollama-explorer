@@ -1,0 +1,587 @@
+{
+  "slug": "gemma3",
+  "name": "gemma3",
+  "description": "The current, most capable model that runs on a single GPU.",
+  "source_url": "https://ollama.com/library/gemma3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 40800000,
+  "tag_count": 26,
+  "source_updated_at": "2025-08-15T08:15:00Z",
+  "parameter_sizes": [
+    "270m",
+    "1b",
+    "4b",
+    "12b",
+    "27b"
+  ],
+  "min_download_size_bytes": 241000000,
+  "max_download_size_bytes": 55000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "FP16",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 26,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "gemma3:latest",
+    "tag": "latest",
+    "digest": "a2af6cc3eb7f",
+    "availability": "local",
+    "download_size_bytes": 3300000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "gemma3:270m-it-qat",
+    "tag": "270m-it-qat",
+    "digest": "b16d6d39dfbd",
+    "availability": "local",
+    "download_size_bytes": 241000000,
+    "parameter": {
+      "raw": "270m",
+      "total_billion": 0.27,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "gemma3:12b",
+      "tag": "12b",
+      "digest": "f4031aab637d",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "12b",
+        "total_billion": 12.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:12b-it-fp16",
+      "tag": "12b-it-fp16",
+      "digest": "6b1ba564b78d",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "12b",
+        "total_billion": 12.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:12b-it-q4_K_M",
+      "tag": "12b-it-q4_K_M",
+      "digest": "f4031aab637d",
+      "availability": "local",
+      "download_size_bytes": 8100000000,
+      "parameter": {
+        "raw": "12b",
+        "total_billion": 12.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:12b-it-q8_0",
+      "tag": "12b-it-q8_0",
+      "digest": "997a7c2c0975",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "12b",
+        "total_billion": 12.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:12b-it-qat",
+      "tag": "12b-it-qat",
+      "digest": "5d4fa005e7bb",
+      "availability": "local",
+      "download_size_bytes": 8900000000,
+      "parameter": {
+        "raw": "12b",
+        "total_billion": 12.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:1b",
+      "tag": "1b",
+      "digest": "8648f39daa8f",
+      "availability": "local",
+      "download_size_bytes": 815000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:1b-it-fp16",
+      "tag": "1b-it-fp16",
+      "digest": "16d00907691b",
+      "availability": "local",
+      "download_size_bytes": 2000000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:1b-it-q4_K_M",
+      "tag": "1b-it-q4_K_M",
+      "digest": "8648f39daa8f",
+      "availability": "local",
+      "download_size_bytes": 815000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:1b-it-q8_0",
+      "tag": "1b-it-q8_0",
+      "digest": "0fdb9c7fefee",
+      "availability": "local",
+      "download_size_bytes": 1100000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:1b-it-qat",
+      "tag": "1b-it-qat",
+      "digest": "b491bd3989c6",
+      "availability": "local",
+      "download_size_bytes": 1000000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:270m",
+      "tag": "270m",
+      "digest": "e7d36fb2c3b3",
+      "availability": "local",
+      "download_size_bytes": 292000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:270m-it-bf16",
+      "tag": "270m-it-bf16",
+      "digest": "dc598b095ea6",
+      "availability": "local",
+      "download_size_bytes": 543000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:270m-it-fp16",
+      "tag": "270m-it-fp16",
+      "digest": "a44af03dd6b3",
+      "availability": "local",
+      "download_size_bytes": 543000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:270m-it-q8_0",
+      "tag": "270m-it-q8_0",
+      "digest": "e7d36fb2c3b3",
+      "availability": "local",
+      "download_size_bytes": 292000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:270m-it-qat",
+      "tag": "270m-it-qat",
+      "digest": "b16d6d39dfbd",
+      "availability": "local",
+      "download_size_bytes": 241000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:27b",
+      "tag": "27b",
+      "digest": "a418f5838eaf",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:27b-it-fp16",
+      "tag": "27b-it-fp16",
+      "digest": "b7d58e2e179e",
+      "availability": "local",
+      "download_size_bytes": 55000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:27b-it-q4_K_M",
+      "tag": "27b-it-q4_K_M",
+      "digest": "a418f5838eaf",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:27b-it-q8_0",
+      "tag": "27b-it-q8_0",
+      "digest": "273cbcd67032",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:27b-it-qat",
+      "tag": "27b-it-qat",
+      "digest": "29eb0b9aeda3",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:4b",
+      "tag": "4b",
+      "digest": "a2af6cc3eb7f",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:4b-it-fp16",
+      "tag": "4b-it-fp16",
+      "digest": "c4da438ae756",
+      "availability": "local",
+      "download_size_bytes": 8600000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:4b-it-q4_K_M",
+      "tag": "4b-it-q4_K_M",
+      "digest": "a2af6cc3eb7f",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:4b-it-q8_0",
+      "tag": "4b-it-q8_0",
+      "digest": "2376388dec16",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:4b-it-qat",
+      "tag": "4b-it-qat",
+      "digest": "d01ad0579247",
+      "availability": "local",
+      "download_size_bytes": 4000000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma3:latest",
+      "tag": "latest",
+      "digest": "a2af6cc3eb7f",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

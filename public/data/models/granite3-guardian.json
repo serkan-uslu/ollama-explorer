@@ -1,0 +1,260 @@
+{
+  "slug": "granite3-guardian",
+  "name": "granite3-guardian",
+  "description": "The IBM Granite Guardian 3.0 2B and 8B models are designed to detect risks in prompts and/or responses.",
+  "source_url": "https://ollama.com/library/granite3-guardian",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 341500,
+  "tag_count": 10,
+  "source_updated_at": "2024-11-19T23:33:00Z",
+  "parameter_sizes": [
+    "2b",
+    "8b"
+  ],
+  "min_download_size_bytes": 2700000000,
+  "max_download_size_bytes": 16000000000,
+  "max_context_window": 8000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 10,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "granite3-guardian:latest",
+    "tag": "latest",
+    "digest": "ba81a177bd23",
+    "availability": "local",
+    "download_size_bytes": 2700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "granite3-guardian:2b",
+    "tag": "2b",
+    "digest": "ba81a177bd23",
+    "availability": "local",
+    "download_size_bytes": 2700000000,
+    "parameter": {
+      "raw": "2b",
+      "total_billion": 2.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 8000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "granite3-guardian:2b",
+      "tag": "2b",
+      "digest": "ba81a177bd23",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:2b-fp16",
+      "tag": "2b-fp16",
+      "digest": "2bf55927dd85",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:2b-q8_0",
+      "tag": "2b-q8_0",
+      "digest": "ba81a177bd23",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:8b",
+      "tag": "8b",
+      "digest": "c8d7d5c76685",
+      "availability": "local",
+      "download_size_bytes": 5800000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:8b-fp16",
+      "tag": "8b-fp16",
+      "digest": "d9ecead6310d",
+      "availability": "local",
+      "download_size_bytes": 16000000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:8b-q5_K_M",
+      "tag": "8b-q5_K_M",
+      "digest": "c8d7d5c76685",
+      "availability": "local",
+      "download_size_bytes": 5800000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:8b-q5_K_S",
+      "tag": "8b-q5_K_S",
+      "digest": "edeec72aa741",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:8b-q6_K",
+      "tag": "8b-q6_K",
+      "digest": "200f63c67d98",
+      "availability": "local",
+      "download_size_bytes": 6700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:8b-q8_0",
+      "tag": "8b-q8_0",
+      "digest": "a91578a591d2",
+      "availability": "local",
+      "download_size_bytes": 8700000000,
+      "parameter": {
+        "raw": "8b",
+        "total_billion": 8.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite3-guardian:latest",
+      "tag": "latest",
+      "digest": "ba81a177bd23",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

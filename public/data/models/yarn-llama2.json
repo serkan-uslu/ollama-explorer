@@ -1,0 +1,1353 @@
+{
+  "slug": "yarn-llama2",
+  "name": "yarn-llama2",
+  "description": "An extension of Llama 2 that supports a context of up to 128k tokens.",
+  "source_url": "https://ollama.com/library/yarn-llama2",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1000000,
+  "tag_count": 67,
+  "source_updated_at": "2023-11-04T22:50:00Z",
+  "parameter_sizes": [
+    "7b",
+    "13b"
+  ],
+  "min_download_size_bytes": 2800000000,
+  "max_download_size_bytes": 26000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 67,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "yarn-llama2:latest",
+    "tag": "latest",
+    "digest": "75df67be3cee",
+    "availability": "local",
+    "download_size_bytes": 3800000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 64000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "yarn-llama2:7b-128k-q2_K",
+    "tag": "7b-128k-q2_K",
+    "digest": "cdf8cc638505",
+    "availability": "local",
+    "download_size_bytes": 2800000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "yarn-llama2:13b",
+      "tag": "13b",
+      "digest": "8a0a518f30c5",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k",
+      "tag": "13b-128k",
+      "digest": "312277e27d21",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-fp16",
+      "tag": "13b-128k-fp16",
+      "digest": "eecf1bcd524a",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q2_K",
+      "tag": "13b-128k-q2_K",
+      "digest": "00e51f24ad67",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q3_K_L",
+      "tag": "13b-128k-q3_K_L",
+      "digest": "7e92cb79ad6f",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q3_K_M",
+      "tag": "13b-128k-q3_K_M",
+      "digest": "b5b98d8650ab",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q3_K_S",
+      "tag": "13b-128k-q3_K_S",
+      "digest": "c753ad94de2e",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q4_0",
+      "tag": "13b-128k-q4_0",
+      "digest": "312277e27d21",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q4_1",
+      "tag": "13b-128k-q4_1",
+      "digest": "1952ac7b3231",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q4_K_M",
+      "tag": "13b-128k-q4_K_M",
+      "digest": "df02b797c5aa",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q4_K_S",
+      "tag": "13b-128k-q4_K_S",
+      "digest": "b2ffe41a638b",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q5_0",
+      "tag": "13b-128k-q5_0",
+      "digest": "dc65f2b65862",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q5_1",
+      "tag": "13b-128k-q5_1",
+      "digest": "7e02f3ba0b14",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q5_K_M",
+      "tag": "13b-128k-q5_K_M",
+      "digest": "6c618202668d",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q5_K_S",
+      "tag": "13b-128k-q5_K_S",
+      "digest": "effbf903f606",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q6_K",
+      "tag": "13b-128k-q6_K",
+      "digest": "311e2194fa2a",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-128k-q8_0",
+      "tag": "13b-128k-q8_0",
+      "digest": "c1cec788ae55",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k",
+      "tag": "13b-64k",
+      "digest": "8a0a518f30c5",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-fp16",
+      "tag": "13b-64k-fp16",
+      "digest": "8863e4eab466",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q2_K",
+      "tag": "13b-64k-q2_K",
+      "digest": "0afb4364db77",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q3_K_L",
+      "tag": "13b-64k-q3_K_L",
+      "digest": "be418e37797b",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q3_K_M",
+      "tag": "13b-64k-q3_K_M",
+      "digest": "ec22dd2cb7ac",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q3_K_S",
+      "tag": "13b-64k-q3_K_S",
+      "digest": "37ef3189742b",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q4_0",
+      "tag": "13b-64k-q4_0",
+      "digest": "8a0a518f30c5",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q4_1",
+      "tag": "13b-64k-q4_1",
+      "digest": "4204c4116efc",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q4_K_M",
+      "tag": "13b-64k-q4_K_M",
+      "digest": "48fbabc18e03",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q4_K_S",
+      "tag": "13b-64k-q4_K_S",
+      "digest": "183a14c4be4d",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q5_0",
+      "tag": "13b-64k-q5_0",
+      "digest": "506dd60df468",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q5_1",
+      "tag": "13b-64k-q5_1",
+      "digest": "d6fe4567c627",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q5_K_M",
+      "tag": "13b-64k-q5_K_M",
+      "digest": "0cdae1412098",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q5_K_S",
+      "tag": "13b-64k-q5_K_S",
+      "digest": "91f3cccd9580",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q6_K",
+      "tag": "13b-64k-q6_K",
+      "digest": "df2074aaebe3",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:13b-64k-q8_0",
+      "tag": "13b-64k-q8_0",
+      "digest": "adbdaa2e0f7a",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b",
+      "tag": "7b",
+      "digest": "75df67be3cee",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k",
+      "tag": "7b-128k",
+      "digest": "9fc4f0e902e7",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-fp16",
+      "tag": "7b-128k-fp16",
+      "digest": "4516a999c8ea",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q2_K",
+      "tag": "7b-128k-q2_K",
+      "digest": "cdf8cc638505",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q3_K_L",
+      "tag": "7b-128k-q3_K_L",
+      "digest": "aaabf5006e38",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q3_K_M",
+      "tag": "7b-128k-q3_K_M",
+      "digest": "45336ee1f0a9",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q3_K_S",
+      "tag": "7b-128k-q3_K_S",
+      "digest": "530c82d4467e",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q4_0",
+      "tag": "7b-128k-q4_0",
+      "digest": "9fc4f0e902e7",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q4_1",
+      "tag": "7b-128k-q4_1",
+      "digest": "f2a3da69d205",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q4_K_M",
+      "tag": "7b-128k-q4_K_M",
+      "digest": "3d161bdec11d",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q4_K_S",
+      "tag": "7b-128k-q4_K_S",
+      "digest": "cc95e37e566a",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q5_0",
+      "tag": "7b-128k-q5_0",
+      "digest": "1b73590983c7",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q5_1",
+      "tag": "7b-128k-q5_1",
+      "digest": "6f754622c8a4",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q5_K_M",
+      "tag": "7b-128k-q5_K_M",
+      "digest": "68bdf2550ed6",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q5_K_S",
+      "tag": "7b-128k-q5_K_S",
+      "digest": "e0f8b2069f93",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q6_K",
+      "tag": "7b-128k-q6_K",
+      "digest": "aaf047ee8cc4",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-128k-q8_0",
+      "tag": "7b-128k-q8_0",
+      "digest": "46e9636b6006",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k",
+      "tag": "7b-64k",
+      "digest": "75df67be3cee",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-fp16",
+      "tag": "7b-64k-fp16",
+      "digest": "cf9cd5b25466",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q2_K",
+      "tag": "7b-64k-q2_K",
+      "digest": "5a72b555332e",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q3_K_L",
+      "tag": "7b-64k-q3_K_L",
+      "digest": "fc7635aa06a7",
+      "availability": "local",
+      "download_size_bytes": 3600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q3_K_M",
+      "tag": "7b-64k-q3_K_M",
+      "digest": "bb367368ddd7",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q3_K_S",
+      "tag": "7b-64k-q3_K_S",
+      "digest": "f1c57a39811e",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q4_0",
+      "tag": "7b-64k-q4_0",
+      "digest": "75df67be3cee",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q4_1",
+      "tag": "7b-64k-q4_1",
+      "digest": "bdfb6c5a3e9b",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q4_K_M",
+      "tag": "7b-64k-q4_K_M",
+      "digest": "76f2052b357c",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q4_K_S",
+      "tag": "7b-64k-q4_K_S",
+      "digest": "1b8985d3a359",
+      "availability": "local",
+      "download_size_bytes": 3900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q5_0",
+      "tag": "7b-64k-q5_0",
+      "digest": "b453cc4f3d00",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q5_1",
+      "tag": "7b-64k-q5_1",
+      "digest": "297d4906eee3",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q5_K_M",
+      "tag": "7b-64k-q5_K_M",
+      "digest": "cec9e8d58901",
+      "availability": "local",
+      "download_size_bytes": 4800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q5_K_S",
+      "tag": "7b-64k-q5_K_S",
+      "digest": "a8f6f4ceeeda",
+      "availability": "local",
+      "download_size_bytes": 4700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q6_K",
+      "tag": "7b-64k-q6_K",
+      "digest": "f583cc04b87c",
+      "availability": "local",
+      "download_size_bytes": 5500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:7b-64k-q8_0",
+      "tag": "7b-64k-q8_0",
+      "digest": "59d75ca11360",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "yarn-llama2:latest",
+      "tag": "latest",
+      "digest": "75df67be3cee",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 64000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

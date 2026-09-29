@@ -1,0 +1,993 @@
+{
+  "slug": "sqlcoder",
+  "name": "sqlcoder",
+  "description": "SQLCoder is a code completion model fined-tuned on StarCoder for SQL generation tasks",
+  "source_url": "https://ollama.com/library/sqlcoder",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 1900000,
+  "tag_count": 48,
+  "source_updated_at": "2024-02-01T04:26:00Z",
+  "parameter_sizes": [
+    "7b",
+    "15b",
+    "70b"
+  ],
+  "min_download_size_bytes": 3100000000,
+  "max_download_size_bytes": 138000000000,
+  "max_context_window": 32000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 48,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "sqlcoder:latest",
+    "tag": "latest",
+    "digest": "77ac14348387",
+    "availability": "local",
+    "download_size_bytes": 4100000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "sqlcoder:7b-q2_K",
+    "tag": "7b-q2_K",
+    "digest": "ef8dfd2a47a9",
+    "availability": "local",
+    "download_size_bytes": 3100000000,
+    "parameter": {
+      "raw": "7b",
+      "total_billion": 7.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 32000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "sqlcoder:15b",
+      "tag": "15b",
+      "digest": "93bb0e8a904f",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-fp16",
+      "tag": "15b-fp16",
+      "digest": "6369c7277e63",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q2_K",
+      "tag": "15b-q2_K",
+      "digest": "dd88fa6c88f9",
+      "availability": "local",
+      "download_size_bytes": 6700000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q3_K_L",
+      "tag": "15b-q3_K_L",
+      "digest": "e897d393ebf1",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q3_K_M",
+      "tag": "15b-q3_K_M",
+      "digest": "35f5a2532a9f",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q3_K_S",
+      "tag": "15b-q3_K_S",
+      "digest": "02328caa22ea",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q4_0",
+      "tag": "15b-q4_0",
+      "digest": "93bb0e8a904f",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q4_1",
+      "tag": "15b-q4_1",
+      "digest": "78804bd67731",
+      "availability": "local",
+      "download_size_bytes": 10000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q4_K_M",
+      "tag": "15b-q4_K_M",
+      "digest": "aee77323d6c4",
+      "availability": "local",
+      "download_size_bytes": 10000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q4_K_S",
+      "tag": "15b-q4_K_S",
+      "digest": "11c41fea3fed",
+      "availability": "local",
+      "download_size_bytes": 9100000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q5_0",
+      "tag": "15b-q5_0",
+      "digest": "2a1ff495d518",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q5_1",
+      "tag": "15b-q5_1",
+      "digest": "c8efb3a98ee1",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q5_K_M",
+      "tag": "15b-q5_K_M",
+      "digest": "fbbab943ddb2",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q5_K_S",
+      "tag": "15b-q5_K_S",
+      "digest": "11b67891395e",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q6_K",
+      "tag": "15b-q6_K",
+      "digest": "cd5d9138d61e",
+      "availability": "local",
+      "download_size_bytes": 13000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:15b-q8_0",
+      "tag": "15b-q8_0",
+      "digest": "e07554606510",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "15b",
+        "total_billion": 15.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-fp16",
+      "tag": "70b-alpha-fp16",
+      "digest": "2a20f63ebd1d",
+      "availability": "local",
+      "download_size_bytes": 138000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q2_K",
+      "tag": "70b-alpha-q2_K",
+      "digest": "510d7936f38d",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q3_K_L",
+      "tag": "70b-alpha-q3_K_L",
+      "digest": "8841830edc80",
+      "availability": "local",
+      "download_size_bytes": 36000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q3_K_M",
+      "tag": "70b-alpha-q3_K_M",
+      "digest": "e58e4a7b8c15",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q3_K_S",
+      "tag": "70b-alpha-q3_K_S",
+      "digest": "7fa3e5dcdb07",
+      "availability": "local",
+      "download_size_bytes": 30000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q4_0",
+      "tag": "70b-alpha-q4_0",
+      "digest": "23ca04b201dd",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q4_1",
+      "tag": "70b-alpha-q4_1",
+      "digest": "e431137fc239",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q4_K_M",
+      "tag": "70b-alpha-q4_K_M",
+      "digest": "a8d3eb52b519",
+      "availability": "local",
+      "download_size_bytes": 41000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q4_K_S",
+      "tag": "70b-alpha-q4_K_S",
+      "digest": "5be5f1377e74",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q5_0",
+      "tag": "70b-alpha-q5_0",
+      "digest": "faad68f73fc2",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q5_1",
+      "tag": "70b-alpha-q5_1",
+      "digest": "d05ce9b94ffd",
+      "availability": "local",
+      "download_size_bytes": 52000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q5_K_M",
+      "tag": "70b-alpha-q5_K_M",
+      "digest": "fdc1971644d8",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q5_K_S",
+      "tag": "70b-alpha-q5_K_S",
+      "digest": "a83028f215d3",
+      "availability": "local",
+      "download_size_bytes": 47000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q6_K",
+      "tag": "70b-alpha-q6_K",
+      "digest": "334382eb1aff",
+      "availability": "local",
+      "download_size_bytes": 57000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:70b-alpha-q8_0",
+      "tag": "70b-alpha-q8_0",
+      "digest": "f9eec4ca6793",
+      "availability": "local",
+      "download_size_bytes": 73000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b",
+      "tag": "7b",
+      "digest": "77ac14348387",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-fp16",
+      "tag": "7b-fp16",
+      "digest": "186b67d3cc81",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q2_K",
+      "tag": "7b-q2_K",
+      "digest": "ef8dfd2a47a9",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q3_K_L",
+      "tag": "7b-q3_K_L",
+      "digest": "cab35c00ef41",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q3_K_M",
+      "tag": "7b-q3_K_M",
+      "digest": "77511b137ab8",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q3_K_S",
+      "tag": "7b-q3_K_S",
+      "digest": "9b217fbd379f",
+      "availability": "local",
+      "download_size_bytes": 3200000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q4_0",
+      "tag": "7b-q4_0",
+      "digest": "77ac14348387",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q4_1",
+      "tag": "7b-q4_1",
+      "digest": "2497c9ce8ce5",
+      "availability": "local",
+      "download_size_bytes": 4600000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q4_K_M",
+      "tag": "7b-q4_K_M",
+      "digest": "83f394c3724e",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q4_K_S",
+      "tag": "7b-q4_K_S",
+      "digest": "1af8f9ec2947",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q5_0",
+      "tag": "7b-q5_0",
+      "digest": "71532749cb66",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q5_1",
+      "tag": "7b-q5_1",
+      "digest": "4f8985282cb3",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q5_K_M",
+      "tag": "7b-q5_K_M",
+      "digest": "422d0b916aa2",
+      "availability": "local",
+      "download_size_bytes": 5100000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q5_K_S",
+      "tag": "7b-q5_K_S",
+      "digest": "bac5bb21f4f1",
+      "availability": "local",
+      "download_size_bytes": 5000000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q6_K",
+      "tag": "7b-q6_K",
+      "digest": "b8436a415945",
+      "availability": "local",
+      "download_size_bytes": 5900000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:7b-q8_0",
+      "tag": "7b-q8_0",
+      "digest": "07db64a3ecb0",
+      "availability": "local",
+      "download_size_bytes": 7700000000,
+      "parameter": {
+        "raw": "7b",
+        "total_billion": 7.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "sqlcoder:latest",
+      "tag": "latest",
+      "digest": "77ac14348387",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

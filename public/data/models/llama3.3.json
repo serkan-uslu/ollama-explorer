@@ -1,0 +1,351 @@
+{
+  "slug": "llama3.3",
+  "name": "llama3.3",
+  "description": "New state of the art 70B model. Llama 3.3 70B offers similar performance compared to the Llama 3.1 405B model.",
+  "source_url": "https://ollama.com/library/llama3.3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 4200000,
+  "tag_count": 14,
+  "source_updated_at": "2024-12-06T19:13:00Z",
+  "parameter_sizes": [
+    "70b"
+  ],
+  "min_download_size_bytes": 26000000000,
+  "max_download_size_bytes": 141000000000,
+  "max_context_window": 128000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 14,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "llama3.3:latest",
+    "tag": "latest",
+    "digest": "a6eb4748fd29",
+    "availability": "local",
+    "download_size_bytes": 43000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "llama3.3:70b-instruct-q2_K",
+    "tag": "70b-instruct-q2_K",
+    "digest": "a6f03da15cbc",
+    "availability": "local",
+    "download_size_bytes": 26000000000,
+    "parameter": {
+      "raw": "70b",
+      "total_billion": 70.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "llama3.3:70b",
+      "tag": "70b",
+      "digest": "a6eb4748fd29",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-fp16",
+      "tag": "70b-instruct-fp16",
+      "digest": "8fbd361705a0",
+      "availability": "local",
+      "download_size_bytes": 141000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q2_K",
+      "tag": "70b-instruct-q2_K",
+      "digest": "a6f03da15cbc",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q3_K_M",
+      "tag": "70b-instruct-q3_K_M",
+      "digest": "151348be3103",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q3_K_S",
+      "tag": "70b-instruct-q3_K_S",
+      "digest": "84d6ecd40b42",
+      "availability": "local",
+      "download_size_bytes": 31000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q4_0",
+      "tag": "70b-instruct-q4_0",
+      "digest": "e5afe30ba419",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q4_K_M",
+      "tag": "70b-instruct-q4_K_M",
+      "digest": "a6eb4748fd29",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q4_K_S",
+      "tag": "70b-instruct-q4_K_S",
+      "digest": "3d546a04bbd5",
+      "availability": "local",
+      "download_size_bytes": 40000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q5_0",
+      "tag": "70b-instruct-q5_0",
+      "digest": "522f1b464c62",
+      "availability": "local",
+      "download_size_bytes": 49000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q5_1",
+      "tag": "70b-instruct-q5_1",
+      "digest": "118a0cbe95b2",
+      "availability": "local",
+      "download_size_bytes": 53000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q5_K_M",
+      "tag": "70b-instruct-q5_K_M",
+      "digest": "a495e09a0513",
+      "availability": "local",
+      "download_size_bytes": 50000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q6_K",
+      "tag": "70b-instruct-q6_K",
+      "digest": "992c05c90cd8",
+      "availability": "local",
+      "download_size_bytes": 58000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:70b-instruct-q8_0",
+      "tag": "70b-instruct-q8_0",
+      "digest": "d5b5e1b84868",
+      "availability": "local",
+      "download_size_bytes": 75000000000,
+      "parameter": {
+        "raw": "70b",
+        "total_billion": 70.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "llama3.3:latest",
+      "tag": "latest",
+      "digest": "a6eb4748fd29",
+      "availability": "local",
+      "download_size_bytes": 43000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "slug": "nemotron-3.5-lightning",
+  "name": "nemotron-3.5-lightning",
+  "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
+  "source_url": "https://ollama.com/library/nemotron-3.5-lightning",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 191000,
+  "tag_count": 11,
+  "source_updated_at": "2026-08-31T21:05:00Z",
+  "parameter_sizes": [
+    "30b",
+    "30b-a3b"
+  ],
+  "min_download_size_bytes": 23000000000,
+  "max_download_size_bytes": 66000000000,
+  "max_context_window": 1000000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 11,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nemotron-3.5-lightning:latest",
+    "tag": "latest",
+    "digest": "e7a64ff15fb1",
+    "availability": "local",
+    "download_size_bytes": 25000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 1000000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nemotron-3.5-lightning:30b-a3b-mlx",
+    "tag": "30b-a3b-mlx",
+    "digest": "8b1474be6e54",
+    "availability": "local",
+    "download_size_bytes": 23000000000,
+    "parameter": {
+      "raw": "30b-a3b",
+      "total_billion": 30.0,
+      "active_billion": 3.0
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nemotron-3.5-lightning:30b",
+      "tag": "30b",
+      "digest": "e7a64ff15fb1",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b",
+      "tag": "30b-a3b",
+      "digest": "e7a64ff15fb1",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-bf16",
+      "tag": "30b-a3b-bf16",
+      "digest": "721c64cd61ac",
+      "availability": "local",
+      "download_size_bytes": 66000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-mlx",
+      "tag": "30b-a3b-mlx",
+      "digest": "8b1474be6e54",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-mlx-bf16",
+      "tag": "30b-a3b-mlx-bf16",
+      "digest": "7bf11b5991ed",
+      "availability": "local",
+      "download_size_bytes": 66000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-mxfp8",
+      "tag": "30b-a3b-mxfp8",
+      "digest": "9dad1618f1ac",
+      "availability": "local",
+      "download_size_bytes": 34000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-nvfp4",
+      "tag": "30b-a3b-nvfp4",
+      "digest": "8b1474be6e54",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-q4_K_M",
+      "tag": "30b-a3b-q4_K_M",
+      "digest": "e7a64ff15fb1",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-a3b-q8_0",
+      "tag": "30b-a3b-q8_0",
+      "digest": "9983b24ee511",
+      "availability": "local",
+      "download_size_bytes": 35000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:30b-mlx",
+      "tag": "30b-mlx",
+      "digest": "8b1474be6e54",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-lightning:latest",
+      "tag": "latest",
+      "digest": "e7a64ff15fb1",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

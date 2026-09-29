@@ -1,0 +1,386 @@
+{
+  "slug": "granite4",
+  "name": "granite4",
+  "description": "Granite 4 features improved instruction following (IF) and tool-calling capabilities, making them more effective in enterprise applications.",
+  "source_url": "https://ollama.com/library/granite4",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1500000,
+  "tag_count": 17,
+  "source_updated_at": "2025-10-29T13:53:00Z",
+  "parameter_sizes": [
+    "350m",
+    "1b",
+    "3b",
+    "32b-a9b",
+    "7b-a1b"
+  ],
+  "min_download_size_bytes": 366000000,
+  "max_download_size_bytes": 19000000000,
+  "max_context_window": 1000000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "Q8_0"
+  ],
+  "local_variant_count": 17,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "granite4:latest",
+    "tag": "latest",
+    "digest": "4235724a127c",
+    "availability": "local",
+    "download_size_bytes": 2100000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "granite4:350m-h",
+    "tag": "350m-h",
+    "digest": "7145075ed3d6",
+    "availability": "local",
+    "download_size_bytes": 366000000,
+    "parameter": {
+      "raw": "350m",
+      "total_billion": 0.35,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 1000000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "granite4:1b",
+      "tag": "1b",
+      "digest": "26e4cb132798",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:1b-bf16",
+      "tag": "1b-bf16",
+      "digest": "26e4cb132798",
+      "availability": "local",
+      "download_size_bytes": 3300000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:1b-h",
+      "tag": "1b-h",
+      "digest": "7761ae79cab9",
+      "availability": "local",
+      "download_size_bytes": 1600000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:1b-h-q8_0",
+      "tag": "1b-h-q8_0",
+      "digest": "7761ae79cab9",
+      "availability": "local",
+      "download_size_bytes": 1600000000,
+      "parameter": {
+        "raw": "1b",
+        "total_billion": 1.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:32b-a9b-h",
+      "tag": "32b-a9b-h",
+      "digest": "2f8a7367d441",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "32b-a9b",
+        "total_billion": 32.0,
+        "active_billion": 9.0
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:350m",
+      "tag": "350m",
+      "digest": "5eee845b49c4",
+      "availability": "local",
+      "download_size_bytes": 708000000,
+      "parameter": {
+        "raw": "350m",
+        "total_billion": 0.35,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:350m-bf16",
+      "tag": "350m-bf16",
+      "digest": "5eee845b49c4",
+      "availability": "local",
+      "download_size_bytes": 708000000,
+      "parameter": {
+        "raw": "350m",
+        "total_billion": 0.35,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 32000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:350m-h",
+      "tag": "350m-h",
+      "digest": "7145075ed3d6",
+      "availability": "local",
+      "download_size_bytes": 366000000,
+      "parameter": {
+        "raw": "350m",
+        "total_billion": 0.35,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:350m-h-q8_0",
+      "tag": "350m-h-q8_0",
+      "digest": "7145075ed3d6",
+      "availability": "local",
+      "download_size_bytes": 366000000,
+      "parameter": {
+        "raw": "350m",
+        "total_billion": 0.35,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:3b",
+      "tag": "3b",
+      "digest": "89962fcc7523",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:3b-h",
+      "tag": "3b-h",
+      "digest": "076afb3855dc",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": {
+        "raw": "3b",
+        "total_billion": 3.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:7b-a1b-h",
+      "tag": "7b-a1b-h",
+      "digest": "566b725534ea",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": {
+        "raw": "7b-a1b",
+        "total_billion": 7.0,
+        "active_billion": 1.0
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:latest",
+      "tag": "latest",
+      "digest": "4235724a127c",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    },
+    {
+      "ref": "granite4:micro",
+      "tag": "micro",
+      "digest": "89962fcc7523",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:micro-h",
+      "tag": "micro-h",
+      "digest": "076afb3855dc",
+      "availability": "local",
+      "download_size_bytes": 1900000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:small-h",
+      "tag": "small-h",
+      "digest": "2f8a7367d441",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "granite4:tiny-h",
+      "tag": "tiny-h",
+      "digest": "566b725534ea",
+      "availability": "local",
+      "download_size_bytes": 4200000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}

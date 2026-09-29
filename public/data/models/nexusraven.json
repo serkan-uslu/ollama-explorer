@@ -1,0 +1,687 @@
+{
+  "slug": "nexusraven",
+  "name": "nexusraven",
+  "description": "Nexus Raven is a 13B instruction tuned model for function calling tasks.",
+  "source_url": "https://ollama.com/library/nexusraven",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [],
+  "applications": [],
+  "pulls": 909400,
+  "tag_count": 32,
+  "source_updated_at": "2024-01-17T19:53:00Z",
+  "parameter_sizes": [
+    "13b"
+  ],
+  "min_download_size_bytes": 5400000000,
+  "max_download_size_bytes": 26000000000,
+  "max_context_window": 16000,
+  "categories": [
+    "chat"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "FP16",
+    "Q2_K",
+    "Q3_K_L",
+    "Q3_K_M",
+    "Q3_K_S",
+    "Q4_0",
+    "Q4_1",
+    "Q4_K_M",
+    "Q4_K_S",
+    "Q5_0",
+    "Q5_1",
+    "Q5_K_M",
+    "Q5_K_S",
+    "Q6_K",
+    "Q8_0"
+  ],
+  "local_variant_count": 32,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nexusraven:latest",
+    "tag": "latest",
+    "digest": "483a8282af74",
+    "availability": "local",
+    "download_size_bytes": 7400000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nexusraven:13b-q2_K",
+    "tag": "13b-q2_K",
+    "digest": "88af7c885f6d",
+    "availability": "local",
+    "download_size_bytes": 5400000000,
+    "parameter": {
+      "raw": "13b",
+      "total_billion": 13.0,
+      "active_billion": null
+    },
+    "quantization": "Q2_K",
+    "context_window": 16000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nexusraven:13b",
+      "tag": "13b",
+      "digest": "483a8282af74",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-fp16",
+      "tag": "13b-fp16",
+      "digest": "038c3ee38ca3",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q2_K",
+      "tag": "13b-q2_K",
+      "digest": "88af7c885f6d",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q3_K_L",
+      "tag": "13b-q3_K_L",
+      "digest": "be1c4d4ebf80",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q3_K_M",
+      "tag": "13b-q3_K_M",
+      "digest": "32ee186898d8",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q3_K_S",
+      "tag": "13b-q3_K_S",
+      "digest": "c327bf4400c3",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q4_0",
+      "tag": "13b-q4_0",
+      "digest": "336957c1d527",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q4_1",
+      "tag": "13b-q4_1",
+      "digest": "cc0185e939a9",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q4_K_M",
+      "tag": "13b-q4_K_M",
+      "digest": "869ecaf32849",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q4_K_S",
+      "tag": "13b-q4_K_S",
+      "digest": "01ab3a1e2bd0",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q5_0",
+      "tag": "13b-q5_0",
+      "digest": "1edef32ba6b0",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q5_1",
+      "tag": "13b-q5_1",
+      "digest": "5695d35736eb",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q5_K_M",
+      "tag": "13b-q5_K_M",
+      "digest": "3ba5150eacb6",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q5_K_S",
+      "tag": "13b-q5_K_S",
+      "digest": "d47e757e2f8a",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q6_K",
+      "tag": "13b-q6_K",
+      "digest": "fa629e4e0d35",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-q8_0",
+      "tag": "13b-q8_0",
+      "digest": "25fba36ef0af",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-fp16",
+      "tag": "13b-v2-fp16",
+      "digest": "6e9f4b4dff57",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "FP16",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q2_K",
+      "tag": "13b-v2-q2_K",
+      "digest": "335cee44ee6e",
+      "availability": "local",
+      "download_size_bytes": 5400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q2_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q3_K_L",
+      "tag": "13b-v2-q3_K_L",
+      "digest": "030244bdb058",
+      "availability": "local",
+      "download_size_bytes": 6900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_L",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q3_K_M",
+      "tag": "13b-v2-q3_K_M",
+      "digest": "9c3abc556fee",
+      "availability": "local",
+      "download_size_bytes": 6300000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q3_K_S",
+      "tag": "13b-v2-q3_K_S",
+      "digest": "e05ddc03a204",
+      "availability": "local",
+      "download_size_bytes": 5700000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q3_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q4_0",
+      "tag": "13b-v2-q4_0",
+      "digest": "483a8282af74",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q4_1",
+      "tag": "13b-v2-q4_1",
+      "digest": "9d97f7422b57",
+      "availability": "local",
+      "download_size_bytes": 8200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q4_K_M",
+      "tag": "13b-v2-q4_K_M",
+      "digest": "c686cfb91b9b",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q4_K_S",
+      "tag": "13b-v2-q4_K_S",
+      "digest": "d922b5f359d4",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q5_0",
+      "tag": "13b-v2-q5_0",
+      "digest": "93d134582405",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q5_1",
+      "tag": "13b-v2-q5_1",
+      "digest": "223215c51cfb",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_1",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q5_K_M",
+      "tag": "13b-v2-q5_K_M",
+      "digest": "8754f5363618",
+      "availability": "local",
+      "download_size_bytes": 9200000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_M",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q5_K_S",
+      "tag": "13b-v2-q5_K_S",
+      "digest": "506b8b5250ba",
+      "availability": "local",
+      "download_size_bytes": 9000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q5_K_S",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q6_K",
+      "tag": "13b-v2-q6_K",
+      "digest": "d81ebb5a6f93",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q6_K",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:13b-v2-q8_0",
+      "tag": "13b-v2-q8_0",
+      "digest": "2f770812d079",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "13b",
+        "total_billion": 13.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nexusraven:latest",
+      "tag": "latest",
+      "digest": "483a8282af74",
+      "availability": "local",
+      "download_size_bytes": 7400000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 16000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

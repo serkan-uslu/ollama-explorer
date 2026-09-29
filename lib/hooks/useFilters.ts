@@ -1,190 +1,232 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
-import type { ActiveFilters } from '@/lib/types/filter';
-import type { Capability, Complexity, Domain, SpeedTier } from '@/lib/types/model';
-import { DEFAULT_SORT } from '@/lib/constants';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import {
+  createDefaultFilters,
+  filtersToSearchParams,
+  parseFiltersFromSearchParams,
+} from '@/lib/data/filter-url';
+import type { ActiveFilters, AvailabilityFilter, FilterOptions } from '@/lib/types/filter';
+import type { BrowseSort } from '@/lib/types/model';
 
-const INITIAL: ActiveFilters = {
-  search: '',
-  capabilities: [],
-  domains: [],
-  useCases: [],
-  complexities: [],
-  languages: [],
-  speedTiers: [],
-  modelFamilies: [],
-  creatorOrgs: [],
-  applications: [],
-  isFineTuned: null,
-  isUncensored: null,
-  paramSizeBucket: null,
-  ramBucket: null,
-  contextWindowBucket: null,
-  sort: DEFAULT_SORT,
-};
+type FilterUpdate = (current: ActiveFilters) => ActiveFilters;
 
-export function useFilters() {
-  const [filters, setFilters] = useState<ActiveFilters>(INITIAL);
+function toggle(values: string[], value: string): string[] {
+  return values.includes(value) ? values.filter((entry) => entry !== value) : [...values, value];
+}
 
-  const setSearch = useCallback((search: string) => {
-    setFilters((prev) => ({ ...prev, search }));
-  }, []);
+export function useFilters(options: FilterOptions) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const searchString = searchParams.toString();
+  const allowlist = useMemo(
+    () => ({
+      capabilities: new Set(options.capabilities.map((option) => option.value)),
+      applications: new Set(options.applications.map((option) => option.value)),
+      modalities: new Set(options.modalities.map((option) => option.value)),
+      quantizations: new Set(options.quantizations.map((option) => option.value)),
+      families: new Set(options.families.map((option) => option.value)),
+      licenses: new Set(options.licenses.map((option) => option.value)),
+    }),
+    [options],
+  );
+  const [filters, setFilters] = useState(createDefaultFilters);
+  const [urlReady, setUrlReady] = useState(false);
+  const filtersRef = useRef(filters);
+  const urlFilters = useMemo(
+    () => parseFiltersFromSearchParams(new URLSearchParams(searchString), allowlist),
+    [allowlist, searchString],
+  );
+  const isUrlSynchronized =
+    filtersToSearchParams(urlFilters).toString() === filtersToSearchParams(filters).toString();
 
-  const toggleCapability = useCallback((cap: Capability) => {
-    setFilters((prev) => ({
-      ...prev,
-      capabilities: prev.capabilities.includes(cap)
-        ? prev.capabilities.filter((c) => c !== cap)
-        : [...prev.capabilities, cap],
-    }));
-  }, []);
+  const writeUrl = useCallback(
+    (next: ActiveFilters, replace = false) => {
+      const query = filtersToSearchParams(next).toString();
+      const url = query ? `${pathname}?${query}` : pathname;
+      if (replace) router.replace(url, { scroll: false });
+      else router.push(url, { scroll: false });
+    },
+    [pathname, router],
+  );
 
-  const toggleDomain = useCallback((domain: Domain) => {
-    setFilters((prev) => ({
-      ...prev,
-      domains: prev.domains.includes(domain)
-        ? prev.domains.filter((d) => d !== domain)
-        : [...prev.domains, domain],
-    }));
-  }, []);
+  const commit = useCallback(
+    (update: FilterUpdate, resetPage = true, replace = false) => {
+      const updated = update(filtersRef.current);
+      const next = resetPage ? { ...updated, page: 1 } : updated;
+      filtersRef.current = next;
+      setFilters(next);
+      writeUrl(next, replace);
+    },
+    [writeUrl],
+  );
 
-  const toggleUseCase = useCallback((uc: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      useCases: prev.useCases.includes(uc)
-        ? prev.useCases.filter((u) => u !== uc)
-        : [...prev.useCases, uc],
-    }));
-  }, []);
+  useEffect(() => {
+    if (
+      filtersToSearchParams(urlFilters).toString() !==
+      filtersToSearchParams(filtersRef.current).toString()
+    ) {
+      filtersRef.current = urlFilters;
+      // URL changes can come from browser back/forward, outside this hook's event handlers.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setFilters(urlFilters);
+    }
+    if (!urlReady) {
+      setUrlReady(true);
+    }
+  }, [urlFilters, urlReady]);
 
-  const toggleComplexity = useCallback((c: Complexity) => {
-    setFilters((prev) => ({
-      ...prev,
-      complexities: prev.complexities.includes(c)
-        ? prev.complexities.filter((x) => x !== c)
-        : [...prev.complexities, c],
-    }));
-  }, []);
+  const setSearch = useCallback(
+    (search: string) => {
+      commit(
+        (current) => ({
+          ...current,
+          search,
+          sort:
+            search && !current.search && current.sort === 'popular'
+              ? 'relevance'
+              : !search && current.sort === 'relevance'
+                ? 'popular'
+                : current.sort,
+        }),
+        true,
+        true,
+      );
+    },
+    [commit],
+  );
 
-  const toggleLanguage = useCallback((lang: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      languages: prev.languages.includes(lang)
-        ? prev.languages.filter((l) => l !== lang)
-        : [...prev.languages, lang],
-    }));
-  }, []);
+  const setAvailability = useCallback(
+    (availability: AvailabilityFilter) => commit((current) => ({ ...current, availability })),
+    [commit],
+  );
+  const toggleTask = useCallback(
+    (task: string) => commit((current) => ({ ...current, tasks: toggle(current.tasks, task) })),
+    [commit],
+  );
+  const toggleCapability = useCallback(
+    (capability: string) =>
+      commit((current) => ({
+        ...current,
+        capabilities: toggle(current.capabilities, capability),
+      })),
+    [commit],
+  );
+  const toggleApplication = useCallback(
+    (application: string) =>
+      commit((current) => ({
+        ...current,
+        applications: toggle(current.applications, application),
+      })),
+    [commit],
+  );
+  const toggleModality = useCallback(
+    (modality: string) =>
+      commit((current) => ({ ...current, modalities: toggle(current.modalities, modality) })),
+    [commit],
+  );
+  const toggleQuantization = useCallback(
+    (quantization: string) =>
+      commit((current) => ({
+        ...current,
+        quantizations: toggle(current.quantizations, quantization),
+      })),
+    [commit],
+  );
+  const toggleFamily = useCallback(
+    (family: string) =>
+      commit((current) => ({ ...current, families: toggle(current.families, family) })),
+    [commit],
+  );
+  const toggleLicense = useCallback(
+    (license: string) =>
+      commit((current) => ({ ...current, licenses: toggle(current.licenses, license) })),
+    [commit],
+  );
+  const toggleParameterBucket = useCallback(
+    (bucket: string) =>
+      commit((current) => ({
+        ...current,
+        parameterBuckets: toggle(current.parameterBuckets, bucket),
+      })),
+    [commit],
+  );
+  const setMemory = useCallback(
+    (memory: number | null) =>
+      commit((current) => ({ ...current, memory: current.memory === memory ? null : memory })),
+    [commit],
+  );
+  const setContext = useCallback(
+    (context: number | null) =>
+      commit((current) => ({ ...current, context: current.context === context ? null : context })),
+    [commit],
+  );
+  const setUpdatedWithinDays = useCallback(
+    (days: number | null) =>
+      commit((current) => ({
+        ...current,
+        updatedWithinDays: current.updatedWithinDays === days ? null : days,
+      })),
+    [commit],
+  );
+  const setSort = useCallback(
+    (sort: BrowseSort) =>
+      commit((current) => ({
+        ...current,
+        sort: sort === 'relevance' && !current.search.trim() ? 'popular' : sort,
+      })),
+    [commit],
+  );
+  const setPage = useCallback(
+    (page: number) =>
+      commit((current) => ({ ...current, page: Math.max(1, Math.floor(page)) }), false),
+    [commit],
+  );
+  const reset = useCallback(() => {
+    const next = createDefaultFilters();
+    filtersRef.current = next;
+    setFilters(next);
+    writeUrl(next);
+  }, [writeUrl]);
 
-  const toggleSpeedTier = useCallback((tier: SpeedTier) => {
-    setFilters((prev) => ({
-      ...prev,
-      speedTiers: prev.speedTiers.includes(tier)
-        ? prev.speedTiers.filter((t) => t !== tier)
-        : [...prev.speedTiers, tier],
-    }));
-  }, []);
-
-  const toggleModelFamily = useCallback((family: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      modelFamilies: prev.modelFamilies.includes(family)
-        ? prev.modelFamilies.filter((f) => f !== family)
-        : [...prev.modelFamilies, family],
-    }));
-  }, []);
-
-  const toggleCreatorOrg = useCallback((org: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      creatorOrgs: prev.creatorOrgs.includes(org)
-        ? prev.creatorOrgs.filter((o) => o !== org)
-        : [...prev.creatorOrgs, org],
-    }));
-  }, []);
-
-  const toggleApplication = useCallback((app: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      applications: prev.applications.includes(app)
-        ? prev.applications.filter((a) => a !== app)
-        : [...prev.applications, app],
-    }));
-  }, []);
-
-  const toggleFineTuned = useCallback(() => {
-    setFilters((prev) => ({ ...prev, isFineTuned: prev.isFineTuned === true ? null : true }));
-  }, []);
-
-  const toggleUncensored = useCallback(() => {
-    setFilters((prev) => ({ ...prev, isUncensored: prev.isUncensored === true ? null : true }));
-  }, []);
-
-  const setRamBucket = useCallback((bucket: string | null) => {
-    setFilters((prev) => ({
-      ...prev,
-      ramBucket: prev.ramBucket === bucket ? null : bucket,
-    }));
-  }, []);
-
-  const setParamSizeBucket = useCallback((bucket: string | null) => {
-    setFilters((prev) => ({
-      ...prev,
-      paramSizeBucket: prev.paramSizeBucket === bucket ? null : bucket,
-    }));
-  }, []);
-
-  const setContextWindowBucket = useCallback((bucket: string | null) => {
-    setFilters((prev) => ({
-      ...prev,
-      contextWindowBucket: prev.contextWindowBucket === bucket ? null : bucket,
-    }));
-  }, []);
-
-  const setSort = useCallback((sort: string) => {
-    setFilters((prev) => ({ ...prev, sort }));
-  }, []);
-
-  const reset = useCallback(() => setFilters(INITIAL), []);
-
-  const activeCount = useMemo(() => {
-    return (
+  const activeCount = useMemo(
+    () =>
+      filters.tasks.length +
       filters.capabilities.length +
-      filters.domains.length +
-      filters.useCases.length +
-      filters.complexities.length +
-      filters.languages.length +
-      filters.speedTiers.length +
-      filters.modelFamilies.length +
-      filters.creatorOrgs.length +
       filters.applications.length +
-      (filters.isFineTuned === true ? 1 : 0) +
-      (filters.isUncensored === true ? 1 : 0) +
-      (filters.paramSizeBucket ? 1 : 0) +
-      (filters.ramBucket ? 1 : 0) +
-      (filters.contextWindowBucket ? 1 : 0)
-    );
-  }, [filters]);
+      filters.modalities.length +
+      filters.quantizations.length +
+      filters.families.length +
+      filters.licenses.length +
+      filters.parameterBuckets.length +
+      (filters.availability === 'local' ? 0 : 1) +
+      (filters.memory === null ? 0 : 1) +
+      (filters.context === null ? 0 : 1) +
+      (filters.updatedWithinDays === null ? 0 : 1),
+    [filters],
+  );
 
   return {
     filters,
+    isReady: urlReady && isUrlSynchronized,
     activeCount,
     setSearch,
+    setAvailability,
+    toggleTask,
     toggleCapability,
-    toggleDomain,
-    toggleUseCase,
-    toggleComplexity,
-    toggleLanguage,
-    toggleSpeedTier,
-    toggleModelFamily,
-    toggleCreatorOrg,
     toggleApplication,
-    toggleFineTuned,
-    toggleUncensored,
-    setRamBucket,
-    setParamSizeBucket,
-    setContextWindowBucket,
+    toggleModality,
+    toggleQuantization,
+    toggleFamily,
+    toggleLicense,
+    toggleParameterBucket,
+    setMemory,
+    setContext,
+    setUpdatedWithinDays,
     setSort,
+    setPage,
     reset,
   };
 }

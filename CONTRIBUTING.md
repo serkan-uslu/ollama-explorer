@@ -105,7 +105,7 @@ ollama-explorer/
 │   └── utils/              # Utility functions
 │
 └── public/
-    └── models.json         # Model data
+    └── data/               # Schema-v2 catalog and per-model detail files
 ```
 
 ### Component Architecture
@@ -205,14 +205,14 @@ feat(filters): add model family filter
 
 Fixes #123
 
-feat(comparison): add export to CSV functionality
+feat(models): add source-backed modality filter
 feat(ui): improve mobile filter responsiveness
 
 fix(search): correct Fuse.js scoring algorithm
 fix(types): resolve Model interface conflicts
 
 docs(readme): update setup instructions
-docs(api): add JSDoc comments to utility functions
+docs(miner): clarify authorized refresh workflow
 ```
 
 ### Commit Hooks
@@ -301,43 +301,30 @@ We're looking for contributions in these areas:
 
 ### High Priority
 
-- 📊 **Model Data Enrichment**
-  - Add benchmark scores
-  - Improve model descriptions
-  - Add missing model metadata
+- 📊 **Source accuracy**
+  - Reproducible parser fixtures for Ollama index, detail, and tag pages
+  - Corrections backed by an official source URL
+  - Catalog invariants, fail-closed checks, and deterministic output
 
-- 🎨 **UI/UX Improvements**
-  - Better mobile experience
-  - Accessibility improvements
-  - Loading states and animations
+- 🎨 **Discovery UX**
+  - Keyboard and screen-reader fixes
+  - Clearer task, availability, memory, and variant selection
+  - Mobile behavior that preserves desktop search and sort semantics
 
 - ⚡ **Performance**
-  - Optimize Fuse.js search
-  - Reduce bundle size
-  - Improve Core Web Vitals
+  - Keep detail records out of client JavaScript
+  - Reduce bundle size and improve Core Web Vitals with measured evidence
 
-### Medium Priority
+### Documentation and tests
 
-- 🌍 **Internationalization**
-  - Add language translations
-  - RTL support
+- Explain source provenance, unknown values, and memory-estimate limits
+- Add focused regressions for search, filters, URLs, redirects, and command copy
+- Keep feature claims aligned with [`FEATURES.md`](FEATURES.md)
 
-- 🔌 **Integrations**
-  - Add more model sources
-  - API for external access
-
-- 📝 **Documentation**
-  - API documentation
-  - Component documentation
-  - Architecture diagrams
-
-### Low Priority
-
-- ✨ **Nice-to-have Features**
-  - Model ratings/reviews
-  - User favorites
-  - Social sharing
-  - Export functionality
+Benchmarks, local Ollama integration, license normalization, history, favorites, semantic search,
+public APIs, accounts, localization, and additional registries are deferred. Propose them only with
+the evidence and entry conditions listed on the roadmap. AI enrichment, a runtime backend, a vector
+database, a new orchestrator, ratings/reviews, and list virtualization are currently out of scope.
 
 ---
 
