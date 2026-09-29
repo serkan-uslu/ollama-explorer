@@ -79,7 +79,7 @@ Next.js imports the checked-in JSON at build time. Home, browse, informational, 
 4. Validates the complete schema-v2 candidate and source-count guardrails.
 5. Writes detail files before the manifest, using atomic file replacement.
 
-The miner has no database, orchestrator, or LLM dependency. Network access is refused unless `OLLAMA_CRAWL_AUTHORIZED=true` is explicitly set. That variable enables manual workflow runs; after two successful manual runs, `OLLAMA_SCHEDULE_ENABLED=true` enables the weekly schedule. Catalog changes are proposed through a pull request.
+The miner has no database, orchestrator, or LLM dependency. Network access is refused unless `OLLAMA_CRAWL_AUTHORIZED=true` is explicitly set. The repository workflow runs every day at 03:17 UTC (06:17 Europe/Istanbul), with an incremental refresh on most days and a complete detail/tag refresh each Sunday. When the source data changes, it verifies the miner, tests and builds the site against the candidate catalog, commits only `public/data` to the production branch, and lets the connected Vercel Git integration deploy that commit. A partial crawl is never published; an unchanged catalog produces neither a commit nor a deployment.
 
 ## Tech stack
 

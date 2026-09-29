@@ -31,7 +31,9 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
-          cache-dependency-path: tools/miner/pyproject.toml
-      - run: python -m pip install -e 'tools/miner[dev]'
+          cache-dependency-path: tools/miner/requirements.lock
+      - run: |
+          python -m pip install --require-hashes -r tools/miner/requirements.lock
+          python -m pip install --no-deps --no-build-isolation -e tools/miner
       - run: ruff check tools/miner
       - run: pytest tools/miner/tests

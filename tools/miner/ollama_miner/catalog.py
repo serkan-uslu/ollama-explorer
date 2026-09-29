@@ -7,6 +7,7 @@ import time
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 
@@ -575,13 +576,23 @@ class HttpFetcher:
         timeout: float,
         user_agent: str,
         token: str | None = None,
+        max_retries: int = 3,
+        retry_backoff: float = 1,
+        max_retry_delay: float = 60,
+        sleep: Callable[[float], None] = time.sleep,
+        monotonic: Callable[[], float] = time.monotonic,
     ) -> None:
         headers = {"User-Agent": user_agent}
         if token:
             headers["Authorization"] = f"Bearer {token}"
         self.client = httpx.Client(headers=headers, follow_redirects=True, timeout=timeout)
         self.delay = max(delay, 0)
-        self.last_request = 0.0
+        self.max_retries = max(max_retries, 0)
+        self.retry_backoff = max(retry_backoff, 0)
+        self.max_retry_delay = max(max_retry_delay, 0)
+        self.sleep = sleep
+        self.monotonic = monotonic
+        self.last_request: float | None = None
 
     def __enter__(self) -> HttpFetcher:
         return self
@@ -589,14 +600,55 @@ class HttpFetcher:
     def __exit__(self, *_: object) -> None:
         self.client.close()
 
-    def __call__(self, url: str) -> str:
-        wait = self.delay - (time.monotonic() - self.last_request)
+    def _wait_for_rate_limit(self) -> None:
+        if self.last_request is None:
+            return
+        wait = self.delay - (self.monotonic() - self.last_request)
         if wait > 0:
-            time.sleep(wait)
-        response = self.client.get(url)
-        self.last_request = time.monotonic()
-        response.raise_for_status()
-        return response.text
+            self.sleep(wait)
+
+    def _retry_after(self, response: httpx.Response) -> float | None:
+        raw = response.headers.get("Retry-After")
+        if not raw:
+            return None
+        try:
+            return max(float(raw), 0)
+        except ValueError:
+            pass
+        try:
+            retry_at = parsedate_to_datetime(raw)
+        except (TypeError, ValueError, OverflowError):
+            return None
+        if retry_at.tzinfo is None:
+            retry_at = retry_at.replace(tzinfo=UTC)
+        return max((retry_at.astimezone(UTC) - datetime.now(UTC)).total_seconds(), 0)
+
+    def _retry_delay(self, attempt: int, response: httpx.Response | None = None) -> float:
+        retry_after = self._retry_after(response) if response is not None else None
+        delay = retry_after if retry_after is not None else self.retry_backoff * (2**attempt)
+        return min(delay, self.max_retry_delay)
+
+    def __call__(self, url: str) -> str:
+        for attempt in range(self.max_retries + 1):
+            self._wait_for_rate_limit()
+            try:
+                response = self.client.get(url)
+            except httpx.TransportError:
+                self.last_request = self.monotonic()
+                if attempt >= self.max_retries:
+                    raise
+                self.sleep(self._retry_delay(attempt))
+                continue
+
+            self.last_request = self.monotonic()
+            retryable_status = response.status_code == 429 or 500 <= response.status_code <= 599
+            if retryable_status and attempt < self.max_retries:
+                self.sleep(self._retry_delay(attempt, response))
+                continue
+            response.raise_for_status()
+            return response.text
+
+        raise AssertionError("retry loop exhausted without returning or raising")
 
 
 def crawl(
@@ -609,10 +661,21 @@ def crawl(
     token: str | None = None,
     max_drop_percent: float = 10,
     force_refresh: bool = False,
+    max_retries: int = 3,
+    retry_backoff: float = 1,
+    max_retry_delay: float = 60,
 ) -> tuple[Baseline, DiffSummary]:
     baseline = load_baseline(repo_root)
     source_url = f"{base_url.rstrip('/')}/library?sort=popular"
-    with HttpFetcher(delay=delay, timeout=timeout, user_agent=user_agent, token=token) as fetch:
+    with HttpFetcher(
+        delay=delay,
+        timeout=timeout,
+        user_agent=user_agent,
+        token=token,
+        max_retries=max_retries,
+        retry_backoff=retry_backoff,
+        max_retry_delay=max_retry_delay,
+    ) as fetch:
         index_html = fetch(source_url)
         return refresh_catalog(
             index_html=index_html,

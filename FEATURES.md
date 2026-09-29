@@ -176,7 +176,7 @@ interface Variant {
 - ✅ Rejects an empty source, duplicate slugs/tags, catalog/detail mismatches, and a configurable large source-count drop
 - ✅ Atomic writes, with detail files written before `catalog.json`
 - ✅ Dry run, offline legacy migration, pytest, and Ruff checks
-- ✅ Opt-in weekly GitHub workflow that opens or updates a reviewable catalog pull request
+- ✅ Authorized daily GitHub workflow with weekly full detail/tag refresh, fail-closed catalog checks, locked dependencies, full production-build verification, and automatic Vercel deployment when data changes
 
 ## Cross-cutting behavior
 

@@ -7,8 +7,11 @@ import httpx
 import pytest
 from pydantic import ValidationError
 
+from ollama_miner import cli as cli_module
 from ollama_miner.catalog import (
     Baseline,
+    DiffSummary,
+    HttpFetcher,
     MinerError,
     build_variant_index,
     load_baseline,
@@ -525,6 +528,37 @@ def test_existing_fetch_failure_preserves_last_good_detail() -> None:
     assert any(value.startswith("example ") for value in diff.preserved)
 
 
+@pytest.mark.parametrize(
+    "partial_diff",
+    [
+        DiffSummary(quarantined=("new-model (offline)",)),
+        DiffSummary(preserved=("example (offline)",)),
+    ],
+)
+def test_cli_fail_on_partial_stops_before_writing(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+    partial_diff: DiffSummary,
+) -> None:
+    current = baseline()
+    write_baseline(tmp_path, current)
+    candidate = baseline([detail(description="Changed description")])
+    monkeypatch.setenv("OLLAMA_CRAWL_AUTHORIZED", "true")
+    monkeypatch.setattr(cli_module, "crawl", lambda **_: (candidate, partial_diff))
+
+    def must_not_write(*_: object, **__: object) -> None:
+        raise AssertionError("partial catalog must not be written")
+
+    monkeypatch.setattr(cli_module, "write_baseline", must_not_write)
+
+    result = cli_module.main(["--repo-root", str(tmp_path), "--fail-on-partial"])
+
+    assert result == 1
+    assert "partial refresh rejected" in capsys.readouterr().err
+    assert load_baseline(tmp_path) == current
+
+
 def test_semantic_diff_includes_detail_only_variant_changes() -> None:
     current = baseline()
     detail_html = """
@@ -724,6 +758,125 @@ def test_atomic_output_round_trips(tmp_path: Path) -> None:
         path.relative_to(root): path.read_bytes() for path in (root / "public/data").rglob("*.json")
     }
     assert second == first
+
+
+def test_http_fetcher_retries_transport_and_server_errors() -> None:
+    attempts = 0
+    sleeps: list[float] = []
+
+    def get(url: str) -> httpx.Response:
+        nonlocal attempts
+        attempts += 1
+        request = httpx.Request("GET", url)
+        if attempts == 1:
+            raise httpx.ConnectError("offline", request=request)
+        if attempts == 2:
+            return httpx.Response(503, request=request)
+        return httpx.Response(200, text="ok", request=request)
+
+    fetcher = HttpFetcher(
+        delay=0,
+        timeout=1,
+        user_agent="test",
+        max_retries=2,
+        retry_backoff=0.25,
+        sleep=sleeps.append,
+    )
+    fetcher.client.get = get  # type: ignore[method-assign]
+    try:
+        assert fetcher("https://example.test/model") == "ok"
+    finally:
+        fetcher.client.close()
+
+    assert attempts == 3
+    assert sleeps == [0.25, 0.5]
+
+
+def test_http_fetcher_honors_retry_after_without_real_sleep() -> None:
+    attempts = 0
+    sleeps: list[float] = []
+
+    def get(url: str) -> httpx.Response:
+        nonlocal attempts
+        attempts += 1
+        request = httpx.Request("GET", url)
+        if attempts == 1:
+            return httpx.Response(429, headers={"Retry-After": "7"}, request=request)
+        return httpx.Response(200, text="ok", request=request)
+
+    fetcher = HttpFetcher(
+        delay=0,
+        timeout=1,
+        user_agent="test",
+        max_retries=1,
+        retry_backoff=0.25,
+        max_retry_delay=10,
+        sleep=sleeps.append,
+    )
+    fetcher.client.get = get  # type: ignore[method-assign]
+    try:
+        assert fetcher("https://example.test/model") == "ok"
+    finally:
+        fetcher.client.close()
+
+    assert attempts == 2
+    assert sleeps == [7]
+
+
+def test_http_fetcher_does_not_retry_permanent_client_errors() -> None:
+    attempts = 0
+    sleeps: list[float] = []
+
+    def get(url: str) -> httpx.Response:
+        nonlocal attempts
+        attempts += 1
+        return httpx.Response(404, request=httpx.Request("GET", url))
+
+    fetcher = HttpFetcher(
+        delay=0,
+        timeout=1,
+        user_agent="test",
+        max_retries=3,
+        sleep=sleeps.append,
+    )
+    fetcher.client.get = get  # type: ignore[method-assign]
+    try:
+        with pytest.raises(httpx.HTTPStatusError, match="404"):
+            fetcher("https://example.test/model")
+    finally:
+        fetcher.client.close()
+
+    assert attempts == 1
+    assert sleeps == []
+
+
+def test_http_fetcher_keeps_the_minimum_request_interval() -> None:
+    now = [100.0]
+    sleeps: list[float] = []
+
+    def sleep(seconds: float) -> None:
+        sleeps.append(seconds)
+        now[0] += seconds
+
+    def get(url: str) -> httpx.Response:
+        return httpx.Response(200, text="ok", request=httpx.Request("GET", url))
+
+    fetcher = HttpFetcher(
+        delay=0.5,
+        timeout=1,
+        user_agent="test",
+        max_retries=0,
+        sleep=sleep,
+        monotonic=lambda: now[0],
+    )
+    fetcher.client.get = get  # type: ignore[method-assign]
+    try:
+        assert fetcher("https://example.test/one") == "ok"
+        assert fetcher("https://example.test/two") == "ok"
+    finally:
+        fetcher.client.close()
+
+    assert sleeps == [0.5]
 
 
 def test_variant_index_has_exact_active_coverage_and_unique_sorted_refs() -> None:
