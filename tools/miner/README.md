@@ -55,13 +55,24 @@ OLLAMA_CRAWL_AUTHORIZED=true .venv/bin/python -m ollama_miner --repo-root .
 Pass `--force-refresh` after changing detail/tag parsing rules. Routine runs deliberately
 reuse details whose source signature has not changed.
 
+Install CI's reproducible dependency set from `requirements.lock`. Regenerate it after changing
+`pyproject.toml` with the compile command recorded at the top of the lock file.
+
 `OLLAMA_REQUEST_DELAY` defaults to 0.5 seconds. `OLLAMA_MINER_TOKEN` adds a bearer token,
 and `OLLAMA_BASE_URL` selects an explicitly authorized compatible source. The command refuses
-network access until `OLLAMA_CRAWL_AUTHORIZED=true` is set.
+network access until `OLLAMA_CRAWL_AUTHORIZED=true` is set. Transient transport failures, HTTP 429,
+and HTTP 5xx responses are retried three times with bounded exponential backoff; `Retry-After` is
+honored up to 60 seconds, while permanent HTTP 4xx responses fail immediately.
 
 The workflow has the same authorization guard. Set the repository Actions variable
-`OLLAMA_CRAWL_AUTHORIZED=true` only after the source owner has authorized the crawl. Manual runs
-then work immediately; set `OLLAMA_SCHEDULE_ENABLED=true` only after two successful manual runs.
+`OLLAMA_CRAWL_AUTHORIZED=true` only after the source owner has authorized the crawl. It runs daily
+at 03:17 UTC and can also be started manually. Most runs reuse unchanged detail pages; Sunday runs
+perform a complete detail/tag refresh, and the manual trigger exposes the same option. The workflow
+uses `--fail-on-partial`, so a quarantined new model or a preserved stale model stops publication.
+A changed candidate must pass Ruff, pytest, the web test suite, lint, the production build, and the
+client-bundle check before the workflow commits only `public/data` to the production branch. The
+connected Vercel Git integration then deploys that commit. An unchanged catalog produces neither a
+commit nor a deployment.
 
 ```sh
 .venv/bin/pytest tools/miner/tests

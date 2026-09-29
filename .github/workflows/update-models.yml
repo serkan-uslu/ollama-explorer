@@ -2,12 +2,19 @@ name: Update model catalog
 
 on:
   workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: Refetch every model detail and tag page
+        required: false
+        default: false
+        type: boolean
   schedule:
-    - cron: '0 3 * * 1'
+    # Every day at 06:17 Europe/Istanbul (03:17 UTC). The off-hour minute avoids
+    # GitHub Actions' busiest scheduling boundary.
+    - cron: '17 3 * * *'
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: update-model-catalog
@@ -15,24 +22,29 @@ concurrency:
 
 jobs:
   update:
-    if: >-
-      vars.OLLAMA_CRAWL_AUTHORIZED == 'true' &&
-      (github.event_name == 'workflow_dispatch' || vars.OLLAMA_SCHEDULE_ENABLED == 'true')
+    if: vars.OLLAMA_CRAWL_AUTHORIZED == 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
+      - name: Capture base revision
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: pip
-          cache-dependency-path: tools/miner/pyproject.toml
+          cache-dependency-path: tools/miner/requirements.lock
 
       - name: Install miner
-        run: python -m pip install -e 'tools/miner[dev]'
+        run: |
+          python -m pip install --require-hashes -r tools/miner/requirements.lock
+          python -m pip install --no-deps --no-build-isolation -e tools/miner
 
       - name: Verify miner
         run: |
@@ -43,48 +55,74 @@ jobs:
         env:
           OLLAMA_CRAWL_AUTHORIZED: 'true'
           OLLAMA_MINER_TOKEN: ${{ secrets.OLLAMA_MINER_TOKEN }}
-        run: >-
-          python -m ollama_miner
-          --repo-root .
-          --summary-file "$RUNNER_TEMP/catalog-summary.md"
+        run: |
+          set -euo pipefail
+          args=(
+            --repo-root .
+            --summary-file "$RUNNER_TEMP/catalog-summary.md"
+            --fail-on-partial
+          )
+          if [ "${{ inputs.force_refresh || 'false' }}" = "true" ]; then
+            args+=(--force-refresh)
+            echo "- Refresh mode: **manual full refresh**" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$GITHUB_EVENT_NAME" = "schedule" ] && [ "$(date -u +%u)" = "7" ]; then
+            args+=(--force-refresh)
+            echo "- Refresh mode: **weekly full refresh**" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "- Refresh mode: **incremental**" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          python -m ollama_miner "${args[@]}"
 
       - name: Detect changes
         id: changes
         run: |
           set -euo pipefail
-          if git diff --quiet -- public/data; then
+          if [ -z "$(git status --porcelain -- public/data)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "- Result: **no catalog changes**" >> "$GITHUB_STEP_SUMMARY"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "- Result: **catalog changes detected; validating the production build**" >> "$GITHUB_STEP_SUMMARY"
           fi
 
-      - name: Create update pull request
+      - uses: actions/setup-node@v4
+        if: steps.changes.outputs.changed == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install web dependencies
+        if: steps.changes.outputs.changed == 'true'
+        run: npm ci
+
+      - name: Verify web app with candidate catalog
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          npm test
+          npm run lint
+          npm run build
+          npm run check:bundle
+
+      - name: Publish catalog to the production branch
         if: steps.changes.outputs.changed == 'true'
         env:
           BASE_BRANCH: ${{ github.event.repository.default_branch }}
-          GH_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ steps.base.outputs.sha }}
         run: |
           set -euo pipefail
-          branch="automation/catalog-update"
-          if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
-            git fetch origin "$branch:refs/remotes/origin/$branch"
+          git fetch --no-tags origin "$BASE_BRANCH"
+          remote_sha="$(git rev-parse "origin/$BASE_BRANCH")"
+          if [ "$remote_sha" != "$BASE_SHA" ]; then
+            echo "::error::The production branch advanced during this run; refusing to overwrite it."
+            echo "- Publish: **stopped because the production branch changed during validation**" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -C "$branch"
+
+          # Vercel associates private-repository deployments with the commit
+          # author, so use the verified repository-owner identity.
+          git config user.name "Serkan Uslu"
+          git config user.email "65805346+serkan-uslu@users.noreply.github.com"
           git add public/data
           git commit -m "chore(catalog): refresh Ollama models"
-          git push --force-with-lease --set-upstream origin "$branch"
-          pr_number="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number')"
-          if [ -n "$pr_number" ]; then
-            gh pr edit "$pr_number" \
-              --title "chore(catalog): refresh Ollama models" \
-              --body-file "$RUNNER_TEMP/catalog-summary.md"
-          else
-            gh pr create \
-              --base "$BASE_BRANCH" \
-              --head "$branch" \
-              --title "chore(catalog): refresh Ollama models" \
-              --body-file "$RUNNER_TEMP/catalog-summary.md"
-          fi
+          git push origin "HEAD:$BASE_BRANCH"
+          echo "- Publish: **committed to \`$BASE_BRANCH\`; Vercel production deployment requested by Git integration**" >> "$GITHUB_STEP_SUMMARY"

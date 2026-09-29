@@ -26,6 +26,14 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--summary-file", type=Path)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument(
+        "--fail-on-partial",
+        action="store_true",
+        help=(
+            "fail before writing when a model is quarantined or its last-known-good "
+            "detail must be preserved after a fetch failure"
+        ),
+    )
+    parser.add_argument(
         "--force-refresh",
         action="store_true",
         help="refetch all detail/tag pages after a parser change",
@@ -85,6 +93,12 @@ def main(argv: list[str] | None = None) -> int:
                 max_drop_percent=args.max_drop_percent,
                 force_refresh=args.force_refresh,
             )
+            if args.fail_on_partial and (diff.quarantined or diff.preserved):
+                raise MinerError(
+                    "partial refresh rejected: "
+                    f"{len(diff.quarantined)} quarantined, "
+                    f"{len(diff.preserved)} preserved after fetch failure"
+                )
             changed = candidate.catalog != before.catalog or candidate.details != before.details
             output_missing = not (root / "public/data/variant-index.json").exists()
             if (changed or output_missing) and not args.dry_run:
