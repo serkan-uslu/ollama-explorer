@@ -18,8 +18,8 @@
     "OpenCode"
   ],
   "pulls": 26000000,
-  "tag_count": 50,
-  "source_updated_at": "2026-09-22T20:28:00Z",
+  "tag_count": 51,
+  "source_updated_at": "2026-09-30T02:36:00Z",
   "parameter_sizes": [
     "e2b",
     "e4b",
@@ -50,14 +50,14 @@
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 48,
+  "local_variant_count": 49,
   "cloud_variant_count": 2,
   "default_variant": {
     "ref": "gemma4:latest",
     "tag": "latest",
-    "digest": "c6eb396dbd59",
+    "digest": "009acb0d7fe1",
     "availability": "local",
-    "download_size_bytes": 9600000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 128000,
@@ -114,9 +114,9 @@
     {
       "ref": "gemma4:12b",
       "tag": "12b",
-      "digest": "4eb23ef187e2",
+      "digest": "312246b09fab",
       "availability": "local",
-      "download_size_bytes": 7600000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "12b",
         "total_billion": 12.0,
@@ -154,9 +154,9 @@
     {
       "ref": "gemma4:12b-it-q4_K_M",
       "tag": "12b-it-q4_K_M",
-      "digest": "4eb23ef187e2",
+      "digest": "6114515d63c1",
       "availability": "local",
-      "download_size_bytes": 7600000000,
+      "download_size_bytes": 8000000000,
       "parameter": {
         "raw": "12b",
         "total_billion": 12.0,
@@ -294,13 +294,33 @@
     {
       "ref": "gemma4:26b",
       "tag": "26b",
-      "digest": "08ae7ec1744b",
+      "digest": "ed3c4359df98",
       "availability": "local",
-      "download_size_bytes": 19000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "26b",
         "total_billion": 26.0,
         "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "gemma4:26b-a4b",
+      "tag": "26b-a4b",
+      "digest": "ed3c4359df98",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "26b-a4b",
+        "total_billion": 26.0,
+        "active_billion": 4.0
       },
       "quantization": null,
       "context_window": 256000,
@@ -334,7 +354,7 @@
     {
       "ref": "gemma4:26b-a4b-it-mtp-q4_K_M",
       "tag": "26b-a4b-it-mtp-q4_K_M",
-      "digest": "08ae7ec1744b",
+      "digest": "001e5dafc3c7",
       "availability": "local",
       "download_size_bytes": 19000000000,
       "parameter": {
@@ -494,9 +514,9 @@
     {
       "ref": "gemma4:31b",
       "tag": "31b",
-      "digest": "6316f0629137",
+      "digest": "70d0e663aeb9",
       "availability": "local",
-      "download_size_bytes": 20000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "31b",
         "total_billion": 31.0,
@@ -574,7 +594,7 @@
     {
       "ref": "gemma4:31b-it-q4_K_M",
       "tag": "31b-it-q4_K_M",
-      "digest": "6316f0629137",
+      "digest": "17ba34c06c80",
       "availability": "local",
       "download_size_bytes": 20000000000,
       "parameter": {
@@ -730,9 +750,9 @@
     {
       "ref": "gemma4:e2b",
       "tag": "e2b",
-      "digest": "7fbdbf8f5e45",
+      "digest": "862c9e801351",
       "availability": "local",
-      "download_size_bytes": 7200000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "e2b",
         "total_billion": null,
@@ -770,9 +790,9 @@
     {
       "ref": "gemma4:e2b-it-q4_K_M",
       "tag": "e2b-it-q4_K_M",
-      "digest": "7fbdbf8f5e45",
+      "digest": "b37049369adf",
       "availability": "local",
-      "download_size_bytes": 7200000000,
+      "download_size_bytes": 4600000000,
       "parameter": {
         "raw": "e2b",
         "total_billion": null,
@@ -910,9 +930,9 @@
     {
       "ref": "gemma4:e4b",
       "tag": "e4b",
-      "digest": "c6eb396dbd59",
+      "digest": "009acb0d7fe1",
       "availability": "local",
-      "download_size_bytes": 9600000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "e4b",
         "total_billion": null,
@@ -950,9 +970,9 @@
     {
       "ref": "gemma4:e4b-it-q4_K_M",
       "tag": "e4b-it-q4_K_M",
-      "digest": "c6eb396dbd59",
+      "digest": "dc35e8d9c606",
       "availability": "local",
-      "download_size_bytes": 9600000000,
+      "download_size_bytes": 6600000000,
       "parameter": {
         "raw": "e4b",
         "total_billion": null,
@@ -1090,9 +1110,9 @@
     {
       "ref": "gemma4:latest",
       "tag": "latest",
-      "digest": "c6eb396dbd59",
+      "digest": "009acb0d7fe1",
       "availability": "local",
-      "download_size_bytes": 9600000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 128000,
