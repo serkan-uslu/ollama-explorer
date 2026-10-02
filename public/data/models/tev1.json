@@ -5,58 +5,51 @@
   "source_url": "https://ollama.com/library/tev1",
   "status": "active",
   "availability": "local",
-  "capabilities": [],
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
   "applications": [],
-  "pulls": 6533,
-  "tag_count": 8,
-  "source_updated_at": "2026-09-29T23:34:00Z",
+  "pulls": 10100,
+  "tag_count": 13,
+  "source_updated_at": "2026-10-01T19:39:00Z",
   "parameter_sizes": [
     "0.8b",
     "4b"
   ],
-  "min_download_size_bytes": 812000000,
+  "min_download_size_bytes": 797000000,
   "max_download_size_bytes": 8400000000,
   "max_context_window": 256000,
   "categories": [
-    "chat"
+    "chat",
+    "tools",
+    "reasoning"
   ],
   "input_modalities": [
     "text"
   ],
   "quantizations": [
     "BF16",
+    "MXFP8",
+    "NVFP4",
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 8,
+  "local_variant_count": 13,
   "cloud_variant_count": 0,
-  "default_variant": {
-    "ref": "tev1:latest",
-    "tag": "latest",
-    "digest": "cef45ef93cf6",
-    "availability": "local",
-    "download_size_bytes": 4500000000,
-    "parameter": null,
-    "quantization": null,
-    "context_window": 256000,
-    "input_modalities": [
-      "text"
-    ],
-    "source_updated_at": null,
-    "is_default": true
-  },
+  "default_variant": null,
   "smallest_local_variant": {
-    "ref": "tev1:0.8b",
-    "tag": "0.8b",
-    "digest": "d45e875d63fe",
+    "ref": "tev1:0.8b-mxfp8",
+    "tag": "0.8b-mxfp8",
+    "digest": "c96262240cf8",
     "availability": "local",
-    "download_size_bytes": 812000000,
+    "download_size_bytes": 797000000,
     "parameter": {
       "raw": "0.8b",
       "total_billion": 0.8,
       "active_billion": null
     },
-    "quantization": null,
+    "quantization": "MXFP8",
     "context_window": 256000,
     "input_modalities": [
       "text"
@@ -71,9 +64,9 @@
     {
       "ref": "tev1:0.8b",
       "tag": "0.8b",
-      "digest": "d45e875d63fe",
+      "digest": "209d0a2808ce",
       "availability": "local",
-      "download_size_bytes": 812000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "0.8b",
         "total_billion": 0.8,
@@ -107,6 +100,44 @@
       "is_default": false
     },
     {
+      "ref": "tev1:0.8b-mlx-bf16",
+      "tag": "0.8b-mlx-bf16",
+      "digest": "9ea18bade940",
+      "availability": "local",
+      "download_size_bytes": 1500000000,
+      "parameter": {
+        "raw": "0.8b",
+        "total_billion": 0.8,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tev1:0.8b-mxfp8",
+      "tag": "0.8b-mxfp8",
+      "digest": "c96262240cf8",
+      "availability": "local",
+      "download_size_bytes": 797000000,
+      "parameter": {
+        "raw": "0.8b",
+        "total_billion": 0.8,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "tev1:0.8b-q8_0",
       "tag": "0.8b-q8_0",
       "digest": "d45e875d63fe",
@@ -128,9 +159,9 @@
     {
       "ref": "tev1:4b",
       "tag": "4b",
-      "digest": "cef45ef93cf6",
+      "digest": "e19886d0d959",
       "availability": "local",
-      "download_size_bytes": 4500000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "4b",
         "total_billion": 4.0,
@@ -156,6 +187,63 @@
         "active_billion": null
       },
       "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tev1:4b-mlx-bf16",
+      "tag": "4b-mlx-bf16",
+      "digest": "b6cc5c8eef21",
+      "availability": "local",
+      "download_size_bytes": 8400000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tev1:4b-mxfp8",
+      "tag": "4b-mxfp8",
+      "digest": "2a76e0606594",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "tev1:4b-nvfp4",
+      "tag": "4b-nvfp4",
+      "digest": "1b15f25c13a0",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
       "context_window": 256000,
       "input_modalities": [
         "text"
@@ -204,9 +292,9 @@
     {
       "ref": "tev1:latest",
       "tag": "latest",
-      "digest": "cef45ef93cf6",
+      "digest": "e19886d0d959",
       "availability": "local",
-      "download_size_bytes": 4500000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 256000,
@@ -214,7 +302,7 @@
         "text"
       ],
       "source_updated_at": null,
-      "is_default": true
+      "is_default": false
     }
   ]
 }
