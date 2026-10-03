@@ -1,0 +1,158 @@
+{
+  "slug": "clef-flash",
+  "name": "clef-flash",
+  "description": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions.",
+  "source_url": "https://ollama.com/library/clef-flash",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 668,
+  "tag_count": 5,
+  "source_updated_at": "2026-10-02T06:19:00Z",
+  "parameter_sizes": [
+    "9b"
+  ],
+  "min_download_size_bytes": 11000000000,
+  "max_download_size_bytes": 19000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "Q8_0"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": null,
+  "smallest_local_variant": {
+    "ref": "clef-flash:9b",
+    "tag": "9b",
+    "digest": "2aa4d39fd93b",
+    "availability": "local",
+    "download_size_bytes": 11000000000,
+    "parameter": {
+      "raw": "9b",
+      "total_billion": 9.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "clef-flash:9b",
+      "tag": "9b",
+      "digest": "2aa4d39fd93b",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "clef-flash:9b-mlx-bf16",
+      "tag": "9b-mlx-bf16",
+      "digest": "15dbbaceebaa",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "clef-flash:9b-mxfp8",
+      "tag": "9b-mxfp8",
+      "digest": "bc72638064ee",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "clef-flash:9b-q8_0",
+      "tag": "9b-q8_0",
+      "digest": "2aa4d39fd93b",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "clef-flash:latest",
+      "tag": "latest",
+      "digest": "2aa4d39fd93b",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}
