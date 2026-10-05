@@ -16,9 +16,9 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 21500000,
-  "tag_count": 69,
-  "source_updated_at": "2026-10-04T01:04:00Z",
+  "pulls": 21600000,
+  "tag_count": 72,
+  "source_updated_at": "2026-10-04T20:59:00Z",
   "parameter_sizes": [
     "0.8b",
     "2b",
@@ -53,14 +53,14 @@
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 69,
+  "local_variant_count": 72,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "qwen3.5:latest",
     "tag": "latest",
-    "digest": "6488c96fa5fa",
+    "digest": "fdf5fd4cd409",
     "availability": "local",
-    "download_size_bytes": 6600000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 256000,
@@ -72,9 +72,9 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "qwen3.5:0.8b",
-    "tag": "0.8b",
-    "digest": "f3817196d142",
+    "ref": "qwen3.5:0.8b-nvfp4",
+    "tag": "0.8b-nvfp4",
+    "digest": "6d2b253cfc04",
     "availability": "local",
     "download_size_bytes": 1000000000,
     "parameter": {
@@ -82,7 +82,7 @@
       "total_billion": 0.8,
       "active_billion": null
     },
-    "quantization": null,
+    "quantization": "NVFP4",
     "context_window": 256000,
     "input_modalities": [
       "text",
@@ -98,9 +98,9 @@
     {
       "ref": "qwen3.5:0.8b",
       "tag": "0.8b",
-      "digest": "f3817196d142",
+      "digest": "6a061203ed02",
       "availability": "local",
-      "download_size_bytes": 1000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "0.8b",
         "total_billion": 0.8,
@@ -318,9 +318,9 @@
     {
       "ref": "qwen3.5:27b",
       "tag": "27b",
-      "digest": "7653528ba5cb",
+      "digest": "1476e7035481",
       "availability": "local",
-      "download_size_bytes": 17000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "27b",
         "total_billion": 27.0,
@@ -496,6 +496,26 @@
       "is_default": false
     },
     {
+      "ref": "qwen3.5:27b-mtp-q4_K_M",
+      "tag": "27b-mtp-q4_K_M",
+      "digest": "06687a8bf737",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "qwen3.5:27b-mxfp8",
       "tag": "27b-mxfp8",
       "digest": "3ce4a5647be1",
@@ -538,7 +558,7 @@
     {
       "ref": "qwen3.5:27b-q4_K_M",
       "tag": "27b-q4_K_M",
-      "digest": "7653528ba5cb",
+      "digest": "64ae5b1d651f",
       "availability": "local",
       "download_size_bytes": 17000000000,
       "parameter": {
@@ -578,9 +598,9 @@
     {
       "ref": "qwen3.5:2b",
       "tag": "2b",
-      "digest": "324d162be6ca",
+      "digest": "0b28bbb3449d",
       "availability": "local",
-      "download_size_bytes": 2700000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "2b",
         "total_billion": 2.0,
@@ -778,9 +798,9 @@
     {
       "ref": "qwen3.5:35b",
       "tag": "35b",
-      "digest": "3460ffeede54",
+      "digest": "154688af885e",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": 22000000000,
       "parameter": {
         "raw": "35b",
         "total_billion": 35.0,
@@ -798,9 +818,9 @@
     {
       "ref": "qwen3.5:35b-a3b",
       "tag": "35b-a3b",
-      "digest": "3460ffeede54",
+      "digest": "154688af885e",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": 22000000000,
       "parameter": {
         "raw": "35b-a3b",
         "total_billion": 35.0,
@@ -956,6 +976,26 @@
       "is_default": false
     },
     {
+      "ref": "qwen3.5:35b-a3b-mtp-q4_K_M",
+      "tag": "35b-a3b-mtp-q4_K_M",
+      "digest": "80df2b8514d6",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "35b-a3b",
+        "total_billion": 35.0,
+        "active_billion": 3.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "qwen3.5:35b-a3b-mxfp8",
       "tag": "35b-a3b-mxfp8",
       "digest": "16b03b99d8bb",
@@ -998,9 +1038,9 @@
     {
       "ref": "qwen3.5:35b-a3b-q4_K_M",
       "tag": "35b-a3b-q4_K_M",
-      "digest": "3460ffeede54",
+      "digest": "72aac7c28be8",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": 22000000000,
       "parameter": {
         "raw": "35b-a3b",
         "total_billion": 35.0,
@@ -1058,9 +1098,9 @@
     {
       "ref": "qwen3.5:4b",
       "tag": "4b",
-      "digest": "2a654d98e6fb",
+      "digest": "492e37dc6907",
       "availability": "local",
-      "download_size_bytes": 3400000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "4b",
         "total_billion": 4.0,
@@ -1258,9 +1298,9 @@
     {
       "ref": "qwen3.5:9b",
       "tag": "9b",
-      "digest": "6488c96fa5fa",
+      "digest": "fdf5fd4cd409",
       "availability": "local",
-      "download_size_bytes": 6600000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "9b",
         "total_billion": 9.0,
@@ -1336,6 +1376,26 @@
       "is_default": false
     },
     {
+      "ref": "qwen3.5:9b-mtp-nvfp4",
+      "tag": "9b-mtp-nvfp4",
+      "digest": "a010df198560",
+      "availability": "local",
+      "download_size_bytes": 7600000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "qwen3.5:9b-mtp-q4_K_M",
       "tag": "9b-mtp-q4_K_M",
       "digest": "bf0f1496db06",
@@ -1398,9 +1458,9 @@
     {
       "ref": "qwen3.5:9b-nvfp4",
       "tag": "9b-nvfp4",
-      "digest": "203e30078279",
+      "digest": "8218177ac78e",
       "availability": "local",
-      "download_size_bytes": 8900000000,
+      "download_size_bytes": 7200000000,
       "parameter": {
         "raw": "9b",
         "total_billion": 9.0,
@@ -1458,9 +1518,9 @@
     {
       "ref": "qwen3.5:latest",
       "tag": "latest",
-      "digest": "6488c96fa5fa",
+      "digest": "fdf5fd4cd409",
       "availability": "local",
-      "download_size_bytes": 6600000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 256000,
