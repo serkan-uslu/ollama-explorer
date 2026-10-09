@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-08T03:39:29Z",
+  "generated_at": "2026-10-09T03:40:37Z",
   "source": {
     "name": "ollama",
     "url": "https://ollama.com/library?sort=popular",
@@ -23,7 +23,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 120100000,
+      "pulls": 120200000,
       "tag_count": 93,
       "source_updated_at": "2024-11-30T22:34:00Z",
       "parameter_sizes": [
@@ -196,7 +196,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 88400000,
+      "pulls": 88500000,
       "tag_count": 3,
       "source_updated_at": "2024-02-21T17:26:00Z",
       "parameter_sizes": [
@@ -256,7 +256,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 85000000,
+      "pulls": 85100000,
       "tag_count": 63,
       "source_updated_at": "2024-09-25T21:09:00Z",
       "parameter_sizes": [
@@ -347,7 +347,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 41900000,
+      "pulls": 42000000,
       "tag_count": 133,
       "source_updated_at": "2024-09-19T16:42:00Z",
       "parameter_sizes": [
@@ -439,8 +439,8 @@
       ],
       "applications": [],
       "pulls": 41000000,
-      "tag_count": 26,
-      "source_updated_at": "2025-08-15T08:15:00Z",
+      "tag_count": 27,
+      "source_updated_at": "2026-10-09T03:34:00Z",
       "parameter_sizes": [
         "270m",
         "1b",
@@ -465,14 +465,14 @@
         "Q4_K_M",
         "Q8_0"
       ],
-      "local_variant_count": 26,
+      "local_variant_count": 27,
       "cloud_variant_count": 0,
       "default_variant": {
         "ref": "gemma3:latest",
         "tag": "latest",
-        "digest": "a2af6cc3eb7f",
+        "digest": "68ceab7e468a",
         "availability": "local",
-        "download_size_bytes": 3300000000,
+        "download_size_bytes": 3400000000,
         "parameter": null,
         "quantization": null,
         "context_window": 128000,
@@ -523,7 +523,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 39300000,
+      "pulls": 39400000,
       "tag_count": 58,
       "source_updated_at": "2025-10-10T20:18:00Z",
       "parameter_sizes": [
@@ -604,7 +604,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 34300000,
+      "pulls": 34400000,
       "tag_count": 94,
       "source_updated_at": "2024-08-01T18:51:00Z",
       "parameter_sizes": [
@@ -787,7 +787,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 26500000,
+      "pulls": 26600000,
       "tag_count": 51,
       "source_updated_at": "2026-09-30T02:36:00Z",
       "parameter_sizes": [
@@ -1076,7 +1076,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 21800000,
+      "pulls": 21900000,
       "tag_count": 72,
       "source_updated_at": "2026-10-04T20:59:00Z",
       "parameter_sizes": [
@@ -1656,7 +1656,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 8000000,
+      "pulls": 8100000,
       "tag_count": 3,
       "source_updated_at": "2026-02-02T23:29:00Z",
       "parameter_sizes": [],
@@ -6853,6 +6853,87 @@
       "license": null
     },
     {
+      "slug": "openhermes",
+      "name": "openhermes",
+      "description": "OpenHermes 2.5 is a 7B model fine-tuned by Teknium on Mistral with fully open datasets.",
+      "source_url": "https://ollama.com/library/openhermes",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 1400000,
+      "tag_count": 35,
+      "source_updated_at": "2023-12-29T21:45:00Z",
+      "parameter_sizes": [
+        "7b"
+      ],
+      "min_download_size_bytes": 3100000000,
+      "max_download_size_bytes": 14000000000,
+      "max_context_window": 32000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q2_K",
+        "Q3_K_L",
+        "Q3_K_M",
+        "Q3_K_S",
+        "Q4_0",
+        "Q4_1",
+        "Q4_K_M",
+        "Q4_K_S",
+        "Q5_0",
+        "Q5_1",
+        "Q5_K_M",
+        "Q5_K_S",
+        "Q6_K",
+        "Q8_0"
+      ],
+      "local_variant_count": 35,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "openhermes:latest",
+        "tag": "latest",
+        "digest": "95477a2659b7",
+        "availability": "local",
+        "download_size_bytes": 4100000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "openhermes:7b-mistral-v2-q2_K",
+        "tag": "7b-mistral-v2-q2_K",
+        "digest": "7382e175bc40",
+        "availability": "local",
+        "download_size_bytes": 3100000000,
+        "parameter": {
+          "raw": "7b",
+          "total_billion": 7.0,
+          "active_billion": null
+        },
+        "quantization": "Q2_K",
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "wizardcoder",
       "name": "wizardcoder",
       "description": "State-of-the-art code generation model",
@@ -7322,87 +7403,6 @@
         "parameter": {
           "raw": "123b",
           "total_billion": 123.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
-      "slug": "openhermes",
-      "name": "openhermes",
-      "description": "OpenHermes 2.5 is a 7B model fine-tuned by Teknium on Mistral with fully open datasets.",
-      "source_url": "https://ollama.com/library/openhermes",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 1300000,
-      "tag_count": 35,
-      "source_updated_at": "2023-12-29T21:45:00Z",
-      "parameter_sizes": [
-        "7b"
-      ],
-      "min_download_size_bytes": 3100000000,
-      "max_download_size_bytes": 14000000000,
-      "max_context_window": 32000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q2_K",
-        "Q3_K_L",
-        "Q3_K_M",
-        "Q3_K_S",
-        "Q4_0",
-        "Q4_1",
-        "Q4_K_M",
-        "Q4_K_S",
-        "Q5_0",
-        "Q5_1",
-        "Q5_K_M",
-        "Q5_K_S",
-        "Q6_K",
-        "Q8_0"
-      ],
-      "local_variant_count": 35,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "openhermes:latest",
-        "tag": "latest",
-        "digest": "95477a2659b7",
-        "availability": "local",
-        "download_size_bytes": 4100000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "openhermes:7b-mistral-v2-q2_K",
-        "tag": "7b-mistral-v2-q2_K",
-        "digest": "7382e175bc40",
-        "availability": "local",
-        "download_size_bytes": 3100000000,
-        "parameter": {
-          "raw": "7b",
-          "total_billion": 7.0,
           "active_billion": null
         },
         "quantization": "Q2_K",
@@ -10592,7 +10592,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 985500,
+      "pulls": 986000,
       "tag_count": 32,
       "source_updated_at": "2023-12-18T03:00:00Z",
       "parameter_sizes": [
@@ -10680,7 +10680,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 974700,
+      "pulls": 975300,
       "tag_count": 33,
       "source_updated_at": "2024-11-19T22:33:00Z",
       "parameter_sizes": [
@@ -10764,7 +10764,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 970100,
+      "pulls": 970800,
       "tag_count": 49,
       "source_updated_at": "2023-10-29T21:57:00Z",
       "parameter_sizes": [
@@ -10839,76 +10839,6 @@
       "license": null
     },
     {
-      "slug": "deepcoder",
-      "name": "deepcoder",
-      "description": "DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available.",
-      "source_url": "https://ollama.com/library/deepcoder",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 960800,
-      "tag_count": 9,
-      "source_updated_at": "2025-04-08T22:53:00Z",
-      "parameter_sizes": [
-        "1.5b",
-        "14b"
-      ],
-      "min_download_size_bytes": 1100000000,
-      "max_download_size_bytes": 30000000000,
-      "max_context_window": 128000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q4_K_M",
-        "Q8_0"
-      ],
-      "local_variant_count": 9,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "deepcoder:latest",
-        "tag": "latest",
-        "digest": "12bdda054d23",
-        "availability": "local",
-        "download_size_bytes": 9000000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 128000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "deepcoder:1.5b",
-        "tag": "1.5b",
-        "digest": "3bc49891ec47",
-        "availability": "local",
-        "download_size_bytes": 1100000000,
-        "parameter": {
-          "raw": "1.5b",
-          "total_billion": 1.5,
-          "active_billion": null
-        },
-        "quantization": null,
-        "context_window": 128000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "shieldgemma",
       "name": "shieldgemma",
       "description": "ShieldGemma is set of instruction tuned models for evaluating the safety of text prompt input and text output responses against a set of defined safety policies.",
@@ -10917,7 +10847,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 960500,
+      "pulls": 961300,
       "tag_count": 49,
       "source_updated_at": "2024-10-11T05:58:00Z",
       "parameter_sizes": [
@@ -10992,6 +10922,76 @@
       "license": null
     },
     {
+      "slug": "deepcoder",
+      "name": "deepcoder",
+      "description": "DeepCoder is a fully open-Source 14B coder model at O3-mini level, with a 1.5B version also available.",
+      "source_url": "https://ollama.com/library/deepcoder",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 961100,
+      "tag_count": 9,
+      "source_updated_at": "2025-04-08T22:53:00Z",
+      "parameter_sizes": [
+        "1.5b",
+        "14b"
+      ],
+      "min_download_size_bytes": 1100000000,
+      "max_download_size_bytes": 30000000000,
+      "max_context_window": 128000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q4_K_M",
+        "Q8_0"
+      ],
+      "local_variant_count": 9,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "deepcoder:latest",
+        "tag": "latest",
+        "digest": "12bdda054d23",
+        "availability": "local",
+        "download_size_bytes": 9000000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 128000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "deepcoder:1.5b",
+        "tag": "1.5b",
+        "digest": "3bc49891ec47",
+        "availability": "local",
+        "download_size_bytes": 1100000000,
+        "parameter": {
+          "raw": "1.5b",
+          "total_billion": 1.5,
+          "active_billion": null
+        },
+        "quantization": null,
+        "context_window": 128000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "orca2",
       "name": "orca2",
       "description": "Orca 2 is built by Microsoft research, and are a fine-tuned version of Meta's Llama 2 models.  The model is designed to excel particularly in reasoning.",
@@ -11000,7 +11000,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 957500,
+      "pulls": 958100,
       "tag_count": 33,
       "source_updated_at": "2023-11-22T22:13:00Z",
       "parameter_sizes": [
@@ -11082,7 +11082,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 948800,
+      "pulls": 949400,
       "tag_count": 33,
       "source_updated_at": "2024-09-11T19:13:00Z",
       "parameter_sizes": [
@@ -11164,7 +11164,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 946500,
+      "pulls": 947400,
       "tag_count": 73,
       "source_updated_at": "2023-10-30T02:54:00Z",
       "parameter_sizes": [
@@ -11254,7 +11254,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 946200,
+      "pulls": 946500,
       "tag_count": 3,
       "source_updated_at": "2024-08-07T00:05:00Z",
       "parameter_sizes": [
@@ -11307,7 +11307,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 931300,
+      "pulls": 931800,
       "tag_count": 33,
       "source_updated_at": "2024-01-09T03:30:00Z",
       "parameter_sizes": [
@@ -11388,7 +11388,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 921400,
+      "pulls": 921900,
       "tag_count": 33,
       "source_updated_at": "2023-11-04T04:20:00Z",
       "parameter_sizes": [
@@ -11469,7 +11469,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 915100,
+      "pulls": 915600,
       "tag_count": 32,
       "source_updated_at": "2024-01-17T19:53:00Z",
       "parameter_sizes": [
@@ -11550,7 +11550,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 910500,
+      "pulls": 910900,
       "tag_count": 22,
       "source_updated_at": "2023-12-05T18:31:00Z",
       "parameter_sizes": [
@@ -11624,6 +11624,87 @@
       "license": null
     },
     {
+      "slug": "mistral-openorca",
+      "name": "mistral-openorca",
+      "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
+      "source_url": "https://ollama.com/library/mistral-openorca",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 908700,
+      "tag_count": 17,
+      "source_updated_at": "2023-10-11T22:00:00Z",
+      "parameter_sizes": [
+        "7b"
+      ],
+      "min_download_size_bytes": 3100000000,
+      "max_download_size_bytes": 14000000000,
+      "max_context_window": 32000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q2_K",
+        "Q3_K_L",
+        "Q3_K_M",
+        "Q3_K_S",
+        "Q4_0",
+        "Q4_1",
+        "Q4_K_M",
+        "Q4_K_S",
+        "Q5_0",
+        "Q5_1",
+        "Q5_K_M",
+        "Q5_K_S",
+        "Q6_K",
+        "Q8_0"
+      ],
+      "local_variant_count": 17,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "mistral-openorca:latest",
+        "tag": "latest",
+        "digest": "12dc6acc14d0",
+        "availability": "local",
+        "download_size_bytes": 4100000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "mistral-openorca:7b-q2_K",
+        "tag": "7b-q2_K",
+        "digest": "977fdfe52b7c",
+        "availability": "local",
+        "download_size_bytes": 3100000000,
+        "parameter": {
+          "raw": "7b",
+          "total_billion": 7.0,
+          "active_billion": null
+        },
+        "quantization": "Q2_K",
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "bakllava",
       "name": "bakllava",
       "description": "BakLLaVA is a multimodal model consisting of the Mistral 7B base model augmented with the LLaVA  architecture.",
@@ -11634,7 +11715,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 899500,
+      "pulls": 899900,
       "tag_count": 17,
       "source_updated_at": "2023-12-13T19:04:00Z",
       "parameter_sizes": [
@@ -11711,87 +11792,6 @@
       "license": null
     },
     {
-      "slug": "mistral-openorca",
-      "name": "mistral-openorca",
-      "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
-      "source_url": "https://ollama.com/library/mistral-openorca",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 897300,
-      "tag_count": 17,
-      "source_updated_at": "2023-10-11T22:00:00Z",
-      "parameter_sizes": [
-        "7b"
-      ],
-      "min_download_size_bytes": 3100000000,
-      "max_download_size_bytes": 14000000000,
-      "max_context_window": 32000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q2_K",
-        "Q3_K_L",
-        "Q3_K_M",
-        "Q3_K_S",
-        "Q4_0",
-        "Q4_1",
-        "Q4_K_M",
-        "Q4_K_S",
-        "Q5_0",
-        "Q5_1",
-        "Q5_K_M",
-        "Q5_K_S",
-        "Q6_K",
-        "Q8_0"
-      ],
-      "local_variant_count": 17,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "mistral-openorca:latest",
-        "tag": "latest",
-        "digest": "12dc6acc14d0",
-        "availability": "local",
-        "download_size_bytes": 4100000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "mistral-openorca:7b-q2_K",
-        "tag": "7b-q2_K",
-        "digest": "977fdfe52b7c",
-        "availability": "local",
-        "download_size_bytes": 3100000000,
-        "parameter": {
-          "raw": "7b",
-          "total_billion": 7.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "nemotron-3-nano",
       "name": "nemotron-3-nano",
       "description": "Nemotron-3-Nano is a new Standard for Efficient, Open, and Intelligent Agentic Models, now updated with a 4B parameter count model.",
@@ -11808,7 +11808,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 889700,
+      "pulls": 892500,
       "tag_count": 9,
       "source_updated_at": "2026-03-16T15:34:00Z",
       "parameter_sizes": [
@@ -11908,7 +11908,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 815400,
+      "pulls": 815800,
       "tag_count": 21,
       "source_updated_at": "2024-08-31T07:16:00Z",
       "parameter_sizes": [
@@ -11999,7 +11999,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 796700,
+      "pulls": 796900,
       "tag_count": 5,
       "source_updated_at": "2025-04-07T16:59:00Z",
       "parameter_sizes": [
@@ -12074,7 +12074,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 776400,
+      "pulls": 776700,
       "tag_count": 13,
       "source_updated_at": "2025-03-19T17:04:00Z",
       "parameter_sizes": [
@@ -12145,7 +12145,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 739600,
+      "pulls": 739900,
       "tag_count": 17,
       "source_updated_at": "2023-10-29T06:00:00Z",
       "parameter_sizes": [
@@ -12226,7 +12226,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 738600,
+      "pulls": 739000,
       "tag_count": 18,
       "source_updated_at": "2024-01-30T09:39:00Z",
       "parameter_sizes": [
@@ -12315,7 +12315,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 732800,
+      "pulls": 733100,
       "tag_count": 7,
       "source_updated_at": "2025-09-27T00:46:00Z",
       "parameter_sizes": [
@@ -12394,7 +12394,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 725100,
+      "pulls": 725500,
       "tag_count": 17,
       "source_updated_at": "2024-09-18T20:21:00Z",
       "parameter_sizes": [
@@ -12477,7 +12477,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 702300,
+      "pulls": 702700,
       "tag_count": 17,
       "source_updated_at": "2024-07-09T01:33:00Z",
       "parameter_sizes": [
@@ -12567,7 +12567,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 675200,
+      "pulls": 675600,
       "tag_count": 4,
       "source_updated_at": "2026-04-27T20:26:00Z",
       "parameter_sizes": [
@@ -12647,7 +12647,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 662100,
+      "pulls": 662700,
       "tag_count": 9,
       "source_updated_at": "2024-11-18T07:31:00Z",
       "parameter_sizes": [
@@ -12717,7 +12717,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 657600,
+      "pulls": 658000,
       "tag_count": 18,
       "source_updated_at": "2023-10-28T15:29:00Z",
       "parameter_sizes": [
@@ -12805,7 +12805,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 636000,
+      "pulls": 636400,
       "tag_count": 17,
       "source_updated_at": "2024-10-16T23:10:00Z",
       "parameter_sizes": [
@@ -12888,7 +12888,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 627200,
+      "pulls": 627500,
       "tag_count": 17,
       "source_updated_at": "2024-09-09T05:16:00Z",
       "parameter_sizes": [
@@ -12969,7 +12969,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 606700,
+      "pulls": 607000,
       "tag_count": 19,
       "source_updated_at": "2023-10-29T06:38:00Z",
       "parameter_sizes": [
@@ -13050,7 +13050,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 601900,
+      "pulls": 602200,
       "tag_count": 18,
       "source_updated_at": "2024-12-20T01:05:00Z",
       "parameter_sizes": [
@@ -13138,7 +13138,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 600600,
+      "pulls": 601000,
       "tag_count": 17,
       "source_updated_at": "2024-11-15T23:37:00Z",
       "parameter_sizes": [
@@ -13229,7 +13229,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 596300,
+      "pulls": 596700,
       "tag_count": 9,
       "source_updated_at": "2025-12-05T04:37:00Z",
       "parameter_sizes": [
@@ -13310,7 +13310,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 587700,
+      "pulls": 592200,
       "tag_count": 9,
       "source_updated_at": "2026-06-27T20:45:00Z",
       "parameter_sizes": [
@@ -13383,7 +13383,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 580200,
+      "pulls": 580500,
       "tag_count": 19,
       "source_updated_at": "2024-01-11T01:25:00Z",
       "parameter_sizes": [
@@ -13464,7 +13464,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 577500,
+      "pulls": 577900,
       "tag_count": 18,
       "source_updated_at": "2023-12-27T20:51:00Z",
       "parameter_sizes": [
@@ -13537,6 +13537,80 @@
       "license": null
     },
     {
+      "slug": "llava-phi3",
+      "name": "llava-phi3",
+      "description": "A new small LLaVA model fine-tuned from Phi 3 Mini.",
+      "source_url": "https://ollama.com/library/llava-phi3",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [
+        "vision"
+      ],
+      "applications": [],
+      "pulls": 575600,
+      "tag_count": 4,
+      "source_updated_at": "2024-05-07T21:20:00Z",
+      "parameter_sizes": [
+        "3.8b"
+      ],
+      "min_download_size_bytes": 2900000000,
+      "max_download_size_bytes": 8300000000,
+      "max_context_window": 4000,
+      "categories": [
+        "chat",
+        "vision"
+      ],
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q4_0"
+      ],
+      "local_variant_count": 4,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "llava-phi3:latest",
+        "tag": "latest",
+        "digest": "c7edd7b87593",
+        "availability": "local",
+        "download_size_bytes": 2900000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 4000,
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "llava-phi3:3.8b",
+        "tag": "3.8b",
+        "digest": "c7edd7b87593",
+        "availability": "local",
+        "download_size_bytes": 2900000000,
+        "parameter": {
+          "raw": "3.8b",
+          "total_billion": 3.8,
+          "active_billion": null
+        },
+        "quantization": null,
+        "context_window": 4000,
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "exaone3.5",
       "name": "exaone3.5",
       "description": "EXAONE 3.5 is a collection of instruction-tuned bilingual (English and Korean) generative models ranging from 2.4B to 32B parameters, developed and released by LG AI Research.",
@@ -13545,7 +13619,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 571600,
+      "pulls": 572000,
       "tag_count": 13,
       "source_updated_at": "2024-12-10T08:03:00Z",
       "parameter_sizes": [
@@ -13616,7 +13690,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 570100,
+      "pulls": 570400,
       "tag_count": 18,
       "source_updated_at": "2024-09-18T22:27:00Z",
       "parameter_sizes": [
@@ -13697,7 +13771,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 566900,
+      "pulls": 567200,
       "tag_count": 18,
       "source_updated_at": "2023-12-05T23:59:00Z",
       "parameter_sizes": [
@@ -13778,7 +13852,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 563200,
+      "pulls": 563800,
       "tag_count": 17,
       "source_updated_at": "2024-07-22T23:54:00Z",
       "parameter_sizes": [
@@ -13851,80 +13925,6 @@
       "license": null
     },
     {
-      "slug": "llava-phi3",
-      "name": "llava-phi3",
-      "description": "A new small LLaVA model fine-tuned from Phi 3 Mini.",
-      "source_url": "https://ollama.com/library/llava-phi3",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [
-        "vision"
-      ],
-      "applications": [],
-      "pulls": 563100,
-      "tag_count": 4,
-      "source_updated_at": "2024-05-07T21:20:00Z",
-      "parameter_sizes": [
-        "3.8b"
-      ],
-      "min_download_size_bytes": 2900000000,
-      "max_download_size_bytes": 8300000000,
-      "max_context_window": 4000,
-      "categories": [
-        "chat",
-        "vision"
-      ],
-      "input_modalities": [
-        "image",
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q4_0"
-      ],
-      "local_variant_count": 4,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "llava-phi3:latest",
-        "tag": "latest",
-        "digest": "c7edd7b87593",
-        "availability": "local",
-        "download_size_bytes": 2900000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 4000,
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "llava-phi3:3.8b",
-        "tag": "3.8b",
-        "digest": "c7edd7b87593",
-        "availability": "local",
-        "download_size_bytes": 2900000000,
-        "parameter": {
-          "raw": "3.8b",
-          "total_billion": 3.8,
-          "active_billion": null
-        },
-        "quantization": null,
-        "context_window": 4000,
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "mathstral",
       "name": "mathstral",
       "description": "MathΣtral: a 7B model designed for math reasoning and scientific discovery by Mistral AI.",
@@ -13933,7 +13933,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 560800,
+      "pulls": 561200,
       "tag_count": 17,
       "source_updated_at": "2024-07-16T17:04:00Z",
       "parameter_sizes": [
@@ -14014,7 +14014,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 551000,
+      "pulls": 551300,
       "tag_count": 17,
       "source_updated_at": "2024-05-14T01:46:00Z",
       "parameter_sizes": [
@@ -14095,7 +14095,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 550900,
+      "pulls": 551300,
       "tag_count": 18,
       "source_updated_at": "2023-12-29T22:06:00Z",
       "parameter_sizes": [
@@ -14176,7 +14176,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 549600,
+      "pulls": 549900,
       "tag_count": 18,
       "source_updated_at": "2023-12-29T03:35:00Z",
       "parameter_sizes": [
@@ -14259,7 +14259,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 547100,
+      "pulls": 547800,
       "tag_count": 3,
       "source_updated_at": "2025-11-19T20:26:00Z",
       "parameter_sizes": [
@@ -14330,7 +14330,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 543600,
+      "pulls": 543900,
       "tag_count": 17,
       "source_updated_at": "2023-12-27T20:51:00Z",
       "parameter_sizes": [
@@ -14411,7 +14411,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 540800,
+      "pulls": 541100,
       "tag_count": 17,
       "source_updated_at": "2024-09-18T18:29:00Z",
       "parameter_sizes": [
@@ -14492,7 +14492,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 538300,
+      "pulls": 538600,
       "tag_count": 17,
       "source_updated_at": "2024-01-29T23:52:00Z",
       "parameter_sizes": [
@@ -14580,7 +14580,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 534600,
+      "pulls": 534900,
       "tag_count": 17,
       "source_updated_at": "2024-07-18T16:39:00Z",
       "parameter_sizes": [
@@ -14663,7 +14663,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 534400,
+      "pulls": 534700,
       "tag_count": 17,
       "source_updated_at": "2023-11-02T22:27:00Z",
       "parameter_sizes": [
@@ -14744,7 +14744,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 528300,
+      "pulls": 528600,
       "tag_count": 17,
       "source_updated_at": "2023-10-28T19:41:00Z",
       "parameter_sizes": [
@@ -14834,7 +14834,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 520799,
+      "pulls": 521100,
       "tag_count": 1,
       "source_updated_at": "2026-06-01T01:34:00Z",
       "parameter_sizes": [],
@@ -14900,7 +14900,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 520299,
+      "pulls": 520600,
       "tag_count": 17,
       "source_updated_at": "2023-10-29T07:52:00Z",
       "parameter_sizes": [
@@ -14988,7 +14988,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 515600,
+      "pulls": 518900,
       "tag_count": 48,
       "source_updated_at": "2026-05-19T21:58:00Z",
       "parameter_sizes": [
@@ -15084,7 +15084,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 513900,
+      "pulls": 514200,
       "tag_count": 5,
       "source_updated_at": "2025-12-09T07:48:00Z",
       "parameter_sizes": [
@@ -15155,7 +15155,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 510200,
+      "pulls": 510400,
       "tag_count": 16,
       "source_updated_at": "2023-10-29T10:48:00Z",
       "parameter_sizes": [
@@ -15235,7 +15235,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 489300,
+      "pulls": 489600,
       "tag_count": 16,
       "source_updated_at": "2023-11-17T21:54:00Z",
       "parameter_sizes": [
@@ -15325,7 +15325,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 487800,
+      "pulls": 488200,
       "tag_count": 1,
       "source_updated_at": "2026-04-20T20:09:00Z",
       "parameter_sizes": [],
@@ -15399,7 +15399,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 466400,
+      "pulls": 466800,
       "tag_count": 15,
       "source_updated_at": "2025-12-16T05:55:00Z",
       "parameter_sizes": [
@@ -15479,7 +15479,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 463800,
+      "pulls": 464100,
       "tag_count": 9,
       "source_updated_at": "2025-02-26T05:48:00Z",
       "parameter_sizes": [
@@ -15553,7 +15553,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 463700,
+      "pulls": 464100,
       "tag_count": 3,
       "source_updated_at": "2024-12-04T23:57:00Z",
       "parameter_sizes": [
@@ -15614,7 +15614,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 445300,
+      "pulls": 446700,
       "tag_count": 2,
       "source_updated_at": "2026-08-13T15:00:00Z",
       "parameter_sizes": [],
@@ -15678,7 +15678,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 444800,
+      "pulls": 445700,
       "tag_count": 9,
       "source_updated_at": "2026-04-16T00:08:00Z",
       "parameter_sizes": [
@@ -15752,7 +15752,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 428200,
+      "pulls": 428400,
       "tag_count": 9,
       "source_updated_at": "2025-02-21T15:28:00Z",
       "parameter_sizes": [
@@ -15822,7 +15822,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 423300,
+      "pulls": 423500,
       "tag_count": 13,
       "source_updated_at": "2024-12-04T08:10:00Z",
       "parameter_sizes": [
@@ -15902,7 +15902,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 421900,
+      "pulls": 422200,
       "tag_count": 5,
       "source_updated_at": "2026-05-05T23:14:00Z",
       "parameter_sizes": [
@@ -15978,7 +15978,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 407500,
+      "pulls": 408000,
       "tag_count": 9,
       "source_updated_at": "2024-12-21T03:58:00Z",
       "parameter_sizes": [
@@ -16050,7 +16050,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 381800,
+      "pulls": 382500,
       "tag_count": 6,
       "source_updated_at": "2024-12-18T04:11:00Z",
       "parameter_sizes": [
@@ -16096,146 +16096,6 @@
       "license": null
     },
     {
-      "slug": "dbrx",
-      "name": "dbrx",
-      "description": "DBRX is an open, general-purpose LLM created by Databricks.",
-      "source_url": "https://ollama.com/library/dbrx",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 371600,
-      "tag_count": 7,
-      "source_updated_at": "2024-04-16T04:18:00Z",
-      "parameter_sizes": [
-        "132b"
-      ],
-      "min_download_size_bytes": 48000000000,
-      "max_download_size_bytes": 263000000000,
-      "max_context_window": 32000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q2_K",
-        "Q4_0",
-        "Q8_0"
-      ],
-      "local_variant_count": 7,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "dbrx:latest",
-        "tag": "latest",
-        "digest": "36800d8d3a28",
-        "availability": "local",
-        "download_size_bytes": 74000000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "dbrx:132b-instruct-q2_K",
-        "tag": "132b-instruct-q2_K",
-        "digest": "e2554a95cc76",
-        "availability": "local",
-        "download_size_bytes": 48000000000,
-        "parameter": {
-          "raw": "132b",
-          "total_billion": 132.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
-      "slug": "glm-5.2",
-      "name": "glm-5.2",
-      "description": "GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.",
-      "source_url": "https://ollama.com/library/glm-5.2",
-      "status": "active",
-      "availability": "cloud",
-      "capabilities": [
-        "thinking",
-        "tools"
-      ],
-      "applications": [
-        "Claude Code",
-        "Hermes Agent",
-        "OpenClaw",
-        "OpenCode"
-      ],
-      "pulls": 371600,
-      "tag_count": 1,
-      "source_updated_at": "2026-06-16T17:39:00Z",
-      "parameter_sizes": [],
-      "min_download_size_bytes": null,
-      "max_download_size_bytes": null,
-      "max_context_window": 976000,
-      "categories": [
-        "chat",
-        "coding",
-        "tools",
-        "reasoning"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [],
-      "local_variant_count": 0,
-      "cloud_variant_count": 1,
-      "default_variant": {
-        "ref": "glm-5.2:cloud",
-        "tag": "cloud",
-        "digest": "ce8fd6f94793",
-        "availability": "cloud",
-        "download_size_bytes": null,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 976000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": null,
-      "cloud_variant": {
-        "ref": "glm-5.2:cloud",
-        "tag": "cloud",
-        "digest": "ce8fd6f94793",
-        "availability": "cloud",
-        "download_size_bytes": null,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 976000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "ornith-1.5",
       "name": "ornith-1.5",
       "description": "Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement.",
@@ -16246,7 +16106,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 370300,
+      "pulls": 373900,
       "tag_count": 3,
       "source_updated_at": "2026-08-19T18:06:00Z",
       "parameter_sizes": [
@@ -16313,6 +16173,146 @@
       "license": null
     },
     {
+      "slug": "glm-5.2",
+      "name": "glm-5.2",
+      "description": "GLM-5.2 is Z.ai’s flagship model for the era of long-horizon tasks.",
+      "source_url": "https://ollama.com/library/glm-5.2",
+      "status": "active",
+      "availability": "cloud",
+      "capabilities": [
+        "thinking",
+        "tools"
+      ],
+      "applications": [
+        "Claude Code",
+        "Hermes Agent",
+        "OpenClaw",
+        "OpenCode"
+      ],
+      "pulls": 371900,
+      "tag_count": 1,
+      "source_updated_at": "2026-06-16T17:39:00Z",
+      "parameter_sizes": [],
+      "min_download_size_bytes": null,
+      "max_download_size_bytes": null,
+      "max_context_window": 976000,
+      "categories": [
+        "chat",
+        "coding",
+        "tools",
+        "reasoning"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [],
+      "local_variant_count": 0,
+      "cloud_variant_count": 1,
+      "default_variant": {
+        "ref": "glm-5.2:cloud",
+        "tag": "cloud",
+        "digest": "ce8fd6f94793",
+        "availability": "cloud",
+        "download_size_bytes": null,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 976000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": null,
+      "cloud_variant": {
+        "ref": "glm-5.2:cloud",
+        "tag": "cloud",
+        "digest": "ce8fd6f94793",
+        "availability": "cloud",
+        "download_size_bytes": null,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 976000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "family": null,
+      "license": null
+    },
+    {
+      "slug": "dbrx",
+      "name": "dbrx",
+      "description": "DBRX is an open, general-purpose LLM created by Databricks.",
+      "source_url": "https://ollama.com/library/dbrx",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 371700,
+      "tag_count": 7,
+      "source_updated_at": "2024-04-16T04:18:00Z",
+      "parameter_sizes": [
+        "132b"
+      ],
+      "min_download_size_bytes": 48000000000,
+      "max_download_size_bytes": 263000000000,
+      "max_context_window": 32000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q2_K",
+        "Q4_0",
+        "Q8_0"
+      ],
+      "local_variant_count": 7,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "dbrx:latest",
+        "tag": "latest",
+        "digest": "36800d8d3a28",
+        "availability": "local",
+        "download_size_bytes": 74000000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "dbrx:132b-instruct-q2_K",
+        "tag": "132b-instruct-q2_K",
+        "digest": "e2554a95cc76",
+        "availability": "local",
+        "download_size_bytes": 48000000000,
+        "parameter": {
+          "raw": "132b",
+          "total_billion": 132.0,
+          "active_billion": null
+        },
+        "quantization": "Q2_K",
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "devstral-2",
       "name": "devstral-2",
       "description": "123B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
@@ -16328,7 +16328,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 360900,
+      "pulls": 361100,
       "tag_count": 5,
       "source_updated_at": "2025-12-12T01:21:00Z",
       "parameter_sizes": [
@@ -16399,7 +16399,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 344200,
+      "pulls": 344400,
       "tag_count": 10,
       "source_updated_at": "2024-11-19T23:33:00Z",
       "parameter_sizes": [
@@ -16478,7 +16478,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 334500,
+      "pulls": 334900,
       "tag_count": 5,
       "source_updated_at": "2025-01-16T22:27:00Z",
       "parameter_sizes": [
@@ -16549,7 +16549,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 317300,
+      "pulls": 317600,
       "tag_count": 5,
       "source_updated_at": "2025-05-01T03:53:00Z",
       "parameter_sizes": [
@@ -16626,7 +16626,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 295800,
+      "pulls": 296100,
       "tag_count": 10,
       "source_updated_at": "2025-12-16T05:56:00Z",
       "parameter_sizes": [
@@ -16698,7 +16698,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 294300,
+      "pulls": 294500,
       "tag_count": 7,
       "source_updated_at": "2024-09-11T19:31:00Z",
       "parameter_sizes": [
@@ -16771,7 +16771,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 289500,
+      "pulls": 289700,
       "tag_count": 3,
       "source_updated_at": "2024-08-07T00:04:00Z",
       "parameter_sizes": [
@@ -16824,7 +16824,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 285000,
+      "pulls": 286500,
       "tag_count": 7,
       "source_updated_at": "2023-11-19T13:58:00Z",
       "parameter_sizes": [
@@ -16904,7 +16904,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 269100,
+      "pulls": 271900,
       "tag_count": 15,
       "source_updated_at": "2026-08-28T19:09:00Z",
       "parameter_sizes": [
@@ -16982,7 +16982,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 264200,
+      "pulls": 264300,
       "tag_count": 5,
       "source_updated_at": "2024-12-30T21:33:00Z",
       "parameter_sizes": [
@@ -17060,7 +17060,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 247900,
+      "pulls": 248300,
       "tag_count": 1,
       "source_updated_at": "2026-06-13T00:26:00Z",
       "parameter_sizes": [],
@@ -17133,7 +17133,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 232500,
+      "pulls": 232600,
       "tag_count": 5,
       "source_updated_at": "2025-03-13T12:39:00Z",
       "parameter_sizes": [
@@ -17204,7 +17204,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 225600,
+      "pulls": 225700,
       "tag_count": 5,
       "source_updated_at": "2025-11-19T18:22:00Z",
       "parameter_sizes": [
@@ -17265,75 +17265,6 @@
       "license": null
     },
     {
-      "slug": "marco-o1",
-      "name": "marco-o1",
-      "description": "An open large reasoning model for real-world solutions by the Alibaba International Digital Commerce Group (AIDC-AI).",
-      "source_url": "https://ollama.com/library/marco-o1",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 217100,
-      "tag_count": 5,
-      "source_updated_at": "2024-12-04T08:14:00Z",
-      "parameter_sizes": [
-        "7b"
-      ],
-      "min_download_size_bytes": 4700000000,
-      "max_download_size_bytes": 15000000000,
-      "max_context_window": 32000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q4_K_M",
-        "Q8_0"
-      ],
-      "local_variant_count": 5,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "marco-o1:latest",
-        "tag": "latest",
-        "digest": "4752e62baa0a",
-        "availability": "local",
-        "download_size_bytes": 4700000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "marco-o1:7b",
-        "tag": "7b",
-        "digest": "4752e62baa0a",
-        "availability": "local",
-        "download_size_bytes": 4700000000,
-        "parameter": {
-          "raw": "7b",
-          "total_billion": 7.0,
-          "active_billion": null
-        },
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "nemotron-3.5-lightning",
       "name": "nemotron-3.5-lightning",
       "description": "NVIDIA Nemotron 3.5 Lightning is an open 30B mixture-of-experts (MoE) model with 3B active parameters built for always-on agents.",
@@ -17350,7 +17281,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 215300,
+      "pulls": 218000,
       "tag_count": 11,
       "source_updated_at": "2026-08-31T21:05:00Z",
       "parameter_sizes": [
@@ -17417,6 +17348,75 @@
       "license": null
     },
     {
+      "slug": "marco-o1",
+      "name": "marco-o1",
+      "description": "An open large reasoning model for real-world solutions by the Alibaba International Digital Commerce Group (AIDC-AI).",
+      "source_url": "https://ollama.com/library/marco-o1",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 217300,
+      "tag_count": 5,
+      "source_updated_at": "2024-12-04T08:14:00Z",
+      "parameter_sizes": [
+        "7b"
+      ],
+      "min_download_size_bytes": 4700000000,
+      "max_download_size_bytes": 15000000000,
+      "max_context_window": 32000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q4_K_M",
+        "Q8_0"
+      ],
+      "local_variant_count": 5,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "marco-o1:latest",
+        "tag": "latest",
+        "digest": "4752e62baa0a",
+        "availability": "local",
+        "download_size_bytes": 4700000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "marco-o1:7b",
+        "tag": "7b",
+        "digest": "4752e62baa0a",
+        "availability": "local",
+        "download_size_bytes": 4700000000,
+        "parameter": {
+          "raw": "7b",
+          "total_billion": 7.0,
+          "active_billion": null
+        },
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "medgemma1.5",
       "name": "medgemma1.5",
       "description": "MedGemma 1.5 4B is an updated version of the MedGemma 4B model.",
@@ -17427,7 +17427,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 209600,
+      "pulls": 209900,
       "tag_count": 5,
       "source_updated_at": "2026-04-16T00:04:00Z",
       "parameter_sizes": [
@@ -17507,7 +17507,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 208000,
+      "pulls": 208100,
       "tag_count": 5,
       "source_updated_at": "2025-02-28T21:28:00Z",
       "parameter_sizes": [
@@ -17580,7 +17580,7 @@
         "tools"
       ],
       "applications": [],
-      "pulls": 197500,
+      "pulls": 198000,
       "tag_count": 4,
       "source_updated_at": "2025-12-18T07:03:00Z",
       "parameter_sizes": [
@@ -17657,7 +17657,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 187200,
+      "pulls": 189800,
       "tag_count": 5,
       "source_updated_at": "2026-05-31T04:16:00Z",
       "parameter_sizes": [
@@ -17739,7 +17739,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 178700,
+      "pulls": 179600,
       "tag_count": 6,
       "source_updated_at": "2026-09-05T17:55:00Z",
       "parameter_sizes": [
@@ -17830,7 +17830,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 176000,
+      "pulls": 177300,
       "tag_count": 1,
       "source_updated_at": "2026-08-26T14:00:00Z",
       "parameter_sizes": [],
@@ -17904,7 +17904,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 170800,
+      "pulls": 171200,
       "tag_count": 8,
       "source_updated_at": "2026-08-28T18:53:00Z",
       "parameter_sizes": [],
@@ -17981,7 +17981,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 160800,
+      "pulls": 161000,
       "tag_count": 3,
       "source_updated_at": "2025-10-29T02:04:00Z",
       "parameter_sizes": [
@@ -18058,7 +18058,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 152000,
+      "pulls": 152200,
       "tag_count": 3,
       "source_updated_at": "2026-03-20T20:10:00Z",
       "parameter_sizes": [
@@ -18137,7 +18137,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 130800,
+      "pulls": 131700,
       "tag_count": 1,
       "source_updated_at": "2025-12-02T23:19:00Z",
       "parameter_sizes": [
@@ -18220,7 +18220,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 125300,
+      "pulls": 125800,
       "tag_count": 7,
       "source_updated_at": "2026-08-31T20:58:00Z",
       "parameter_sizes": [],
@@ -18280,76 +18280,6 @@
       "license": null
     },
     {
-      "slug": "nemotron-3-ultra",
-      "name": "nemotron-3-ultra",
-      "description": "NVIDIA Nemotron 3 Ultra is built for high-throughput reasoning and long-running agent workflows.",
-      "source_url": "https://ollama.com/library/nemotron-3-ultra",
-      "status": "active",
-      "availability": "cloud",
-      "capabilities": [
-        "thinking",
-        "tools"
-      ],
-      "applications": [
-        "Claude Code",
-        "Hermes Agent",
-        "OpenClaw",
-        "OpenCode"
-      ],
-      "pulls": 118500,
-      "tag_count": 1,
-      "source_updated_at": "2026-06-04T00:00:00Z",
-      "parameter_sizes": [],
-      "min_download_size_bytes": null,
-      "max_download_size_bytes": null,
-      "max_context_window": 256000,
-      "categories": [
-        "chat",
-        "coding",
-        "tools",
-        "reasoning"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [],
-      "local_variant_count": 0,
-      "cloud_variant_count": 1,
-      "default_variant": {
-        "ref": "nemotron-3-ultra:cloud",
-        "tag": "cloud",
-        "digest": "802a2bec181a",
-        "availability": "cloud",
-        "download_size_bytes": null,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 256000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": null,
-      "cloud_variant": {
-        "ref": "nemotron-3-ultra:cloud",
-        "tag": "cloud",
-        "digest": "802a2bec181a",
-        "availability": "cloud",
-        "download_size_bytes": null,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 256000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "granite4.2",
       "name": "granite4.2",
       "description": "IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license.",
@@ -18358,7 +18288,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 117400,
+      "pulls": 120000,
       "tag_count": 49,
       "source_updated_at": "2026-08-27T21:41:00Z",
       "parameter_sizes": [
@@ -18433,6 +18363,76 @@
       "license": null
     },
     {
+      "slug": "nemotron-3-ultra",
+      "name": "nemotron-3-ultra",
+      "description": "NVIDIA Nemotron 3 Ultra is built for high-throughput reasoning and long-running agent workflows.",
+      "source_url": "https://ollama.com/library/nemotron-3-ultra",
+      "status": "active",
+      "availability": "cloud",
+      "capabilities": [
+        "thinking",
+        "tools"
+      ],
+      "applications": [
+        "Claude Code",
+        "Hermes Agent",
+        "OpenClaw",
+        "OpenCode"
+      ],
+      "pulls": 119500,
+      "tag_count": 1,
+      "source_updated_at": "2026-06-04T00:00:00Z",
+      "parameter_sizes": [],
+      "min_download_size_bytes": null,
+      "max_download_size_bytes": null,
+      "max_context_window": 256000,
+      "categories": [
+        "chat",
+        "coding",
+        "tools",
+        "reasoning"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [],
+      "local_variant_count": 0,
+      "cloud_variant_count": 1,
+      "default_variant": {
+        "ref": "nemotron-3-ultra:cloud",
+        "tag": "cloud",
+        "digest": "802a2bec181a",
+        "availability": "cloud",
+        "download_size_bytes": null,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 256000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": null,
+      "cloud_variant": {
+        "ref": "nemotron-3-ultra:cloud",
+        "tag": "cloud",
+        "digest": "802a2bec181a",
+        "availability": "cloud",
+        "download_size_bytes": null,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 256000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "kimi-k3",
       "name": "kimi-k3",
       "description": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date.",
@@ -18450,7 +18450,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 99400,
+      "pulls": 100000,
       "tag_count": 1,
       "source_updated_at": "2026-07-27T15:53:00Z",
       "parameter_sizes": [],
@@ -18524,7 +18524,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 84000,
+      "pulls": 85700,
       "tag_count": 1,
       "source_updated_at": "2026-08-28T15:00:00Z",
       "parameter_sizes": [],
@@ -18578,6 +18578,69 @@
       "license": null
     },
     {
+      "slug": "tev1",
+      "name": "tev1",
+      "description": "A 4B decision model from Together AI for fast classification.",
+      "source_url": "https://ollama.com/library/tev1",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [
+        "thinking",
+        "tools"
+      ],
+      "applications": [],
+      "pulls": 77200,
+      "tag_count": 13,
+      "source_updated_at": "2026-10-01T19:39:00Z",
+      "parameter_sizes": [
+        "0.8b",
+        "4b"
+      ],
+      "min_download_size_bytes": 797000000,
+      "max_download_size_bytes": 8400000000,
+      "max_context_window": 256000,
+      "categories": [
+        "chat",
+        "tools",
+        "reasoning"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "BF16",
+        "MXFP8",
+        "NVFP4",
+        "Q4_K_M",
+        "Q8_0"
+      ],
+      "local_variant_count": 13,
+      "cloud_variant_count": 0,
+      "default_variant": null,
+      "smallest_local_variant": {
+        "ref": "tev1:0.8b-mxfp8",
+        "tag": "0.8b-mxfp8",
+        "digest": "c96262240cf8",
+        "availability": "local",
+        "download_size_bytes": 797000000,
+        "parameter": {
+          "raw": "0.8b",
+          "total_billion": 0.8,
+          "active_billion": null
+        },
+        "quantization": "MXFP8",
+        "context_window": 256000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "deepseek-v4.1-flash",
       "name": "deepseek-v4.1-flash",
       "description": "DeepSeek-V4.1-Flash is an advanced tool designed to enhance search capabilities, providing users with faster and more accurate results.",
@@ -18595,7 +18658,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 74000,
+      "pulls": 75400,
       "tag_count": 1,
       "source_updated_at": "2026-09-10T03:00:00Z",
       "parameter_sizes": [],
@@ -18653,69 +18716,6 @@
       "license": null
     },
     {
-      "slug": "tev1",
-      "name": "tev1",
-      "description": "A 4B decision model from Together AI for fast classification.",
-      "source_url": "https://ollama.com/library/tev1",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [
-        "thinking",
-        "tools"
-      ],
-      "applications": [],
-      "pulls": 70400,
-      "tag_count": 13,
-      "source_updated_at": "2026-10-01T19:39:00Z",
-      "parameter_sizes": [
-        "0.8b",
-        "4b"
-      ],
-      "min_download_size_bytes": 797000000,
-      "max_download_size_bytes": 8400000000,
-      "max_context_window": 256000,
-      "categories": [
-        "chat",
-        "tools",
-        "reasoning"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "BF16",
-        "MXFP8",
-        "NVFP4",
-        "Q4_K_M",
-        "Q8_0"
-      ],
-      "local_variant_count": 13,
-      "cloud_variant_count": 0,
-      "default_variant": null,
-      "smallest_local_variant": {
-        "ref": "tev1:0.8b-mxfp8",
-        "tag": "0.8b-mxfp8",
-        "digest": "c96262240cf8",
-        "availability": "local",
-        "download_size_bytes": 797000000,
-        "parameter": {
-          "raw": "0.8b",
-          "total_billion": 0.8,
-          "active_billion": null
-        },
-        "quantization": "MXFP8",
-        "context_window": 256000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "north-mini-code-1.0",
       "name": "north-mini-code-1.0",
       "description": "North Mini Code is Cohere's first model for developers — a 30B Mixture-of-Experts model with 3B active parameters, built for agentic software engineering.",
@@ -18732,7 +18732,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 65000,
+      "pulls": 65500,
       "tag_count": 7,
       "source_updated_at": "2026-06-18T01:39:00Z",
       "parameter_sizes": [],
@@ -18802,7 +18802,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 62300,
+      "pulls": 63000,
       "tag_count": 13,
       "source_updated_at": "2026-06-02T07:54:00Z",
       "parameter_sizes": [
@@ -18885,7 +18885,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 50400,
+      "pulls": 51000,
       "tag_count": 13,
       "source_updated_at": "2026-06-02T08:02:00Z",
       "parameter_sizes": [
@@ -18970,7 +18970,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 33700,
+      "pulls": 33900,
       "tag_count": 7,
       "source_updated_at": "2026-07-25T18:19:00Z",
       "parameter_sizes": [],
@@ -19041,7 +19041,7 @@
         "tools"
       ],
       "applications": [],
-      "pulls": 31400,
+      "pulls": 32700,
       "tag_count": 8,
       "source_updated_at": "2026-10-01T19:41:00Z",
       "parameter_sizes": [
@@ -19108,7 +19108,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 31000,
+      "pulls": 31300,
       "tag_count": 16,
       "source_updated_at": "2026-06-10T21:07:00Z",
       "parameter_sizes": [
@@ -19188,66 +19188,6 @@
       "license": null
     },
     {
-      "slug": "clef-flash",
-      "name": "clef-flash",
-      "description": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions.",
-      "source_url": "https://ollama.com/library/clef-flash",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [
-        "vision"
-      ],
-      "applications": [],
-      "pulls": 12300,
-      "tag_count": 5,
-      "source_updated_at": "2026-10-04T23:27:00Z",
-      "parameter_sizes": [
-        "9b"
-      ],
-      "min_download_size_bytes": 11000000000,
-      "max_download_size_bytes": 19000000000,
-      "max_context_window": 256000,
-      "categories": [
-        "chat",
-        "vision"
-      ],
-      "input_modalities": [
-        "image",
-        "text"
-      ],
-      "quantizations": [
-        "BF16",
-        "MXFP8",
-        "Q8_0"
-      ],
-      "local_variant_count": 5,
-      "cloud_variant_count": 0,
-      "default_variant": null,
-      "smallest_local_variant": {
-        "ref": "clef-flash:9b-q8_0",
-        "tag": "9b-q8_0",
-        "digest": "2aa4d39fd93b",
-        "availability": "local",
-        "download_size_bytes": 11000000000,
-        "parameter": {
-          "raw": "9b",
-          "total_billion": 9.0,
-          "active_billion": null
-        },
-        "quantization": "Q8_0",
-        "context_window": 256000,
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "embeddinggemma-2",
       "name": "embeddinggemma-2",
       "description": "EmbeddingGemma 2 is a multimodal embedding model from Google built on the Gemma 4 architecture.",
@@ -19260,7 +19200,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 11400,
+      "pulls": 17700,
       "tag_count": 17,
       "source_updated_at": "2026-10-06T04:10:00Z",
       "parameter_sizes": [
@@ -19313,6 +19253,66 @@
       "license": null
     },
     {
+      "slug": "clef-flash",
+      "name": "clef-flash",
+      "description": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions.",
+      "source_url": "https://ollama.com/library/clef-flash",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [
+        "vision"
+      ],
+      "applications": [],
+      "pulls": 13800,
+      "tag_count": 5,
+      "source_updated_at": "2026-10-04T23:27:00Z",
+      "parameter_sizes": [
+        "9b"
+      ],
+      "min_download_size_bytes": 11000000000,
+      "max_download_size_bytes": 19000000000,
+      "max_context_window": 256000,
+      "categories": [
+        "chat",
+        "vision"
+      ],
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "quantizations": [
+        "BF16",
+        "MXFP8",
+        "Q8_0"
+      ],
+      "local_variant_count": 5,
+      "cloud_variant_count": 0,
+      "default_variant": null,
+      "smallest_local_variant": {
+        "ref": "clef-flash:9b-q8_0",
+        "tag": "9b-q8_0",
+        "digest": "2aa4d39fd93b",
+        "availability": "local",
+        "download_size_bytes": 11000000000,
+        "parameter": {
+          "raw": "9b",
+          "total_billion": 9.0,
+          "active_billion": null
+        },
+        "quantization": "Q8_0",
+        "context_window": 256000,
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "clef",
       "name": "clef",
       "description": "Clef is a 27B multimodal model created by Cloudflare that turns a state and a schema of typed questions into decisions.",
@@ -19323,7 +19323,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 7675,
+      "pulls": 8714,
       "tag_count": 7,
       "source_updated_at": "2026-10-04T23:22:00Z",
       "parameter_sizes": [
@@ -19392,7 +19392,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 1719,
+      "pulls": 2837,
       "tag_count": 1,
       "source_updated_at": "2026-10-06T13:00:00Z",
       "parameter_sizes": [],
@@ -19458,7 +19458,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 1435,
+      "pulls": 2504,
       "tag_count": 4,
       "source_updated_at": "2026-09-30T23:35:00Z",
       "parameter_sizes": [
