@@ -10,8 +10,8 @@
   ],
   "applications": [],
   "pulls": 41000000,
-  "tag_count": 27,
-  "source_updated_at": "2026-10-09T03:34:00Z",
+  "tag_count": 29,
+  "source_updated_at": "2026-10-09T15:09:00Z",
   "parameter_sizes": [
     "270m",
     "1b",
@@ -36,7 +36,7 @@
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 27,
+  "local_variant_count": 29,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "gemma3:latest",
@@ -98,9 +98,29 @@
       "is_default": false
     },
     {
+      "ref": "gemma3:12b-it-bf16",
+      "tag": "12b-it-bf16",
+      "digest": "36949f7228f6",
+      "availability": "local",
+      "download_size_bytes": 24000000000,
+      "parameter": {
+        "raw": "12b",
+        "total_billion": 12.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "gemma3:12b-it-fp16",
       "tag": "12b-it-fp16",
-      "digest": "6b1ba564b78d",
+      "digest": "36949f7228f6",
       "availability": "local",
       "download_size_bytes": 24000000000,
       "parameter": {
@@ -160,7 +180,7 @@
     {
       "ref": "gemma3:12b-it-qat",
       "tag": "12b-it-qat",
-      "digest": "5d4fa005e7bb",
+      "digest": "c615ec41b385",
       "availability": "local",
       "download_size_bytes": 8900000000,
       "parameter": {
@@ -370,7 +390,7 @@
     {
       "ref": "gemma3:27b",
       "tag": "27b",
-      "digest": "a418f5838eaf",
+      "digest": "6be2e2ba6843",
       "availability": "local",
       "download_size_bytes": 17000000000,
       "parameter": {
@@ -388,9 +408,29 @@
       "is_default": false
     },
     {
+      "ref": "gemma3:27b-it-bf16",
+      "tag": "27b-it-bf16",
+      "digest": "1bc907263cde",
+      "availability": "local",
+      "download_size_bytes": 55000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "gemma3:27b-it-fp16",
       "tag": "27b-it-fp16",
-      "digest": "b7d58e2e179e",
+      "digest": "1bc907263cde",
       "availability": "local",
       "download_size_bytes": 55000000000,
       "parameter": {
@@ -410,7 +450,7 @@
     {
       "ref": "gemma3:27b-it-q4_K_M",
       "tag": "27b-it-q4_K_M",
-      "digest": "a418f5838eaf",
+      "digest": "6be2e2ba6843",
       "availability": "local",
       "download_size_bytes": 17000000000,
       "parameter": {
@@ -430,7 +470,7 @@
     {
       "ref": "gemma3:27b-it-q8_0",
       "tag": "27b-it-q8_0",
-      "digest": "273cbcd67032",
+      "digest": "62dc427fec6b",
       "availability": "local",
       "download_size_bytes": 30000000000,
       "parameter": {
@@ -450,7 +490,7 @@
     {
       "ref": "gemma3:27b-it-qat",
       "tag": "27b-it-qat",
-      "digest": "29eb0b9aeda3",
+      "digest": "a53d94b409fe",
       "availability": "local",
       "download_size_bytes": 18000000000,
       "parameter": {
