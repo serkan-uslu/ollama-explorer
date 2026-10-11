@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-10T03:38:43Z",
+  "generated_at": "2026-10-11T03:46:51Z",
   "source": {
     "name": "ollama",
     "url": "https://ollama.com/library?sort=popular",
@@ -196,7 +196,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 88700000,
+      "pulls": 88800000,
       "tag_count": 3,
       "source_updated_at": "2024-02-21T17:26:00Z",
       "parameter_sizes": [
@@ -347,7 +347,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 42000000,
+      "pulls": 42100000,
       "tag_count": 133,
       "source_updated_at": "2024-09-19T16:42:00Z",
       "parameter_sizes": [
@@ -523,7 +523,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 39500000,
+      "pulls": 39600000,
       "tag_count": 58,
       "source_updated_at": "2025-10-10T20:18:00Z",
       "parameter_sizes": [
@@ -604,7 +604,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 34400000,
+      "pulls": 34500000,
       "tag_count": 94,
       "source_updated_at": "2024-08-01T18:51:00Z",
       "parameter_sizes": [
@@ -694,7 +694,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 33800000,
+      "pulls": 33900000,
       "tag_count": 84,
       "source_updated_at": "2025-07-13T00:56:00Z",
       "parameter_sizes": [
@@ -979,7 +979,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 22200000,
+      "pulls": 22300000,
       "tag_count": 199,
       "source_updated_at": "2025-05-28T01:19:00Z",
       "parameter_sizes": [
@@ -1076,7 +1076,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 21900000,
+      "pulls": 22000000,
       "tag_count": 72,
       "source_updated_at": "2026-10-04T20:59:00Z",
       "parameter_sizes": [
@@ -1398,7 +1398,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 13600000,
+      "pulls": 13700000,
       "tag_count": 5,
       "source_updated_at": "2026-10-09T15:23:00Z",
       "parameter_sizes": [
@@ -1656,7 +1656,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 8100000,
+      "pulls": 8199999,
       "tag_count": 3,
       "source_updated_at": "2026-02-02T23:29:00Z",
       "parameter_sizes": [],
@@ -2028,7 +2028,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 7000000,
+      "pulls": 7100000,
       "tag_count": 35,
       "source_updated_at": "2026-09-30T20:29:00Z",
       "parameter_sizes": [
@@ -5192,6 +5192,89 @@
       "license": null
     },
     {
+      "slug": "sqlcoder",
+      "name": "sqlcoder",
+      "description": "SQLCoder is a code completion model fined-tuned on StarCoder for SQL generation tasks",
+      "source_url": "https://ollama.com/library/sqlcoder",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 2100000,
+      "tag_count": 48,
+      "source_updated_at": "2024-02-01T04:26:00Z",
+      "parameter_sizes": [
+        "7b",
+        "15b",
+        "70b"
+      ],
+      "min_download_size_bytes": 3100000000,
+      "max_download_size_bytes": 138000000000,
+      "max_context_window": 32000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q2_K",
+        "Q3_K_L",
+        "Q3_K_M",
+        "Q3_K_S",
+        "Q4_0",
+        "Q4_1",
+        "Q4_K_M",
+        "Q4_K_S",
+        "Q5_0",
+        "Q5_1",
+        "Q5_K_M",
+        "Q5_K_S",
+        "Q6_K",
+        "Q8_0"
+      ],
+      "local_variant_count": 48,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "sqlcoder:latest",
+        "tag": "latest",
+        "digest": "77ac14348387",
+        "availability": "local",
+        "download_size_bytes": 4100000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "sqlcoder:7b-q2_K",
+        "tag": "7b-q2_K",
+        "digest": "ef8dfd2a47a9",
+        "availability": "local",
+        "download_size_bytes": 3100000000,
+        "parameter": {
+          "raw": "7b",
+          "total_billion": 7.0,
+          "active_billion": null
+        },
+        "quantization": "Q2_K",
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "glm-4.7-flash",
       "name": "glm-4.7-flash",
       "description": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency.",
@@ -5344,89 +5427,6 @@
         "input_modalities": [
           "text",
           "image"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
-      "slug": "sqlcoder",
-      "name": "sqlcoder",
-      "description": "SQLCoder is a code completion model fined-tuned on StarCoder for SQL generation tasks",
-      "source_url": "https://ollama.com/library/sqlcoder",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 2000000,
-      "tag_count": 48,
-      "source_updated_at": "2024-02-01T04:26:00Z",
-      "parameter_sizes": [
-        "7b",
-        "15b",
-        "70b"
-      ],
-      "min_download_size_bytes": 3100000000,
-      "max_download_size_bytes": 138000000000,
-      "max_context_window": 32000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q2_K",
-        "Q3_K_L",
-        "Q3_K_M",
-        "Q3_K_S",
-        "Q4_0",
-        "Q4_1",
-        "Q4_K_M",
-        "Q4_K_S",
-        "Q5_0",
-        "Q5_1",
-        "Q5_K_M",
-        "Q5_K_S",
-        "Q6_K",
-        "Q8_0"
-      ],
-      "local_variant_count": 48,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "sqlcoder:latest",
-        "tag": "latest",
-        "digest": "77ac14348387",
-        "availability": "local",
-        "download_size_bytes": 4100000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "sqlcoder:7b-q2_K",
-        "tag": "7b-q2_K",
-        "digest": "ef8dfd2a47a9",
-        "availability": "local",
-        "download_size_bytes": 3100000000,
-        "parameter": {
-          "raw": "7b",
-          "total_billion": 7.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
         ],
         "source_updated_at": null,
         "is_default": false
@@ -5684,6 +5684,108 @@
       "license": null
     },
     {
+      "slug": "devstral-small-2",
+      "name": "devstral-small-2",
+      "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
+      "source_url": "https://ollama.com/library/devstral-small-2",
+      "status": "active",
+      "availability": "both",
+      "capabilities": [
+        "tools",
+        "vision"
+      ],
+      "applications": [
+        "Claude Code",
+        "Hermes Agent",
+        "OpenClaw",
+        "OpenCode"
+      ],
+      "pulls": 1700000,
+      "tag_count": 6,
+      "source_updated_at": "2025-12-13T06:47:00Z",
+      "parameter_sizes": [
+        "24b"
+      ],
+      "min_download_size_bytes": 15000000000,
+      "max_download_size_bytes": 48000000000,
+      "max_context_window": 384000,
+      "categories": [
+        "chat",
+        "coding",
+        "vision",
+        "tools"
+      ],
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q4_K_M",
+        "Q8_0"
+      ],
+      "local_variant_count": 5,
+      "cloud_variant_count": 1,
+      "default_variant": {
+        "ref": "devstral-small-2:latest",
+        "tag": "latest",
+        "digest": "24277f07f62d",
+        "availability": "local",
+        "download_size_bytes": 15000000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 384000,
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "devstral-small-2:24b",
+        "tag": "24b",
+        "digest": "24277f07f62d",
+        "availability": "local",
+        "download_size_bytes": 15000000000,
+        "parameter": {
+          "raw": "24b",
+          "total_billion": 24.0,
+          "active_billion": null
+        },
+        "quantization": null,
+        "context_window": 384000,
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": {
+        "ref": "devstral-small-2:24b-cloud",
+        "tag": "24b-cloud",
+        "digest": "ec4a591da58a",
+        "availability": "cloud",
+        "download_size_bytes": null,
+        "parameter": {
+          "raw": "24b",
+          "total_billion": 24.0,
+          "active_billion": null
+        },
+        "quantization": null,
+        "context_window": 256000,
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "hermes3",
       "name": "hermes3",
       "description": "Hermes 3 is the latest version of the flagship Hermes series of LLMs by Nous Research",
@@ -5846,15 +5948,14 @@
       "license": null
     },
     {
-      "slug": "devstral-small-2",
-      "name": "devstral-small-2",
-      "description": "24B model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
-      "source_url": "https://ollama.com/library/devstral-small-2",
+      "slug": "command-r",
+      "name": "command-r",
+      "description": "Command R is a Large Language Model optimized for conversational interaction and long context tasks.",
+      "source_url": "https://ollama.com/library/command-r",
       "status": "active",
-      "availability": "both",
+      "availability": "local",
       "capabilities": [
-        "tools",
-        "vision"
+        "tools"
       ],
       "applications": [
         "Claude Code",
@@ -5863,87 +5964,76 @@
         "OpenCode"
       ],
       "pulls": 1600000,
-      "tag_count": 6,
-      "source_updated_at": "2025-12-13T06:47:00Z",
+      "tag_count": 32,
+      "source_updated_at": "2024-08-30T23:38:00Z",
       "parameter_sizes": [
-        "24b"
+        "35b"
       ],
-      "min_download_size_bytes": 15000000000,
-      "max_download_size_bytes": 48000000000,
-      "max_context_window": 384000,
+      "min_download_size_bytes": 13000000000,
+      "max_download_size_bytes": 70000000000,
+      "max_context_window": 128000,
       "categories": [
         "chat",
         "coding",
-        "vision",
         "tools"
       ],
       "input_modalities": [
-        "image",
         "text"
       ],
       "quantizations": [
         "FP16",
+        "Q2_K",
+        "Q3_K_L",
+        "Q3_K_M",
+        "Q3_K_S",
+        "Q4_0",
+        "Q4_1",
         "Q4_K_M",
+        "Q4_K_S",
+        "Q5_0",
+        "Q5_1",
+        "Q5_K_M",
+        "Q5_K_S",
+        "Q6_K",
         "Q8_0"
       ],
-      "local_variant_count": 5,
-      "cloud_variant_count": 1,
+      "local_variant_count": 32,
+      "cloud_variant_count": 0,
       "default_variant": {
-        "ref": "devstral-small-2:latest",
+        "ref": "command-r:latest",
         "tag": "latest",
-        "digest": "24277f07f62d",
+        "digest": "7d96360d357f",
         "availability": "local",
-        "download_size_bytes": 15000000000,
+        "download_size_bytes": 19000000000,
         "parameter": null,
         "quantization": null,
-        "context_window": 384000,
+        "context_window": 128000,
         "input_modalities": [
-          "text",
-          "image"
+          "text"
         ],
         "source_updated_at": null,
         "is_default": true
       },
       "smallest_local_variant": {
-        "ref": "devstral-small-2:24b",
-        "tag": "24b",
-        "digest": "24277f07f62d",
+        "ref": "command-r:35b-08-2024-q2_K",
+        "tag": "35b-08-2024-q2_K",
+        "digest": "baa79f31c7db",
         "availability": "local",
-        "download_size_bytes": 15000000000,
+        "download_size_bytes": 13000000000,
         "parameter": {
-          "raw": "24b",
-          "total_billion": 24.0,
+          "raw": "35b",
+          "total_billion": 35.0,
           "active_billion": null
         },
-        "quantization": null,
-        "context_window": 384000,
+        "quantization": "Q2_K",
+        "context_window": 128000,
         "input_modalities": [
-          "text",
-          "image"
+          "text"
         ],
         "source_updated_at": null,
         "is_default": false
       },
-      "cloud_variant": {
-        "ref": "devstral-small-2:24b-cloud",
-        "tag": "24b-cloud",
-        "digest": "ec4a591da58a",
-        "availability": "cloud",
-        "download_size_bytes": null,
-        "parameter": {
-          "raw": "24b",
-          "total_billion": 24.0,
-          "active_billion": null
-        },
-        "quantization": null,
-        "context_window": 256000,
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
+      "cloud_variant": null,
       "family": null,
       "license": null
     },
@@ -6180,96 +6270,6 @@
         },
         "quantization": "Q2_K",
         "context_window": 2000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
-      "slug": "command-r",
-      "name": "command-r",
-      "description": "Command R is a Large Language Model optimized for conversational interaction and long context tasks.",
-      "source_url": "https://ollama.com/library/command-r",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [
-        "tools"
-      ],
-      "applications": [
-        "Claude Code",
-        "Hermes Agent",
-        "OpenClaw",
-        "OpenCode"
-      ],
-      "pulls": 1500000,
-      "tag_count": 32,
-      "source_updated_at": "2024-08-30T23:38:00Z",
-      "parameter_sizes": [
-        "35b"
-      ],
-      "min_download_size_bytes": 13000000000,
-      "max_download_size_bytes": 70000000000,
-      "max_context_window": 128000,
-      "categories": [
-        "chat",
-        "coding",
-        "tools"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q2_K",
-        "Q3_K_L",
-        "Q3_K_M",
-        "Q3_K_S",
-        "Q4_0",
-        "Q4_1",
-        "Q4_K_M",
-        "Q4_K_S",
-        "Q5_0",
-        "Q5_1",
-        "Q5_K_M",
-        "Q5_K_S",
-        "Q6_K",
-        "Q8_0"
-      ],
-      "local_variant_count": 32,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "command-r:latest",
-        "tag": "latest",
-        "digest": "7d96360d357f",
-        "availability": "local",
-        "download_size_bytes": 19000000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 128000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "command-r:35b-08-2024-q2_K",
-        "tag": "35b-08-2024-q2_K",
-        "digest": "baa79f31c7db",
-        "availability": "local",
-        "download_size_bytes": 13000000000,
-        "parameter": {
-          "raw": "35b",
-          "total_billion": 35.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 128000,
         "input_modalities": [
           "text"
         ],
@@ -6772,6 +6772,86 @@
       "license": null
     },
     {
+      "slug": "codestral",
+      "name": "codestral",
+      "description": "Codestral is Mistral AI’s first-ever code model designed for code generation tasks.",
+      "source_url": "https://ollama.com/library/codestral",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 1400000,
+      "tag_count": 17,
+      "source_updated_at": "2024-09-03T21:32:00Z",
+      "parameter_sizes": [
+        "22b"
+      ],
+      "min_download_size_bytes": 8300000000,
+      "max_download_size_bytes": 24000000000,
+      "max_context_window": 32000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "Q2_K",
+        "Q3_K_L",
+        "Q3_K_M",
+        "Q3_K_S",
+        "Q4_0",
+        "Q4_1",
+        "Q4_K_M",
+        "Q4_K_S",
+        "Q5_0",
+        "Q5_1",
+        "Q5_K_M",
+        "Q5_K_S",
+        "Q6_K",
+        "Q8_0"
+      ],
+      "local_variant_count": 17,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "codestral:latest",
+        "tag": "latest",
+        "digest": "0898a8b286d5",
+        "availability": "local",
+        "download_size_bytes": 13000000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "codestral:22b-v0.1-q2_K",
+        "tag": "22b-v0.1-q2_K",
+        "digest": "0e1127d332ef",
+        "availability": "local",
+        "download_size_bytes": 8300000000,
+        "parameter": {
+          "raw": "22b",
+          "total_billion": 22.0,
+          "active_billion": null
+        },
+        "quantization": "Q2_K",
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "openchat",
       "name": "openchat",
       "description": "A family of open-source models trained on a wide variety of data, surpassing ChatGPT on various benchmarks. Updated to version 3.5-0106.",
@@ -7007,86 +7087,6 @@
         },
         "quantization": "Q2_K",
         "context_window": 16000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
-      "slug": "codestral",
-      "name": "codestral",
-      "description": "Codestral is Mistral AI’s first-ever code model designed for code generation tasks.",
-      "source_url": "https://ollama.com/library/codestral",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 1300000,
-      "tag_count": 17,
-      "source_updated_at": "2024-09-03T21:32:00Z",
-      "parameter_sizes": [
-        "22b"
-      ],
-      "min_download_size_bytes": 8300000000,
-      "max_download_size_bytes": 24000000000,
-      "max_context_window": 32000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "Q2_K",
-        "Q3_K_L",
-        "Q3_K_M",
-        "Q3_K_S",
-        "Q4_0",
-        "Q4_1",
-        "Q4_K_M",
-        "Q4_K_S",
-        "Q5_0",
-        "Q5_1",
-        "Q5_K_M",
-        "Q5_K_S",
-        "Q6_K",
-        "Q8_0"
-      ],
-      "local_variant_count": 17,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "codestral:latest",
-        "tag": "latest",
-        "digest": "0898a8b286d5",
-        "availability": "local",
-        "download_size_bytes": 13000000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "codestral:22b-v0.1-q2_K",
-        "tag": "22b-v0.1-q2_K",
-        "digest": "0e1127d332ef",
-        "availability": "local",
-        "download_size_bytes": 8300000000,
-        "parameter": {
-          "raw": "22b",
-          "total_billion": 22.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 32000,
         "input_modalities": [
           "text"
         ],
@@ -10592,7 +10592,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 986600,
+      "pulls": 987200,
       "tag_count": 32,
       "source_updated_at": "2023-12-18T03:00:00Z",
       "parameter_sizes": [
@@ -10680,7 +10680,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 975900,
+      "pulls": 976600,
       "tag_count": 33,
       "source_updated_at": "2024-11-19T22:33:00Z",
       "parameter_sizes": [
@@ -10764,7 +10764,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 971700,
+      "pulls": 972500,
       "tag_count": 49,
       "source_updated_at": "2023-10-29T21:57:00Z",
       "parameter_sizes": [
@@ -10847,7 +10847,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 962100,
+      "pulls": 962900,
       "tag_count": 49,
       "source_updated_at": "2024-10-11T05:58:00Z",
       "parameter_sizes": [
@@ -10930,7 +10930,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 961400,
+      "pulls": 961700,
       "tag_count": 9,
       "source_updated_at": "2025-04-08T22:53:00Z",
       "parameter_sizes": [
@@ -11000,7 +11000,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 958800,
+      "pulls": 959500,
       "tag_count": 33,
       "source_updated_at": "2023-11-22T22:13:00Z",
       "parameter_sizes": [
@@ -11082,7 +11082,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 950000,
+      "pulls": 950600,
       "tag_count": 33,
       "source_updated_at": "2024-09-11T19:13:00Z",
       "parameter_sizes": [
@@ -11164,7 +11164,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 948400,
+      "pulls": 949500,
       "tag_count": 73,
       "source_updated_at": "2023-10-30T02:54:00Z",
       "parameter_sizes": [
@@ -11254,7 +11254,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 946700,
+      "pulls": 947000,
       "tag_count": 3,
       "source_updated_at": "2024-08-07T00:05:00Z",
       "parameter_sizes": [
@@ -11307,7 +11307,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 932400,
+      "pulls": 933000,
       "tag_count": 33,
       "source_updated_at": "2024-01-09T03:30:00Z",
       "parameter_sizes": [
@@ -11380,87 +11380,6 @@
       "license": null
     },
     {
-      "slug": "yarn-mistral",
-      "name": "yarn-mistral",
-      "description": "An extension of Mistral to support context windows of 64K or 128K.",
-      "source_url": "https://ollama.com/library/yarn-mistral",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [],
-      "applications": [],
-      "pulls": 922500,
-      "tag_count": 33,
-      "source_updated_at": "2023-11-04T04:20:00Z",
-      "parameter_sizes": [
-        "7b"
-      ],
-      "min_download_size_bytes": 3100000000,
-      "max_download_size_bytes": 14000000000,
-      "max_context_window": 128000,
-      "categories": [
-        "chat"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q2_K",
-        "Q3_K_L",
-        "Q3_K_M",
-        "Q3_K_S",
-        "Q4_0",
-        "Q4_1",
-        "Q4_K_M",
-        "Q4_K_S",
-        "Q5_0",
-        "Q5_1",
-        "Q5_K_M",
-        "Q5_K_S",
-        "Q6_K",
-        "Q8_0"
-      ],
-      "local_variant_count": 33,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "yarn-mistral:latest",
-        "tag": "latest",
-        "digest": "8e9c368a0ae4",
-        "availability": "local",
-        "download_size_bytes": 4100000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 32000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "yarn-mistral:7b-128k-q2_K",
-        "tag": "7b-128k-q2_K",
-        "digest": "4801801e65c9",
-        "availability": "local",
-        "download_size_bytes": 3100000000,
-        "parameter": {
-          "raw": "7b",
-          "total_billion": 7.0,
-          "active_billion": null
-        },
-        "quantization": "Q2_K",
-        "context_window": 128000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "mistral-openorca",
       "name": "mistral-openorca",
       "description": "Mistral OpenOrca is a 7 billion parameter model, fine-tuned on top of the Mistral 7B model using the OpenOrca dataset.",
@@ -11469,7 +11388,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 918600,
+      "pulls": 930300,
       "tag_count": 17,
       "source_updated_at": "2023-10-11T22:00:00Z",
       "parameter_sizes": [
@@ -11542,6 +11461,87 @@
       "license": null
     },
     {
+      "slug": "yarn-mistral",
+      "name": "yarn-mistral",
+      "description": "An extension of Mistral to support context windows of 64K or 128K.",
+      "source_url": "https://ollama.com/library/yarn-mistral",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [],
+      "applications": [],
+      "pulls": 923100,
+      "tag_count": 33,
+      "source_updated_at": "2023-11-04T04:20:00Z",
+      "parameter_sizes": [
+        "7b"
+      ],
+      "min_download_size_bytes": 3100000000,
+      "max_download_size_bytes": 14000000000,
+      "max_context_window": 128000,
+      "categories": [
+        "chat"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q2_K",
+        "Q3_K_L",
+        "Q3_K_M",
+        "Q3_K_S",
+        "Q4_0",
+        "Q4_1",
+        "Q4_K_M",
+        "Q4_K_S",
+        "Q5_0",
+        "Q5_1",
+        "Q5_K_M",
+        "Q5_K_S",
+        "Q6_K",
+        "Q8_0"
+      ],
+      "local_variant_count": 33,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "yarn-mistral:latest",
+        "tag": "latest",
+        "digest": "8e9c368a0ae4",
+        "availability": "local",
+        "download_size_bytes": 4100000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 32000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "yarn-mistral:7b-128k-q2_K",
+        "tag": "7b-128k-q2_K",
+        "digest": "4801801e65c9",
+        "availability": "local",
+        "download_size_bytes": 3100000000,
+        "parameter": {
+          "raw": "7b",
+          "total_billion": 7.0,
+          "active_billion": null
+        },
+        "quantization": "Q2_K",
+        "context_window": 128000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "nexusraven",
       "name": "nexusraven",
       "description": "Nexus Raven is a 13B instruction tuned model for function calling tasks.",
@@ -11550,7 +11550,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 916200,
+      "pulls": 916700,
       "tag_count": 32,
       "source_updated_at": "2024-01-17T19:53:00Z",
       "parameter_sizes": [
@@ -11631,7 +11631,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 911400,
+      "pulls": 912000,
       "tag_count": 22,
       "source_updated_at": "2023-12-05T18:31:00Z",
       "parameter_sizes": [
@@ -11715,7 +11715,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 900300,
+      "pulls": 900800,
       "tag_count": 17,
       "source_updated_at": "2023-12-13T19:04:00Z",
       "parameter_sizes": [
@@ -11808,7 +11808,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 895000,
+      "pulls": 897300,
       "tag_count": 9,
       "source_updated_at": "2026-03-16T15:34:00Z",
       "parameter_sizes": [
@@ -11908,7 +11908,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 816400,
+      "pulls": 817100,
       "tag_count": 21,
       "source_updated_at": "2024-08-31T07:16:00Z",
       "parameter_sizes": [
@@ -11999,7 +11999,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 797200,
+      "pulls": 797500,
       "tag_count": 5,
       "source_updated_at": "2025-04-07T16:59:00Z",
       "parameter_sizes": [
@@ -12074,7 +12074,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 777100,
+      "pulls": 777400,
       "tag_count": 13,
       "source_updated_at": "2025-03-19T17:04:00Z",
       "parameter_sizes": [
@@ -12145,7 +12145,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 740200,
+      "pulls": 740600,
       "tag_count": 17,
       "source_updated_at": "2023-10-29T06:00:00Z",
       "parameter_sizes": [
@@ -12226,7 +12226,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 739400,
+      "pulls": 739800,
       "tag_count": 18,
       "source_updated_at": "2024-01-30T09:39:00Z",
       "parameter_sizes": [
@@ -12315,7 +12315,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 733400,
+      "pulls": 733700,
       "tag_count": 7,
       "source_updated_at": "2025-09-27T00:46:00Z",
       "parameter_sizes": [
@@ -12394,7 +12394,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 726000,
+      "pulls": 726500,
       "tag_count": 17,
       "source_updated_at": "2024-09-18T20:21:00Z",
       "parameter_sizes": [
@@ -12477,7 +12477,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 703100,
+      "pulls": 703500,
       "tag_count": 17,
       "source_updated_at": "2024-07-09T01:33:00Z",
       "parameter_sizes": [
@@ -12567,7 +12567,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 676000,
+      "pulls": 676300,
       "tag_count": 4,
       "source_updated_at": "2026-04-27T20:26:00Z",
       "parameter_sizes": [
@@ -12647,7 +12647,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 663400,
+      "pulls": 664000,
       "tag_count": 9,
       "source_updated_at": "2024-11-18T07:31:00Z",
       "parameter_sizes": [
@@ -12717,7 +12717,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 658400,
+      "pulls": 658800,
       "tag_count": 18,
       "source_updated_at": "2023-10-28T15:29:00Z",
       "parameter_sizes": [
@@ -12805,7 +12805,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 636700,
+      "pulls": 637100,
       "tag_count": 17,
       "source_updated_at": "2024-10-16T23:10:00Z",
       "parameter_sizes": [
@@ -12888,7 +12888,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 627800,
+      "pulls": 628200,
       "tag_count": 17,
       "source_updated_at": "2024-09-09T05:16:00Z",
       "parameter_sizes": [
@@ -12969,7 +12969,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 607400,
+      "pulls": 607800,
       "tag_count": 19,
       "source_updated_at": "2023-10-29T06:38:00Z",
       "parameter_sizes": [
@@ -13050,7 +13050,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 602600,
+      "pulls": 602900,
       "tag_count": 18,
       "source_updated_at": "2024-12-20T01:05:00Z",
       "parameter_sizes": [
@@ -13138,7 +13138,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 601300,
+      "pulls": 601700,
       "tag_count": 17,
       "source_updated_at": "2024-11-15T23:37:00Z",
       "parameter_sizes": [
@@ -13213,87 +13213,6 @@
       "license": null
     },
     {
-      "slug": "qwen3-next",
-      "name": "qwen3-next",
-      "description": "The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed.",
-      "source_url": "https://ollama.com/library/qwen3-next",
-      "status": "active",
-      "availability": "local",
-      "capabilities": [
-        "thinking",
-        "tools"
-      ],
-      "applications": [
-        "Claude Code",
-        "Hermes Agent",
-        "OpenClaw",
-        "OpenCode"
-      ],
-      "pulls": 597200,
-      "tag_count": 9,
-      "source_updated_at": "2025-12-05T04:37:00Z",
-      "parameter_sizes": [
-        "80b",
-        "80b-a3b"
-      ],
-      "min_download_size_bytes": 50000000000,
-      "max_download_size_bytes": 159000000000,
-      "max_context_window": 256000,
-      "categories": [
-        "chat",
-        "coding",
-        "tools",
-        "reasoning"
-      ],
-      "input_modalities": [
-        "text"
-      ],
-      "quantizations": [
-        "FP16",
-        "Q4_K_M",
-        "Q8_0"
-      ],
-      "local_variant_count": 9,
-      "cloud_variant_count": 0,
-      "default_variant": {
-        "ref": "qwen3-next:latest",
-        "tag": "latest",
-        "digest": "b2ebb986e4e9",
-        "availability": "local",
-        "download_size_bytes": 50000000000,
-        "parameter": null,
-        "quantization": null,
-        "context_window": 256000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": true
-      },
-      "smallest_local_variant": {
-        "ref": "qwen3-next:80b",
-        "tag": "80b",
-        "digest": "b2ebb986e4e9",
-        "availability": "local",
-        "download_size_bytes": 50000000000,
-        "parameter": {
-          "raw": "80b",
-          "total_billion": 80.0,
-          "active_billion": null
-        },
-        "quantization": null,
-        "context_window": 256000,
-        "input_modalities": [
-          "text"
-        ],
-        "source_updated_at": null,
-        "is_default": false
-      },
-      "cloud_variant": null,
-      "family": null,
-      "license": null
-    },
-    {
       "slug": "ornith",
       "name": "ornith",
       "description": "A self-improving family of open-source models for agentic coding",
@@ -13310,7 +13229,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 596400,
+      "pulls": 600300,
       "tag_count": 9,
       "source_updated_at": "2026-06-27T20:45:00Z",
       "parameter_sizes": [
@@ -13385,7 +13304,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 586700,
+      "pulls": 599000,
       "tag_count": 4,
       "source_updated_at": "2024-05-07T21:20:00Z",
       "parameter_sizes": [
@@ -13449,6 +13368,87 @@
       "license": null
     },
     {
+      "slug": "qwen3-next",
+      "name": "qwen3-next",
+      "description": "The first installment in the Qwen3-Next series with strong performance in terms of both parameter efficiency and inference speed.",
+      "source_url": "https://ollama.com/library/qwen3-next",
+      "status": "active",
+      "availability": "local",
+      "capabilities": [
+        "thinking",
+        "tools"
+      ],
+      "applications": [
+        "Claude Code",
+        "Hermes Agent",
+        "OpenClaw",
+        "OpenCode"
+      ],
+      "pulls": 597800,
+      "tag_count": 9,
+      "source_updated_at": "2025-12-05T04:37:00Z",
+      "parameter_sizes": [
+        "80b",
+        "80b-a3b"
+      ],
+      "min_download_size_bytes": 50000000000,
+      "max_download_size_bytes": 159000000000,
+      "max_context_window": 256000,
+      "categories": [
+        "chat",
+        "coding",
+        "tools",
+        "reasoning"
+      ],
+      "input_modalities": [
+        "text"
+      ],
+      "quantizations": [
+        "FP16",
+        "Q4_K_M",
+        "Q8_0"
+      ],
+      "local_variant_count": 9,
+      "cloud_variant_count": 0,
+      "default_variant": {
+        "ref": "qwen3-next:latest",
+        "tag": "latest",
+        "digest": "b2ebb986e4e9",
+        "availability": "local",
+        "download_size_bytes": 50000000000,
+        "parameter": null,
+        "quantization": null,
+        "context_window": 256000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": true
+      },
+      "smallest_local_variant": {
+        "ref": "qwen3-next:80b",
+        "tag": "80b",
+        "digest": "b2ebb986e4e9",
+        "availability": "local",
+        "download_size_bytes": 50000000000,
+        "parameter": {
+          "raw": "80b",
+          "total_billion": 80.0,
+          "active_billion": null
+        },
+        "quantization": null,
+        "context_window": 256000,
+        "input_modalities": [
+          "text"
+        ],
+        "source_updated_at": null,
+        "is_default": false
+      },
+      "cloud_variant": null,
+      "family": null,
+      "license": null
+    },
+    {
       "slug": "megadolphin",
       "name": "megadolphin",
       "description": "MegaDolphin-2.2-120b is a transformation of Dolphin-2.2-70b created by interleaving the model with itself.",
@@ -13457,7 +13457,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 580800,
+      "pulls": 581200,
       "tag_count": 19,
       "source_updated_at": "2024-01-11T01:25:00Z",
       "parameter_sizes": [
@@ -13538,7 +13538,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 578200,
+      "pulls": 578600,
       "tag_count": 18,
       "source_updated_at": "2023-12-27T20:51:00Z",
       "parameter_sizes": [
@@ -13619,7 +13619,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 572700,
+      "pulls": 573400,
       "tag_count": 13,
       "source_updated_at": "2024-12-10T08:03:00Z",
       "parameter_sizes": [
@@ -13690,7 +13690,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 570800,
+      "pulls": 571200,
       "tag_count": 18,
       "source_updated_at": "2024-09-18T22:27:00Z",
       "parameter_sizes": [
@@ -13771,7 +13771,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 567600,
+      "pulls": 568000,
       "tag_count": 18,
       "source_updated_at": "2023-12-05T23:59:00Z",
       "parameter_sizes": [
@@ -13852,7 +13852,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 564400,
+      "pulls": 565000,
       "tag_count": 17,
       "source_updated_at": "2024-07-22T23:54:00Z",
       "parameter_sizes": [
@@ -13933,7 +13933,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 561600,
+      "pulls": 562100,
       "tag_count": 17,
       "source_updated_at": "2024-07-16T17:04:00Z",
       "parameter_sizes": [
@@ -14014,7 +14014,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 551700,
+      "pulls": 552100,
       "tag_count": 17,
       "source_updated_at": "2024-05-14T01:46:00Z",
       "parameter_sizes": [
@@ -14095,7 +14095,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 551600,
+      "pulls": 552000,
       "tag_count": 18,
       "source_updated_at": "2023-12-29T22:06:00Z",
       "parameter_sizes": [
@@ -14176,7 +14176,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 550200,
+      "pulls": 550600,
       "tag_count": 18,
       "source_updated_at": "2023-12-29T03:35:00Z",
       "parameter_sizes": [
@@ -14259,7 +14259,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 548500,
+      "pulls": 549100,
       "tag_count": 3,
       "source_updated_at": "2025-11-19T20:26:00Z",
       "parameter_sizes": [
@@ -14330,7 +14330,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 544200,
+      "pulls": 544600,
       "tag_count": 17,
       "source_updated_at": "2023-12-27T20:51:00Z",
       "parameter_sizes": [
@@ -14411,7 +14411,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 541500,
+      "pulls": 541900,
       "tag_count": 17,
       "source_updated_at": "2024-09-18T18:29:00Z",
       "parameter_sizes": [
@@ -14492,7 +14492,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 539000,
+      "pulls": 539300,
       "tag_count": 17,
       "source_updated_at": "2024-01-29T23:52:00Z",
       "parameter_sizes": [
@@ -14580,7 +14580,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 535200,
+      "pulls": 535600,
       "tag_count": 17,
       "source_updated_at": "2024-07-18T16:39:00Z",
       "parameter_sizes": [
@@ -14663,7 +14663,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 535000,
+      "pulls": 535400,
       "tag_count": 17,
       "source_updated_at": "2023-11-02T22:27:00Z",
       "parameter_sizes": [
@@ -14744,7 +14744,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 528900,
+      "pulls": 529300,
       "tag_count": 17,
       "source_updated_at": "2023-10-28T19:41:00Z",
       "parameter_sizes": [
@@ -14832,7 +14832,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 521900,
+      "pulls": 524800,
       "tag_count": 48,
       "source_updated_at": "2026-05-19T21:58:00Z",
       "parameter_sizes": [
@@ -14930,7 +14930,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 521600,
+      "pulls": 522000,
       "tag_count": 1,
       "source_updated_at": "2026-06-01T01:34:00Z",
       "parameter_sizes": [],
@@ -14996,7 +14996,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 520900,
+      "pulls": 521299,
       "tag_count": 17,
       "source_updated_at": "2023-10-29T07:52:00Z",
       "parameter_sizes": [
@@ -15084,7 +15084,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 514500,
+      "pulls": 514700,
       "tag_count": 5,
       "source_updated_at": "2025-12-09T07:48:00Z",
       "parameter_sizes": [
@@ -15155,7 +15155,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 510800,
+      "pulls": 511200,
       "tag_count": 16,
       "source_updated_at": "2023-10-29T10:48:00Z",
       "parameter_sizes": [
@@ -15235,7 +15235,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 489900,
+      "pulls": 490200,
       "tag_count": 16,
       "source_updated_at": "2023-11-17T21:54:00Z",
       "parameter_sizes": [
@@ -15325,7 +15325,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 488800,
+      "pulls": 489300,
       "tag_count": 1,
       "source_updated_at": "2026-04-20T20:09:00Z",
       "parameter_sizes": [],
@@ -15399,7 +15399,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 467300,
+      "pulls": 467700,
       "tag_count": 15,
       "source_updated_at": "2025-12-16T05:55:00Z",
       "parameter_sizes": [
@@ -15474,7 +15474,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 464600,
+      "pulls": 465100,
       "tag_count": 3,
       "source_updated_at": "2024-12-04T23:57:00Z",
       "parameter_sizes": [
@@ -15534,7 +15534,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 464300,
+      "pulls": 464600,
       "tag_count": 9,
       "source_updated_at": "2025-02-26T05:48:00Z",
       "parameter_sizes": [
@@ -15614,7 +15614,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 448300,
+      "pulls": 449600,
       "tag_count": 2,
       "source_updated_at": "2026-08-13T15:00:00Z",
       "parameter_sizes": [],
@@ -15678,7 +15678,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 446600,
+      "pulls": 447400,
       "tag_count": 9,
       "source_updated_at": "2026-04-16T00:08:00Z",
       "parameter_sizes": [
@@ -15752,7 +15752,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 428600,
+      "pulls": 428900,
       "tag_count": 9,
       "source_updated_at": "2025-02-21T15:28:00Z",
       "parameter_sizes": [
@@ -15822,7 +15822,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 423800,
+      "pulls": 424200,
       "tag_count": 13,
       "source_updated_at": "2024-12-04T08:10:00Z",
       "parameter_sizes": [
@@ -15902,7 +15902,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 422600,
+      "pulls": 423000,
       "tag_count": 5,
       "source_updated_at": "2026-05-05T23:14:00Z",
       "parameter_sizes": [
@@ -15978,7 +15978,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 408400,
+      "pulls": 408900,
       "tag_count": 9,
       "source_updated_at": "2024-12-21T03:58:00Z",
       "parameter_sizes": [
@@ -16050,7 +16050,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 383200,
+      "pulls": 383700,
       "tag_count": 6,
       "source_updated_at": "2024-12-18T04:11:00Z",
       "parameter_sizes": [
@@ -16106,7 +16106,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 375500,
+      "pulls": 377600,
       "tag_count": 3,
       "source_updated_at": "2026-08-19T18:06:00Z",
       "parameter_sizes": [
@@ -16189,7 +16189,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 372200,
+      "pulls": 372400,
       "tag_count": 1,
       "source_updated_at": "2026-06-16T17:39:00Z",
       "parameter_sizes": [],
@@ -16251,7 +16251,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 371900,
+      "pulls": 372100,
       "tag_count": 7,
       "source_updated_at": "2024-04-16T04:18:00Z",
       "parameter_sizes": [
@@ -16328,7 +16328,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 361300,
+      "pulls": 361500,
       "tag_count": 5,
       "source_updated_at": "2025-12-12T01:21:00Z",
       "parameter_sizes": [
@@ -16399,7 +16399,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 344700,
+      "pulls": 344900,
       "tag_count": 10,
       "source_updated_at": "2024-11-19T23:33:00Z",
       "parameter_sizes": [
@@ -16478,7 +16478,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 335400,
+      "pulls": 335900,
       "tag_count": 5,
       "source_updated_at": "2025-01-16T22:27:00Z",
       "parameter_sizes": [
@@ -16549,7 +16549,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 317900,
+      "pulls": 318300,
       "tag_count": 5,
       "source_updated_at": "2025-05-01T03:53:00Z",
       "parameter_sizes": [
@@ -16626,7 +16626,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 296400,
+      "pulls": 296800,
       "tag_count": 10,
       "source_updated_at": "2025-12-16T05:56:00Z",
       "parameter_sizes": [
@@ -16698,7 +16698,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 294700,
+      "pulls": 294900,
       "tag_count": 7,
       "source_updated_at": "2024-09-11T19:31:00Z",
       "parameter_sizes": [
@@ -16771,7 +16771,7 @@
         "embedding"
       ],
       "applications": [],
-      "pulls": 289900,
+      "pulls": 290100,
       "tag_count": 3,
       "source_updated_at": "2024-08-07T00:04:00Z",
       "parameter_sizes": [
@@ -16824,7 +16824,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 287900,
+      "pulls": 288900,
       "tag_count": 7,
       "source_updated_at": "2023-11-19T13:58:00Z",
       "parameter_sizes": [
@@ -16904,7 +16904,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 274800,
+      "pulls": 277400,
       "tag_count": 15,
       "source_updated_at": "2026-08-28T19:09:00Z",
       "parameter_sizes": [
@@ -16982,7 +16982,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 264500,
+      "pulls": 264700,
       "tag_count": 5,
       "source_updated_at": "2024-12-30T21:33:00Z",
       "parameter_sizes": [
@@ -17060,7 +17060,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 248700,
+      "pulls": 249100,
       "tag_count": 1,
       "source_updated_at": "2026-06-13T00:26:00Z",
       "parameter_sizes": [],
@@ -17133,7 +17133,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 232800,
+      "pulls": 233100,
       "tag_count": 5,
       "source_updated_at": "2025-03-13T12:39:00Z",
       "parameter_sizes": [
@@ -17204,7 +17204,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 225900,
+      "pulls": 226000,
       "tag_count": 5,
       "source_updated_at": "2025-11-19T18:22:00Z",
       "parameter_sizes": [
@@ -17281,7 +17281,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 220300,
+      "pulls": 222100,
       "tag_count": 11,
       "source_updated_at": "2026-08-31T21:05:00Z",
       "parameter_sizes": [
@@ -17356,7 +17356,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 217400,
+      "pulls": 217600,
       "tag_count": 5,
       "source_updated_at": "2024-12-04T08:14:00Z",
       "parameter_sizes": [
@@ -17427,7 +17427,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 210300,
+      "pulls": 210700,
       "tag_count": 5,
       "source_updated_at": "2026-04-16T00:04:00Z",
       "parameter_sizes": [
@@ -17507,7 +17507,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 208300,
+      "pulls": 208500,
       "tag_count": 5,
       "source_updated_at": "2025-02-28T21:28:00Z",
       "parameter_sizes": [
@@ -17580,7 +17580,7 @@
         "tools"
       ],
       "applications": [],
-      "pulls": 198400,
+      "pulls": 198800,
       "tag_count": 4,
       "source_updated_at": "2025-12-18T07:03:00Z",
       "parameter_sizes": [
@@ -17657,7 +17657,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 192100,
+      "pulls": 194100,
       "tag_count": 5,
       "source_updated_at": "2026-05-31T04:16:00Z",
       "parameter_sizes": [
@@ -17739,7 +17739,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 180700,
+      "pulls": 182500,
       "tag_count": 6,
       "source_updated_at": "2026-09-05T17:55:00Z",
       "parameter_sizes": [
@@ -17830,7 +17830,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 178600,
+      "pulls": 179800,
       "tag_count": 1,
       "source_updated_at": "2026-08-26T14:00:00Z",
       "parameter_sizes": [],
@@ -17904,7 +17904,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 171600,
+      "pulls": 172100,
       "tag_count": 8,
       "source_updated_at": "2026-08-28T18:53:00Z",
       "parameter_sizes": [],
@@ -17981,7 +17981,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 161200,
+      "pulls": 161500,
       "tag_count": 3,
       "source_updated_at": "2025-10-29T02:04:00Z",
       "parameter_sizes": [
@@ -18058,7 +18058,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 152500,
+      "pulls": 152600,
       "tag_count": 3,
       "source_updated_at": "2026-03-20T20:10:00Z",
       "parameter_sizes": [
@@ -18137,7 +18137,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 132600,
+      "pulls": 133200,
       "tag_count": 1,
       "source_updated_at": "2025-12-02T23:19:00Z",
       "parameter_sizes": [
@@ -18220,7 +18220,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 126300,
+      "pulls": 127200,
       "tag_count": 7,
       "source_updated_at": "2026-08-31T20:58:00Z",
       "parameter_sizes": [],
@@ -18288,7 +18288,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 122600,
+      "pulls": 126100,
       "tag_count": 49,
       "source_updated_at": "2026-08-27T21:41:00Z",
       "parameter_sizes": [
@@ -18379,7 +18379,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 120500,
+      "pulls": 121500,
       "tag_count": 1,
       "source_updated_at": "2026-06-04T00:00:00Z",
       "parameter_sizes": [],
@@ -18450,7 +18450,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 100600,
+      "pulls": 101300,
       "tag_count": 1,
       "source_updated_at": "2026-07-27T15:53:00Z",
       "parameter_sizes": [],
@@ -18524,7 +18524,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 87400,
+      "pulls": 88800,
       "tag_count": 1,
       "source_updated_at": "2026-08-28T15:00:00Z",
       "parameter_sizes": [],
@@ -18589,7 +18589,7 @@
         "tools"
       ],
       "applications": [],
-      "pulls": 79200,
+      "pulls": 81700,
       "tag_count": 13,
       "source_updated_at": "2026-10-01T19:39:00Z",
       "parameter_sizes": [
@@ -18658,7 +18658,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 77000,
+      "pulls": 78400,
       "tag_count": 1,
       "source_updated_at": "2026-09-10T03:00:00Z",
       "parameter_sizes": [],
@@ -18732,7 +18732,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 66000,
+      "pulls": 66800,
       "tag_count": 7,
       "source_updated_at": "2026-06-18T01:39:00Z",
       "parameter_sizes": [],
@@ -18802,7 +18802,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 63700,
+      "pulls": 64500,
       "tag_count": 13,
       "source_updated_at": "2026-06-02T07:54:00Z",
       "parameter_sizes": [
@@ -18885,7 +18885,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 51500,
+      "pulls": 52100,
       "tag_count": 13,
       "source_updated_at": "2026-06-02T08:02:00Z",
       "parameter_sizes": [
@@ -18965,7 +18965,7 @@
         "tools"
       ],
       "applications": [],
-      "pulls": 34300,
+      "pulls": 35900,
       "tag_count": 8,
       "source_updated_at": "2026-10-01T19:41:00Z",
       "parameter_sizes": [
@@ -19032,7 +19032,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 34100,
+      "pulls": 34400,
       "tag_count": 7,
       "source_updated_at": "2026-07-25T18:19:00Z",
       "parameter_sizes": [],
@@ -19108,7 +19108,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 31600,
+      "pulls": 32200,
       "tag_count": 16,
       "source_updated_at": "2026-06-10T21:07:00Z",
       "parameter_sizes": [
@@ -19200,7 +19200,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 22100,
+      "pulls": 26200,
       "tag_count": 17,
       "source_updated_at": "2026-10-06T04:10:00Z",
       "parameter_sizes": [
@@ -19263,7 +19263,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 15000,
+      "pulls": 16300,
       "tag_count": 5,
       "source_updated_at": "2026-10-04T23:27:00Z",
       "parameter_sizes": [
@@ -19323,7 +19323,7 @@
         "vision"
       ],
       "applications": [],
-      "pulls": 9551,
+      "pulls": 10600,
       "tag_count": 7,
       "source_updated_at": "2026-10-04T23:22:00Z",
       "parameter_sizes": [
@@ -19392,7 +19392,7 @@
         "OpenClaw",
         "OpenCode"
       ],
-      "pulls": 3766,
+      "pulls": 4556,
       "tag_count": 1,
       "source_updated_at": "2026-10-06T13:00:00Z",
       "parameter_sizes": [],
@@ -19458,7 +19458,7 @@
       "availability": "local",
       "capabilities": [],
       "applications": [],
-      "pulls": 3409,
+      "pulls": 4183,
       "tag_count": 4,
       "source_updated_at": "2026-09-30T23:35:00Z",
       "parameter_sizes": [
