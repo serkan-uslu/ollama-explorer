@@ -9,6 +9,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 <!-- END:nextjs-agent-rules -->
 
 <!-- project-managment:managed:start project=b7966fa3-cd10-43a9-8290-88cc5e32868d -->
+
 # Project Managment — proje köprüsü
 
 Proje adı: Ollama Explorer
@@ -16,7 +17,7 @@ Proje kimliği: b7966fa3-cd10-43a9-8290-88cc5e32868d
 Proje çalışma alanı: http://127.0.0.1:3210/projects/b7966fa3-cd10-43a9-8290-88cc5e32868d
 GitHub deposu: https://github.com/serkan-uslu/ollama-explorer
 GitHub Projects panosu: https://github.com/users/serkan-uslu/projects/16
-Yönetilen yapı sürümü: 11
+Yönetilen yapı sürümü: 16
 
 Bu blok Project Managment tarafından yönetilir ve eşitlenir; içini düzenleme. Depoya özel talimatları bloğun dışına yaz. Proje tanımı, kararlar ve geliştirme geçmişi bu dosyada değil, Project Managment veritabanındadır.
 
@@ -36,4 +37,5 @@ Bu blok Project Managment tarafından yönetilir ve eşitlenir; içini düzenlem
 Project Managment http://127.0.0.1:3210 adresinde çalışır durumda olmalıdır. Bu proje için kapsamlı MCP sunucusunun adı `project_management_b7966fa3cd1043a9829088cc5e32868d`; genel sunucu `project_management` adını taşır ve her çağrıda `projectId: b7966fa3-cd10-43a9-8290-88cc5e32868d` ister. MCP araçları görünmüyorsa bunu kullanıcıya bildir; kurulum http://127.0.0.1:3210/settings sayfasında anlatılır. Masaüstü uygulamalarının ayar dosyalarını kendin düzenleme.
 
 MCP kullanılamıyorsa yalnızca bu bilgisayardaki yerel API'yi kullan: GET http://127.0.0.1:3210/api/projects/b7966fa3-cd10-43a9-8290-88cc5e32868d, GET http://127.0.0.1:3210/api/structure?projectId=b7966fa3-cd10-43a9-8290-88cc5e32868d ve gerektiğinde GET http://127.0.0.1:3210/api/projects/b7966fa3-cd10-43a9-8290-88cc5e32868d/board. İsteklere X-Structure-Client: codex başlığını ekle; bu başlık ve MCP istemci adı doğrulanmış kimlik değildir. Yazma isteklerinde Content-Type: application/json, Origin: http://127.0.0.1:3210, son okunan version ve işlem için benzersiz idempotencyKey gönder. Başarısız isteği başarılı gibi bildirme.
+
 <!-- project-managment:managed:end -->
