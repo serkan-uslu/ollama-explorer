@@ -1,0 +1,266 @@
+{
+  "slug": "nemotron-3.5-super",
+  "name": "nemotron-3.5-super",
+  "description": "Nemotron 3.5 Super is NVIDIA’s vision-language model for coding, reasoning, tool use, and document understanding",
+  "source_url": "https://ollama.com/library/nemotron-3.5-super",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 704,
+  "tag_count": 9,
+  "source_updated_at": "2026-10-15T17:36:00Z",
+  "parameter_sizes": [
+    "120b",
+    "120b-a12b"
+  ],
+  "min_download_size_bytes": 80000000000,
+  "max_download_size_bytes": 249000000000,
+  "max_context_window": 1000000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 9,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nemotron-3.5-super:latest",
+    "tag": "latest",
+    "digest": "d84f81c512c4",
+    "availability": "local",
+    "download_size_bytes": null,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 1000000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nemotron-3.5-super:120b-a12b-nvfp4",
+    "tag": "120b-a12b-nvfp4",
+    "digest": "aba4cee1e75e",
+    "availability": "local",
+    "download_size_bytes": 80000000000,
+    "parameter": {
+      "raw": "120b-a12b",
+      "total_billion": 120.0,
+      "active_billion": 12.0
+    },
+    "quantization": "NVFP4",
+    "context_window": null,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nemotron-3.5-super:120b",
+      "tag": "120b",
+      "digest": "d84f81c512c4",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "120b",
+        "total_billion": 120.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b",
+      "tag": "120b-a12b",
+      "digest": "d84f81c512c4",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b-bf16",
+      "tag": "120b-a12b-bf16",
+      "digest": "45c225544aa0",
+      "availability": "local",
+      "download_size_bytes": 249000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "BF16",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b-mlx-bf16",
+      "tag": "120b-a12b-mlx-bf16",
+      "digest": "93aa29b11e26",
+      "availability": "local",
+      "download_size_bytes": 249000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "BF16",
+      "context_window": null,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b-mxfp8",
+      "tag": "120b-a12b-mxfp8",
+      "digest": "dda000e80902",
+      "availability": "local",
+      "download_size_bytes": 130000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "MXFP8",
+      "context_window": null,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b-nvfp4",
+      "tag": "120b-a12b-nvfp4",
+      "digest": "aba4cee1e75e",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "NVFP4",
+      "context_window": null,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b-q4_K_M",
+      "tag": "120b-a12b-q4_K_M",
+      "digest": "8a58f3e60082",
+      "availability": "local",
+      "download_size_bytes": 90000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:120b-a12b-q8_0",
+      "tag": "120b-a12b-q8_0",
+      "digest": "b8269ff2e3e0",
+      "availability": "local",
+      "download_size_bytes": 133000000000,
+      "parameter": {
+        "raw": "120b-a12b",
+        "total_billion": 120.0,
+        "active_billion": 12.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-super:latest",
+      "tag": "latest",
+      "digest": "d84f81c512c4",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

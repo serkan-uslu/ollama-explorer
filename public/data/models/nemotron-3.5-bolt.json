@@ -1,0 +1,141 @@
+{
+  "slug": "nemotron-3.5-bolt",
+  "name": "nemotron-3.5-bolt",
+  "description": "Nemotron 3.5 Bolt is NVIDIA’s compact vision-language model for local coding, reasoning, and tool use.",
+  "source_url": "https://ollama.com/library/nemotron-3.5-bolt",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 738,
+  "tag_count": 3,
+  "source_updated_at": "2026-10-15T16:40:00Z",
+  "parameter_sizes": [
+    "74b-a9b"
+  ],
+  "min_download_size_bytes": 25000000000,
+  "max_download_size_bytes": 25000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "IQ2"
+  ],
+  "local_variant_count": 3,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "nemotron-3.5-bolt:latest",
+    "tag": "latest",
+    "digest": "d6d3deeca271",
+    "availability": "local",
+    "download_size_bytes": 25000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "nemotron-3.5-bolt:74b-a9b",
+    "tag": "74b-a9b",
+    "digest": "d6d3deeca271",
+    "availability": "local",
+    "download_size_bytes": 25000000000,
+    "parameter": {
+      "raw": "74b-a9b",
+      "total_billion": 74.0,
+      "active_billion": 9.0
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "nemotron-3.5-bolt:74b-a9b",
+      "tag": "74b-a9b",
+      "digest": "d6d3deeca271",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "74b-a9b",
+        "total_billion": 74.0,
+        "active_billion": 9.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:74b-a9b-iq2",
+      "tag": "74b-a9b-iq2",
+      "digest": "d6d3deeca271",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "74b-a9b",
+        "total_billion": 74.0,
+        "active_billion": 9.0
+      },
+      "quantization": "IQ2",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:latest",
+      "tag": "latest",
+      "digest": "d6d3deeca271",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

@@ -15,16 +15,18 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 207300,
-  "tag_count": 5,
-  "source_updated_at": "2026-05-31T04:16:00Z",
+  "pulls": 210700,
+  "tag_count": 10,
+  "source_updated_at": "2026-10-15T06:20:00Z",
   "parameter_sizes": [
     "8b",
+    "24b",
+    "24b-a2b",
     "8b-a1b"
   ],
   "min_download_size_bytes": 5200000000,
-  "max_download_size_bytes": 17000000000,
-  "max_context_window": 125000,
+  "max_download_size_bytes": 48000000000,
+  "max_context_window": 128000,
   "categories": [
     "chat",
     "coding",
@@ -36,10 +38,11 @@
   ],
   "quantizations": [
     "BF16",
+    "Q4_0",
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 5,
+  "local_variant_count": 10,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "lfm2.5:latest",
@@ -79,6 +82,101 @@
   "family": null,
   "license": null,
   "variants": [
+    {
+      "ref": "lfm2.5:24b",
+      "tag": "24b",
+      "digest": "00a755688d0f",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "24b",
+        "total_billion": 24.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2.5:24b-a2b-bf16",
+      "tag": "24b-a2b-bf16",
+      "digest": "92403fbc4a1f",
+      "availability": "local",
+      "download_size_bytes": 48000000000,
+      "parameter": {
+        "raw": "24b-a2b",
+        "total_billion": 24.0,
+        "active_billion": 2.0
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2.5:24b-a2b-q4_0",
+      "tag": "24b-a2b-q4_0",
+      "digest": "ce54a54c2ce7",
+      "availability": "local",
+      "download_size_bytes": 14000000000,
+      "parameter": {
+        "raw": "24b-a2b",
+        "total_billion": 24.0,
+        "active_billion": 2.0
+      },
+      "quantization": "Q4_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2.5:24b-a2b-q4_K_M",
+      "tag": "24b-a2b-q4_K_M",
+      "digest": "00a755688d0f",
+      "availability": "local",
+      "download_size_bytes": 15000000000,
+      "parameter": {
+        "raw": "24b-a2b",
+        "total_billion": 24.0,
+        "active_billion": 2.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm2.5:24b-a2b-q8_0",
+      "tag": "24b-a2b-q8_0",
+      "digest": "26bdb85d5401",
+      "availability": "local",
+      "download_size_bytes": 25000000000,
+      "parameter": {
+        "raw": "24b-a2b",
+        "total_billion": 24.0,
+        "active_billion": 2.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
     {
       "ref": "lfm2.5:8b",
       "tag": "8b",

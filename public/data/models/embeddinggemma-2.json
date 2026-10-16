@@ -11,16 +11,16 @@
     "vision"
   ],
   "applications": [],
-  "pulls": 44900,
-  "tag_count": 17,
-  "source_updated_at": "2026-10-06T04:10:00Z",
+  "pulls": 49100,
+  "tag_count": 21,
+  "source_updated_at": "2026-10-15T05:40:00Z",
   "parameter_sizes": [
     "270m",
     "440m",
     "570m",
     "740m"
   ],
-  "min_download_size_bytes": 378000000,
+  "min_download_size_bytes": 304000000,
   "max_download_size_bytes": 1500000000,
   "max_context_window": 256000,
   "categories": [
@@ -35,23 +35,24 @@
   "quantizations": [
     "BF16",
     "MXFP8",
-    "NVFP4"
+    "NVFP4",
+    "Q8_0"
   ],
-  "local_variant_count": 17,
+  "local_variant_count": 21,
   "cloud_variant_count": 0,
   "default_variant": null,
   "smallest_local_variant": {
-    "ref": "embeddinggemma-2:270m",
-    "tag": "270m",
-    "digest": "9e1df58d197e",
+    "ref": "embeddinggemma-2:270m-q8_0-text",
+    "tag": "270m-q8_0-text",
+    "digest": "c21dd30c1e38",
     "availability": "local",
-    "download_size_bytes": 378000000,
+    "download_size_bytes": 304000000,
     "parameter": {
       "raw": "270m",
       "total_billion": 0.27,
       "active_billion": null
     },
-    "quantization": null,
+    "quantization": "Q8_0",
     "context_window": 256000,
     "input_modalities": [
       "text"
@@ -66,9 +67,9 @@
     {
       "ref": "embeddinggemma-2:270m",
       "tag": "270m",
-      "digest": "9e1df58d197e",
+      "digest": "ff630aa67948",
       "availability": "local",
-      "download_size_bytes": 378000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "270m",
         "total_billion": 0.27,
@@ -140,11 +141,30 @@
       "is_default": false
     },
     {
+      "ref": "embeddinggemma-2:270m-q8_0-text",
+      "tag": "270m-q8_0-text",
+      "digest": "c21dd30c1e38",
+      "availability": "local",
+      "download_size_bytes": 304000000,
+      "parameter": {
+        "raw": "270m",
+        "total_billion": 0.27,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "embeddinggemma-2:440m",
       "tag": "440m",
-      "digest": "d302b84ce388",
+      "digest": "b750e83c282e",
       "availability": "local",
-      "download_size_bytes": 714000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "440m",
         "total_billion": 0.44,
@@ -220,11 +240,31 @@
       "is_default": false
     },
     {
+      "ref": "embeddinggemma-2:440m-q8_0-text-vision",
+      "tag": "440m-q8_0-text-vision",
+      "digest": "7d8dc01c0a05",
+      "availability": "local",
+      "download_size_bytes": 671000000,
+      "parameter": {
+        "raw": "440m",
+        "total_billion": 0.44,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "embeddinggemma-2:570m",
       "tag": "570m",
-      "digest": "eaf989e4d334",
+      "digest": "74f652944b2b",
       "availability": "local",
-      "download_size_bytes": 990000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "570m",
         "total_billion": 0.57,
@@ -296,9 +336,28 @@
       "is_default": false
     },
     {
+      "ref": "embeddinggemma-2:570m-q8_0-text-audio",
+      "tag": "570m-q8_0-text-audio",
+      "digest": "899c39804f83",
+      "availability": "local",
+      "download_size_bytes": 918000000,
+      "parameter": {
+        "raw": "570m",
+        "total_billion": 0.57,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "embeddinggemma-2:740m",
       "tag": "740m",
-      "digest": "969600645b52",
+      "digest": "1f30cabe5af7",
       "availability": "local",
       "download_size_bytes": 1300000000,
       "parameter": {
@@ -376,9 +435,29 @@
       "is_default": false
     },
     {
+      "ref": "embeddinggemma-2:740m-q8_0",
+      "tag": "740m-q8_0",
+      "digest": "f4981a15b998",
+      "availability": "local",
+      "download_size_bytes": 1300000000,
+      "parameter": {
+        "raw": "740m",
+        "total_billion": 0.74,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "embeddinggemma-2:latest",
       "tag": "latest",
-      "digest": "969600645b52",
+      "digest": "1f30cabe5af7",
       "availability": "local",
       "download_size_bytes": 1300000000,
       "parameter": null,

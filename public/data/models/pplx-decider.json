@@ -1,0 +1,131 @@
+{
+  "slug": "pplx-decider",
+  "name": "pplx-decider",
+  "description": "pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B",
+  "source_url": "https://ollama.com/library/pplx-decider",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 1072,
+  "tag_count": 3,
+  "source_updated_at": "2026-10-15T04:56:00Z",
+  "parameter_sizes": [
+    "27b"
+  ],
+  "min_download_size_bytes": 17000000000,
+  "max_download_size_bytes": 17000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "Q4_K_M"
+  ],
+  "local_variant_count": 3,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "pplx-decider:latest",
+    "tag": "latest",
+    "digest": "f3950da72565",
+    "availability": "local",
+    "download_size_bytes": 17000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "pplx-decider:27b",
+    "tag": "27b",
+    "digest": "f3950da72565",
+    "availability": "local",
+    "download_size_bytes": 17000000000,
+    "parameter": {
+      "raw": "27b",
+      "total_billion": 27.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "pplx-decider:27b",
+      "tag": "27b",
+      "digest": "f3950da72565",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "pplx-decider:27b-q4_K_M",
+      "tag": "27b-q4_K_M",
+      "digest": "f3950da72565",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "pplx-decider:latest",
+      "tag": "latest",
+      "digest": "f3950da72565",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}
