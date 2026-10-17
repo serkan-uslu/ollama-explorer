@@ -9,7 +9,7 @@ Proje kimliği: b7966fa3-cd10-43a9-8290-88cc5e32868d
 Proje çalışma alanı: http://127.0.0.1:3210/projects/b7966fa3-cd10-43a9-8290-88cc5e32868d
 GitHub deposu: https://github.com/serkan-uslu/ollama-explorer
 GitHub Projects panosu: https://github.com/users/serkan-uslu/projects/16
-Yönetilen yapı sürümü: 18
+Yönetilen yapı sürümü: 19
 
 Bu blok Project Managment tarafından yönetilir ve eşitlenir; içini düzenleme. Depoya özel talimatları bloğun dışına yaz. Proje tanımı, kararlar ve geliştirme geçmişi bu dosyada değil, Project Managment veritabanındadır.
 
