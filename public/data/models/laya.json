@@ -5,43 +5,46 @@
   "source_url": "https://ollama.com/library/laya",
   "status": "active",
   "availability": "local",
-  "capabilities": [],
+  "capabilities": [
+    "embedding"
+  ],
   "applications": [],
-  "pulls": 7951,
-  "tag_count": 4,
-  "source_updated_at": "2026-09-30T23:35:00Z",
+  "pulls": 8668,
+  "tag_count": 7,
+  "source_updated_at": "2026-10-16T16:16:00Z",
   "parameter_sizes": [
     "322m",
     "421m"
   ],
-  "min_download_size_bytes": 678000000,
+  "min_download_size_bytes": 658000000,
   "max_download_size_bytes": 846000000,
-  "max_context_window": 1000,
+  "max_context_window": 8000,
   "categories": [
-    "chat"
+    "embedding"
   ],
   "input_modalities": [
     "text"
   ],
   "quantizations": [
+    "BF16",
     "FP16"
   ],
-  "local_variant_count": 4,
+  "local_variant_count": 7,
   "cloud_variant_count": 0,
   "default_variant": null,
   "smallest_local_variant": {
-    "ref": "laya:322m-multilingual-mlx-fp16",
-    "tag": "322m-multilingual-mlx-fp16",
-    "digest": "63b6e37ecedb",
+    "ref": "laya:322m-multilingual-bf16",
+    "tag": "322m-multilingual-bf16",
+    "digest": "c1242e4a83f0",
     "availability": "local",
-    "download_size_bytes": 678000000,
+    "download_size_bytes": 658000000,
     "parameter": {
       "raw": "322m",
       "total_billion": 0.322,
       "active_billion": null
     },
-    "quantization": "FP16",
-    "context_window": 1000,
+    "quantization": "BF16",
+    "context_window": 8000,
     "input_modalities": [
       "text"
     ],
@@ -52,6 +55,25 @@
   "family": null,
   "license": null,
   "variants": [
+    {
+      "ref": "laya:322m-multilingual-bf16",
+      "tag": "322m-multilingual-bf16",
+      "digest": "c1242e4a83f0",
+      "availability": "local",
+      "download_size_bytes": 658000000,
+      "parameter": {
+        "raw": "322m",
+        "total_billion": 0.322,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
     {
       "ref": "laya:322m-multilingual-mlx-fp16",
       "tag": "322m-multilingual-mlx-fp16",
@@ -72,6 +94,25 @@
       "is_default": false
     },
     {
+      "ref": "laya:421m-english-bf16",
+      "tag": "421m-english-bf16",
+      "digest": "1f196b378202",
+      "availability": "local",
+      "download_size_bytes": 844000000,
+      "parameter": {
+        "raw": "421m",
+        "total_billion": 0.421,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 8000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "laya:421m-english-mlx-fp16",
       "tag": "421m-english-mlx-fp16",
       "digest": "aaba5574a1e1",
@@ -84,6 +125,25 @@
       },
       "quantization": "FP16",
       "context_window": 512,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "laya:421m-typed-decisions-bf16",
+      "tag": "421m-typed-decisions-bf16",
+      "digest": "84a7be5dd978",
+      "availability": "local",
+      "download_size_bytes": 844000000,
+      "parameter": {
+        "raw": "421m",
+        "total_billion": 0.421,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 8000,
       "input_modalities": [
         "text"
       ],
@@ -112,12 +172,12 @@
     {
       "ref": "laya:latest",
       "tag": "latest",
-      "digest": "aaba5574a1e1",
+      "digest": "0175aca9f021",
       "availability": "local",
-      "download_size_bytes": 846000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
-      "context_window": 512,
+      "context_window": 8000,
       "input_modalities": [
         "text"
       ],

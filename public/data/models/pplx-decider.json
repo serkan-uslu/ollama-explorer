@@ -9,14 +9,14 @@
     "vision"
   ],
   "applications": [],
-  "pulls": 1072,
-  "tag_count": 3,
-  "source_updated_at": "2026-10-15T04:56:00Z",
+  "pulls": 2418,
+  "tag_count": 6,
+  "source_updated_at": "2026-10-16T23:19:00Z",
   "parameter_sizes": [
     "27b"
   ],
   "min_download_size_bytes": 17000000000,
-  "max_download_size_bytes": 17000000000,
+  "max_download_size_bytes": 52000000000,
   "max_context_window": 256000,
   "categories": [
     "chat",
@@ -27,26 +27,14 @@
     "text"
   ],
   "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
     "Q4_K_M"
   ],
-  "local_variant_count": 3,
+  "local_variant_count": 6,
   "cloud_variant_count": 0,
-  "default_variant": {
-    "ref": "pplx-decider:latest",
-    "tag": "latest",
-    "digest": "f3950da72565",
-    "availability": "local",
-    "download_size_bytes": 17000000000,
-    "parameter": null,
-    "quantization": null,
-    "context_window": 256000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "source_updated_at": null,
-    "is_default": true
-  },
+  "default_variant": null,
   "smallest_local_variant": {
     "ref": "pplx-decider:27b",
     "tag": "27b",
@@ -92,6 +80,66 @@
       "is_default": false
     },
     {
+      "ref": "pplx-decider:27b-mlx-bf16",
+      "tag": "27b-mlx-bf16",
+      "digest": "324e158a5b38",
+      "availability": "local",
+      "download_size_bytes": 52000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "pplx-decider:27b-mxfp8",
+      "tag": "27b-mxfp8",
+      "digest": "90f1593f7fb6",
+      "availability": "local",
+      "download_size_bytes": 29000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "pplx-decider:27b-nvfp4",
+      "tag": "27b-nvfp4",
+      "digest": "b9e7a46849ee",
+      "availability": "local",
+      "download_size_bytes": 20000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "pplx-decider:27b-q4_K_M",
       "tag": "27b-q4_K_M",
       "digest": "f3950da72565",
@@ -125,7 +173,7 @@
         "image"
       ],
       "source_updated_at": null,
-      "is_default": true
+      "is_default": false
     }
   ]
 }
