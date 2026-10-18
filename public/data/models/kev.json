@@ -7,16 +7,16 @@
   "availability": "local",
   "capabilities": [],
   "applications": [],
-  "pulls": 3409,
-  "tag_count": 8,
-  "source_updated_at": "2026-10-13T00:54:00Z",
+  "pulls": 4727,
+  "tag_count": 16,
+  "source_updated_at": "2026-10-17T22:28:00Z",
   "parameter_sizes": [
     "0.8b",
     "27b",
     "4b",
     "9b"
   ],
-  "min_download_size_bytes": 1000000000,
+  "min_download_size_bytes": 812000000,
   "max_download_size_bytes": 51000000000,
   "max_context_window": 256000,
   "categories": [
@@ -28,23 +28,25 @@
   "quantizations": [
     "BF16",
     "MXFP8",
-    "NVFP4"
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
   ],
-  "local_variant_count": 8,
+  "local_variant_count": 16,
   "cloud_variant_count": 0,
   "default_variant": null,
   "smallest_local_variant": {
-    "ref": "kev:0.8b-mxfp8",
-    "tag": "0.8b-mxfp8",
-    "digest": "e414a229c2b8",
+    "ref": "kev:0.8b-q8_0",
+    "tag": "0.8b-q8_0",
+    "digest": "a2f47e09befb",
     "availability": "local",
-    "download_size_bytes": 1000000000,
+    "download_size_bytes": 812000000,
     "parameter": {
       "raw": "0.8b",
       "total_billion": 0.8,
       "active_billion": null
     },
-    "quantization": "MXFP8",
+    "quantization": "Q8_0",
     "context_window": 256000,
     "input_modalities": [
       "text"
@@ -56,6 +58,25 @@
   "family": null,
   "license": null,
   "variants": [
+    {
+      "ref": "kev:0.8b-bf16",
+      "tag": "0.8b-bf16",
+      "digest": "5ee097410a63",
+      "availability": "local",
+      "download_size_bytes": 1500000000,
+      "parameter": {
+        "raw": "0.8b",
+        "total_billion": 0.8,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
     {
       "ref": "kev:0.8b-mlx-bf16",
       "tag": "0.8b-mlx-bf16",
@@ -87,6 +108,25 @@
         "active_billion": null
       },
       "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "kev:0.8b-q8_0",
+      "tag": "0.8b-q8_0",
+      "digest": "a2f47e09befb",
+      "availability": "local",
+      "download_size_bytes": 812000000,
+      "parameter": {
+        "raw": "0.8b",
+        "total_billion": 0.8,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
       "context_window": 256000,
       "input_modalities": [
         "text"
@@ -133,6 +173,25 @@
       "is_default": false
     },
     {
+      "ref": "kev:4b-bf16",
+      "tag": "4b-bf16",
+      "digest": "8406d8a74261",
+      "availability": "local",
+      "download_size_bytes": 8400000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "kev:4b-mlx-bf16",
       "tag": "4b-mlx-bf16",
       "digest": "458360f7747d",
@@ -141,6 +200,63 @@
       "parameter": {
         "raw": "4b",
         "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "kev:4b-q4_K_M",
+      "tag": "4b-q4_K_M",
+      "digest": "818b6cdb957c",
+      "availability": "local",
+      "download_size_bytes": 2700000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "kev:4b-q8_0",
+      "tag": "4b-q8_0",
+      "digest": "46203beabf65",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "kev:9b-bf16",
+      "tag": "9b-bf16",
+      "digest": "925e229ef61d",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
         "active_billion": null
       },
       "quantization": "BF16",
@@ -190,11 +306,49 @@
       "is_default": false
     },
     {
+      "ref": "kev:9b-q4_K_M",
+      "tag": "9b-q4_K_M",
+      "digest": "96375189a97f",
+      "availability": "local",
+      "download_size_bytes": 5600000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "kev:9b-q8_0",
+      "tag": "9b-q8_0",
+      "digest": "446718ead956",
+      "availability": "local",
+      "download_size_bytes": 9500000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "kev:latest",
       "tag": "latest",
-      "digest": "d31165461ae8",
+      "digest": "079f29347a00",
       "availability": "local",
-      "download_size_bytes": 6700000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 256000,

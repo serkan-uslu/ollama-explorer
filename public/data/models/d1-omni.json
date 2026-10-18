@@ -1,0 +1,152 @@
+{
+  "slug": "d1-omni",
+  "name": "d1-omni",
+  "description": "d1-omni is a multimodal 600M decision model from Liquid AI",
+  "source_url": "https://ollama.com/library/d1-omni",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 221,
+  "tag_count": 4,
+  "source_updated_at": "2026-10-17T22:32:00Z",
+  "parameter_sizes": [
+    "600m"
+  ],
+  "min_download_size_bytes": 850000000,
+  "max_download_size_bytes": 1200000000,
+  "max_context_window": 125000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "Q8_0"
+  ],
+  "local_variant_count": 4,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "d1-omni:latest",
+    "tag": "latest",
+    "digest": "1ba59f63e836",
+    "availability": "local",
+    "download_size_bytes": 850000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 125000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "d1-omni:600m",
+    "tag": "600m",
+    "digest": "1ba59f63e836",
+    "availability": "local",
+    "download_size_bytes": 850000000,
+    "parameter": {
+      "raw": "600m",
+      "total_billion": 0.6,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 125000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "d1-omni:600m",
+      "tag": "600m",
+      "digest": "1ba59f63e836",
+      "availability": "local",
+      "download_size_bytes": 850000000,
+      "parameter": {
+        "raw": "600m",
+        "total_billion": 0.6,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "d1-omni:600m-bf16",
+      "tag": "600m-bf16",
+      "digest": "c1e95fce6627",
+      "availability": "local",
+      "download_size_bytes": 1200000000,
+      "parameter": {
+        "raw": "600m",
+        "total_billion": 0.6,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "d1-omni:600m-q8_0",
+      "tag": "600m-q8_0",
+      "digest": "1ba59f63e836",
+      "availability": "local",
+      "download_size_bytes": 850000000,
+      "parameter": {
+        "raw": "600m",
+        "total_billion": 0.6,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "d1-omni:latest",
+      "tag": "latest",
+      "digest": "1ba59f63e836",
+      "availability": "local",
+      "download_size_bytes": 850000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

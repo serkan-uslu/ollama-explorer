@@ -15,9 +15,9 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 916300,
-  "tag_count": 9,
-  "source_updated_at": "2026-03-16T15:34:00Z",
+  "pulls": 919400,
+  "tag_count": 20,
+  "source_updated_at": "2026-10-17T20:28:00Z",
   "parameter_sizes": [
     "4b",
     "30b",
@@ -38,17 +38,19 @@
   "quantizations": [
     "BF16",
     "FP16",
+    "MXFP8",
+    "NVFP4",
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 8,
+  "local_variant_count": 19,
   "cloud_variant_count": 1,
   "default_variant": {
     "ref": "nemotron-3-nano:latest",
     "tag": "latest",
-    "digest": "b725f1117407",
+    "digest": "373f79c3ce94",
     "availability": "local",
-    "download_size_bytes": 24000000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 1000000,
@@ -59,8 +61,8 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "nemotron-3-nano:4b",
-    "tag": "4b",
+    "ref": "nemotron-3-nano:4b-q4_K_M",
+    "tag": "4b-q4_K_M",
     "digest": "6cc467f05439",
     "availability": "local",
     "download_size_bytes": 2800000000,
@@ -69,7 +71,7 @@
       "total_billion": 4.0,
       "active_billion": null
     },
-    "quantization": null,
+    "quantization": "Q4_K_M",
     "context_window": 256000,
     "input_modalities": [
       "text"
@@ -102,13 +104,32 @@
     {
       "ref": "nemotron-3-nano:30b",
       "tag": "30b",
-      "digest": "b725f1117407",
+      "digest": "373f79c3ce94",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "30b",
         "total_billion": 30.0,
         "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:30b-a3b",
+      "tag": "30b-a3b",
+      "digest": "373f79c3ce94",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
       },
       "quantization": null,
       "context_window": 1000000,
@@ -131,6 +152,82 @@
       },
       "quantization": "FP16",
       "context_window": 1000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:30b-a3b-mlx",
+      "tag": "30b-a3b-mlx",
+      "digest": "c436912ee99d",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:30b-a3b-mlx-bf16",
+      "tag": "30b-a3b-mlx-bf16",
+      "digest": "22a581094756",
+      "availability": "local",
+      "download_size_bytes": 63000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:30b-a3b-mxfp8",
+      "tag": "30b-a3b-mxfp8",
+      "digest": "9b21e7aeeee8",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:30b-a3b-nvfp4",
+      "tag": "30b-a3b-nvfp4",
+      "digest": "c436912ee99d",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
       "input_modalities": [
         "text"
       ],
@@ -195,11 +292,30 @@
       "is_default": false
     },
     {
+      "ref": "nemotron-3-nano:30b-mlx",
+      "tag": "30b-mlx",
+      "digest": "c436912ee99d",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "nemotron-3-nano:4b",
       "tag": "4b",
-      "digest": "6cc467f05439",
+      "digest": "28e2e9e36b77",
       "availability": "local",
-      "download_size_bytes": 2800000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "4b",
         "total_billion": 4.0,
@@ -233,6 +349,101 @@
       "is_default": false
     },
     {
+      "ref": "nemotron-3-nano:4b-mlx",
+      "tag": "4b-mlx",
+      "digest": "87e6cab38edd",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:4b-mlx-bf16",
+      "tag": "4b-mlx-bf16",
+      "digest": "2b68ba060a87",
+      "availability": "local",
+      "download_size_bytes": 8000000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:4b-mxfp8",
+      "tag": "4b-mxfp8",
+      "digest": "5eab47118f52",
+      "availability": "local",
+      "download_size_bytes": 4100000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:4b-nvfp4",
+      "tag": "4b-nvfp4",
+      "digest": "87e6cab38edd",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3-nano:4b-q4_K_M",
+      "tag": "4b-q4_K_M",
+      "digest": "6cc467f05439",
+      "availability": "local",
+      "download_size_bytes": 2800000000,
+      "parameter": {
+        "raw": "4b",
+        "total_billion": 4.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "nemotron-3-nano:4b-q8_0",
       "tag": "4b-q8_0",
       "digest": "c534497d032c",
@@ -254,9 +465,9 @@
     {
       "ref": "nemotron-3-nano:latest",
       "tag": "latest",
-      "digest": "b725f1117407",
+      "digest": "373f79c3ce94",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 1000000,
