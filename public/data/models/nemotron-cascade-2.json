@@ -15,15 +15,15 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 155100,
-  "tag_count": 3,
-  "source_updated_at": "2026-03-20T20:10:00Z",
+  "pulls": 155500,
+  "tag_count": 9,
+  "source_updated_at": "2026-10-19T02:20:00Z",
   "parameter_sizes": [
     "30b",
     "30b-a3b"
   ],
-  "min_download_size_bytes": 24000000000,
-  "max_download_size_bytes": 24000000000,
+  "min_download_size_bytes": 18000000000,
+  "max_download_size_bytes": 63000000000,
   "max_context_window": 256000,
   "categories": [
     "chat",
@@ -35,16 +35,19 @@
     "text"
   ],
   "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
     "Q4_K_M"
   ],
-  "local_variant_count": 3,
+  "local_variant_count": 9,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "nemotron-cascade-2:latest",
     "tag": "latest",
-    "digest": "e0705e3fe8f7",
+    "digest": "54e93b9643c7",
     "availability": "local",
-    "download_size_bytes": 24000000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 256000,
@@ -55,15 +58,15 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "nemotron-cascade-2:30b",
-    "tag": "30b",
-    "digest": "e0705e3fe8f7",
+    "ref": "nemotron-cascade-2:30b-a3b-mlx",
+    "tag": "30b-a3b-mlx",
+    "digest": "2bdd5dcdbf50",
     "availability": "local",
-    "download_size_bytes": 24000000000,
+    "download_size_bytes": 18000000000,
     "parameter": {
-      "raw": "30b",
+      "raw": "30b-a3b",
       "total_billion": 30.0,
-      "active_billion": null
+      "active_billion": 3.0
     },
     "quantization": null,
     "context_window": 256000,
@@ -80,15 +83,110 @@
     {
       "ref": "nemotron-cascade-2:30b",
       "tag": "30b",
-      "digest": "e0705e3fe8f7",
+      "digest": "54e93b9643c7",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "30b",
         "total_billion": 30.0,
         "active_billion": null
       },
       "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-cascade-2:30b-a3b",
+      "tag": "30b-a3b",
+      "digest": "54e93b9643c7",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-cascade-2:30b-a3b-mlx",
+      "tag": "30b-a3b-mlx",
+      "digest": "2bdd5dcdbf50",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-cascade-2:30b-a3b-mlx-bf16",
+      "tag": "30b-a3b-mlx-bf16",
+      "digest": "9eb1e0d8f8a7",
+      "availability": "local",
+      "download_size_bytes": 63000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-cascade-2:30b-a3b-mxfp8",
+      "tag": "30b-a3b-mxfp8",
+      "digest": "7a05ba2133bd",
+      "availability": "local",
+      "download_size_bytes": 33000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-cascade-2:30b-a3b-nvfp4",
+      "tag": "30b-a3b-nvfp4",
+      "digest": "2bdd5dcdbf50",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b-a3b",
+        "total_billion": 30.0,
+        "active_billion": 3.0
+      },
+      "quantization": "NVFP4",
       "context_window": 256000,
       "input_modalities": [
         "text"
@@ -116,11 +214,30 @@
       "is_default": false
     },
     {
+      "ref": "nemotron-cascade-2:30b-mlx",
+      "tag": "30b-mlx",
+      "digest": "2bdd5dcdbf50",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "30b",
+        "total_billion": 30.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "nemotron-cascade-2:latest",
       "tag": "latest",
-      "digest": "e0705e3fe8f7",
+      "digest": "54e93b9643c7",
       "availability": "local",
-      "download_size_bytes": 24000000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 256000,
