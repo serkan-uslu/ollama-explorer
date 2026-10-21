@@ -6,15 +6,23 @@
   "status": "active",
   "availability": "local",
   "capabilities": [
+    "thinking",
+    "tools",
     "vision"
   ],
-  "applications": [],
-  "pulls": 404100,
-  "tag_count": 3,
-  "source_updated_at": "2026-08-19T18:06:00Z",
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 408900,
+  "tag_count": 6,
+  "source_updated_at": "2026-10-20T13:50:00Z",
   "parameter_sizes": [
     "9b",
     "35b",
+    "122b",
     "397b"
   ],
   "min_download_size_bytes": 6600000000,
@@ -22,14 +30,20 @@
   "max_context_window": 256000,
   "categories": [
     "chat",
-    "vision"
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
   ],
   "input_modalities": [
     "image",
     "text"
   ],
-  "quantizations": [],
-  "local_variant_count": 3,
+  "quantizations": [
+    "NVFP4",
+    "Q4_K_M"
+  ],
+  "local_variant_count": 6,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "ornith-1.5:9b",
@@ -75,6 +89,66 @@
   "family": null,
   "license": null,
   "variants": [
+    {
+      "ref": "ornith-1.5:122b",
+      "tag": "122b",
+      "digest": "ea3e29aebeb8",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "122b",
+        "total_billion": 122.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ornith-1.5:122b-nvfp4",
+      "tag": "122b-nvfp4",
+      "digest": "f0df8c3e9efc",
+      "availability": "local",
+      "download_size_bytes": 73000000000,
+      "parameter": {
+        "raw": "122b",
+        "total_billion": 122.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ornith-1.5:122b-q4_K_M",
+      "tag": "122b-q4_K_M",
+      "digest": "f1e64af05b7d",
+      "availability": "local",
+      "download_size_bytes": 77000000000,
+      "parameter": {
+        "raw": "122b",
+        "total_billion": 122.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
     {
       "ref": "ornith-1.5:35b",
       "tag": "35b",
