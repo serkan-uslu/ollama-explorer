@@ -1,0 +1,213 @@
+{
+  "slug": "flint",
+  "name": "flint",
+  "description": "Flint is a 39.8 billion-parameter mixture-of-experts model from Recursive, built for coding agents.",
+  "source_url": "https://ollama.com/library/flint",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 2741,
+  "tag_count": 7,
+  "source_updated_at": "2026-10-21T21:46:00Z",
+  "parameter_sizes": [
+    "40b",
+    "40b-a2b"
+  ],
+  "min_download_size_bytes": 23000000000,
+  "max_download_size_bytes": 80000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "INT4",
+    "NVFP4",
+    "Q4_1"
+  ],
+  "local_variant_count": 7,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "flint:latest",
+    "tag": "latest",
+    "digest": "905c74dfd56b",
+    "availability": "local",
+    "download_size_bytes": 23000000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "flint:40b",
+    "tag": "40b",
+    "digest": "905c74dfd56b",
+    "availability": "local",
+    "download_size_bytes": 23000000000,
+    "parameter": {
+      "raw": "40b",
+      "total_billion": 40.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "flint:40b",
+      "tag": "40b",
+      "digest": "905c74dfd56b",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "40b",
+        "total_billion": 40.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "flint:40b-a2b",
+      "tag": "40b-a2b",
+      "digest": "905c74dfd56b",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "40b-a2b",
+        "total_billion": 40.0,
+        "active_billion": 2.0
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "flint:40b-a2b-gguf-nvfp4",
+      "tag": "40b-a2b-gguf-nvfp4",
+      "digest": "39fc172e198d",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "40b-a2b",
+        "total_billion": 40.0,
+        "active_billion": 2.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "flint:40b-a2b-mlx-bf16",
+      "tag": "40b-a2b-mlx-bf16",
+      "digest": "105775bdd1a7",
+      "availability": "local",
+      "download_size_bytes": 80000000000,
+      "parameter": {
+        "raw": "40b-a2b",
+        "total_billion": 40.0,
+        "active_billion": 2.0
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "flint:40b-a2b-q4_1",
+      "tag": "40b-a2b-q4_1",
+      "digest": "f7d42a0a1137",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "40b-a2b",
+        "total_billion": 40.0,
+        "active_billion": 2.0
+      },
+      "quantization": "Q4_1",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "flint:40b-a2b-qat-int4",
+      "tag": "40b-a2b-qat-int4",
+      "digest": "a503b9032955",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": {
+        "raw": "40b-a2b",
+        "total_billion": 40.0,
+        "active_billion": 2.0
+      },
+      "quantization": "INT4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "flint:latest",
+      "tag": "latest",
+      "digest": "905c74dfd56b",
+      "availability": "local",
+      "download_size_bytes": 23000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}
