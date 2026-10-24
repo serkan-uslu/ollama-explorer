@@ -6,6 +6,7 @@
   "status": "active",
   "availability": "local",
   "capabilities": [
+    "audio",
     "thinking",
     "tools",
     "vision"
@@ -16,13 +17,14 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 9140,
-  "tag_count": 3,
-  "source_updated_at": "2026-10-15T16:40:00Z",
+  "pulls": 11800,
+  "tag_count": 10,
+  "source_updated_at": "2026-10-23T21:18:00Z",
   "parameter_sizes": [
+    "e4b",
     "74b-a9b"
   ],
-  "min_download_size_bytes": 25000000000,
+  "min_download_size_bytes": 7200000000,
   "max_download_size_bytes": 25000000000,
   "max_context_window": 256000,
   "categories": [
@@ -30,16 +32,22 @@
     "coding",
     "vision",
     "tools",
-    "reasoning"
+    "reasoning",
+    "audio"
   ],
   "input_modalities": [
     "image",
     "text"
   ],
   "quantizations": [
-    "IQ2"
+    "BF16",
+    "IQ2",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
   ],
-  "local_variant_count": 3,
+  "local_variant_count": 10,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "nemotron-3.5-bolt:latest",
@@ -58,18 +66,18 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "nemotron-3.5-bolt:74b-a9b",
-    "tag": "74b-a9b",
-    "digest": "d6d3deeca271",
+    "ref": "nemotron-3.5-bolt:e4b-nvfp4",
+    "tag": "e4b-nvfp4",
+    "digest": "f1cd13dbf8c8",
     "availability": "local",
-    "download_size_bytes": 25000000000,
+    "download_size_bytes": 7200000000,
     "parameter": {
-      "raw": "74b-a9b",
-      "total_billion": 74.0,
-      "active_billion": 9.0
+      "raw": "e4b",
+      "total_billion": null,
+      "active_billion": 4.0
     },
-    "quantization": null,
-    "context_window": 256000,
+    "quantization": "NVFP4",
+    "context_window": 64000,
     "input_modalities": [
       "text",
       "image"
@@ -114,6 +122,146 @@
       },
       "quantization": "IQ2",
       "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b",
+      "tag": "e4b",
+      "digest": "4354fecbfc04",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": null,
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b-bf16",
+      "tag": "e4b-bf16",
+      "digest": "99fcad567609",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": "BF16",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b-mlx-bf16",
+      "tag": "e4b-mlx-bf16",
+      "digest": "49e1dd266141",
+      "availability": "local",
+      "download_size_bytes": 17000000000,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": "BF16",
+      "context_window": 64000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b-mxfp8",
+      "tag": "e4b-mxfp8",
+      "digest": "0ee41f6e46b9",
+      "availability": "local",
+      "download_size_bytes": 12000000000,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": "MXFP8",
+      "context_window": 64000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b-nvfp4",
+      "tag": "e4b-nvfp4",
+      "digest": "f1cd13dbf8c8",
+      "availability": "local",
+      "download_size_bytes": 7200000000,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": "NVFP4",
+      "context_window": 64000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b-q4_K_M",
+      "tag": "e4b-q4_K_M",
+      "digest": "69f2be39b309",
+      "availability": "local",
+      "download_size_bytes": 7900000000,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 128000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "nemotron-3.5-bolt:e4b-q8_0",
+      "tag": "e4b-q8_0",
+      "digest": "667121e303ea",
+      "availability": "local",
+      "download_size_bytes": 9800000000,
+      "parameter": {
+        "raw": "e4b",
+        "total_billion": null,
+        "active_billion": 4.0
+      },
+      "quantization": "Q8_0",
+      "context_window": 128000,
       "input_modalities": [
         "text",
         "image"
