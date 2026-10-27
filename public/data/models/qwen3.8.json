@@ -16,9 +16,9 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 4900000,
-  "tag_count": 12,
-  "source_updated_at": "2026-09-25T02:43:00Z",
+  "pulls": 5000000,
+  "tag_count": 13,
+  "source_updated_at": "2026-10-26T23:22:00Z",
   "parameter_sizes": [
     "27b"
   ],
@@ -43,7 +43,7 @@
     "Q4_K_M",
     "Q8_0"
   ],
-  "local_variant_count": 12,
+  "local_variant_count": 13,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "qwen3.8:latest",
@@ -117,6 +117,26 @@
         "active_billion": null
       },
       "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "qwen3.8:27b-dflash2-nvfp4",
+      "tag": "27b-dflash2-nvfp4",
+      "digest": "01e7d6014498",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
       "context_window": 256000,
       "input_modalities": [
         "text",
