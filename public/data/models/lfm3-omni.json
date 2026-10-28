@@ -1,0 +1,183 @@
+{
+  "slug": "lfm3-omni",
+  "name": "lfm3-omni",
+  "description": "a single end-to-end model that understands text, images, video and audio, and answers in text and speech",
+  "source_url": "https://ollama.com/library/lfm3-omni",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "audio",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 642,
+  "tag_count": 5,
+  "source_updated_at": "2026-10-27T17:07:00Z",
+  "parameter_sizes": [
+    "2b"
+  ],
+  "min_download_size_bytes": 2400000000,
+  "max_download_size_bytes": 4500000000,
+  "max_context_window": 125000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "audio"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "lfm3-omni:latest",
+    "tag": "latest",
+    "digest": "8c2f5a2d126d",
+    "availability": "local",
+    "download_size_bytes": 2400000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 125000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "lfm3-omni:2b",
+    "tag": "2b",
+    "digest": "8c2f5a2d126d",
+    "availability": "local",
+    "download_size_bytes": 2400000000,
+    "parameter": {
+      "raw": "2b",
+      "total_billion": 2.0,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 125000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "lfm3-omni:2b",
+      "tag": "2b",
+      "digest": "8c2f5a2d126d",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-omni:2b-mlx-bf16",
+      "tag": "2b-mlx-bf16",
+      "digest": "a3eb4ae57b32",
+      "availability": "local",
+      "download_size_bytes": 4500000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-omni:2b-mxfp8",
+      "tag": "2b-mxfp8",
+      "digest": "6836661470a1",
+      "availability": "local",
+      "download_size_bytes": 3100000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-omni:2b-nvfp4",
+      "tag": "2b-nvfp4",
+      "digest": "8c2f5a2d126d",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-omni:latest",
+      "tag": "latest",
+      "digest": "8c2f5a2d126d",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

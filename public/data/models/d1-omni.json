@@ -6,21 +6,24 @@
   "status": "active",
   "availability": "local",
   "capabilities": [
+    "audio",
     "vision"
   ],
   "applications": [],
-  "pulls": 10900,
-  "tag_count": 4,
-  "source_updated_at": "2026-10-17T22:32:00Z",
+  "pulls": 12800,
+  "tag_count": 8,
+  "source_updated_at": "2026-10-27T16:56:00Z",
   "parameter_sizes": [
-    "600m"
+    "600m",
+    "2b"
   ],
   "min_download_size_bytes": 850000000,
-  "max_download_size_bytes": 1200000000,
+  "max_download_size_bytes": 4400000000,
   "max_context_window": 125000,
   "categories": [
     "chat",
-    "vision"
+    "vision",
+    "audio"
   ],
   "input_modalities": [
     "image",
@@ -28,26 +31,13 @@
   ],
   "quantizations": [
     "BF16",
+    "MXFP8",
+    "NVFP4",
     "Q8_0"
   ],
-  "local_variant_count": 4,
+  "local_variant_count": 8,
   "cloud_variant_count": 0,
-  "default_variant": {
-    "ref": "d1-omni:latest",
-    "tag": "latest",
-    "digest": "1ba59f63e836",
-    "availability": "local",
-    "download_size_bytes": 850000000,
-    "parameter": null,
-    "quantization": null,
-    "context_window": 125000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "source_updated_at": null,
-    "is_default": true
-  },
+  "default_variant": null,
   "smallest_local_variant": {
     "ref": "d1-omni:600m",
     "tag": "600m",
@@ -72,6 +62,86 @@
   "family": null,
   "license": null,
   "variants": [
+    {
+      "ref": "d1-omni:2b",
+      "tag": "2b",
+      "digest": "5f8373a90ed1",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "d1-omni:2b-mlx-bf16",
+      "tag": "2b-mlx-bf16",
+      "digest": "5f8373a90ed1",
+      "availability": "local",
+      "download_size_bytes": 4400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "d1-omni:2b-mxfp8",
+      "tag": "2b-mxfp8",
+      "digest": "a1fa476acb76",
+      "availability": "local",
+      "download_size_bytes": 2900000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "d1-omni:2b-nvfp4",
+      "tag": "2b-nvfp4",
+      "digest": "c8f8b36e4c26",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
     {
       "ref": "d1-omni:600m",
       "tag": "600m",
@@ -146,7 +216,7 @@
         "image"
       ],
       "source_updated_at": null,
-      "is_default": true
+      "is_default": false
     }
   ]
 }

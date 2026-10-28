@@ -1,0 +1,173 @@
+{
+  "slug": "lfm3",
+  "name": "lfm3",
+  "description": "LFM3-1.7B is a tri-hybrid model for local agents and specialized applications.",
+  "source_url": "https://ollama.com/library/lfm3",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 1199,
+  "tag_count": 5,
+  "source_updated_at": "2026-10-27T17:06:00Z",
+  "parameter_sizes": [
+    "1.7b"
+  ],
+  "min_download_size_bytes": 1700000000,
+  "max_download_size_bytes": 3500000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4"
+  ],
+  "local_variant_count": 5,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "lfm3:latest",
+    "tag": "latest",
+    "digest": "2012d88e202f",
+    "availability": "local",
+    "download_size_bytes": 1700000000,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "lfm3:1.7b",
+    "tag": "1.7b",
+    "digest": "2012d88e202f",
+    "availability": "local",
+    "download_size_bytes": 1700000000,
+    "parameter": {
+      "raw": "1.7b",
+      "total_billion": 1.7,
+      "active_billion": null
+    },
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "lfm3:1.7b",
+      "tag": "1.7b",
+      "digest": "2012d88e202f",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:1.7b-mlx-bf16",
+      "tag": "1.7b-mlx-bf16",
+      "digest": "f39cc56813fb",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:1.7b-mxfp8",
+      "tag": "1.7b-mxfp8",
+      "digest": "4637931b9fcc",
+      "availability": "local",
+      "download_size_bytes": 2100000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:1.7b-nvfp4",
+      "tag": "1.7b-nvfp4",
+      "digest": "2012d88e202f",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:latest",
+      "tag": "latest",
+      "digest": "2012d88e202f",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}
