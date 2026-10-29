@@ -7,7 +7,8 @@
   "availability": "local",
   "capabilities": [
     "audio",
-    "tools"
+    "tools",
+    "vision"
   ],
   "applications": [
     "Claude Code",
@@ -15,18 +16,19 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 299,
-  "tag_count": 5,
-  "source_updated_at": "2026-10-27T17:08:00Z",
+  "pulls": 2742,
+  "tag_count": 8,
+  "source_updated_at": "2026-10-29T01:55:00Z",
   "parameter_sizes": [
     "2b"
   ],
-  "min_download_size_bytes": 2100000000,
+  "min_download_size_bytes": 1700000000,
   "max_download_size_bytes": 4200000000,
-  "max_context_window": null,
+  "max_context_window": 125000,
   "categories": [
     "chat",
     "coding",
+    "vision",
     "tools",
     "audio"
   ],
@@ -36,19 +38,21 @@
   "quantizations": [
     "BF16",
     "MXFP8",
-    "NVFP4"
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
   ],
-  "local_variant_count": 5,
+  "local_variant_count": 8,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "lfm3-audio:latest",
     "tag": "latest",
-    "digest": "ecfcfb300186",
+    "digest": "3cc080be117a",
     "availability": "local",
-    "download_size_bytes": 2100000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
-    "context_window": null,
+    "context_window": 125000,
     "input_modalities": [
       "text"
     ],
@@ -56,18 +60,18 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "lfm3-audio:2b",
-    "tag": "2b",
-    "digest": "ecfcfb300186",
+    "ref": "lfm3-audio:2b-q4_K_M",
+    "tag": "2b-q4_K_M",
+    "digest": "3327c1a06755",
     "availability": "local",
-    "download_size_bytes": 2100000000,
+    "download_size_bytes": 1700000000,
     "parameter": {
       "raw": "2b",
       "total_billion": 2.0,
       "active_billion": null
     },
-    "quantization": null,
-    "context_window": null,
+    "quantization": "Q4_K_M",
+    "context_window": 125000,
     "input_modalities": [
       "text"
     ],
@@ -81,16 +85,35 @@
     {
       "ref": "lfm3-audio:2b",
       "tag": "2b",
-      "digest": "ecfcfb300186",
+      "digest": "3cc080be117a",
       "availability": "local",
-      "download_size_bytes": 2100000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "2b",
         "total_billion": 2.0,
         "active_billion": null
       },
       "quantization": null,
-      "context_window": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-audio:2b-bf16",
+      "tag": "2b-bf16",
+      "digest": "0697269928c0",
+      "availability": "local",
+      "download_size_bytes": 4000000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 125000,
       "input_modalities": [
         "text"
       ],
@@ -155,14 +178,52 @@
       "is_default": false
     },
     {
+      "ref": "lfm3-audio:2b-q4_K_M",
+      "tag": "2b-q4_K_M",
+      "digest": "3327c1a06755",
+      "availability": "local",
+      "download_size_bytes": 1700000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-audio:2b-q8_0",
+      "tag": "2b-q8_0",
+      "digest": "d0ae0cb67fb9",
+      "availability": "local",
+      "download_size_bytes": 2400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "lfm3-audio:latest",
       "tag": "latest",
-      "digest": "ecfcfb300186",
+      "digest": "3cc080be117a",
       "availability": "local",
-      "download_size_bytes": 2100000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
-      "context_window": null,
+      "context_window": 125000,
       "input_modalities": [
         "text"
       ],

@@ -16,13 +16,13 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 490,
-  "tag_count": 5,
-  "source_updated_at": "2026-10-27T17:07:00Z",
+  "pulls": 3641,
+  "tag_count": 9,
+  "source_updated_at": "2026-10-29T01:50:00Z",
   "parameter_sizes": [
     "2b"
   ],
-  "min_download_size_bytes": 1700000000,
+  "min_download_size_bytes": 1400000000,
   "max_download_size_bytes": 3900000000,
   "max_context_window": 125000,
   "categories": [
@@ -39,16 +39,19 @@
   "quantizations": [
     "BF16",
     "MXFP8",
-    "NVFP4"
+    "NVFP4",
+    "Q4_0",
+    "Q4_K_M",
+    "Q8_0"
   ],
-  "local_variant_count": 5,
+  "local_variant_count": 9,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "lfm3-vl:latest",
     "tag": "latest",
-    "digest": "280791ff33bb",
+    "digest": "b663c9779257",
     "availability": "local",
-    "download_size_bytes": 1700000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 125000,
@@ -60,17 +63,17 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "lfm3-vl:2b",
-    "tag": "2b",
-    "digest": "280791ff33bb",
+    "ref": "lfm3-vl:2b-qad-q4_0",
+    "tag": "2b-qad-q4_0",
+    "digest": "eefca5a1a2dc",
     "availability": "local",
-    "download_size_bytes": 1700000000,
+    "download_size_bytes": 1400000000,
     "parameter": {
       "raw": "2b",
       "total_billion": 2.0,
       "active_billion": null
     },
-    "quantization": null,
+    "quantization": "Q4_0",
     "context_window": 125000,
     "input_modalities": [
       "text",
@@ -86,15 +89,35 @@
     {
       "ref": "lfm3-vl:2b",
       "tag": "2b",
-      "digest": "280791ff33bb",
+      "digest": "b663c9779257",
       "availability": "local",
-      "download_size_bytes": 1700000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "2b",
         "total_billion": 2.0,
         "active_billion": null
       },
       "quantization": null,
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-vl:2b-bf16",
+      "tag": "2b-bf16",
+      "digest": "dd69080d181a",
+      "availability": "local",
+      "download_size_bytes": 3800000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
       "context_window": 125000,
       "input_modalities": [
         "text",
@@ -164,11 +187,71 @@
       "is_default": false
     },
     {
+      "ref": "lfm3-vl:2b-q4_K_M",
+      "tag": "2b-q4_K_M",
+      "digest": "00ca45bf65a5",
+      "availability": "local",
+      "download_size_bytes": 1500000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-vl:2b-q8_0",
+      "tag": "2b-q8_0",
+      "digest": "e2be50ac28b2",
+      "availability": "local",
+      "download_size_bytes": 2200000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3-vl:2b-qad-q4_0",
+      "tag": "2b-qad-q4_0",
+      "digest": "eefca5a1a2dc",
+      "availability": "local",
+      "download_size_bytes": 1400000000,
+      "parameter": {
+        "raw": "2b",
+        "total_billion": 2.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 125000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "lfm3-vl:latest",
       "tag": "latest",
-      "digest": "280791ff33bb",
+      "digest": "b663c9779257",
       "availability": "local",
-      "download_size_bytes": 1700000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 125000,

@@ -15,13 +15,13 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 1199,
-  "tag_count": 5,
-  "source_updated_at": "2026-10-27T17:06:00Z",
+  "pulls": 8095,
+  "tag_count": 9,
+  "source_updated_at": "2026-10-29T01:43:00Z",
   "parameter_sizes": [
     "1.7b"
   ],
-  "min_download_size_bytes": 1700000000,
+  "min_download_size_bytes": 1000000000,
   "max_download_size_bytes": 3500000000,
   "max_context_window": 256000,
   "categories": [
@@ -36,16 +36,19 @@
   "quantizations": [
     "BF16",
     "MXFP8",
-    "NVFP4"
+    "NVFP4",
+    "Q4_0",
+    "Q4_K_M",
+    "Q8_0"
   ],
-  "local_variant_count": 5,
+  "local_variant_count": 9,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "lfm3:latest",
     "tag": "latest",
-    "digest": "2012d88e202f",
+    "digest": "df5fd9016d22",
     "availability": "local",
-    "download_size_bytes": 1700000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 256000,
@@ -56,17 +59,17 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "lfm3:1.7b",
-    "tag": "1.7b",
-    "digest": "2012d88e202f",
+    "ref": "lfm3:1.7b-qad-q4_0",
+    "tag": "1.7b-qad-q4_0",
+    "digest": "765f7bd04f18",
     "availability": "local",
-    "download_size_bytes": 1700000000,
+    "download_size_bytes": 1000000000,
     "parameter": {
       "raw": "1.7b",
       "total_billion": 1.7,
       "active_billion": null
     },
-    "quantization": null,
+    "quantization": "Q4_0",
     "context_window": 256000,
     "input_modalities": [
       "text"
@@ -81,15 +84,34 @@
     {
       "ref": "lfm3:1.7b",
       "tag": "1.7b",
-      "digest": "2012d88e202f",
+      "digest": "df5fd9016d22",
       "availability": "local",
-      "download_size_bytes": 1700000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "1.7b",
         "total_billion": 1.7,
         "active_billion": null
       },
       "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:1.7b-bf16",
+      "tag": "1.7b-bf16",
+      "digest": "40476494244e",
+      "availability": "local",
+      "download_size_bytes": 3500000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "BF16",
       "context_window": 256000,
       "input_modalities": [
         "text"
@@ -155,11 +177,68 @@
       "is_default": false
     },
     {
+      "ref": "lfm3:1.7b-q4_K_M",
+      "tag": "1.7b-q4_K_M",
+      "digest": "b36a103fe2f8",
+      "availability": "local",
+      "download_size_bytes": 1100000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:1.7b-q8_0",
+      "tag": "1.7b-q8_0",
+      "digest": "a329e3b38ec2",
+      "availability": "local",
+      "download_size_bytes": 1800000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "lfm3:1.7b-qad-q4_0",
+      "tag": "1.7b-qad-q4_0",
+      "digest": "765f7bd04f18",
+      "availability": "local",
+      "download_size_bytes": 1000000000,
+      "parameter": {
+        "raw": "1.7b",
+        "total_billion": 1.7,
+        "active_billion": null
+      },
+      "quantization": "Q4_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
       "ref": "lfm3:latest",
       "tag": "latest",
-      "digest": "2012d88e202f",
+      "digest": "df5fd9016d22",
       "availability": "local",
-      "download_size_bytes": 1700000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 256000,
