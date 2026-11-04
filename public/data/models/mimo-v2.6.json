@@ -1,0 +1,245 @@
+{
+  "slug": "mimo-v2.6",
+  "name": "mimo-v2.6",
+  "description": "MiMo-V2.6-Distill-Qwen-9B is Xiaomi MiMo’s 9B model for code and agent workflows",
+  "source_url": "https://ollama.com/library/mimo-v2.6",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools",
+    "vision"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 2197,
+  "tag_count": 8,
+  "source_updated_at": "2026-11-03T16:14:00Z",
+  "parameter_sizes": [
+    "9b"
+  ],
+  "min_download_size_bytes": 6600000000,
+  "max_download_size_bytes": 19000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "coding",
+    "vision",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4",
+    "Q4_K_M",
+    "Q8_0"
+  ],
+  "local_variant_count": 8,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "mimo-v2.6:latest",
+    "tag": "latest",
+    "digest": "4af06b564ed4",
+    "availability": "local",
+    "download_size_bytes": null,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "mimo-v2.6:9b-q4_K_M",
+    "tag": "9b-q4_K_M",
+    "digest": "cc58eacf0e3e",
+    "availability": "local",
+    "download_size_bytes": 6600000000,
+    "parameter": {
+      "raw": "9b",
+      "total_billion": 9.0,
+      "active_billion": null
+    },
+    "quantization": "Q4_K_M",
+    "context_window": 256000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "mimo-v2.6:9b",
+      "tag": "9b",
+      "digest": "4af06b564ed4",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:9b-gguf-bf16",
+      "tag": "9b-gguf-bf16",
+      "digest": "08ec2ae01ade",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:9b-mlx-bf16",
+      "tag": "9b-mlx-bf16",
+      "digest": "98bfe7751130",
+      "availability": "local",
+      "download_size_bytes": 19000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:9b-mxfp8",
+      "tag": "9b-mxfp8",
+      "digest": "74dc9c06c486",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:9b-nvfp4",
+      "tag": "9b-nvfp4",
+      "digest": "13e6cddd37a6",
+      "availability": "local",
+      "download_size_bytes": 8700000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:9b-q4_K_M",
+      "tag": "9b-q4_K_M",
+      "digest": "cc58eacf0e3e",
+      "availability": "local",
+      "download_size_bytes": 6600000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:9b-q8_0",
+      "tag": "9b-q8_0",
+      "digest": "37f7310de102",
+      "availability": "local",
+      "download_size_bytes": 10000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "Q8_0",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "mimo-v2.6:latest",
+      "tag": "latest",
+      "digest": "4af06b564ed4",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}
