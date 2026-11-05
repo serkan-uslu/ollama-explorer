@@ -1,0 +1,274 @@
+{
+  "slug": "autotrust-jev",
+  "name": "autotrust-jev",
+  "description": "AutoTrust’s decision models return choices, yes/no probabilities, and ratings for the questions you supply",
+  "source_url": "https://ollama.com/library/autotrust-jev",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "vision"
+  ],
+  "applications": [],
+  "pulls": 368,
+  "tag_count": 11,
+  "source_updated_at": "2026-11-04T23:26:00Z",
+  "parameter_sizes": [
+    "9b",
+    "35b",
+    "27b"
+  ],
+  "min_download_size_bytes": 8000000000,
+  "max_download_size_bytes": 39000000000,
+  "max_context_window": 256000,
+  "categories": [
+    "chat",
+    "vision"
+  ],
+  "input_modalities": [
+    "image",
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "MXFP8",
+    "NVFP4"
+  ],
+  "local_variant_count": 11,
+  "cloud_variant_count": 0,
+  "default_variant": null,
+  "smallest_local_variant": {
+    "ref": "autotrust-jev:9b-nvfp4",
+    "tag": "9b-nvfp4",
+    "digest": "454a99f93908",
+    "availability": "local",
+    "download_size_bytes": 8000000000,
+    "parameter": {
+      "raw": "9b",
+      "total_billion": 9.0,
+      "active_billion": null
+    },
+    "quantization": "NVFP4",
+    "context_window": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "autotrust-jev:27b-vl",
+      "tag": "27b-vl",
+      "digest": "ddd4abaa2baf",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:27b-vl-mxfp8",
+      "tag": "27b-vl-mxfp8",
+      "digest": "3006be8ff2e9",
+      "availability": "local",
+      "download_size_bytes": 32000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:27b-vl-nvfp4",
+      "tag": "27b-vl-nvfp4",
+      "digest": "ddd4abaa2baf",
+      "availability": "local",
+      "download_size_bytes": 21000000000,
+      "parameter": {
+        "raw": "27b",
+        "total_billion": 27.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:35b",
+      "tag": "35b",
+      "digest": "973a7b9bdf9f",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "35b",
+        "total_billion": 35.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:35b-mxfp8",
+      "tag": "35b-mxfp8",
+      "digest": "4a51b82c2ffa",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "35b",
+        "total_billion": 35.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:35b-nvfp4",
+      "tag": "35b-nvfp4",
+      "digest": "973a7b9bdf9f",
+      "availability": "local",
+      "download_size_bytes": 26000000000,
+      "parameter": {
+        "raw": "35b",
+        "total_billion": 35.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:9b",
+      "tag": "9b",
+      "digest": "ae39b218bea7",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:9b-mlx-bf16",
+      "tag": "9b-mlx-bf16",
+      "digest": "18e60050218c",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:9b-mxfp8",
+      "tag": "9b-mxfp8",
+      "digest": "ae39b218bea7",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "MXFP8",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:9b-nvfp4",
+      "tag": "9b-nvfp4",
+      "digest": "454a99f93908",
+      "availability": "local",
+      "download_size_bytes": 8000000000,
+      "parameter": {
+        "raw": "9b",
+        "total_billion": 9.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "autotrust-jev:latest",
+      "tag": "latest",
+      "digest": "ae39b218bea7",
+      "availability": "local",
+      "download_size_bytes": 11000000000,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 256000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    }
+  ]
+}
