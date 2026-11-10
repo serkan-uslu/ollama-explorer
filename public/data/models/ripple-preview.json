@@ -1,0 +1,211 @@
+{
+  "slug": "ripple-preview",
+  "name": "ripple-preview",
+  "description": "65B dense model built for agentic coding, with up to 1M tokens of context.",
+  "source_url": "https://ollama.com/library/ripple-preview",
+  "status": "active",
+  "availability": "local",
+  "capabilities": [
+    "thinking",
+    "tools"
+  ],
+  "applications": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "OpenCode"
+  ],
+  "pulls": 284,
+  "tag_count": 7,
+  "source_updated_at": "2026-11-09T23:18:00Z",
+  "parameter_sizes": [
+    "65b"
+  ],
+  "min_download_size_bytes": 39000000000,
+  "max_download_size_bytes": 138000000000,
+  "max_context_window": 2000000,
+  "categories": [
+    "chat",
+    "coding",
+    "tools",
+    "reasoning"
+  ],
+  "input_modalities": [
+    "text"
+  ],
+  "quantizations": [
+    "BF16",
+    "NVFP4",
+    "Q4_K_M"
+  ],
+  "local_variant_count": 7,
+  "cloud_variant_count": 0,
+  "default_variant": {
+    "ref": "ripple-preview:latest",
+    "tag": "latest",
+    "digest": "8cc02e88378d",
+    "availability": "local",
+    "download_size_bytes": null,
+    "parameter": null,
+    "quantization": null,
+    "context_window": 2000000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": true
+  },
+  "smallest_local_variant": {
+    "ref": "ripple-preview:65b-q4_K_M",
+    "tag": "65b-q4_K_M",
+    "digest": "d5ecf76699cf",
+    "availability": "local",
+    "download_size_bytes": 39000000000,
+    "parameter": {
+      "raw": "65b",
+      "total_billion": 65.0,
+      "active_billion": null
+    },
+    "quantization": "Q4_K_M",
+    "context_window": 2000000,
+    "input_modalities": [
+      "text"
+    ],
+    "source_updated_at": null,
+    "is_default": false
+  },
+  "cloud_variant": null,
+  "family": null,
+  "license": null,
+  "variants": [
+    {
+      "ref": "ripple-preview:65b",
+      "tag": "65b",
+      "digest": "8cc02e88378d",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "65b",
+        "total_billion": 65.0,
+        "active_billion": null
+      },
+      "quantization": null,
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ripple-preview:65b-bf16",
+      "tag": "65b-bf16",
+      "digest": "69a90109eb59",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": {
+        "raw": "65b",
+        "total_billion": 65.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ripple-preview:65b-gguf-bf16",
+      "tag": "65b-gguf-bf16",
+      "digest": "fa8176b7842a",
+      "availability": "local",
+      "download_size_bytes": 130000000000,
+      "parameter": {
+        "raw": "65b",
+        "total_billion": 65.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ripple-preview:65b-mlx-bf16",
+      "tag": "65b-mlx-bf16",
+      "digest": "0510c48c0544",
+      "availability": "local",
+      "download_size_bytes": 138000000000,
+      "parameter": {
+        "raw": "65b",
+        "total_billion": 65.0,
+        "active_billion": null
+      },
+      "quantization": "BF16",
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ripple-preview:65b-nvfp4",
+      "tag": "65b-nvfp4",
+      "digest": "e3b74fd4c9a0",
+      "availability": "local",
+      "download_size_bytes": 46000000000,
+      "parameter": {
+        "raw": "65b",
+        "total_billion": 65.0,
+        "active_billion": null
+      },
+      "quantization": "NVFP4",
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ripple-preview:65b-q4_K_M",
+      "tag": "65b-q4_K_M",
+      "digest": "d5ecf76699cf",
+      "availability": "local",
+      "download_size_bytes": 39000000000,
+      "parameter": {
+        "raw": "65b",
+        "total_billion": 65.0,
+        "active_billion": null
+      },
+      "quantization": "Q4_K_M",
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "ripple-preview:latest",
+      "tag": "latest",
+      "digest": "8cc02e88378d",
+      "availability": "local",
+      "download_size_bytes": null,
+      "parameter": null,
+      "quantization": null,
+      "context_window": 2000000,
+      "input_modalities": [
+        "text"
+      ],
+      "source_updated_at": null,
+      "is_default": true
+    }
+  ]
+}

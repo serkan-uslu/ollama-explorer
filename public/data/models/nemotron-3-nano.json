@@ -4,7 +4,7 @@
   "description": "Nemotron-3-Nano is a new Standard for Efficient, Open, and Intelligent Agentic Models, now updated with a 4B parameter count model.",
   "source_url": "https://ollama.com/library/nemotron-3-nano",
   "status": "active",
-  "availability": "both",
+  "availability": "local",
   "capabilities": [
     "thinking",
     "tools"
@@ -15,8 +15,8 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 996000,
-  "tag_count": 20,
+  "pulls": 998200,
+  "tag_count": 19,
   "source_updated_at": "2026-10-17T20:28:00Z",
   "parameter_sizes": [
     "4b",
@@ -44,7 +44,7 @@
     "Q8_0"
   ],
   "local_variant_count": 19,
-  "cloud_variant_count": 1,
+  "cloud_variant_count": 0,
   "default_variant": {
     "ref": "nemotron-3-nano:latest",
     "tag": "latest",
@@ -79,25 +79,7 @@
     "source_updated_at": null,
     "is_default": false
   },
-  "cloud_variant": {
-    "ref": "nemotron-3-nano:30b-cloud",
-    "tag": "30b-cloud",
-    "digest": "01d0d069a149",
-    "availability": "cloud",
-    "download_size_bytes": null,
-    "parameter": {
-      "raw": "30b",
-      "total_billion": 30.0,
-      "active_billion": null
-    },
-    "quantization": null,
-    "context_window": 1000000,
-    "input_modalities": [
-      "text"
-    ],
-    "source_updated_at": null,
-    "is_default": false
-  },
+  "cloud_variant": null,
   "family": null,
   "license": null,
   "variants": [
@@ -265,25 +247,6 @@
         "active_billion": 3.0
       },
       "quantization": "Q8_0",
-      "context_window": 1000000,
-      "input_modalities": [
-        "text"
-      ],
-      "source_updated_at": null,
-      "is_default": false
-    },
-    {
-      "ref": "nemotron-3-nano:30b-cloud",
-      "tag": "30b-cloud",
-      "digest": "01d0d069a149",
-      "availability": "cloud",
-      "download_size_bytes": null,
-      "parameter": {
-        "raw": "30b",
-        "total_billion": 30.0,
-        "active_billion": null
-      },
-      "quantization": null,
       "context_window": 1000000,
       "input_modalities": [
         "text"
