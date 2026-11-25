@@ -16,13 +16,13 @@
     "OpenClaw",
     "OpenCode"
   ],
-  "pulls": 56800,
-  "tag_count": 3,
-  "source_updated_at": "2026-11-20T22:24:00Z",
+  "pulls": 75200,
+  "tag_count": 4,
+  "source_updated_at": "2026-11-24T07:11:00Z",
   "parameter_sizes": [
     "26b-a5b"
   ],
-  "min_download_size_bytes": 20000000000,
+  "min_download_size_bytes": 18000000000,
   "max_download_size_bytes": 20000000000,
   "max_context_window": 1000000,
   "categories": [
@@ -37,16 +37,17 @@
     "text"
   ],
   "quantizations": [
+    "IQ4_NL",
     "NVFP4"
   ],
-  "local_variant_count": 3,
+  "local_variant_count": 4,
   "cloud_variant_count": 0,
   "default_variant": {
     "ref": "inkling-2-mini:latest",
     "tag": "latest",
-    "digest": "d183b1321cb5",
+    "digest": "8ce12ee30781",
     "availability": "local",
-    "download_size_bytes": 20000000000,
+    "download_size_bytes": null,
     "parameter": null,
     "quantization": null,
     "context_window": 1000000,
@@ -58,17 +59,17 @@
     "is_default": true
   },
   "smallest_local_variant": {
-    "ref": "inkling-2-mini:26b-a5b",
-    "tag": "26b-a5b",
-    "digest": "d183b1321cb5",
+    "ref": "inkling-2-mini:26b-a5b-iq4_NL",
+    "tag": "26b-a5b-iq4_NL",
+    "digest": "2b942cf76646",
     "availability": "local",
-    "download_size_bytes": 20000000000,
+    "download_size_bytes": 18000000000,
     "parameter": {
       "raw": "26b-a5b",
       "total_billion": 26.0,
       "active_billion": 5.0
     },
-    "quantization": null,
+    "quantization": "IQ4_NL",
     "context_window": 1000000,
     "input_modalities": [
       "text",
@@ -84,15 +85,35 @@
     {
       "ref": "inkling-2-mini:26b-a5b",
       "tag": "26b-a5b",
-      "digest": "d183b1321cb5",
+      "digest": "8ce12ee30781",
       "availability": "local",
-      "download_size_bytes": 20000000000,
+      "download_size_bytes": null,
       "parameter": {
         "raw": "26b-a5b",
         "total_billion": 26.0,
         "active_billion": 5.0
       },
       "quantization": null,
+      "context_window": 1000000,
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "source_updated_at": null,
+      "is_default": false
+    },
+    {
+      "ref": "inkling-2-mini:26b-a5b-iq4_NL",
+      "tag": "26b-a5b-iq4_NL",
+      "digest": "2b942cf76646",
+      "availability": "local",
+      "download_size_bytes": 18000000000,
+      "parameter": {
+        "raw": "26b-a5b",
+        "total_billion": 26.0,
+        "active_billion": 5.0
+      },
+      "quantization": "IQ4_NL",
       "context_window": 1000000,
       "input_modalities": [
         "text",
@@ -124,9 +145,9 @@
     {
       "ref": "inkling-2-mini:latest",
       "tag": "latest",
-      "digest": "d183b1321cb5",
+      "digest": "8ce12ee30781",
       "availability": "local",
-      "download_size_bytes": 20000000000,
+      "download_size_bytes": null,
       "parameter": null,
       "quantization": null,
       "context_window": 1000000,
